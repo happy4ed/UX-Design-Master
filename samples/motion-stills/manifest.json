@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0",
+  "origin": "self-authored-renderer-capture",
+  "renderer": "assets/layout/motion-verified-engine.mjs",
+  "gallery": "samples/motion-verified-lab.html",
+  "captureScript": "scripts/capture_authored_motion_stills.py",
+  "purpose": "Representative static frames for preview; the linked HTML gallery provides the full motion.",
+  "motions": [
+    {
+      "id": "line-draw",
+      "name": "선 그리기",
+      "frames": [
+        {
+          "phase": 0.08,
+          "file": "line-draw-08.png",
+          "sha256": "3a66fc34b7d2f88a8a9aa18a59d00c17b493de4293edfaa12479774d3efc7025"
+        },
+        {
+          "phase": 0.48,
+          "file": "line-draw-48.png",
+          "sha256": "5ae25e9b805d9bed31aa7404780fff019a36dcea9e8677412186f6ffa6eafea5"
+        },
+        {
+          "phase": 0.86,
+          "file": "line-draw-86.png",
+          "sha256": "af3c5d33da5099998fdcbd05107b6d80da34265a583e84ee93e72752c72995b4"
+        }
+      ]
+    },
+    {
+      "id": "odometer-roll",
+      "name": "숫자 릴 굴리기",
+      "frames": [
+        {
+          "phase": 0.08,
+          "file": "odometer-roll-08.png",
+          "sha256": "75b724b7bfb3e388bb7f69652598d4640eecd2800a5cce504f2ac17810f70dcd"
+        },
+        {
+          "phase": 0.48,
+          "file": "odometer-roll-48.png",
+          "sha256": "830ac6544ad1d0f0c19dbae8ae7aca9ef4470a608f52ef70097b7b19ae857630"
+        },
+        {
+          "phase": 0.86,
+          "file": "odometer-roll-86.png",
+          "sha256": "7679fa056490605b7607ec86737d5692bed537fd6a1e466fe7de66c713cac593"
+        }
+      ]
+    },
+    {
+      "id": "shutter-wipe",
+      "name": "셔터 와이프",
+      "frames": [
+        {
+          "phase": 0.12,
+          "file": "shutter-wipe-12.png",
+          "sha256": "5248425c87e7d3b86caad1f0d0421cff11b14363b4c74fb3e65f4ffcca97bb12"
+        },
+        {
+          "phase": 0.24,
+          "file": "shutter-wipe-24.png",
+          "sha256": "004c8cb9d5f8c0f50b5580093b42eb76cea0ede46d21bf648c62b45e6b158716"
+        },
+        {
+          "phase": 0.3,
+          "file": "shutter-wipe-30.png",
+          "sha256": "f124c3550e8117be04f5a0b9275eff54081542230cbfc47c7fde0abb4e2974e8"
+        }
+      ]
+    },
+    {
+      "id": "brush-wipe",
+      "name": "붓 와이프",
+      "frames": [
+        {
+          "phase": 0.12,
+          "file": "brush-wipe-12.png",
+          "sha256": "f43b7b8816bbd667f51bedc72dbb140584208cbf03411adc34003a6de40cd5c0"
+        },
+        {
+          "phase": 0.27,
+          "file": "brush-wipe-27.png",
+          "sha256": "999c76cf0b7db141b6c72bf6b970d5780640cae6ef96df6a7d89e72e8d94be3b"
+        },
+        {
+          "phase": 0.42,
+          "file": "brush-wipe-42.png",
+          "sha256": "1cc60f874bed973de991e6e9f98beb1bf9975905ab6b3afdd1b3fbad616ea693"
+        }
+      ]
+    },
+    {
+      "id": "kaleidoscope",
+      "name": "만화경",
+      "frames": [
+        {
+          "phase": 0.08,
+          "file": "kaleidoscope-08.png",
+          "sha256": "9462754f683a8f345030e06a55f3d88eaa25b102652a8309a4155e38ebcdc7e2"
+        },
+        {
+          "phase": 0.48,
+          "file": "kaleidoscope-48.png",
+          "sha256": "77e4d5e967405ade22005ec6cf9eb81a6e0b7fda2d8fc3d20bcc7d9ed49f94d2"
+        },
+        {
+          "phase": 0.86,
+          "file": "kaleidoscope-86.png",
+          "sha256": "3ea6c36350f9387112755674cda0b659ae6d6d638574cbe47677af84e34e8ddd"
+        }
+      ]
+    },
+    {
+      "id": "ripple-ring",
+      "name": "외곽 파문",
+      "frames": [
+        {
+          "phase": 0.08,
+          "file": "ripple-ring-08.png",
+          "sha256": "57f0e877f0d32dcb1313e51587fb49beca4dd686d0f39bc75b8019ac7cf00cfe"
+        },
+        {
+          "phase": 0.48,
+          "file": "ripple-ring-48.png",
+          "sha256": "5e07856e90e90188e894622829d3608d3cb46eec32e142d79e8fcd517f034faa"
+        },
+        {
+          "phase": 0.86,
+          "file": "ripple-ring-86.png",
+          "sha256": "c5a19f6a56f3ed05f2751d5322e66fca5f58e0bbd1ca4575f44cf1b730393983"
+        }
+      ]
+    },
+    {
+      "id": "paper-cut",
+      "name": "페이퍼 컷",
+      "frames": [
+        {
+          "phase": 0.08,
+          "file": "paper-cut-08.png",
+          "sha256": "d7b7d021f969f4ca41f064ba4a8ff33ce69c78eb1352e0f2cc3806c446f8b5cf"
+        },
+        {
+          "phase": 0.48,
+          "file": "paper-cut-48.png",
+          "sha256": "bd19882b73813c58946c78420eee7520de5747eca7416d0fe83b8b12c47f3ae3"
+        },
+        {
+          "phase": 0.86,
+          "file": "paper-cut-86.png",
+          "sha256": "d20fed3d702bf4eecc8e8eeb0006ba2d5ad66eda0ffc7d499a43782196370fb9"
+        }
+      ]
+    }
+  ]
+}

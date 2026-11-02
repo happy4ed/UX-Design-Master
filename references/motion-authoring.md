@@ -1,5 +1,7 @@
 # 고유 모션별 제작 명세
 
+직접 제작한 모션의 정지 장면을 재사용할 때는 [모션 스틸 샘플](../samples/motion-stills/index.html)과 [생성 기록](../samples/motion-stills/manifest.json)을 참고한다. 정지 장면만으로 움직임의 경로·순서·주기를 검증하지 않는다.
+
 [343종 제작 계약](../knowledge/motion-authoring-recipes.json)은 [모션·컴포넌트 KG](motion-component-graph.md)와 같은 대표 ID를 사용한다. [브라우저 명세 탐색 화면](../samples/motion-authoring-catalog.html)에서 각 항목을 볼 수 있다. 각 항목에는 움직이는 대상 후보, 시작·핵심 변화·끝, 기존 효과로 잘못 대체하지 말아야 할 동작, 원본 제작 단서, 매체별 구현 경로, 정적·움직임 감소 대안, 검증 항목이 있다. 이 계약은 **제작 입력**이다. JSON이 존재한다는 이유로 원본 일치나 시연 완성을 PASS로 표시하지 않는다.
 
 ## 모션을 선택하고 만드는 순서

@@ -28,11 +28,11 @@ git clone https://github.com/happy4ed/UX-Design-Master.git ~/.codex/skills/ux-de
 | --- | --- |
 | `SKILL.md`, `agents/`, `references/` | 실행 절차, 단계별 계약, 검수 원칙과 출처 설명 |
 | `knowledge/` | 컴포넌트·색·모션 등 재사용 가능한 구조화 지식과 출처 URL |
-| `samples/` | 이 스킬용으로 직접 만든 HTML·SVG 시연 |
+| `samples/` | 이 스킬용으로 직접 만든 HTML·SVG 시연과 자체 렌더러에서 캡처한 대표 장면 |
 | `assets/` | 시연과 렌더에 필요한 자체 코드·데이터 |
 | `scripts/`, `tests/`, `tools/` | 제작·검사 도구와 회귀시험 |
 
-다운로드한 레퍼런스 화면과 모션 대조 캡처는 제작 과정의 서버 자료입니다. 이 저장소와 설치 스킬에는 넣지 않습니다. `knowledge/`에는 관찰 결과와 출처 주소를 남기며, 외부 이미지를 내장하거나 시연에 불러오지 않습니다.
+다운로드한 레퍼런스 화면과 외부 모션 대조 캡처는 제작 과정의 서버 자료입니다. 이 저장소와 설치 스킬에는 넣지 않습니다. [직접 만든 모션 대표 장면](samples/motion-stills/index.html)은 샘플로 포함하며, [생성·출처 기록](samples/motion-stills/manifest.json)에 연결합니다. `knowledge/`에는 외부 레퍼런스의 관찰 결과와 출처 주소를 남기되 외부 이미지를 내장하거나 시연에 불러오지 않습니다.
 
 ## 주요 파일
 

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>직접 제작한 모션 장면 · UX-design-master</title>
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;color:#192333;background:#f4f6f8}*{box-sizing:border-box}body{margin:0}main{max-width:1280px;margin:auto;padding:clamp(20px,4vw,48px)}h1{font-size:clamp(28px,4vw,42px);line-height:1.15;margin:0 0 12px}p{max-width:70ch;margin:0 0 28px;color:#4b5969}a{color:#145eae}a:focus-visible{outline:3px solid #146bd3;outline-offset:3px}.list{display:grid;gap:22px}.motion{background:#fff;border:1px solid #dbe3eb;border-radius:16px;padding:clamp(16px,2vw,24px)}.motion h2{font-size:21px;margin:0 0 12px}.motion h2 a{text-decoration-thickness:1px;text-underline-offset:4px}.frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.frames figure{margin:0;min-width:0}.frames img{display:block;width:100%;height:auto;aspect-ratio:800/254;object-fit:contain;border-radius:9px;background:#141821}.frames figcaption{font-size:14px;color:#526172;padding-top:7px}@media(max-width:700px){.frames{grid-template-columns:1fr}.motion{padding:16px}}
+</style>
+</head>
+<body>
+<main>
+<h1>직접 제작한 모션의 대표 장면</h1>
+<p>이 이미지는 스킬 내부 모션 렌더러에서 변화의 초·중·후반 장면을 직접 캡처한 샘플입니다. 움직임과 인터랙션은 각 제목을 눌러 실제 시연에서 확인할 수 있습니다. 외부 레퍼런스 화면은 포함하지 않았습니다.</p>
+<div class="list" id="list" aria-live="polite">이미지를 불러오는 중입니다.</div>
+</main>
+<script type="module">
+const list=document.querySelector('#list');
+try{
+  const response=await fetch('manifest.json');
+  if(!response.ok)throw new Error('manifest load failed');
+  const manifest=await response.json();
+  const fragment=document.createDocumentFragment();
+  for(const motion of manifest.motions){
+    const section=document.createElement('section');section.className='motion';
+    const heading=document.createElement('h2');const link=document.createElement('a');
+    link.href='../motion-verified-lab.html#'+encodeURIComponent(motion.id);
+    link.textContent=motion.name+' · 움직임 보기 ↗';heading.append(link);section.append(heading);
+    const frames=document.createElement('div');frames.className='frames';
+    for(const [index,frame] of motion.frames.entries()){
+      const figure=document.createElement('figure');const img=document.createElement('img');
+      img.src=frame.file;img.alt=motion.name+' '+['초반','중반','후반'][index]+' 장면';img.loading='lazy';
+      const caption=document.createElement('figcaption');caption.textContent=['초반 변화','중간 변화','후반 변화'][index];
+      figure.append(img,caption);frames.append(figure);
+    }
+    section.append(frames);fragment.append(section);
+  }
+  list.replaceChildren(fragment);
+}catch(error){list.textContent='샘플을 불러오지 못했습니다. 로컬 서버에서 다시 열어 주세요.';console.error(error)}
+</script>
+</body>
+</html>
