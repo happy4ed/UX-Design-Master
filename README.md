@@ -20,6 +20,18 @@
 git clone https://github.com/happy4ed/UX-Design-Master.git ~/.codex/skills/ux-design-master
 ```
 
+### Claude Code로 이전하기
+
+개인 스킬 경로는 `~/.claude/skills/`입니다. 기존 `app-web-design-master` 설치를 삭제하고 새 스킬을 설치합니다. 이 명령은 **설치된 옛 스킬 폴더만** 지우며 제작 자료 보관 폴더는 건드리지 않습니다.
+
+```bash
+mkdir -p ~/.claude/skills
+rm -rf ~/.claude/skills/app-web-design-master
+git clone https://github.com/happy4ed/UX-Design-Master.git ~/.claude/skills/ux-design-master
+```
+
+이미 새 스킬을 설치했다면 다시 복제하지 않고 `git -C ~/.claude/skills/ux-design-master pull --ff-only`로 갱신합니다. Claude Code에서 `/skills`로 목록을 확인하고 `/ux-design-master`로 실행합니다. `~/.claude/skills/` 설치는 해당 컴퓨터의 터미널 Claude Code에서 사용합니다.
+
 스킬 본문과 내부 지식은 별도 패키지 설치 없이 읽을 수 있습니다. 일부 렌더 검사기는 Python 3와 Playwright가 필요합니다. 브라우저 검사를 실행할 때에는 해당 환경에 Chromium도 준비해야 합니다. Node 기반 SVG·HTML 렌더러는 Node.js를 사용합니다. 도구가 없으면 해당 검사를 `NOT_RUN`으로 기록합니다.
 
 ## 자료 구분

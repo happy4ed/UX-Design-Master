@@ -59,7 +59,7 @@ if "UX-design-master" not in (ROOT / "agents/openai.yaml").read_text(encoding="u
 
 for path in ROOT.rglob("*.md"):
     content = path.read_text(encoding="utf-8")
-    if "app-web-design-master" in content:
+    if path != ROOT / "README.md" and "app-web-design-master" in content:
         problems.append(f"old skill name: {path.relative_to(ROOT)}")
     for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", content):
         target = target.split("#", 1)[0].strip()
