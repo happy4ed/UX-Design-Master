@@ -1,0 +1,100 @@
+{
+  "source": {
+    "kind": "user-provided Threads post",
+    "postId": "De_t-LojVJc",
+    "observed": "2026-10-27",
+    "evidence": "Nine numbered chart cards visible in the post media; names and examples read from the image. Suitability rules below are our own interpretation."
+  },
+  "charts": [
+    {
+      "id": "pie",
+      "name": "파이 차트",
+      "family": "part-whole",
+      "requires": "one categorical dimension, one nonnegative additive measure, known whole",
+      "bestFor": "rough shares of 2–4 parts at one point",
+      "avoid": "many slices, negative values, exact ranking, incompatible denominators",
+      "preferInstead": "bar-comparison for precise comparisons",
+      "renderer": null
+    },
+    {
+      "id": "donut",
+      "name": "도넛 차트",
+      "family": "part-whole",
+      "requires": "one categorical dimension, one nonnegative additive measure, known whole",
+      "bestFor": "rough shares of a few parts with an actual total in the center",
+      "avoid": "center value with a different denominator, many slices, precise comparison",
+      "preferInstead": "bar-comparison for precise comparisons",
+      "renderer": "share-donut"
+    },
+    {
+      "id": "funnel",
+      "name": "퍼널 차트",
+      "family": "sequential-retention",
+      "requires": "ordered stages, same cohort and unit, nonincreasing counts",
+      "bestFor": "where the same cohort drops out across stages",
+      "avoid": "unrelated stage counts, cohorts with different definitions, increasing counts without explanation",
+      "preferInstead": "bar-comparison when stages are independent",
+      "renderer": null
+    },
+    {
+      "id": "waffle",
+      "name": "와플 차트",
+      "family": "part-whole",
+      "requires": "one categorical dimension and known denominator; cells represent equal units",
+      "bestFor": "a coarse percentage out of 100 or another clear unit grid",
+      "avoid": "precision beyond cell resolution, many parts, unclear rounding",
+      "preferInstead": "bar-comparison when exact values matter",
+      "renderer": null
+    },
+    {
+      "id": "treemap",
+      "name": "트리맵",
+      "family": "part-whole-hierarchy",
+      "requires": "nonnegative additive values; one-level parts or a valid hierarchy",
+      "bestFor": "many parts or nested groups where area represents size",
+      "avoid": "negative values, tiny unreadable leaves, precise close-value comparison",
+      "preferInstead": "bar-comparison for exact size order",
+      "renderer": "part-treemap"
+    },
+    {
+      "id": "sunburst",
+      "name": "선버스트",
+      "family": "hierarchy",
+      "requires": "rooted acyclic parent-child hierarchy with nonnegative additive leaf values",
+      "bestFor": "hierarchical composition across two or more levels",
+      "avoid": "cross-links, deep or dense labels, double-counted parent totals",
+      "preferInstead": "hierarchy-tree or treemap when labels and precise values lead",
+      "renderer": null
+    },
+    {
+      "id": "waterfall",
+      "name": "폭포 차트",
+      "family": "signed-change",
+      "requires": "starting value, ordered signed deltas, computed or supplied ending value",
+      "bestFor": "which increases and decreases explain a final value",
+      "avoid": "independent category values or unexplained final total mismatch",
+      "preferInstead": "bar-comparison for independent categories",
+      "renderer": "running-waterfall"
+    },
+    {
+      "id": "pareto",
+      "name": "파레토 차트",
+      "family": "ranked-concentration",
+      "requires": "one category, nonnegative additive measure, meaningful total; sort descending and calculate cumulative share",
+      "bestFor": "identify whether a few categories account for most of the total",
+      "avoid": "negative values, nonadditive rates, forced 80/20 conclusion",
+      "preferInstead": "bar-comparison if only ranking is needed",
+      "renderer": null
+    },
+    {
+      "id": "marimekko",
+      "name": "마리메코 차트",
+      "family": "two-dimensional-composition",
+      "requires": "two categorical dimensions and nonnegative additive cell values; column width and segment height encode different shares",
+      "bestFor": "compare category-group size and each group's internal mix together",
+      "avoid": "negative values, missing/ambiguous cells, precise cell comparisons, too many categories",
+      "preferInstead": "stacked-categories plus totals for more exact reading",
+      "renderer": null
+    }
+  ]
+}

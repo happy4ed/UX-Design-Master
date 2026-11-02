@@ -1,0 +1,25 @@
+{
+  "schemaVersion":"1.0",
+  "rules":[
+    {"id":"motion-none","symptom":"모션이 전혀 안 보임","check":"getAnimations() 개수·playState, prefers-reduced-motion, CSS animation-name/transition-duration, JS 오류","causes":"감소 설정, 정지 프리셋, 덮어쓴 CSS, 이벤트 미연결, 시작·끝 값 동일","fix":"원인별로 실제 상태 변경을 연결하고 검토 화면에는 감소 설정을 명시적으로 표시","verify":"두 시점의 transform/opacity와 재생 수를 비교하고 감소 모드에서는 정적 정보 확인"},
+    {"id":"motion-subtle","symptom":"강도나 이징 차이가 안 느껴짐","check":"같은 거리·시간·대상으로 비교했는지, keyframe 휴지 구간과 stagger 범위","causes":"진폭이 작음, 서로 다른 효과를 비교함, 느린 반복, 동일한 위상의 샘플","fix":"한 축만 바꿔 동시 비교하고 강도는 거리·scale·시간, 느낌은 easing으로 분리","verify":"중간 시점 위치와 오버슈트가 실제 렌더에서 구별됨"},
+    {"id":"motion-offscreen","symptom":"모션 실행 중인데 화면에 보이지 않음","check":"boundingClientRect와 viewport, opacity, overflow clip, z-index","causes":"대상이 화면 밖, 부모 clip, 뒤 레이어, 긴 delay","fix":"시연 대상을 viewport 안에 두고 겹침·지연·가림을 수정","verify":"재생 시작·중간·종료 프레임을 캡처"},
+    {"id":"transition-no-state","symptom":"transition 선언했는데 반응 없음","check":"상태 속성 전후 computedStyle 값과 transition-property","causes":"실제 속성값 불변, display 전환, 선택자 불일치","fix":"상태와 해당 속성을 연결하고 display는 별도 접근으로 처리","verify":"사용자 입력 후 측정값이 시간에 따라 바뀜"},
+    {"id":"flex-overflow","symptom":"플렉스 자식이 화면 밖으로 밀림","check":"자식 min-width:auto, 긴 내용·이미지 intrinsic width","causes":"기본 최소폭이 축소를 막음","fix":"필요한 자식에 min-width:0, 이미지 max-width:100%, 줄바꿈 계약 적용","verify":"320px와 포화 데이터에서 가로 스크롤이 사라짐"},
+    {"id":"grid-overflow","symptom":"그리드 열이 너무 좁거나 튀어나옴","check":"minmax 값, track 수, 콘텐츠 최소폭, gap","causes":"열 최소폭·고정폭·콘텐츠 폭의 충돌","fix":"minmax(0,1fr)와 실제 breakpoint를 재설계하고 순서를 확인","verify":"좁은 폭과 긴 번역에서 열·순서·hit 영역 확인"},
+    {"id":"center-optical","symptom":"수치상 중앙인데 눈에는 치우침","check":"글리프·아이콘 내부 투명 여백과 optical mass, baseline","causes":"외곽 상자 중심과 보이는 형태의 중심이 다름","fix":"아이콘 viewBox/내부 여백을 정리하고 필요한 소폭 보정은 토큰화","verify":"실제 크기와 200% 확대에서 주변 기준선 대조"},
+    {"id":"text-clipped","symptom":"글자가 잘리거나 다른 영역에 침범","check":"text box 높이, line-height, overflow, white-space, max-lines, 폰트 로딩","causes":"고정 높이·임의 말줄임·폴백 폭 차이","fix":"내용 계약에 맞춰 영역 확장·재배치·명시적 줄수 선택","verify":"초기·포화·긴 번역·폰트 폴백에서 전체 문구 확인"},
+    {"id":"korean-wrap","symptom":"한글 마지막 줄이나 문장부호 위치가 어색","check":"실제 글자 행 좌표, 폭, word-break, font-family","causes":"너무 좁은 칸, 폰트 교체, 임의 강제 개행","fix":"문장·영역 폭을 조정하고 필요한 지점만 의미 단위로 개행","verify":"한글 줄바꿈 검사기와 실물 화면 대조"},
+    {"id":"line-paragraph-gap","symptom":"줄 간격과 문단 간격이 같아 덩어리가 안 보임","check":"line-height, p margin-block, 같은 문단의 줄바꿈인지 새 문단인지","causes":"br와 p를 동일한 간격 토큰으로 처리","fix":"문단 내부 leading과 문단 사이 margin을 별도 토큰으로 정의","verify":"긴 본문과 짧은 목록에서 리듬 비교"},
+    {"id":"arrow-gap","symptom":"화살표가 도형 경계에 닿지 않음","check":"path 끝점과 도형 외곽의 거리, stroke marker 길이","causes":"중심 좌표만 연결, marker 끝 오프셋 누락","fix":"도형 외곽 교점을 계산하고 화살촉 길이만큼 보정","verify":"확대 렌더와 geometry-audit 결과 함께 확인"},
+    {"id":"touch-small","symptom":"아이콘은 보여도 누르기 어려움","check":"visibleBounds와 hitBounds, 인접 대상의 겹침","causes":"시각 크기를 터치 크기로 사용, 부모 clip","fix":"플랫폼 목표 크기의 hit 영역을 확장하고 겹침을 분리","verify":"실제 기기에서 터치·키보드 포커스 점검"},
+    {"id":"sticky-cover","symptom":"고정 헤더가 본문을 가림","check":"sticky 높이, scroll-padding-top, anchor 이동 후 위치","causes":"상단 예약 영역이 없음","fix":"스크롤 컨테이너에 헤더 높이만큼 예약 공간 설정","verify":"각 anchor와 키보드 이동 후 제목이 완전히 보임"},
+    {"id":"modal-focus","symptom":"대화상자 뒤 화면이 조작됨","check":"focus trap, inert, scrim, Escape, 복귀 포커스","causes":"시각 레이어만 올리고 상호작용 수명 미정의","fix":"모달 상태·배경 차단·닫기·포커스 복귀를 한 계약으로 구현","verify":"키보드와 스크린리더 탐색 순서 확인"},
+    {"id":"image-stretch","symptom":"이미지 비율이 깨짐","check":"intrinsic ratio, object-fit, 고정 width/height","causes":"부모 비율과 원본 비율을 동시에 강제","fix":"매체 역할에 따라 contain/cover와 focal point를 정의","verify":"좁은 폭·다른 비율 자산에서 중요한 부분 보임"},
+    {"id":"rtl-order","symptom":"RTL에서 순서·정렬이 틀어짐","check":"dir, logical CSS 속성, 아이콘 방향, 숫자 구간","causes":"left/right 고정 좌표와 LTR 가정","fix":"inline-start/end와 실제 읽기 순서로 재설계","verify":"아랍어 실제 문장과 숫자·아이콘을 함께 렌더"},
+    {"id":"stacking-layer","symptom":"메뉴·툴팁이 뒤에 가려짐","check":"stacking context 부모, overflow, transform, z-index","causes":"부모 stacking context와 clip 내부에 popup 배치","fix":"레이어 소유자를 정하고 필요한 경우 top-layer/portal에 렌더","verify":"스크롤·모달·좁은 화면에서 popup이 잘리지 않음"},
+    {"id":"card-overuse","symptom":"모든 영역이 카드로 보여 계층이 흐려짐","check":"surface 역할, 반복 테두리·그림자·패딩","causes":"의미 그룹과 독립 행동 단위를 모두 card로 처리","fix":"section·chunk·구분선·여백·표를 내용 역할에 맞춰 선택","verify":"카드를 제거해도 읽기 순서와 주요 행동이 선명함"},
+    {"id":"font-fallback","symptom":"폰트가 지정됐는데 다르게 보임","check":"네트워크·설치·FontFaceSet, 실제 glyph coverage와 fallback","causes":"서체 파일 누락, 한글 글리프 누락, weight 미제공","fix":"실제 파일을 연결하고 필요한 굵기·문자권을 포함한 폴백 정의","verify":"실제 글꼴로 두 폭과 긴 문구의 재흐름 확인"},
+    {"id":"contrast-state","symptom":"비활성·선택 상태가 흐리거나 구분 안 됨","check":"전경/배경 대비, 색 외 라벨·아이콘·형태, focus ring","causes":"색의 명도만 낮추거나 불투명도를 일괄 적용","fix":"각 상태의 역할과 대비·표시 방식을 별도 정의","verify":"밝은/어두운 배경과 색각 조건에서 상태 식별"}
+  ]
+}

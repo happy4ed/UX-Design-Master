@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "total": 414,
+  "totalMeans": "inventory terms, including aliases and context variants; distinct mechanism count is not yet verified",
+  "principle": "Top-level groups classify the visual target and role. Source family IDs remain as subtypes for provenance and renderer routing; a subtype is not a separate top-level motion category.",
+  "groups": [
+    {"id":"camera-basic","name":"카메라 이동","sourceFamilies":["family-01"]},
+    {"id":"camera-emphasis","name":"카메라 강조","sourceFamilies":["family-02"]},
+    {"id":"transition-reveal","name":"전환·공개","sourceFamilies":["family-03","family-07","family-11"],"subtypeRule":"장면 교체, 면/선 공개, 화면 탐색을 하위 유형으로 구분"},
+    {"id":"typography","name":"글자 모션","sourceFamilies":["family-04","family-09","family-10","family-17"],"subtypeRule":"키네틱 타이포, 글자 연출, 글자 몸짓, 타이틀 도입을 하위 유형과 적용 맥락으로 구분"},
+    {"id":"timing-physics","name":"시간·물성","sourceFamilies":["family-05"]},
+    {"id":"film-effects","name":"영상 효과","sourceFamilies":["family-06"]},
+    {"id":"background-pattern","name":"패턴 배경","sourceFamilies":["family-08"]},
+    {"id":"data-change","name":"데이터 변화","sourceFamilies":["family-12"]},
+    {"id":"icon-logo","name":"아이콘·로고","sourceFamilies":["family-13"]},
+    {"id":"social-feedback","name":"소셜 피드백","sourceFamilies":["family-14"]},
+    {"id":"graphic-transform","name":"그래픽 변환","sourceFamilies":["family-15"]},
+    {"id":"generative-background","name":"생성형 배경","sourceFamilies":["family-16"]},
+    {"id":"numeric-change","name":"숫자 변화","sourceFamilies":["family-18"]},
+    {"id":"diagram","name":"도식 모션","sourceFamilies":["family-19"]}
+  ]
+}

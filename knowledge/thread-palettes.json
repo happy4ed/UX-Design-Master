@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "source": {
+    "id": "threads-nexacode-De-vGafCNVy",
+    "type": "social-post-images",
+    "url": "https://www.threads.com/@nexacode.co.kr/post/De-vGafCNVy",
+    "sharedUrl": "https://www.threads.com/share/Db5VW7QxV/",
+    "creator": "nexacode.co.kr",
+    "checkedAt": "2026-10-27",
+    "evidence": "HEX labels read from three 1080×1350 carousel images; codes are image labels, not pixel samples"
+  },
+  "palettes": [
+    {
+      "id": "obsidian-plum",
+      "name": "Obsidian Plum",
+      "ko": "옵시디언 플럼",
+      "imageIndex": 1,
+      "family": "purple-neutral",
+      "swatchesDarkToLight": ["#17151C", "#292531", "#45404F", "#716879", "#AAA2B3", "#E2DDE7"]
+    },
+    {
+      "id": "smoked-copper",
+      "name": "Smoked Copper",
+      "ko": "스모크드 코퍼",
+      "imageIndex": 2,
+      "family": "warm-copper-neutral",
+      "swatchesDarkToLight": ["#211B1A", "#382A28", "#60433D", "#916B60", "#C1A094", "#E8D8CE"]
+    },
+    {
+      "id": "blue-hour",
+      "name": "Blue Hour",
+      "ko": "블루 아워",
+      "imageIndex": 3,
+      "family": "blue-neutral",
+      "swatchesDarkToLight": ["#111522", "#1E263B", "#303D59", "#536684", "#98A9C4", "#DCE3EF"]
+    }
+  ]
+}

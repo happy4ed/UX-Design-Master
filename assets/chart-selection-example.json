@@ -1,0 +1,10 @@
+{
+  "task": "two-way-mix",
+  "roles": {"category": "channel", "group": "device", "value": "sales"},
+  "rows": [
+    {"channel": "Store", "device": "Mobile", "sales": 28},
+    {"channel": "Store", "device": "Desktop", "sales": 12},
+    {"channel": "Partner", "device": "Mobile", "sales": 17},
+    {"channel": "Partner", "device": "Desktop", "sales": 43}
+  ]
+}

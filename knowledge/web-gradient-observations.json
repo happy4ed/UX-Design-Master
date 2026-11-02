@@ -1,0 +1,1208 @@
+{
+  "schemaVersion": "1.0",
+  "method": "computed background-image of loaded homepage DOM; up to ten distinct gradients per site",
+  "observations": [
+    {
+      "siteId": "linear",
+      "sourceUrl": "https://linear.app/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "WS84WW_background",
+            "css": "radial-gradient(52.53% 57.5% at 50% 100%, rgba(8, 9, 10, 0) 0%, rgba(8, 9, 10, 0.5) 100%), linear-gradient(rgb(8, 9, 10) 10%, rgb(208, 214, 224) 100%)",
+            "height": 748,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "WS84WW_glow",
+            "css": "radial-gradient(50% 50%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 90%)",
+            "height": 400,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 400
+          },
+          {
+            "className": "KFZpfa_commentCard Fzcv4W_edgeHighlightRing",
+            "css": "linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03)), none",
+            "height": 149,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 662
+          },
+          {
+            "className": "TZTsQG_header TZTsQG_header",
+            "css": "linear-gradient(rgba(11, 11, 11, 0.8) 0%, oklab(0.149576 0.00000680983 0.00000298768 / 0.761905) 100%)",
+            "height": 73,
+            "inFirstViewport": true,
+            "tag": "header",
+            "width": 1280
+          },
+          {
+            "className": "Dc5tqa_customerCard Dc5tqa_primary I_mUeq_root",
+            "css": "linear-gradient(0deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), linear-gradient(rgb(178, 213, 255) 0%, rgb(223, 209, 255) 100%)",
+            "height": 480,
+            "inFirstViewport": false,
+            "tag": "a",
+            "width": 796
+          },
+          {
+            "className": "qM9FAa_glow MwJdiW_glow",
+            "css": "radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0) 50%)",
+            "height": 400,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 400
+          },
+          {
+            "className": "_9Zs8oG_initiativesBoxGlow MwJdiW_glow",
+            "css": "radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0) 50%)",
+            "height": 400,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 400
+          },
+          {
+            "className": "_5k-xcq_card qM9FAa_issue",
+            "css": "linear-gradient(rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)), none",
+            "height": 96,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 300
+          },
+          {
+            "className": "q1lnWq_bubble",
+            "css": "linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)), none",
+            "height": 80,
+            "inFirstViewport": false,
+            "tag": "p",
+            "width": 342
+          },
+          {
+            "className": "_rhIjq_solid _rhIjq_solidWithTail",
+            "css": "linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), none",
+            "height": 24,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 320
+          }
+        ],
+        "title": "Linear – The system for product development",
+        "totalUnique": 12,
+        "url": "https://linear.app/"
+      }
+    },
+    {
+      "siteId": "vercel",
+      "sourceUrl": "https://vercel.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "size-full [--app-inset:48px] shadow-[inset_0_1px_2px_rgba(0,0,0,0.18),inset_0_0_24px_rgba(0,0,0,0.14)] [--blueprint-from",
+            "css": "linear-gradient(to right, rgba(255, 255, 255, 0.16) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(rgba(255, 255, 255, 0.16) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(rgb(82, 174, 255), rgb(0, 114, 245) 160%)",
+            "height": 580,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 605
+          },
+          {
+            "className": "absolute top-96 left-96 right-0 bottom-0 origin-bottom-right rounded-sm [--peel-crease:var(--ds-gray-400)] [--peel-highl",
+            "css": "linear-gradient(-45deg, rgb(255, 255, 255) 23.2px, rgb(235, 235, 235) 61.2px, rgb(255, 255, 255) 76.2px, rgb(235, 235, 235) 79.2px)",
+            "height": 605,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 580
+          },
+          {
+            "className": "pointer-events-none absolute inset-x-0 bottom-0 z-2 h-40 bg-linear-to-t from-background-200 to-transparent",
+            "css": "linear-gradient(to top in oklab, rgb(250, 250, 250) 0%, rgba(0, 0, 0, 0) 100%)",
+            "height": 160,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 815
+          },
+          {
+            "className": "absolute inset-0 z-1 h-full w-64 bg-linear-to-r from-background-200 to-background-200/0",
+            "css": "linear-gradient(to right, rgb(250, 250, 250) 0%, oklab(0 0 0 / 0) 100%)",
+            "height": 280,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 256
+          },
+          {
+            "className": "absolute inset-y-0 left-0 w-1/2 -translate-x-full bg-linear-to-r from-transparent via-white/60 to-transparent dark:via-w",
+            "css": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.999998 -0.00000980496 0.0000234246 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)",
+            "height": 68,
+            "inFirstViewport": false,
+            "tag": "span",
+            "width": 108
+          }
+        ],
+        "title": "Agentic Infrastructure - Vercel",
+        "totalUnique": 5,
+        "url": "https://vercel.com/"
+      }
+    },
+    {
+      "siteId": "stripe",
+      "sourceUrl": "https://stripe.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "stats-animation-gradient__gradient stats-animation-gradient__gradient--pre-dawn",
+            "css": "radial-gradient(103.24% 102.63% at 50% 102.63%, rgb(72, 111, 253) 0px, rgb(127, 129, 243) 9.84%, rgb(196, 137, 255) 20.83%, rgb(218, 192, 255) 34.13%, rgb(234, 220, 255) 44.86%, rgb(249, 246, 255) 58.59%, rgb(248, 250, 253) 100%)",
+            "height": 970,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "stats-animation-gradient__gradient stats-animation-gradient__gradient--sunrise",
+            "css": "radial-gradient(102.68% 99.11% at 50% 104.6%, rgb(203, 131, 255) 0px, rgb(255, 144, 185) 15.77%, rgb(255, 201, 119) 30.62%, rgb(255, 215, 155) 38.04%, rgb(255, 241, 220) 50.11%, rgb(255, 255, 255) 63.1%, rgb(252, 253, 254) 77.95%, rgb(248, 250, 253) 98.81%)",
+            "height": 970,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "stats-animation-gradient__gradient stats-animation-gradient__gradient--daytime",
+            "css": "radial-gradient(102.84% 104.98% at 50% 104.98%, rgb(0, 113, 193) 1.33%, rgb(96, 168, 226) 15.71%, rgb(180, 216, 255) 33.15%, rgb(217, 235, 255) 45%, rgb(248, 250, 253) 60%)",
+            "height": 970,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "stats-animation-gradient__gradient stats-animation-gradient__gradient--dusk stats-animation-gradient__gradient--active",
+            "css": "radial-gradient(102.83% 103.24% at 49.98% 104.51%, rgb(255, 180, 81) 0px, rgb(239, 198, 128) 16.73%, rgb(180, 216, 255) 33.03%, rgb(210, 232, 255) 43.38%, rgb(250, 253, 255) 59.16%, rgb(253, 254, 255) 76.24%, rgb(248, 250, 253) 100%)",
+            "height": 970,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "stats-animation-gradient__gradient stats-animation-gradient__gradient--sunset",
+            "css": "radial-gradient(103.12% 100% at 50% 100%, rgb(255, 165, 119) 0px, rgb(255, 144, 161) 15.52%, rgb(221, 173, 255) 30.09%, rgb(236, 216, 255) 45.72%, rgb(245, 234, 255) 54.96%, rgb(248, 250, 253) 88.16%)",
+            "height": 970,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "stats-animation-gradient__gradient stats-animation-gradient__gradient--night",
+            "css": "radial-gradient(102.82% 106.44% at 50% 106.44%, rgb(252, 253, 254) 1.11%, rgb(103, 99, 228) 28.73%, rgb(69, 59, 179) 45.76%, rgb(41, 34, 125) 63.37%, rgb(30, 32, 100) 78.67%, rgb(20, 30, 75) 100%)",
+            "height": 970,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "modular-solutions-bento-card__border-color-gradient",
+            "css": "radial-gradient(circle, rgb(127, 125, 252), rgb(244, 75, 204) 33%, rgb(229, 237, 245) 66%)",
+            "height": 740,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 740
+          },
+          {
+            "className": "billing-plan-graphic__background-gradient-3",
+            "css": "radial-gradient(50% 50%, rgb(255, 207, 94) 41.35%, rgba(255, 207, 94, 0) 100%)",
+            "height": 423,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 707
+          },
+          {
+            "className": "billing-plan-graphic__background-gradient-1",
+            "css": "radial-gradient(50% 50%, rgba(83, 58, 253, 0.8) 62.5%, rgba(83, 58, 253, 0) 100%)",
+            "height": 435,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 678
+          },
+          {
+            "className": "billing-plan-graphic__background-gradient-2",
+            "css": "radial-gradient(50% 50%, rgba(243, 99, 243, 0.8) 53.85%, rgba(243, 99, 243, 0) 100%)",
+            "height": 411,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 692
+          }
+        ],
+        "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+        "totalUnique": 18,
+        "url": "https://stripe.com/"
+      }
+    },
+    {
+      "siteId": "notion",
+      "sourceUrl": "https://www.notion.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "XB4X_a_legibility",
+            "css": "linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.55) 100%)",
+            "height": 436,
+            "inFirstViewport": false,
+            "tag": "span",
+            "width": 349
+          }
+        ],
+        "title": "The AI workspace that works for you. | Notion",
+        "totalUnique": 1,
+        "url": "https://www.notion.com/"
+      }
+    },
+    {
+      "siteId": "figma",
+      "sourceUrl": "https://www.figma.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "fig-51j1vz",
+            "css": "repeating-conic-gradient(rgb(0, 182, 255) 0deg, rgb(0, 182, 255) 18deg, rgba(0, 0, 0, 0) 18deg, rgba(0, 0, 0, 0) 30deg)",
+            "height": 54,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 54
+          }
+        ],
+        "title": "Figma: The collaborative canvas for design, code, and AI",
+        "totalUnique": 1,
+        "url": "https://www.figma.com/"
+      }
+    },
+    {
+      "siteId": "raycast",
+      "sourceUrl": "https://www.raycast.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "pSp8Ga_navbar",
+            "css": "linear-gradient(137deg, rgba(17, 18, 20, 0.75) 4.87%, rgba(12, 13, 15, 0.9) 75.88%)",
+            "height": 76,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1204
+          },
+          {
+            "className": "ezSJPa_announcementOuter",
+            "css": "conic-gradient(from -80deg at 0px 15px, rgba(0, 0, 0, 0) 0%, rgb(236, 165, 167) 20%, rgba(0, 0, 0, 0) 25%), none",
+            "height": 32,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 204
+          },
+          {
+            "className": "nhiC3q_content",
+            "css": "linear-gradient(rgba(7, 8, 10, 0.8) 0.1%, rgb(7, 8, 10) 32.45%), radial-gradient(49.41% 64.58% at 49.4% 0px, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%)",
+            "height": 1039,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "ytWjRG_window ytWjRG_material",
+            "css": "linear-gradient(color(srgb 0.0666667 0.0705882 0.0901961 / 0.96), color(srgb 0.0666667 0.0705882 0.0901961 / 0.98))",
+            "height": 600,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 980
+          },
+          {
+            "className": "NFhuXW_testimonial",
+            "css": "radial-gradient(49.41% 64.58% at 49.4% 0px, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%)",
+            "height": 314,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1064
+          },
+          {
+            "className": "DBt7hq_dotted",
+            "css": "radial-gradient(rgb(47, 48, 49) 0.5px, rgba(0, 0, 0, 0) 0px)",
+            "height": 431,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 711
+          },
+          {
+            "className": "frj_5G_card",
+            "css": "linear-gradient(45deg, rgb(12, 13, 15) 0%, rgb(7, 8, 10) 100.67%)",
+            "height": 218,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1204
+          },
+          {
+            "className": "o1EREW_text",
+            "css": "linear-gradient(rgba(0, 0, 0, 0), rgb(7, 8, 10) 50%)",
+            "height": 720,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 320
+          },
+          {
+            "className": "pFn2Lq_card",
+            "css": "radial-gradient(94.21% 78.4% at 50% 29.91%, rgba(39, 61, 180, 0.7), rgba(15, 9, 38, 0.4))",
+            "height": 536,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 360
+          },
+          {
+            "className": "pFn2Lq_card",
+            "css": "radial-gradient(84.35% 70.19% at 50% 38.11%, rgba(2, 96, 101, 0.57), rgba(5, 136, 178, 0.06))",
+            "height": 536,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 360
+          }
+        ],
+        "title": "Raycast - Your shortcut to everything",
+        "totalUnique": 28,
+        "url": "https://www.raycast.com/"
+      }
+    },
+    {
+      "siteId": "slack",
+      "sourceUrl": "https://slack.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "c-billboard asset-text-carousel switch_timing--22",
+            "css": "linear-gradient(rgb(255, 255, 255) 46.382%, rgb(239, 213, 255) 71.215%, rgb(229, 185, 254) 100%)",
+            "height": 1236,
+            "inFirstViewport": true,
+            "tag": "section",
+            "width": 1280
+          },
+          {
+            "className": "comp-customer-videos__card-overlay",
+            "css": "linear-gradient(rgba(24, 24, 24, 0) 22.75%, rgba(24, 24, 24, 0.06) 28.48%, rgba(24, 24, 24, 0.12) 34.34%, rgba(24, 24, 24, 0.25) 42.06%, rgba(24, 24, 24, 0.38) 49.79%, rgba(24, 24, 24, 0.5) 57.51%, rgba(24, 24, 24, 0.55) 69.1%, rgba(24, 24, 24, 0.6) 80.03%, rgba(24, 24, 24, 0.8) 90.52%)",
+            "height": 260,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 460
+          },
+          {
+            "className": "c-accordion-carousel__decoration--stat-number",
+            "css": "linear-gradient(rgb(72, 26, 84) 0%, rgb(115, 3, 148) 35.2%, rgb(150, 2, 199) 80%, rgb(209, 125, 254) 100%)",
+            "height": 64,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 259
+          }
+        ],
+        "title": "Slack | AI Work Platform & Productivity Tools",
+        "totalUnique": 3,
+        "url": "https://slack.com/"
+      }
+    },
+    {
+      "siteId": "asana",
+      "sourceUrl": "https://asana.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [],
+        "title": "Work & Project Management for Human-Agent Teams • Asana",
+        "totalUnique": 0,
+        "url": "https://asana.com/"
+      }
+    },
+    {
+      "siteId": "dropbox",
+      "sourceUrl": "https://www.dropbox.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "_sectionWrapperBackground_4izxk_10 dwg-box dwg-position--absolute",
+            "css": "linear-gradient(rgb(41, 44, 49), rgb(0, 0, 0))",
+            "height": 1494,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1184
+          }
+        ],
+        "title": "Dropbox: Secure cloud storage, file sharing, and more",
+        "totalUnique": 1,
+        "url": "https://www.dropbox.com/"
+      }
+    },
+    {
+      "siteId": "github",
+      "sourceUrl": "https://github.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "",
+            "css": "linear-gradient(rgb(0, 2, 64), rgba(0, 0, 0, 0))",
+            "height": 1907,
+            "inFirstViewport": true,
+            "tag": "section",
+            "width": 1280
+          },
+          {
+            "className": "lp-Intro",
+            "css": "linear-gradient(rgb(0, 2, 64), rgb(0, 0, 0) 117%)",
+            "height": 1528,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "lp-Intro-gradient",
+            "css": "linear-gradient(rgba(255, 255, 255, 0) -8.14%, rgba(255, 255, 255, 0.1) 62.09%)",
+            "height": 1528,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "",
+            "css": "linear-gradient(rgba(39, 50, 231, 0) 57.46%, rgba(95, 237, 131, 0.5) 112.96%)",
+            "height": 809,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1920
+          },
+          {
+            "className": "",
+            "css": "linear-gradient(rgba(0, 0, 0, 0) 47.42%, rgba(14, 10, 162, 0.5) 104.56%)",
+            "height": 809,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1920
+          },
+          {
+            "className": "CtaFormControl-container",
+            "css": "linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.57) 300%)",
+            "height": 56,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 459
+          },
+          {
+            "className": "button__1uQE7N closeButton__2B-u4Q",
+            "css": "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%)",
+            "height": 42,
+            "inFirstViewport": true,
+            "tag": "button",
+            "width": 80
+          },
+          {
+            "className": "glow",
+            "css": "radial-gradient(circle at 0px 100%, rgb(230, 183, 254) 10%, rgb(80, 73, 194) 20%, rgba(87, 78, 255, 0) 60%)",
+            "height": 1086,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1086
+          },
+          {
+            "className": "glow",
+            "css": "radial-gradient(circle at 0px 100%, rgb(230, 183, 254) 20%, rgb(80, 73, 194) 40%, rgba(58, 55, 255, 0) 50%)",
+            "height": 1086,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1086
+          },
+          {
+            "className": "glass",
+            "css": "linear-gradient(rgba(120, 115, 203, 0.2) 60%, rgb(89, 147, 212) 100%)",
+            "height": 657,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1278
+          }
+        ],
+        "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub · GitHub",
+        "totalUnique": 12,
+        "url": "https://github.com/"
+      }
+    },
+    {
+      "siteId": "cloudflare",
+      "sourceUrl": "https://www.cloudflare.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "absolute inset-y-0 left-0 w-[200%]",
+            "css": "radial-gradient(55% 70% at 0% 28%, rgba(255, 150, 80, 0.2), rgba(0, 0, 0, 0) 70%), radial-gradient(55% 70% at 100% 28%, rgba(255, 150, 80, 0.2), rgba(0, 0, 0, 0) 70%), radial-gradient(55% 65% at 50% 72%, rgba(200, 40, 0, 0.15), rgba(200, 40, 0, 0.01) 70%), radial-gradient(40% 60% at 50% 45%, rgba(255, 90, 20, 0.05), rgba(200, 40, 0, 0.01) 75%)",
+            "height": 27,
+            "inFirstViewport": false,
+            "tag": "span",
+            "width": 621
+          },
+          {
+            "className": "pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-linear-to-l from-background-200 to-transparent transition-op",
+            "css": "linear-gradient(to left in oklab, rgb(253, 253, 252) 0%, rgba(0, 0, 0, 0) 100%)",
+            "height": 75,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 64
+          }
+        ],
+        "title": "Cloudflare: Build for the agent era",
+        "totalUnique": 2,
+        "url": "https://www.cloudflare.com/"
+      }
+    },
+    {
+      "siteId": "shopify",
+      "sourceUrl": "https://www.shopify.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "grid gap-y-2xl grid-cols-full bg-section-dark-bg text-section-dark-text rounded-t-4xl md:rounded-t-5xl bg-gradient-to-b ",
+            "css": "linear-gradient(in oklab, rgb(44, 0, 127) 42.49%, rgb(0, 10, 29) 100%)",
+            "height": 810,
+            "inFirstViewport": false,
+            "tag": "section",
+            "width": 1280
+          },
+          {
+            "className": "grid gap-y-2xl grid-cols-full pb-4xl text-section-dark-text rounded-t-4xl md:rounded-t-5xl pt-3xl relative bg-conversion",
+            "css": "linear-gradient(rgba(2, 8, 8, 0.5), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 90%, rgba(2, 8, 8, 0.5)), radial-gradient(at 87% 84%, rgba(2, 8, 8, 0.9) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 10% 8%, rgba(2, 8, 8, 0.9) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 65% 36%, rgba(63, 63, 75, 0.5) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 38% 61%, rgba(63, 63, 75, 0.5) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 99% 36%, rgba(63, 63, 75, 0.5) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 0px 62%, rgba(63, 63, 75, 0.5) 0px, rgba(0, 0, 0, 0) 50%), linear-gradient(rgb(9, 9, 10), rgb(9, 9, 10))",
+            "height": 745,
+            "inFirstViewport": false,
+            "tag": "section",
+            "width": 1280
+          },
+          {
+            "className": "absolute inset-0 pointer-events-none mix-blend-darken transition-opacity duration-1000 opacity-0 group-hover:opacity-60",
+            "css": "radial-gradient(circle at 0px 0px, rgb(255, 255, 255), rgb(0, 10, 30) 30%)",
+            "height": 480,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "absolute w-[412px] aspect-[412/163] rounded-[100%] opacity-80 top-0 left-full bg-[radial-gradient(rgba(18,96,255,0.35),t",
+            "css": "radial-gradient(rgba(18, 96, 255, 0.35), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0))",
+            "height": 489,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1236
+          },
+          {
+            "className": "relative overflow-hidden rounded-2xl bg-[#061A1C] md:bg-[linear-gradient(290.7deg,#061A1C_58.79%,#0D3A2D_100%)] after:po",
+            "css": "linear-gradient(290.7deg, rgb(6, 26, 28) 58.79%, rgb(13, 58, 45) 100%)",
+            "height": 458,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1100
+          },
+          {
+            "className": "absolute h-[220px] sm:h-[220px] md:h-[247px] lg:h-[264px] xl:h-[234px] md:bg-[linear-gradient(145deg,#000a1e_47%,rgba(0,",
+            "css": "linear-gradient(145deg, rgb(0, 10, 30) 50%, rgba(0, 10, 30, 0.9) 70%, rgba(0, 10, 30, 0) 93%)",
+            "height": 264,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "absolute z-0 glow-0 top-[2cqw] -left-[4cqw] w-[20cqw] h-[12cqw] rounded-[340px] opacity-20 transform scale-200 rotate-45",
+            "css": "radial-gradient(rgb(21, 112, 118), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0))",
+            "height": 469,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 469
+          },
+          {
+            "className": "bg-clip-text text-t2 leading-none tracking-[-0.02em] bg-ab-control sm:text-balance py-[0.12em] -my-[0.12em]",
+            "css": "linear-gradient(126.17deg, rgb(95, 213, 182) 32.74%, rgb(134, 92, 255) 100%)",
+            "height": 181,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1100
+          },
+          {
+            "className": "pointer-events-none absolute w-full top-0 h-1/4 bg-gradient-to-b from-deep-navy to-transparent",
+            "css": "linear-gradient(in oklab, rgb(0, 10, 30) 0%, rgba(0, 0, 0, 0) 100%)",
+            "height": 136,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "pointer-events-none absolute w-full bottom-0 h-1/4 bg-gradient-to-t from-deep-navy to-transparent",
+            "css": "linear-gradient(to top in oklab, rgb(0, 10, 30) 0%, rgba(0, 0, 0, 0) 100%)",
+            "height": 136,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1280
+          }
+        ],
+        "title": "Shopify: The All-in-One Commerce Platform for Businesses - Shopify",
+        "totalUnique": 16,
+        "url": "https://www.shopify.com/"
+      }
+    },
+    {
+      "siteId": "square",
+      "sourceUrl": "https://squareup.com/us/en",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "DesktopNav svelte-7xphtp",
+            "css": "linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0))",
+            "height": 72,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "Action__content-wrapper svelte-2pm7qc",
+            "css": "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0))",
+            "height": 22,
+            "inFirstViewport": false,
+            "tag": "span",
+            "width": 86
+          },
+          {
+            "className": "Action__content-wrapper svelte-2pm7qc",
+            "css": "linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))",
+            "height": 22,
+            "inFirstViewport": false,
+            "tag": "span",
+            "width": 86
+          }
+        ],
+        "title": "Power your entire business | Square",
+        "totalUnique": 3,
+        "url": "https://squareup.com/us/en"
+      }
+    },
+    {
+      "siteId": "wise",
+      "sourceUrl": "https://wise.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [],
+        "title": "Wise: The international account | Money without borders | Wise United States",
+        "totalUnique": 0,
+        "url": "https://wise.com/"
+      }
+    },
+    {
+      "siteId": "mercury",
+      "sourceUrl": "https://mercury.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "pointer-events-none absolute top-0 bottom-[50%] z-2 w-full",
+            "css": "linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 100%)",
+            "height": 450,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1280
+          }
+        ],
+        "title": "Online Business Banking For Startups, Small Businesses & Scaling Companies",
+        "totalUnique": 1,
+        "url": "https://mercury.com/"
+      }
+    },
+    {
+      "siteId": "ramp",
+      "sourceUrl": "https://ramp.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "pointer-events-none fixed inset-0 top-[50px] z-overlay hidden h-screen bg-linear-to-b from-transparent to-black-700 lg:b",
+            "css": "linear-gradient(in oklab, rgba(0, 0, 0, 0) 0%, rgba(33, 33, 33, 0.7) 100%)",
+            "height": 900,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "pointer-events-none absolute bottom-0 left-0 z-10 h-[200px] w-full bg-[linear-gradient(0deg,#FFF_10.91%,rgba(255,255,255",
+            "css": "linear-gradient(rgba(255, 255, 255, 0) 55%, rgb(255, 255, 255) 89.09%)",
+            "height": 200,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "pointer-events-none absolute inset-x-0 top-0 z-10 h-[200px] bg-gradient-to-b from-white from-60% to-transparent md:h-[26",
+            "css": "linear-gradient(lab(100 0 0) 60%, rgba(0, 0, 0, 0) 100%)",
+            "height": 260,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1117
+          },
+          {
+            "className": "absolute inset-0 _6IGf6q_photoOverlay",
+            "css": "linear-gradient(rgba(23, 18, 14, 0.2) 0%, rgba(23, 18, 14, 0.6) 60%, rgba(23, 18, 14, 0.82) 100%)",
+            "height": 287,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 287
+          },
+          {
+            "className": "pointer-events-none absolute w-full h-[20%] top-auto bottom-0 bg-gradient-to-b from-[#F4F2F000] to-[#F4F2F0] right-0 lef",
+            "css": "linear-gradient(in oklab, rgba(244, 242, 240, 0) 0%, rgb(244, 242, 240) 100%)",
+            "height": 92,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 366
+          },
+          {
+            "className": "pointer-events-none absolute w-[20%] h-[80%] top-auto bottom-0 bg-gradient-to-r from-[#F4F2F000] to-[#F4F2F0] right-0 le",
+            "css": "linear-gradient(to right in oklab, rgba(244, 242, 240, 0) 0%, rgb(244, 242, 240) 100%)",
+            "height": 366,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 73
+          },
+          {
+            "className": "pointer-events-none absolute inset-y-0 left-0 z-20 w-[79px] bg-[linear-gradient(to_right,white_0%,transparent_71%)]",
+            "css": "linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 71%)",
+            "height": 24,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 79
+          },
+          {
+            "className": "pointer-events-none absolute inset-y-0 right-0 z-20 w-[79px] bg-[linear-gradient(to_right,transparent_0%,white_71%)]",
+            "css": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 71%)",
+            "height": 24,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 79
+          }
+        ],
+        "title": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp",
+        "totalUnique": 8,
+        "url": "https://ramp.com/"
+      }
+    },
+    {
+      "siteId": "apple",
+      "sourceUrl": "https://www.apple.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "media-gallery-contents",
+            "css": "radial-gradient(100% 33% at 0% 100%, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0))",
+            "height": 930,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 930
+          },
+          {
+            "className": "media-gallery-contents",
+            "css": "linear-gradient(rgba(29, 29, 31, 0.4) 0%, rgba(29, 29, 31, 0) 70px, rgba(29, 29, 31, 0) calc(100% - 70px), rgba(29, 29, 31, 0.4) 100%)",
+            "height": 417,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 417
+          }
+        ],
+        "title": "Apple",
+        "totalUnique": 2,
+        "url": "https://www.apple.com/"
+      }
+    },
+    {
+      "siteId": "nike",
+      "sourceUrl": "https://www.nike.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "nav-css-1syi1pm",
+            "css": "linear-gradient(rgb(213, 255, 68) 0%, rgb(255, 255, 255) 50%, rgb(213, 255, 68) 100%)",
+            "height": 48,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 48
+          }
+        ],
+        "title": "Nike. Just Do It. Nike.com",
+        "totalUnique": 1,
+        "url": "https://www.nike.com/"
+      }
+    },
+    {
+      "siteId": "ikea",
+      "sourceUrl": "https://www.ikea.com/us/en/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "hri-text-overlay-card__gradient",
+            "css": "linear-gradient(to top, rgba(0, 0, 0, 0.54) 0px, rgba(0, 0, 0, 0.52) 6%, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.43) 16%, rgba(0, 0, 0, 0.38) 20%, rgba(0, 0, 0, 0.31) 25%, rgba(0, 0, 0, 0.25) 31%, rgba(0, 0, 0, 0.19) 38%, rgba(0, 0, 0, 0.13) 46%, rgba(0, 0, 0, 0.08) 56%, rgba(0, 0, 0, 0.04) 68%, rgba(0, 0, 0, 0.01) 83%, rgba(0, 0, 0, 0))",
+            "height": 200,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 586
+          },
+          {
+            "className": "hri-skeleton _loadingSkeleton_k70sp_10",
+            "css": "linear-gradient(90deg, rgba(255, 255, 255, 0) 40%, rgba(245, 245, 245, 0.5), rgba(255, 255, 255, 0) 60%)",
+            "height": 499,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 374
+          }
+        ],
+        "title": "Shop Affordable Home Furnishings & Home Goods - IKEA",
+        "totalUnique": 2,
+        "url": "https://www.ikea.com/us/en/"
+      }
+    },
+    {
+      "siteId": "the-guardian",
+      "sourceUrl": "https://www.theguardian.com/international",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "dcr-vbq6c6",
+            "css": "linear-gradient(to left, rgb(255, 255, 255) 0px, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 100%)",
+            "height": 134,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 60
+          },
+          {
+            "className": "dcr-1k3r8vt",
+            "css": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(5, 41, 98) 100%)",
+            "height": 44,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 40
+          },
+          {
+            "className": "cover-drop-thrasher-utax2i-Component",
+            "css": "linear-gradient(90deg, rgb(255, 229, 0), rgb(228, 229, 232) 60%)",
+            "height": 76,
+            "inFirstViewport": false,
+            "tag": "section",
+            "width": 1140
+          },
+          {
+            "className": "dcr-kss2tu",
+            "css": "linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%)",
+            "height": 64,
+            "inFirstViewport": false,
+            "tag": "figcaption",
+            "width": 620
+          },
+          {
+            "className": "dcr-1a9r2bu",
+            "css": "repeating-linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 36px, rgba(0, 0, 0, 0) 36px, rgba(0, 0, 0, 0) 37px, rgb(255, 255, 255) 37px, rgb(255, 255, 255) 48px), repeating-linear-gradient(to right, rgb(220, 220, 220) 0px, rgb(220, 220, 220) 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 5px)",
+            "height": 26,
+            "inFirstViewport": false,
+            "tag": "ul",
+            "width": 1098
+          }
+        ],
+        "title": "Latest news, sport and opinion from the Guardian",
+        "totalUnique": 5,
+        "url": "https://www.theguardian.com/international"
+      }
+    },
+    {
+      "siteId": "gov-uk",
+      "sourceUrl": "https://www.gov.uk/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [],
+        "title": "Welcome to GOV.UK",
+        "totalUnique": 0,
+        "url": "https://www.gov.uk/"
+      }
+    },
+    {
+      "siteId": "nasa",
+      "sourceUrl": "https://www.nasa.gov/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "skrim-overlay skrim-left mobile-skrim-top z-200",
+            "css": "linear-gradient(65.99deg, rgb(0, 0, 0) 0px, rgba(0, 0, 0, 0) 99.04%)",
+            "height": 640,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1265
+          },
+          {
+            "className": "skrim-overlay skrim-overlay-dark skrim-left mobile-skrim-top padding-3 display-flex flex-column flex-align-start flex-ju",
+            "css": "linear-gradient(65.99deg, rgb(0, 0, 0), rgba(0, 0, 0, 0) 99.04%)",
+            "height": 400,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 569
+          }
+        ],
+        "title": "NASA",
+        "totalUnique": 2,
+        "url": "https://www.nasa.gov/"
+      }
+    },
+    {
+      "siteId": "wikipedia",
+      "sourceUrl": "https://www.wikipedia.org/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "central-textlogo__image sprite svg-Wikipedia_wordmark",
+            "css": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(\"https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-e49fbf32.svg\")",
+            "height": 32,
+            "inFirstViewport": true,
+            "tag": "span",
+            "width": 176
+          }
+        ],
+        "title": "Wikipedia",
+        "totalUnique": 1,
+        "url": "https://www.wikipedia.org/"
+      }
+    },
+    {
+      "siteId": "mdn",
+      "sourceUrl": "https://developer.mozilla.org/en-US/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [],
+        "title": "MDN Web Docs",
+        "totalUnique": 0,
+        "url": "https://developer.mozilla.org/en-US/"
+      }
+    },
+    {
+      "siteId": "gitlab",
+      "sourceUrl": "https://about.gitlab.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "dither-field one-hero__field",
+            "css": "radial-gradient(120% 90%, rgba(255, 255, 255, 0.043), rgba(255, 255, 255, 0) 62%)",
+            "height": 955,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1280
+          },
+          {
+            "className": "one-hero__columns",
+            "css": "repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0px, rgba(255, 255, 255, 0.08) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 33.3333%)",
+            "height": 885,
+            "inFirstViewport": true,
+            "tag": "div",
+            "width": 1077
+          },
+          {
+            "className": "one-hero__action one-hero__action--primary",
+            "css": "linear-gradient(-90deg, rgba(119, 89, 194, 0.3), rgba(229, 60, 151, 0.3) 34%, rgba(252, 109, 38, 0.3))",
+            "height": 72,
+            "inFirstViewport": true,
+            "tag": "a",
+            "width": 359
+          },
+          {
+            "className": "one-hero__card-eyebrow one-hero__card-eyebrow--gradient",
+            "css": "linear-gradient(-90deg, rgb(119, 89, 194) 50%, rgb(229, 60, 151) 92%, rgb(252, 109, 38) 174%)",
+            "height": 18,
+            "inFirstViewport": true,
+            "tag": "p",
+            "width": 311
+          },
+          {
+            "className": "one-expanding-cards__rules",
+            "css": "repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 33.3333%)",
+            "height": 1356,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 1110
+          },
+          {
+            "className": "one-quotes__mark",
+            "css": "linear-gradient(90deg, rgb(252, 109, 38), rgb(229, 60, 151) 50%, rgb(119, 89, 194))",
+            "height": 61,
+            "inFirstViewport": false,
+            "tag": "span",
+            "width": 38
+          },
+          {
+            "className": "one-numbered-cards__ordinal",
+            "css": "linear-gradient(90deg, rgb(252, 109, 38), rgb(229, 60, 151))",
+            "height": 43,
+            "inFirstViewport": false,
+            "tag": "span",
+            "width": 38
+          },
+          {
+            "className": "one-numbered-cards__ordinal",
+            "css": "linear-gradient(90deg, rgb(229, 60, 151), rgb(119, 89, 194))",
+            "height": 43,
+            "inFirstViewport": false,
+            "tag": "span",
+            "width": 38
+          }
+        ],
+        "title": "GitLab - Speed with control for agentic software engineering",
+        "totalUnique": 8,
+        "url": "https://about.gitlab.com/"
+      }
+    },
+    {
+      "siteId": "bbc",
+      "sourceUrl": "https://www.bbc.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [],
+        "title": "BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video & Audio",
+        "totalUnique": 0,
+        "url": "https://www.bbc.com/"
+      }
+    },
+    {
+      "siteId": "smashing-magazine",
+      "sourceUrl": "https://www.smashingmagazine.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "conf-panel conf-panel--darkblue",
+            "css": "linear-gradient(rgb(27, 113, 187) 45%, rgb(67, 153, 217) 100%)",
+            "height": 1047,
+            "inFirstViewport": false,
+            "tag": "section",
+            "width": 1280
+          },
+          {
+            "className": "",
+            "css": "linear-gradient(rgb(67, 153, 217), rgb(67, 153, 217))",
+            "height": 162,
+            "inFirstViewport": false,
+            "tag": "a",
+            "width": 637
+          },
+          {
+            "className": "btn btn--large btn--card btn--text-shadow card__guide--green_bg",
+            "css": "linear-gradient(rgb(24, 164, 111), rgb(24, 164, 111))",
+            "height": 61,
+            "inFirstViewport": false,
+            "tag": "a",
+            "width": 388
+          },
+          {
+            "className": "btn btn--large btn--card btn--text-shadow card__guide--violet_bg",
+            "css": "linear-gradient(rgb(170, 25, 148), rgb(170, 25, 148))",
+            "height": 61,
+            "inFirstViewport": false,
+            "tag": "a",
+            "width": 372
+          },
+          {
+            "className": "btn btn--large btn--card btn--text-shadow card__guide--orange_bg",
+            "css": "linear-gradient(rgb(245, 87, 0), rgb(245, 87, 0))",
+            "height": 61,
+            "inFirstViewport": false,
+            "tag": "a",
+            "width": 303
+          },
+          {
+            "className": "vertical vertical--white vertical--horizontal-fallback left-aligned",
+            "css": "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0))",
+            "height": 243,
+            "inFirstViewport": false,
+            "tag": "h4",
+            "width": 14
+          }
+        ],
+        "title": "Smashing Magazine — For Web Designers And Developers",
+        "totalUnique": 6,
+        "url": "https://www.smashingmagazine.com/"
+      }
+    },
+    {
+      "siteId": "duolingo",
+      "sourceUrl": "https://www.duolingo.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [],
+        "title": "Duolingo - The world’s most popular way to learn",
+        "totalUnique": 0,
+        "url": "https://www.duolingo.com/"
+      }
+    },
+    {
+      "siteId": "atlassian",
+      "sourceUrl": "https://www.atlassian.com/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "_kqswstnw _152tidpf _u7coidpf _1bsb1ejb _lcxvglyw _1pbycs5v _v5641hrg _1e02idpf _11q7dx5r _tzy4idpf",
+            "css": "linear-gradient(to right, rgb(240, 241, 242), rgba(0, 0, 0, 0))",
+            "height": 40,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 24
+          },
+          {
+            "className": "_kqswstnw _152tidpf _u7coidpf _1bsb1ejb _lcxvglyw _1pbycs5v _v5641hrg _rjxpidpf _11q7ugqf _tzy4idpf",
+            "css": "linear-gradient(to left, rgb(240, 241, 242), rgba(0, 0, 0, 0))",
+            "height": 40,
+            "inFirstViewport": false,
+            "tag": "div",
+            "width": 24
+          }
+        ],
+        "title": "Collaboration software for software, IT and business teams | Atlassian",
+        "totalUnique": 2,
+        "url": "https://www.atlassian.com/"
+      }
+    },
+    {
+      "siteId": "mozilla",
+      "sourceUrl": "https://www.mozilla.org/en-US/",
+      "checkedAt": "2026-10-27",
+      "observation": {
+        "gradients": [
+          {
+            "className": "m24-c-cta",
+            "css": "linear-gradient(to right, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 33%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, rgb(255, 255, 255) 66%, rgb(255, 255, 255) 100%)",
+            "height": 29,
+            "inFirstViewport": true,
+            "tag": "a",
+            "width": 169
+          },
+          {
+            "className": "m24-c-cta",
+            "css": "linear-gradient(to right, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 33%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, rgb(0, 0, 0) 66%, rgb(0, 0, 0) 100%)",
+            "height": 29,
+            "inFirstViewport": false,
+            "tag": "a",
+            "width": 239
+          }
+        ],
+        "title": "Mozilla - Internet for people, not profit (US)",
+        "totalUnique": 2,
+        "url": "https://www.mozilla.org/en-US/"
+      }
+    }
+  ]
+}

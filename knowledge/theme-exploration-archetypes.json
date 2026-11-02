@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Nine distinct visual grammars to investigate after a wireframe is approved; adapt or replace an archetype when the product makes it unsuitable.",
+  "axes": [
+    "composition",
+    "palette",
+    "spacing",
+    "radius",
+    "componentStyle",
+    "material",
+    "typography",
+    "imagery"
+  ],
+  "directions": [
+    {
+      "id": "native",
+      "name": "플랫폼 기본형",
+      "role": "grounded",
+      "composition": "플랫폼 관례에 맞춘 묶음",
+      "componentStyle": "익숙한 기본 조작 요소",
+      "material": "불투명한 바탕 면",
+      "typography": "플랫폼의 제목·본문 위계",
+      "considerWhen": "반복 조작이 많은 설정·입력 화면",
+      "avoidWhen": "브랜드 표현과 플랫폼 관례가 충돌할 때"
+    },
+    {
+      "id": "editorial",
+      "name": "편집형 선·행",
+      "role": "grounded",
+      "composition": "열린 지면과 구분선",
+      "componentStyle": "글 중심 목록과 작은 보조 조작",
+      "material": "종이 같은 열린 바탕",
+      "typography": "제목과 본문의 뚜렷한 대비",
+      "considerWhen": "읽기·비교·문서 중심 화면",
+      "avoidWhen": "작은 조작부의 터치 영역이 줄어들 때"
+    },
+    {
+      "id": "utility",
+      "name": "고밀도 작업형",
+      "role": "grounded",
+      "composition": "정렬된 데이터 격자",
+      "componentStyle": "표·목록·직접 조작",
+      "material": "평평하고 기능적인 면",
+      "typography": "숫자와 라벨의 정밀한 정렬",
+      "considerWhen": "반복 데스크톱 작업과 모니터링",
+      "avoidWhen": "큰 글자·터치 조작에서 밀도가 과할 때"
+    },
+    {
+      "id": "tactile",
+      "name": "부드러운 촉감형",
+      "role": "expressive",
+      "composition": "편안하게 묶은 영역",
+      "componentStyle": "부드럽지만 구별되는 조작 요소",
+      "material": "따뜻한 색과 얕은 깊이",
+      "typography": "차분한 둥근 리듬",
+      "considerWhen": "개인·건강·가족 관련 서비스",
+      "avoidWhen": "부드러운 경계 때문에 선택 상태가 흐려질 때"
+    },
+    {
+      "id": "graphic",
+      "name": "그래픽 포스터형",
+      "role": "expressive",
+      "composition": "큰 글자와 강한 대비",
+      "componentStyle": "드문 핵심 행동과 열린 구획",
+      "material": "그래픽 색면",
+      "typography": "보여 주는 큰 글자 중심",
+      "considerWhen": "랜딩·캠페인·발표의 핵심 장면",
+      "avoidWhen": "반복 과업에서 빠른 목록 탐색이 필요할 때"
+    },
+    {
+      "id": "modular",
+      "name": "모듈 그리드형",
+      "role": "expressive",
+      "composition": "비대칭이지만 정렬된 모듈",
+      "componentStyle": "소유 영역이 분명한 타일",
+      "material": "블록 색면",
+      "typography": "모듈별 글자 크기와 라벨",
+      "considerWhen": "서로 다른 자료를 함께 보는 대시보드",
+      "avoidWhen": "정보 경계 없이 타일만 반복될 때"
+    },
+    {
+      "id": "glass",
+      "name": "유리 레이어형",
+      "role": "experimental",
+      "composition": "전경과 배경의 층",
+      "componentStyle": "반투명 면과 불투명 글자 영역",
+      "material": "유리·블러·투명도",
+      "typography": "읽기 쉬운 전경 대비",
+      "considerWhen": "이미지·영상·공간감이 중요한 화면",
+      "avoidWhen": "블러·낮은 대비가 읽기를 방해할 때; 불투명 대안 제공"
+    },
+    {
+      "id": "origami",
+      "name": "접힌 종이형",
+      "role": "experimental",
+      "composition": "접힌 면과 드러나는 층",
+      "componentStyle": "열림·접힘 의미가 있는 요소",
+      "material": "종이 모서리·접힌 선·방향 그림자",
+      "typography": "평평한 면 위의 읽기 쉬운 글자",
+      "considerWhen": "단계 설명·문서·온보딩",
+      "avoidWhen": "실제로 열리지 않는 면이 조작 가능해 보일 때"
+    },
+    {
+      "id": "spatial",
+      "name": "공간 장면형",
+      "role": "experimental",
+      "composition": "전경·중경·배경의 깊이",
+      "componentStyle": "공간 장면 위에 고정한 조작 요소",
+      "material": "깊이·빛·정적 대안",
+      "typography": "안정적인 글자 오버레이",
+      "considerWhen": "제품 소개·지도·3D 설명",
+      "avoidWhen": "움직임·깊이가 반복 작업을 방해할 때"
+    }
+  ]
+}

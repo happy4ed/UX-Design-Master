@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "A1 기능 구조에서 처리 유형이 만들어 내는 검토·수정 과업을 사용자 요청 이전에 제안한다. 도메인별 입력 필드는 추정하지 않는다.",
+  "processingTypes": [
+    {
+      "id": "recognition-extraction",
+      "trigger": "사진·문서·음성 등 원본에서 값이나 항목을 자동 인식·추출한다.",
+      "obligations": [
+        {"id":"source-result-side-by-side","proposal":"원본과 인식 결과를 나란히 보는 검토·수정 화면","states":["인식 전","처리 중","결과","수정 중","확정"],"validation":"원본 확대·이동 중에도 대응 결과값을 동시에 읽고 수정할 수 있는지 실제 렌더 확인"},
+        {"id":"linked-pan-zoom","proposal":"원본을 확대·이동해도 대응 결과값과 현재 항목을 계속 보이게 하기","states":["기본 배율","확대","이동","항목 전환"],"validation":"확대·이동·항목 선택 후 값 패널이 사라지거나 문맥이 끊기지 않는지 확인"},
+        {"id":"source-region-highlight","proposal":"결과 항목을 고르면 원본의 해당 위치 강조","states":["항목 선택","원본 위치 없음"],"validation":"연결 위치가 없는 항목은 위치를 꾸며내지 않고 미확인으로 표시"},
+        {"id":"low-confidence-queue","proposal":"신뢰도가 낮거나 읽을 수 없는 칸 표시와 확인 대기열","states":["확인 필요","확정","판독 불가"],"validation":"신뢰도 숫자가 없으면 임의 백분율 대신 확인 필요 사유 표시"},
+        {"id":"edit-undo","proposal":"인식값 수정과 되돌리기","states":["원본 인식값","수정값","되돌림"],"validation":"수정 후 원래 값·변경 이력과 화면 상태 확인"},
+        {"id":"full-result-overview","proposal":"전체 인식 결과 개요를 표와 적합한 차트로 보기","states":["처리 중","일부 완료","전체 완료","오류"],"validation":"표에서 모든 원본 항목을 볼 수 있고 차트의 집계가 표와 일치하는지 확인"},
+        {"id":"preserve-source-values","proposal":"원본에 기록된 전체 항목과 값을 그대로 보존하고 표시","states":["원본","수정 제안","확정"],"validation":"신청에 필요한 필드만 남겨 원본 항목이 사라지지 않았는지 확인"}
+      ]
+    },
+    {
+      "id": "classification",
+      "trigger": "항목을 자동으로 묶거나 범주·상태로 분류한다.",
+      "obligations": [
+        {"id":"classification-reason","proposal":"자동 분류 근거 보기","states":["자동 분류","근거 없음","수정됨"],"validation":"근거가 없으면 추정 이유를 지어내지 않고 근거 미제공으로 표시"},
+        {"id":"reclassify","proposal":"분류를 다시 지정하고 되돌리기","states":["기본 분류","다시 분류","되돌림"],"validation":"분류 변경이 목록·집계·후속 과업에 반영되는지 확인"},
+        {"id":"classification-review-queue","proposal":"확인 필요 항목 대기열","states":["확인 필요","확정"],"validation":"대기 항목을 놓치지 않고 원본으로 되돌아갈 수 있는지 확인"}
+      ]
+    },
+    {
+      "id": "calculation-aggregation",
+      "trigger": "원본 값에서 합계·비율·판정·신청용 값을 계산한다.",
+      "obligations": [
+        {"id":"preserve-source-values","proposal":"원본의 전체 항목과 값을 계산 값과 구분해 보존","states":["원본","수정","확정"],"validation":"원본 값이 계산 값으로 덮이지 않는지 확인"},
+        {"id":"calculation-trace","proposal":"계산 값마다 사용한 원본 값과 계산식을 펼쳐 보기","states":["접힘","펼침","원본 수정 후 재계산"],"validation":"식·입력값·결과가 일치하고 단위가 유지되는지 확인"},
+        {"id":"source-cross-check","proposal":"원본 서식의 검산식과 계산 결과를 대조","states":["일치","불일치","원본 검산식 없음"],"validation":"불일치 원인과 누락·중복 입력을 확인할 수 있는지 확인"}
+      ]
+    },
+    {
+      "id": "recommendation",
+      "trigger": "사용자에게 선택·행동·상품·결과를 자동 추천한다.",
+      "obligations": [
+        {"id":"recommendation-reason","proposal":"추천 이유와 사용한 근거 보기","states":["추천","근거 부족"],"validation":"개별 추천의 근거가 실제 입력과 연결되는지 확인"},
+        {"id":"reject-recommendation","proposal":"추천 거절하기","states":["추천","거절"],"validation":"거절 후 강제로 같은 선택이 다시 적용되지 않는지 확인"},
+        {"id":"recommendation-alternatives","proposal":"대안과 선택 결과 비교","states":["추천안","대안","선택"],"validation":"대안을 숨기거나 추천안만 실행 가능한 상태로 만들지 않았는지 확인"}
+      ]
+    }
+  ]
+}

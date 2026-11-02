@@ -1,0 +1,34 @@
+name: Validate skill
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install test dependency
+        run: python3 -m pip install Pillow playwright
+      - name: Standalone package and contract regressions
+        run: |
+          python3 scripts/check_release_package.py
+          python3 tests/test_color_variations.py
+          python3 tests/test_design_system_checker.py
+          python3 tests/test_infographic_contract.py
+          python3 tests/test_motion_authoring_recipes.py
+          python3 tests/test_motion_cluster_audit.py
+          python3 tests/test_motion_component_graph.py
+          python3 tests/test_motion_concept_index.py
+          python3 tests/test_motion_core_progress.py
+          python3 tests/test_presentation_contract.py
+          python3 tests/test_theme_exploration.py
+          python3 tests/test_user_input_obligations.py
+          node tests/test_motion_vocabulary.mjs

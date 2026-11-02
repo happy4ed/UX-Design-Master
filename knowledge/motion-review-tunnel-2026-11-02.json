@@ -1,0 +1,11 @@
+[
+  {
+    "a": "text-tunnel",
+    "b": "polygon-tunnel",
+    "kind": "principle-applied-to-context",
+    "canonicalMotionId": "text-tunnel",
+    "reason": "두 원본은 겹친 윤곽이 커지며 다가오는 깊이 표현을 공유한다. 그러나 글자 터널은 글자 형태와 읽기 가능성이 핵심이고, 육각형 터널은 다각형의 비틀림과 기하학적 깊이가 핵심이다. 이미 검토된 선 터널·글자 터널의 구분과 같이 별도 레시피로 유지한다.",
+    "mechanismEvidence": "Both scale nested contours to convey forward depth, but text legibility and form deformation distinguish the glyph recipe from rotating hexagon outlines.",
+    "sourceFrames": []
+  }
+]

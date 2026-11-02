@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>텍스트 영역·모션 점검</title>
+  <style>
+    :root{font-family:Arial,'Noto Sans KR',sans-serif;color:#213141;background:#f4f2ed}*{box-sizing:border-box}body{margin:0}main{max-width:1160px;margin:auto;padding:38px 24px 70px}h1{font-size:clamp(30px,3.5vw,42px);letter-spacing:-.035em;margin:6px 0 12px}p{line-height:1.55;color:#536477}.lede{max-width:750px;margin-bottom:24px}.layout{display:grid;grid-template-columns:310px minmax(0,1fr);gap:26px}.controls,.results{border-top:2px solid #213141;padding-top:17px;min-width:0}.controls label{display:block;font-size:13px;font-weight:700;margin:0 0 13px}.controls textarea,.controls select{display:block;width:100%;font:inherit;margin-top:7px;border:1px solid #a8b8bd;border-radius:4px;background:white;padding:9px;color:#213141}.controls textarea{height:150px;line-height:1.5;resize:vertical}.controls input[type=range]{display:block;width:100%;margin:8px 0 0;accent-color:#126b68}.controls output{font-weight:400;color:#536477}.controls button{min-height:44px;border:1px solid #a8b8bd;border-radius:4px;background:white;padding:8px 12px;font:inherit;cursor:pointer}.controls button:focus-visible,.controls textarea:focus-visible,.controls select:focus-visible{outline:3px solid #a2542c;outline-offset:2px}.preview{border:1px solid #dce2df;background:#fffefa;max-width:100%}.preview svg{width:100%;display:block}.result{margin-top:12px;padding:12px 0;border-top:1px solid #cbd5d1;font-size:13px;line-height:1.6}.result strong{color:#126b68}.meta{font-size:12px;color:#536477}.hint{font-size:12px;color:#536477;margin-top:15px}.motion-dot{display:inline-block;width:11px;height:11px;border-radius:50%;background:#126b68;margin-right:7px;vertical-align:middle}.motion-dot.running{animation:motion-dot 1.45s ease-in-out infinite alternate}@keyframes motion-dot{to{transform:translateX(20px)}}@media(max-width:740px){main{padding:25px 18px 55px}.layout{grid-template-columns:minmax(0,1fr)}.preview{overflow:auto}.preview svg{min-width:520px}}@media(prefers-reduced-motion:reduce){.motion-dot{animation:none!important}}
+  </style>
+  <style>
+    .motion-demo{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:#fffefa;border:2px solid #126b68;padding:12px 16px;margin:20px 0 24px;box-shadow:0 5px 18px #2131411c}
+    .motion-demo strong{font-size:13px}.motion-target{display:inline-flex;align-items:center;justify-content:center;min-width:110px;min-height:44px;padding:7px 13px;border-radius:4px;background:#126b68;color:white;font-size:14px;font-weight:700;transform-origin:center}
+    .motion-track{position:relative;flex:1;min-width:145px;max-width:270px;height:18px;border-bottom:3px solid #a8b8bd}.motion-tracer{position:absolute;left:0;bottom:-8px;width:16px;height:16px;border-radius:50%;background:#a2542c;box-shadow:0 0 0 3px #fffefa}
+    .motion-demo button{min-height:36px;border:1px solid #a8b8bd;border-radius:4px;background:white;color:#213141;padding:5px 10px;cursor:pointer}.motion-demo [role=status]{font-size:12px;color:#536477;min-width:145px}
+    .full-copy{margin:0 0 12px;border-left:3px solid #a2542c;background:#fff8f2;padding:10px 13px}.full-copy b{font-size:12px;color:#8a3f22}.full-copy p{margin:6px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;color:#213141}
+    @media(max-width:740px){.motion-demo{gap:9px;padding:9px 11px}.motion-track{min-width:95px;max-width:none}.motion-demo [role=status]{flex-basis:100%}}
+  </style>
+</head>
+<body><main>
+  <a href="./visualization-catalog.html">← 다이어그램 55종</a><h1>텍스트 영역·모션 점검</h1>
+  <p class="lede">문구의 공간을 먼저 정한 뒤 도형 크기와 글자 크기를 바꿔 보세요. 원과 마름모는 줄 높이마다 실제 내부 폭을 계산합니다. 빈 줄은 문단 간격을 더합니다.</p>
+  <div class="motion-demo" id="motionDemo" aria-label="움직임 미리보기"><strong>실제 모션</strong><span class="motion-target" data-motion-target>움직임 확인</span><span class="motion-track" data-motion-track><i class="motion-tracer" data-motion-tracer></i></span><button id="replay" type="button">다시 재생</button><span id="motionState" role="status"></span></div>
+  <div class="layout"><section class="controls" aria-label="점검 설정">
+    <label>문구<textarea id="copy">Extended descriptive label for the current stage
+Second line of information
+
+Next paragraph with a clear pause</textarea></label>
+    <label>도형<select id="shape"><option value="rectangle">사각형</option><option value="circle">원형·타원형</option><option value="diamond">마름모</option><option value="polygon">다각형(사다리꼴)</option></select></label>
+    <label>글자 배치<select id="placement"><option value="inside">도형 안</option><option value="curve">곡선 따라</option><option value="outline">원 외곽 따라</option><option value="rotate">30° 회전</option></select></label>
+    <label>도형 너비 <output id="widthValue"></output><input id="width" type="range" min="80" max="250" value="190"></label>
+    <label>도형 높이 <output id="heightValue"></output><input id="height" type="range" min="65" max="175" value="140"></label>
+    <label>기본 글자 크기 <output id="sizeValue"></output><input id="size" type="range" min="11" max="23" value="14"></label>
+    <label>줄 간격 <output id="lineValue"></output><input id="lineGap" type="range" min="105" max="170" value="127"></label>
+    <label>문단 간격 <output id="gapValue"></output><input id="gap" type="range" min="0" max="14" value="7"></label>
+    <label>움직임<select id="motion"><option value="trace">흐름선 재생</option><option value="reveal">차례로 보기</option><option value="pulse">강조</option><option value="none">정지 화면</option></select></label>
+    <button id="pause" type="button" aria-pressed="false">일시정지</button>
+  </section><section class="results"><div class="full-copy" id="fullCopy" hidden><b>이 도형에는 문구가 들어가지 않아 원문을 따로 배치했습니다</b><p id="fullCopyText"></p></div><div class="preview" id="preview"></div><div class="result" id="result" role="status"></div><p class="hint">기기의 ‘움직임 줄이기’가 켜져 있어도 움직임을 직접 선택하거나 ‘다시 재생’을 누르면 이 점검 화면에서 재생합니다. 그림의 정보는 정지 화면에도 남습니다.</p></section></div>
+</main>
+<script type="module">
+  import {Canvas} from '../assets/visualization/svg-core.mjs';
+  import {auditSvgLayout} from '../assets/visualization/layout-audit.mjs';
+  import {planTextRegion,layoutShapeText} from '../assets/visualization/text-layout.mjs';
+  import {planPathText} from '../assets/visualization/path-text.mjs';
+  import {MotionController} from '../assets/layout/motion-controller.mjs';
+  const $=s=>document.querySelector(s);let paused=false,forceMotion=false;const player=new MotionController($('#motionDemo'));
+  const measurePath=d=>{const path=document.createElementNS('http://www.w3.org/2000/svg','path');path.setAttribute('d',d);return path.getTotalLength()};
+  function draw(){
+    const value=$('#copy').value.trim()||'문구를 입력하세요',shape=$('#shape').value,placement=$('#placement').value,w=+$('#width').value,h=+$('#height').value,size=+$('#size').value,gap=+$('#gap').value,lineRatio=+$('#lineGap').value/100,mode=$('#motion').value;
+    $('#widthValue').textContent=`${w}px`;$('#heightValue').textContent=`${h}px`;$('#sizeValue').textContent=`${size}px`;$('#lineValue').textContent=`${Math.round(lineRatio*100)}%`;$('#gapValue').textContent=`${gap}px`;
+    const c=new Canvas({id:'text-layout-lab',name:'텍스트 영역',meaning:'문구와 모션 점검',labels:[value],values:[]},{motion:mode});
+    const cx=260,cy=105,x=cx-w/2,y=cy-h/2;let external=false;
+    const place=(region,{maxLines=7,role='shape-label',rotate=0}={})=>{
+      const opts={size,minSize:Math.max(10,size-3),maxLines,padding:0,lineRatio,paragraphGap:gap/size,role};
+      external=planTextRegion(value,region,opts).decision==='external-reference';
+      const shown=external?'원문 ↑':value;
+      if(rotate)c.rotatedTextBox(cx,cy,region.w,region.h,shown,rotate,{...opts,size:external?Math.min(size,12):size,maxLines:external?2:maxLines});
+      else c.textBox(region.x,region.y,region.w,region.h,shown,{...opts,size:external?Math.min(size,12):size,maxLines:external?2:maxLines});
+    };
+    const along=(d,role)=>{const length=measurePath(d);external=value.includes('\n')||planPathText(value,{pathLength:length,size,minSize:Math.max(10,size-3)}).decision==='external-reference';c.textOnPath(d,length,external?'원문 ↑':value,{size:external?Math.min(size,12):size,minSize:10,role})};
+    if(placement==='curve'){const d='M 90 150 Q 260 18 430 150';c.path(d,'none','teal',1.5);along(d,'path-label')}
+    else if(placement==='outline'){const r=Math.min(w,h)/2,outer=r+13,d=`M ${cx-outer} ${cy} A ${outer} ${outer} 0 0 1 ${cx+outer} ${cy}`;c.circle(cx,cy,r,'tealLight','teal');along(d,'outline-label')}
+    else if(placement==='rotate'){c.rect(x,y,w,h,'tealLight','teal',5);place({x:cx-(w-25)/2,y:cy-24,w:w-25,h:48},{maxLines:2,role:'rotated-label',rotate:30})}
+    else if(shape==='rectangle'){c.rect(x,y,w,h,'tealLight','teal',5);place({x:x+9,y:y+8,w:w-18,h:h-16})}
+    else if(['circle','diamond','polygon'].includes(shape)){
+      if(shape==='circle')c.ellipse(cx,cy,w/2,h/2,'tealLight','teal');
+      else if(shape==='diamond')c.poly(`${cx},${cy-h/2} ${cx+w/2},${cy} ${cx},${cy+h/2} ${cx-w/2},${cy}`,'tealLight','teal');
+      const polygon={kind:'polygon',points:[{x:x+10,y},{x:x+w-10,y},{x:x+w-15,y:y+h},{x:x+45,y:y+h}]};
+      if(shape==='polygon')c.poly(polygon.points.map(p=>`${p.x},${p.y}`).join(' '),'tealLight','teal');
+      const region={x,y,w,h},context=document.createElement('canvas').getContext('2d');
+      const measureText=(text,fontSize)=>{context.font=`600 ${fontSize}px Arial, 'Noto Sans KR', 'Noto Naskh Arabic', sans-serif`;return context.measureText(text).width};
+      const opts={shape:shape==='polygon'?polygon:shape,size,minSize:Math.max(10,size-3),maxLines:7,padding:7,lineRatio,paragraphGap:gap/size,role:`${shape}-label`,measureText};
+      external=!layoutShapeText(value,{...region,...opts}).fits;
+      c.shapeText(x,y,w,h,value,opts);
+    }
+    c.arrow(143,234,377,234);c.edgeLabel(143,234,377,234,'다음 단계',{gap:7,size:11});
+    $('#preview').innerHTML=c.finish();const svg=$('#preview svg');svg.dataset.paused=String(paused);svg.dataset.forceMotion=String(forceMotion);
+    $('#fullCopy').hidden=!external;$('#fullCopyText').textContent=external?value:'';
+    const report=auditSvgLayout(svg),label=svg.querySelector('[data-role="shape-label"],[data-role="circle-label"],[data-role="diamond-label"],[data-role="polygon-label"],[data-role="path-label"],[data-role="outline-label"],[data-role="rotated-label"]');
+    const names={fit:'원래 크기로 배치','grow-region':'텍스트 영역 확대','grow-and-shrink':'영역 확대 후 글자 크기 조정','shrink-font':'글자 크기 조정'};
+    $('#result').innerHTML=`<strong>${external?'원문을 도형 밖에 배치':names[label.dataset.fitDecision]}</strong> · 글자 크기 ${label.getAttribute('font-size')}px · 도형 경계 초과 ${report.shapeLineOverflow.length}건 · 영역 밖 ${report.regionOverflow.length+report.pathOverflow.length}건 · 문구 겹침 ${report.textOverlap.length}건 · 화살표 설명 간격 경고 ${report.edgeCaptionGap.length}건`;
+    const state=player.play(mode,{paused,force:forceMotion});const labels={trace:'선 위의 점 이동',reveal:'문구가 나타났다 다시 시작',pulse:'크기와 강조 반복'};
+    $('#motionState').textContent=state.running?`재생 중 · ${labels[mode]}`:state.reason==='reduced-motion'?'기기의 움직임 줄이기 설정으로 정지 · 다시 재생을 누르면 시험할 수 있습니다':paused?'일시정지':'정지 화면';
+  }
+  document.querySelectorAll('textarea,input').forEach(el=>el.addEventListener('input',draw));document.querySelectorAll('select').forEach(el=>el.addEventListener('change',e=>{if(e.currentTarget.id==='motion'){forceMotion=true;paused=false;$('#pause').textContent='일시정지';$('#pause').setAttribute('aria-pressed','false')}draw()}));
+  $('#pause').addEventListener('click',e=>{paused=!paused;e.currentTarget.setAttribute('aria-pressed',String(paused));e.currentTarget.textContent=paused?'재생':'일시정지';player.setPaused(paused);const svg=$('#preview svg');if(svg)svg.dataset.paused=String(paused);$('#motionState').textContent=paused?'일시정지':`재생 중 · ${{trace:'선 위의 점 이동',reveal:'문구가 나타났다 다시 시작',pulse:'크기와 강조 반복',none:'정지 화면'}[$('#motion').value]}`});
+  $('#replay').addEventListener('click',()=>{forceMotion=true;paused=false;$('#pause').textContent='일시정지';$('#pause').setAttribute('aria-pressed','false');draw()});matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',draw);draw();
+</script></body></html>

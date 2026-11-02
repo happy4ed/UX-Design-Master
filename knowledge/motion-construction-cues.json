@@ -1,0 +1,10495 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Internalized structured construction cues distilled from motion-menu request examples; source wording is not copied. These are evidence and implementation tests, not ready-made renderers.",
+  "total": 414,
+  "entries": [
+    {
+      "id": "pan",
+      "familyId": "family-01",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "tilt",
+      "familyId": "family-01",
+      "sourceDurationSeconds": [
+        1.5
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "1.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "roll",
+      "familyId": "family-01",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [],
+      "measures": [
+        "5도",
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "track",
+      "familyId": "family-01",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "왼쪽"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드"
+      ]
+    },
+    {
+      "id": "pedestal",
+      "familyId": "family-01",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "dolly",
+      "familyId": "family-01",
+      "sourceDurationSeconds": [
+        1.5
+      ],
+      "directions": [],
+      "measures": [
+        "1.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "zoom",
+      "familyId": "family-01",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "orbit",
+      "familyId": "family-01",
+      "sourceDurationSeconds": [
+        3.0
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "180도",
+        "3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "whip-pan",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [
+        0.4
+      ],
+      "directions": [],
+      "measures": [
+        "0.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "snap-zoom",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "4프레임"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드"
+      ]
+    },
+    {
+      "id": "punch-in",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [
+        3.0
+      ],
+      "directions": [],
+      "measures": [
+        "3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "dolly-zoom",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "앞"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "speed-ramp",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [
+        0.5,
+        0.3,
+        0.5
+      ],
+      "directions": [],
+      "measures": [
+        "0.5초",
+        "0.3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드"
+      ]
+    },
+    {
+      "id": "parallax",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "앞"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "rack-focus",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [
+        "앞",
+        "뒤"
+      ],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "perspective-tilt",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "20도",
+        "1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "camera-2-5d",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [
+        2.5
+      ],
+      "directions": [
+        "앞",
+        "뒤"
+      ],
+      "measures": [
+        "2.5초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "돌아"
+      ]
+    },
+    {
+      "id": "match-cut",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "위"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "impact-shake",
+      "familyId": "family-02",
+      "sourceDurationSeconds": [
+        0.14,
+        0.4
+      ],
+      "directions": [],
+      "measures": [
+        "2.6배",
+        "0.14초",
+        "0.4초"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "흔들"
+      ]
+    },
+    {
+      "id": "cross-dissolve",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [],
+      "measures": [
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "pixel-dissolve",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [
+        "차오르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "차오르"
+      ]
+    },
+    {
+      "id": "iris-wipe",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "화면"
+      ],
+      "phaseOrder": [
+        "원",
+        "화면"
+      ]
+    },
+    {
+      "id": "wipe",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        0.4
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "0.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "mask-reveal",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [
+        "그려",
+        "나타"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "로고"
+      ],
+      "phaseOrder": [
+        "로고",
+        "그려",
+        "나타"
+      ]
+    },
+    {
+      "id": "morph-cut",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "glitch",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        0.3
+      ],
+      "directions": [],
+      "measures": [
+        "0.3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "rgb-split",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        0.4
+      ],
+      "directions": [],
+      "measures": [
+        "0.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "light-sweep",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [],
+      "measures": [
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "로고"
+      ],
+      "phaseOrder": [
+        "로고"
+      ]
+    },
+    {
+      "id": "screen-dive",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "line-draw",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        1.6
+      ],
+      "directions": [],
+      "measures": [
+        "1.6초"
+      ],
+      "actionCues": [
+        "그려"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화살촉"
+      ],
+      "phaseOrder": [
+        "그려",
+        "화살촉"
+      ]
+    },
+    {
+      "id": "shape-morph",
+      "familyId": "family-03",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원"
+      ]
+    },
+    {
+      "id": "kinetic-typography",
+      "familyId": "family-04",
+      "sourceDurationSeconds": [
+        4.0
+      ],
+      "directions": [],
+      "measures": [
+        "4초"
+      ],
+      "actionCues": [
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "커지"
+      ]
+    },
+    {
+      "id": "type-on",
+      "familyId": "family-04",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "text-stagger",
+      "familyId": "family-04",
+      "sourceDurationSeconds": [
+        0.1
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "0.1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "word-morph",
+      "familyId": "family-04",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자",
+        "바뀌"
+      ]
+    },
+    {
+      "id": "text-sandwich",
+      "familyId": "family-04",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "위"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "lower-third",
+      "familyId": "family-04",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "왼쪽",
+        "아래"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "letter-flythrough",
+      "familyId": "family-04",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "count-up",
+      "familyId": "family-04",
+      "sourceDurationSeconds": [
+        2.4
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "2.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대"
+      ],
+      "phaseOrder": [
+        "막대"
+      ]
+    },
+    {
+      "id": "easing",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "ease-out",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드"
+      ]
+    },
+    {
+      "id": "overshoot",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "110%",
+        "100%"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "돌아"
+      ]
+    },
+    {
+      "id": "anticipation",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [
+        0.15
+      ],
+      "directions": [],
+      "measures": [
+        "0.15초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "stagger",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [
+        0.1
+      ],
+      "directions": [],
+      "measures": [
+        "0.1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드"
+      ]
+    },
+    {
+      "id": "motion-blur",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "squash-stretch",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "motion-trail",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "beat-sync",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [
+        0.1
+      ],
+      "directions": [],
+      "measures": [
+        "0.1초"
+      ],
+      "actionCues": [
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "바뀌"
+      ]
+    },
+    {
+      "id": "arc",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘"
+      ]
+    },
+    {
+      "id": "bounce",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "위"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘"
+      ]
+    },
+    {
+      "id": "follow-through",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [
+        0.2
+      ],
+      "directions": [],
+      "measures": [
+        "0.2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "overlapping-action",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [
+        0.05
+      ],
+      "directions": [],
+      "measures": [
+        "0.05초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "hold",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [
+        0.3
+      ],
+      "directions": [],
+      "measures": [
+        "0.3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "secondary-action",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "흔들"
+      ]
+    },
+    {
+      "id": "smear",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "loop",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘"
+      ]
+    },
+    {
+      "id": "pop-in",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [
+        0.3
+      ],
+      "directions": [],
+      "measures": [
+        "0.3초",
+        "1.1배"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "liquid-motion",
+      "familyId": "family-05",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "slow-motion",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "0.25배"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "time-lapse",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [
+        5.0
+      ],
+      "directions": [],
+      "measures": [
+        "5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "freeze-frame",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [],
+      "measures": [
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "reverse",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "조각"
+      ],
+      "phaseOrder": [
+        "조각",
+        "모이"
+      ]
+    },
+    {
+      "id": "strobe",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [
+        0.4
+      ],
+      "directions": [],
+      "measures": [
+        "0.4초"
+      ],
+      "actionCues": [
+        "번쩍"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "번쩍"
+      ]
+    },
+    {
+      "id": "light-leak",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "번지"
+      ]
+    },
+    {
+      "id": "lens-flare",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "로고"
+      ],
+      "phaseOrder": [
+        "로고"
+      ]
+    },
+    {
+      "id": "bloom-glow",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자",
+        "빛"
+      ],
+      "phaseOrder": [
+        "글자",
+        "번지",
+        "빛"
+      ]
+    },
+    {
+      "id": "split-screen",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "pip",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "오른쪽",
+        "아래"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "창"
+      ],
+      "phaseOrder": [
+        "창"
+      ]
+    },
+    {
+      "id": "datamosh",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "밀려"
+      ]
+    },
+    {
+      "id": "burst",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [],
+      "measures": [
+        "1.3배",
+        "10개",
+        "0.6초"
+      ],
+      "actionCues": [
+        "사라",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "튀",
+        "점",
+        "사라"
+      ]
+    },
+    {
+      "id": "particles",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [
+        1.2
+      ],
+      "directions": [
+        "위",
+        "아래",
+        "가운데"
+      ],
+      "measures": [
+        "40개",
+        "1.2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "조각"
+      ],
+      "phaseOrder": [
+        "조각"
+      ]
+    },
+    {
+      "id": "film-grain",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [
+        3.0
+      ],
+      "directions": [],
+      "measures": [
+        "18%",
+        "3초"
+      ],
+      "actionCues": [
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "바뀌"
+      ]
+    },
+    {
+      "id": "vector-crt",
+      "familyId": "family-06",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "8px",
+        "3px"
+      ],
+      "actionCues": [
+        "회전"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "빛",
+        "주사선",
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "회전",
+        "빛",
+        "주사선",
+        "남"
+      ]
+    },
+    {
+      "id": "color-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.1,
+        0.6
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "0.1초",
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "diagonal-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "30도",
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "multi-stripe-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.05
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "6줄",
+        "0.05초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "zigzag-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [],
+      "measures": [
+        "6개",
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "다음 화면",
+        "색면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "색면",
+        "다음 화면",
+        "화면"
+      ]
+    },
+    {
+      "id": "slice-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "5개",
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "bars-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [
+        "위",
+        "아래",
+        "가운데"
+      ],
+      "measures": [
+        "9개",
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대"
+      ],
+      "phaseOrder": [
+        "막대"
+      ]
+    },
+    {
+      "id": "brush-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [],
+      "measures": [
+        "4줄",
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "curtain-slide",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "닫히"
+      ]
+    },
+    {
+      "id": "circle-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [],
+      "measures": [
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원"
+      ]
+    },
+    {
+      "id": "block-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "블록"
+      ],
+      "phaseOrder": [
+        "블록"
+      ]
+    },
+    {
+      "id": "shutter-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [],
+      "measures": [
+        "0.5초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "닫히"
+      ]
+    },
+    {
+      "id": "clock-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [
+        "시계 방향"
+      ],
+      "measures": [
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "diamond-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "0.7초"
+      ],
+      "actionCues": [
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "마름모",
+        "격자",
+        "물결"
+      ],
+      "phaseOrder": [
+        "마름모",
+        "격자",
+        "물결",
+        "커지"
+      ]
+    },
+    {
+      "id": "star-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [],
+      "measures": [
+        "0.6초"
+      ],
+      "actionCues": [
+        "돌",
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "별"
+      ],
+      "phaseOrder": [
+        "점",
+        "별",
+        "커지"
+      ]
+    },
+    {
+      "id": "pinwheel-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "6개",
+        "0.6초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "corner-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.05,
+        0.6
+      ],
+      "directions": [],
+      "measures": [
+        "0.05초",
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "liquid-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [
+        "차오르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "물결",
+        "다음 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "차오르",
+        "물결",
+        "다음 화면",
+        "화면"
+      ]
+    },
+    {
+      "id": "drip-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "5개",
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "ripple-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.9
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "3겹",
+        "0.9초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "고리",
+        "화면"
+      ],
+      "phaseOrder": [
+        "고리",
+        "원",
+        "화면"
+      ]
+    },
+    {
+      "id": "text-wipe",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자",
+        "다음 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "커지",
+        "글자",
+        "화면",
+        "다음 화면"
+      ]
+    },
+    {
+      "id": "impact-flash",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.1
+      ],
+      "directions": [],
+      "measures": [
+        "0.1초"
+      ],
+      "actionCues": [
+        "번쩍"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "고리"
+      ],
+      "phaseOrder": [
+        "번쩍",
+        "고리"
+      ]
+    },
+    {
+      "id": "wave-split",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "물결"
+      ],
+      "phaseOrder": [
+        "물결",
+        "흔들"
+      ]
+    },
+    {
+      "id": "zigzag-split",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "circle-split",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [],
+      "measures": [
+        "0.7초"
+      ],
+      "actionCues": [
+        "돌",
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "커지"
+      ]
+    },
+    {
+      "id": "horizontal-split",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "vertical-split",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "triple-split",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.12,
+        0.7
+      ],
+      "directions": [
+        "왼쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.12초",
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "four-panel",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.1,
+        0.7
+      ],
+      "directions": [
+        "왼쪽",
+        "위",
+        "가운데",
+        "시계 방향"
+      ],
+      "measures": [
+        "2 칸",
+        "0.1초",
+        "0.7초"
+      ],
+      "actionCues": [
+        "펼쳐"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "펼쳐"
+      ]
+    },
+    {
+      "id": "sliding-panels",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.08,
+        0.7
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "0.08초",
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "패널"
+      ],
+      "phaseOrder": [
+        "패널",
+        "밀려"
+      ]
+    },
+    {
+      "id": "diagonal-panels",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.07,
+        0.6
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "0.07초",
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "quad-open",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "앞"
+      ],
+      "measures": [
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "앞 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "앞 화면",
+        "화면",
+        "밀려",
+        "열리"
+      ]
+    },
+    {
+      "id": "checker-panels",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "왼쪽",
+        "뒤"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "뒤집"
+      ]
+    },
+    {
+      "id": "diagonal-split",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "60도",
+        "120도",
+        "0.6초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "분할선"
+      ],
+      "phaseOrder": [
+        "분할선"
+      ]
+    },
+    {
+      "id": "mosaic-flash",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "3 칸",
+        "6박"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "다음 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "다음 화면",
+        "화면"
+      ]
+    },
+    {
+      "id": "frame-stack",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.07,
+        0.7
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래",
+        "가운데"
+      ],
+      "measures": [
+        "0.07초",
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "창"
+      ],
+      "phaseOrder": [
+        "창",
+        "닫히"
+      ]
+    },
+    {
+      "id": "bar-panels",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "11개"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대",
+        "화면"
+      ],
+      "phaseOrder": [
+        "막대",
+        "화면"
+      ]
+    },
+    {
+      "id": "band-split",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [
+        "왼쪽"
+      ],
+      "measures": [
+        "5줄",
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "grid-flip",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "왼쪽",
+        "위",
+        "뒤"
+      ],
+      "measures": [
+        "3 칸",
+        "180도",
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "뒤집"
+      ]
+    },
+    {
+      "id": "panel-zoom-out",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.1,
+        0.7
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "3겹",
+        "0.1초",
+        "0.7초"
+      ],
+      "actionCues": [
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "다음 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "커지",
+        "다음 화면",
+        "화면"
+      ]
+    },
+    {
+      "id": "strip-shuffle",
+      "familyId": "family-07",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "8줄",
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "halftone-pulse",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        4.0
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점"
+      ]
+    },
+    {
+      "id": "dot-wave",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        4.0
+      ],
+      "directions": [],
+      "measures": [
+        "4초"
+      ],
+      "actionCues": [
+        "작아지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "물결",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점",
+        "작아지",
+        "물결"
+      ]
+    },
+    {
+      "id": "halftone-gradient",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        4.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점"
+      ]
+    },
+    {
+      "id": "polka-drift",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "오른쪽",
+        "아래"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점"
+      ]
+    },
+    {
+      "id": "dot-spiral",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "137.5도",
+        "260개"
+      ],
+      "actionCues": [
+        "회전"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점",
+        "회전"
+      ]
+    },
+    {
+      "id": "dot-matrix",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "막대",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점",
+        "막대"
+      ]
+    },
+    {
+      "id": "dot-rings",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "안쪽"
+      ],
+      "measures": [],
+      "actionCues": [
+        "회전"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "원",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점",
+        "원",
+        "회전"
+      ]
+    },
+    {
+      "id": "comic-dots",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점",
+        "남",
+        "흔들"
+      ]
+    },
+    {
+      "id": "perspective-grid",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "가운데",
+        "앞"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점",
+        "격자",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점",
+        "격자"
+      ]
+    },
+    {
+      "id": "grid-zoom",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "커지"
+      ]
+    },
+    {
+      "id": "grid-wave",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "격자",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "격자"
+      ]
+    },
+    {
+      "id": "moire-grid",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "회전"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "격자",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "격자",
+        "회전"
+      ]
+    },
+    {
+      "id": "isometric-grid",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "30도"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "격자",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "격자"
+      ]
+    },
+    {
+      "id": "hex-grid",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        4.0
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "타일",
+        "물결",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "타일",
+        "물결"
+      ]
+    },
+    {
+      "id": "truchet-tiles",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "90도"
+      ],
+      "actionCues": [
+        "돌",
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "타일",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "원",
+        "타일",
+        "돌아",
+        "바뀌"
+      ]
+    },
+    {
+      "id": "checker-scroll",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "15도"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "speed-lines",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "equalizer-stripes",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "12줄"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "radial-burst",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [],
+      "actionCues": [
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "바뀌"
+      ]
+    },
+    {
+      "id": "wave-lines",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "12줄",
+        "8초"
+      ],
+      "actionCues": [
+        "겹쳐"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "물결",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "물결",
+        "겹쳐"
+      ]
+    },
+    {
+      "id": "ripple-interference",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점",
+        "원",
+        "파문",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점",
+        "원",
+        "파문"
+      ]
+    },
+    {
+      "id": "barber-stripes",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "흐르"
+      ],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "흐르"
+      ]
+    },
+    {
+      "id": "line-tunnel",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "crosshatch",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "bubble-pop",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "16개"
+      ],
+      "actionCues": [
+        "나타",
+        "사라"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "원",
+        "나타",
+        "사라"
+      ]
+    },
+    {
+      "id": "floating-shapes",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "9개"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "물결",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "물결"
+      ]
+    },
+    {
+      "id": "polygon-tunnel",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "orbit-shapes",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "4개"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점"
+      ]
+    },
+    {
+      "id": "kaleidoscope",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "회전"
+      ],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "조각",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "조각",
+        "회전"
+      ]
+    },
+    {
+      "id": "confetti-fall",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "40개"
+      ],
+      "actionCues": [
+        "회전",
+        "흔들"
+      ],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "뒤집",
+        "회전",
+        "흔들"
+      ]
+    },
+    {
+      "id": "blob-morph",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "4개"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "pinwheels",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "5개"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "color-blocks",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [],
+      "measures": [
+        "3개",
+        "2초"
+      ],
+      "actionCues": [
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경",
+        "색면"
+      ],
+      "phaseOrder": [
+        "배경",
+        "색면",
+        "바뀌"
+      ]
+    },
+    {
+      "id": "eclipse-circle",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "원"
+      ]
+    },
+    {
+      "id": "bauhaus-tiles",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "90도"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "타일",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "원",
+        "타일"
+      ]
+    },
+    {
+      "id": "concentric-arcs",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "안쪽"
+      ],
+      "measures": [
+        "3개"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "원"
+      ]
+    },
+    {
+      "id": "sliding-bands",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [],
+      "measures": [
+        "3줄",
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "square-snap",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "2초",
+        "90도"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "soft-wave",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "물결",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "물결"
+      ]
+    },
+    {
+      "id": "nested-squares",
+      "familyId": "family-08",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "안쪽"
+      ],
+      "measures": [
+        "9겹"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "word-burst",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        0.12
+      ],
+      "directions": [],
+      "measures": [
+        "2.4배",
+        "0.12초",
+        "12개"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "흔들"
+      ]
+    },
+    {
+      "id": "letter-slam",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        0.28
+      ],
+      "directions": [],
+      "measures": [
+        "0.28초",
+        "2.3배"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "stamp-text",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        0.9
+      ],
+      "directions": [],
+      "measures": [
+        "0.9초",
+        "1.7배"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "punch-zoom",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        0.3
+      ],
+      "directions": [],
+      "measures": [
+        "0.08배",
+        "0.3초",
+        "4겹"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "kinetic-stack",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        0.35
+      ],
+      "directions": [],
+      "measures": [
+        "0.35초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "stretch-text",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "1.9배"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "text-zoom-through",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "squeeze-swap",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        0.4
+      ],
+      "directions": [],
+      "measures": [
+        "0.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "giant-scroll",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "vertical-columns",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "repeat-wave",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "격자",
+        "물결"
+      ],
+      "phaseOrder": [
+        "격자",
+        "물결"
+      ]
+    },
+    {
+      "id": "diagonal-bands",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "3줄",
+        "12도"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "text-on-path",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자",
+        "물결"
+      ],
+      "phaseOrder": [
+        "물결",
+        "글자"
+      ]
+    },
+    {
+      "id": "marquee-stack",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "4줄"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "parallax-columns",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "앞",
+        "뒤"
+      ],
+      "measures": [
+        "3겹"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "caution-tape",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "2줄",
+        "12도"
+      ],
+      "actionCues": [
+        "흐르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "흐르"
+      ]
+    },
+    {
+      "id": "text-tunnel",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "10겹",
+        "1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "text-corridor",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "text-cylinder",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "3개"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원"
+      ]
+    },
+    {
+      "id": "text-vortex",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [],
+      "measures": [
+        "18도",
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "ring-text",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "회전"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "원",
+        "고리"
+      ],
+      "phaseOrder": [
+        "원",
+        "고리",
+        "회전"
+      ]
+    },
+    {
+      "id": "text-orbit",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "앞",
+        "뒤"
+      ],
+      "measures": [],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원"
+      ]
+    },
+    {
+      "id": "text-cube",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [],
+      "measures": [
+        "2초",
+        "90도"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "extrude-text",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "14겹",
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "split-flap",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        0.15
+      ],
+      "directions": [],
+      "measures": [
+        "0.15초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "접히"
+      ]
+    },
+    {
+      "id": "flip-cards",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        0.18
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "0.18초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드",
+        "뒤집"
+      ]
+    },
+    {
+      "id": "typewriter-swap",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        2.2
+      ],
+      "directions": [],
+      "measures": [
+        "2.2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "slot-text",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        1.4,
+        1.9
+      ],
+      "directions": [],
+      "measures": [
+        "2개",
+        "1.4초",
+        "1.9초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "odometer",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        2.6
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "2.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "headline-swap",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        2.0,
+        0.6
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "4개",
+        "2초",
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "led-text",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "9줄"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "split-halves",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "outline-fill",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        1.6
+      ],
+      "directions": [
+        "왼쪽"
+      ],
+      "measures": [
+        "4개",
+        "1.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "채워"
+      ]
+    },
+    {
+      "id": "glitch-slices",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        2.0,
+        0.5
+      ],
+      "directions": [],
+      "measures": [
+        "2초",
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "조각"
+      ],
+      "phaseOrder": [
+        "조각"
+      ]
+    },
+    {
+      "id": "pattern-mask",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "long-shadow",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "60겹",
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "그림자",
+        "빛"
+      ],
+      "phaseOrder": [
+        "빛",
+        "그림자"
+      ]
+    },
+    {
+      "id": "liquid-fill",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        3.0
+      ],
+      "directions": [],
+      "measures": [
+        "3초"
+      ],
+      "actionCues": [
+        "차오르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "채워",
+        "차오르"
+      ]
+    },
+    {
+      "id": "highlighter",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [],
+      "measures": [
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "split-invert",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "text-echo",
+      "familyId": "family-09",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "10겹"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "disintegrate",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        1.6
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "1.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "ink-bleed",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        0.35,
+        1.1
+      ],
+      "directions": [],
+      "measures": [
+        "0.35초",
+        "1.1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "번지"
+      ]
+    },
+    {
+      "id": "crumble-down",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        0.28
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "0.28초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "letter-assemble",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        1.1,
+        0.12
+      ],
+      "directions": [],
+      "measures": [
+        "1.1초",
+        "0.12초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "모이",
+        "글자"
+      ]
+    },
+    {
+      "id": "magnet-pull",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        1.3
+      ],
+      "directions": [],
+      "measures": [
+        "2배",
+        "1.3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "끌려"
+      ]
+    },
+    {
+      "id": "shuffle-letters",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "blur-focus",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        0.9,
+        0.12
+      ],
+      "directions": [
+        "앞"
+      ],
+      "measures": [
+        "12px",
+        "0.9초",
+        "0.12초",
+        "1.08배",
+        "1배"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "wave-letters",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자",
+        "물결"
+      ],
+      "phaseOrder": [
+        "물결",
+        "글자"
+      ]
+    },
+    {
+      "id": "swing-letters",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자",
+        "막대"
+      ],
+      "phaseOrder": [
+        "막대",
+        "글자"
+      ]
+    },
+    {
+      "id": "text-flag",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "왼쪽"
+      ],
+      "measures": [],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "float-drift",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        4.0,
+        8.0
+      ],
+      "directions": [
+        "위",
+        "뒤"
+      ],
+      "measures": [
+        "4초",
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "jitter-settle",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자",
+        "흔들"
+      ]
+    },
+    {
+      "id": "stop-motion",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "8프레임"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "흔들",
+        "글자"
+      ]
+    },
+    {
+      "id": "underwater-warp",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "4px",
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "가로줄",
+        "글자",
+        "물결"
+      ],
+      "phaseOrder": [
+        "글자",
+        "가로줄",
+        "물결"
+      ]
+    },
+    {
+      "id": "domino-letters",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        0.24
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "0.24초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "gravity-flip",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        0.9,
+        2.0
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "0.9초",
+        "2초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "뒤집"
+      ]
+    },
+    {
+      "id": "letter-rain",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "karaoke-ball",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        2.8
+      ],
+      "directions": [
+        "왼쪽",
+        "위"
+      ],
+      "measures": [
+        "2.8초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "튀"
+      ]
+    },
+    {
+      "id": "magnifier-lens",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [
+        "안쪽"
+      ],
+      "measures": [
+        "8초",
+        "2.2배"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "water-reflection",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "위",
+        "아래",
+        "뒤"
+      ],
+      "measures": [],
+      "actionCues": [
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "뒤집",
+        "커지"
+      ]
+    },
+    {
+      "id": "weight-grow",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        1.0,
+        0.25
+      ],
+      "directions": [],
+      "measures": [
+        "1초",
+        "0.25초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자"
+      ]
+    },
+    {
+      "id": "gradient-flow",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        4.0
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "4초"
+      ],
+      "actionCues": [
+        "흐르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "흐르"
+      ]
+    },
+    {
+      "id": "text-mosaic",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "4 칸",
+        "1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "켜지"
+      ]
+    },
+    {
+      "id": "scramble-decode",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        0.4
+      ],
+      "directions": [
+        "앞"
+      ],
+      "measures": [
+        "0.4초"
+      ],
+      "actionCues": [
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자",
+        "바뀌"
+      ]
+    },
+    {
+      "id": "text-kaleido",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "고리",
+        "조각"
+      ],
+      "phaseOrder": [
+        "조각",
+        "고리"
+      ]
+    },
+    {
+      "id": "text-fan",
+      "familyId": "family-10",
+      "sourceDurationSeconds": [
+        0.9
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "0.9초"
+      ],
+      "actionCues": [
+        "펼쳐",
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점",
+        "막대"
+      ],
+      "phaseOrder": [
+        "펼쳐",
+        "막대",
+        "점",
+        "돌아"
+      ]
+    },
+    {
+      "id": "push",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "slide-over",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [
+        "위",
+        "앞"
+      ],
+      "measures": [
+        "35%",
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "다음 화면",
+        "앞 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "다음 화면",
+        "화면",
+        "앞 화면"
+      ]
+    },
+    {
+      "id": "slide-reveal",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [
+        "왼쪽",
+        "앞"
+      ],
+      "measures": [
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "다음 화면",
+        "앞 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "앞 화면",
+        "화면",
+        "다음 화면"
+      ]
+    },
+    {
+      "id": "elastic-slide",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "8%",
+        "0.6초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "돌아"
+      ]
+    },
+    {
+      "id": "stack-cards",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "아래",
+        "앞"
+      ],
+      "measures": [
+        "88%",
+        "0.6초"
+      ],
+      "actionCues": [
+        "어두워"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "다음 화면",
+        "앞 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "앞 화면",
+        "화면",
+        "어두워",
+        "다음 화면"
+      ]
+    },
+    {
+      "id": "dip-to-black",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.4,
+        0.1,
+        0.4
+      ],
+      "directions": [],
+      "measures": [
+        "0.4초",
+        "0.1초"
+      ],
+      "actionCues": [
+        "어두워",
+        "밝아"
+      ],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "어두워",
+        "밝아"
+      ]
+    },
+    {
+      "id": "dip-to-white",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.4,
+        0.1,
+        0.4
+      ],
+      "directions": [],
+      "measures": [
+        "0.4초",
+        "0.1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "다음 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "다음 화면",
+        "화면"
+      ]
+    },
+    {
+      "id": "film-burn",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.3,
+        0.8
+      ],
+      "directions": [
+        "왼쪽",
+        "위"
+      ],
+      "measures": [
+        "0.3초",
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "빛"
+      ],
+      "phaseOrder": [
+        "빛"
+      ]
+    },
+    {
+      "id": "vhs-rewind",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "왼쪽",
+        "위"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "가로줄"
+      ],
+      "phaseOrder": [
+        "가로줄",
+        "남"
+      ]
+    },
+    {
+      "id": "spin-zoom",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "가운데",
+        "앞"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [
+        "돌",
+        "사라"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "다음 화면",
+        "앞 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "앞 화면",
+        "화면",
+        "사라",
+        "다음 화면"
+      ]
+    },
+    {
+      "id": "drop-zoom",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [
+        "아래",
+        "앞"
+      ],
+      "measures": [
+        "55%",
+        "135%",
+        "100%",
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "다음 화면",
+        "앞 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "앞 화면",
+        "화면",
+        "다음 화면"
+      ]
+    },
+    {
+      "id": "spin-blur",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "90도",
+        "0.6초"
+      ],
+      "actionCues": [
+        "회전",
+        "돌"
+      ],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "회전"
+      ]
+    },
+    {
+      "id": "distort-warp",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "물결",
+        "화면"
+      ],
+      "phaseOrder": [
+        "물결",
+        "화면"
+      ]
+    },
+    {
+      "id": "cube-rotate",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [],
+      "measures": [
+        "90도",
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "card-flip",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "180도",
+        "0.7초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "뒤집"
+      ]
+    },
+    {
+      "id": "roll-over",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "90도",
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "domino-flip",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.08,
+        0.8
+      ],
+      "directions": [
+        "왼쪽"
+      ],
+      "measures": [
+        "6개",
+        "0.08초",
+        "0.8초"
+      ],
+      "actionCues": [
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "바뀌"
+      ]
+    },
+    {
+      "id": "page-curl",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "오른쪽",
+        "아래"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "그림자"
+      ],
+      "phaseOrder": [
+        "그림자"
+      ]
+    },
+    {
+      "id": "glass-shatter",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.15,
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "0.15초",
+        "30개",
+        "1초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "조각"
+      ],
+      "phaseOrder": [
+        "조각"
+      ]
+    },
+    {
+      "id": "paper-tear",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "tv-off",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.3
+      ],
+      "directions": [],
+      "measures": [
+        "0.3초"
+      ],
+      "actionCues": [
+        "눌리"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "가로줄",
+        "점",
+        "다음 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "가로줄",
+        "눌리",
+        "점",
+        "다음 화면",
+        "화면",
+        "켜지"
+      ]
+    },
+    {
+      "id": "roll-up",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원"
+      ]
+    },
+    {
+      "id": "squeeze-line",
+      "familyId": "family-11",
+      "sourceDurationSeconds": [
+        0.7
+      ],
+      "directions": [],
+      "measures": [
+        "0.7초"
+      ],
+      "actionCues": [
+        "펼쳐"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "세로 선",
+        "다음 화면",
+        "화면"
+      ],
+      "phaseOrder": [
+        "세로 선",
+        "다음 화면",
+        "화면",
+        "펼쳐"
+      ]
+    },
+    {
+      "id": "odometer-roll",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        2.2,
+        0.12
+      ],
+      "directions": [
+        "왼쪽",
+        "위"
+      ],
+      "measures": [
+        "2.2초",
+        "0.12초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자"
+      ]
+    },
+    {
+      "id": "digit-slot",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        1.2,
+        0.55,
+        0.35
+      ],
+      "directions": [
+        "왼쪽"
+      ],
+      "measures": [
+        "1.2초",
+        "0.55초",
+        "0.35초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "number-punch",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.5,
+        0.45
+      ],
+      "directions": [
+        "위",
+        "아래",
+        "뒤"
+      ],
+      "measures": [
+        "3.2배",
+        "0.5초",
+        "0.45초"
+      ],
+      "actionCues": [
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자",
+        "커지"
+      ]
+    },
+    {
+      "id": "delta-badge",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        1.6,
+        0.5
+      ],
+      "directions": [],
+      "measures": [
+        "1.6초",
+        "15%",
+        "0.5초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "튀"
+      ]
+    },
+    {
+      "id": "percent-ring",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        2.4
+      ],
+      "directions": [
+        "가운데",
+        "시계 방향"
+      ],
+      "measures": [
+        "72%",
+        "2.4초"
+      ],
+      "actionCues": [
+        "차오르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "차오르",
+        "숫자"
+      ]
+    },
+    {
+      "id": "ticker-tape",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "아래"
+      ],
+      "measures": [
+        "5개",
+        "8초"
+      ],
+      "actionCues": [
+        "흐르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "흐르"
+      ]
+    },
+    {
+      "id": "bar-grow",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.18,
+        0.7,
+        0.3
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "5개",
+        "0.18초",
+        "0.7초",
+        "0.3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대",
+        "숫자"
+      ],
+      "phaseOrder": [
+        "막대",
+        "숫자"
+      ]
+    },
+    {
+      "id": "bar-race",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        5.0
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "5초"
+      ],
+      "actionCues": [
+        "이동",
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대"
+      ],
+      "phaseOrder": [
+        "바뀌",
+        "막대",
+        "이동"
+      ]
+    },
+    {
+      "id": "bar-swap",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        2.0,
+        1.4
+      ],
+      "directions": [],
+      "measures": [
+        "2초",
+        "1.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대"
+      ],
+      "phaseOrder": [
+        "막대"
+      ]
+    },
+    {
+      "id": "stacked-build",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.7,
+        0.5
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "4개",
+        "0.7초",
+        "0.5초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대"
+      ],
+      "phaseOrder": [
+        "막대"
+      ]
+    },
+    {
+      "id": "waterfall-steps",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.45
+      ],
+      "directions": [],
+      "measures": [
+        "5개",
+        "0.45초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대"
+      ],
+      "phaseOrder": [
+        "막대"
+      ]
+    },
+    {
+      "id": "goal-fill",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        2.6
+      ],
+      "directions": [],
+      "measures": [
+        "87%",
+        "2.6초",
+        "80%"
+      ],
+      "actionCues": [
+        "차오르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "차오르",
+        "숫자"
+      ]
+    },
+    {
+      "id": "line-chart-draw",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        3.0
+      ],
+      "directions": [
+        "왼쪽"
+      ],
+      "measures": [
+        "10개",
+        "3초",
+        "4줄"
+      ],
+      "actionCues": [
+        "그려"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점",
+        "그려"
+      ]
+    },
+    {
+      "id": "area-fill",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        1.8,
+        1.2
+      ],
+      "directions": [
+        "아래",
+        "뒤"
+      ],
+      "measures": [
+        "1.8초",
+        "1.2초",
+        "35%"
+      ],
+      "actionCues": [
+        "차오르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "차오르"
+      ]
+    },
+    {
+      "id": "point-pop",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.22,
+        0.4
+      ],
+      "directions": [],
+      "measures": [
+        "10개",
+        "0.22초",
+        "0.4초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점",
+        "튀"
+      ]
+    },
+    {
+      "id": "sparkline-scroll",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [
+        "흐르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "숫자"
+      ],
+      "phaseOrder": [
+        "흐르",
+        "점",
+        "숫자"
+      ]
+    },
+    {
+      "id": "peak-callout",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        1.8,
+        2.4,
+        0.5,
+        2.8
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "1.8초",
+        "2.4초",
+        "0.5초",
+        "2.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "line-cross",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        2.6,
+        3.2
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "2.6초",
+        "3.2초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점",
+        "튀"
+      ]
+    },
+    {
+      "id": "dot-globe",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.5,
+        1.2
+      ],
+      "directions": [
+        "앞"
+      ],
+      "measures": [
+        "0.5초",
+        "1.2초"
+      ],
+      "actionCues": [
+        "돌",
+        "그려"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점",
+        "그려"
+      ]
+    },
+    {
+      "id": "pie-sweep",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        2.2
+      ],
+      "directions": [
+        "시계 방향"
+      ],
+      "measures": [
+        "4개",
+        "13%",
+        "2.2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "조각"
+      ],
+      "phaseOrder": [
+        "조각"
+      ]
+    },
+    {
+      "id": "donut-split",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        1.6,
+        2.3,
+        0.6
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "4개",
+        "1.6초",
+        "2.3초",
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "고리",
+        "조각"
+      ],
+      "phaseOrder": [
+        "고리",
+        "조각"
+      ]
+    },
+    {
+      "id": "treemap-split",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.9,
+        0.8
+      ],
+      "directions": [],
+      "measures": [
+        "4개",
+        "0.9초",
+        "0.8초",
+        "42%"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "waffle-fill",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.055
+      ],
+      "directions": [
+        "왼쪽",
+        "아래"
+      ],
+      "measures": [
+        "37%",
+        "10 칸",
+        "0.055초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자"
+      ]
+    },
+    {
+      "id": "isotype-row",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.14,
+        0.35
+      ],
+      "directions": [],
+      "measures": [
+        "0.14초",
+        "0.35초",
+        "25%"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "켜지",
+        "아이콘"
+      ]
+    },
+    {
+      "id": "scale-compare",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        0.5,
+        1.2,
+        1.4
+      ],
+      "directions": [],
+      "measures": [
+        "0.5초",
+        "1.2초",
+        "1.4초",
+        "3배",
+        "9배"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "튀"
+      ]
+    },
+    {
+      "id": "liquid-gauge",
+      "familyId": "family-12",
+      "sourceDurationSeconds": [
+        2.6
+      ],
+      "directions": [],
+      "measures": [
+        "72%",
+        "2.6초"
+      ],
+      "actionCues": [
+        "차오르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "물결"
+      ],
+      "phaseOrder": [
+        "원",
+        "차오르",
+        "물결"
+      ]
+    },
+    {
+      "id": "logo-trace",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        2.2,
+        1.0
+      ],
+      "directions": [
+        "안쪽"
+      ],
+      "measures": [
+        "2.2초",
+        "1초",
+        "4%"
+      ],
+      "actionCues": [
+        "나타"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "로고"
+      ],
+      "phaseOrder": [
+        "로고",
+        "나타"
+      ]
+    },
+    {
+      "id": "stroke-then-fill",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        1.6,
+        2.1,
+        0.7
+      ],
+      "directions": [],
+      "measures": [
+        "1.6초",
+        "2.1초",
+        "0.7초"
+      ],
+      "actionCues": [
+        "차오르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "로고"
+      ],
+      "phaseOrder": [
+        "로고",
+        "차오르"
+      ]
+    },
+    {
+      "id": "logo-wipe",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        1.4
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "1.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대",
+        "로고"
+      ],
+      "phaseOrder": [
+        "로고",
+        "막대"
+      ]
+    },
+    {
+      "id": "dot-assemble",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        1.2,
+        1.2,
+        2.4,
+        0.5
+      ],
+      "directions": [],
+      "measures": [
+        "40개",
+        "1.2초",
+        "2.4초",
+        "0.5초"
+      ],
+      "actionCues": [
+        "사라"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "로고"
+      ],
+      "phaseOrder": [
+        "로고",
+        "점",
+        "모이",
+        "채워",
+        "사라"
+      ]
+    },
+    {
+      "id": "stamp-in",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.35,
+        0.3
+      ],
+      "directions": [],
+      "measures": [
+        "2.2배",
+        "0.35초",
+        "1배",
+        "7도",
+        "0.3초"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "고리",
+        "로고"
+      ],
+      "phaseOrder": [
+        "로고",
+        "흔들",
+        "고리"
+      ]
+    },
+    {
+      "id": "split-join",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.9,
+        0.15
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "가운데"
+      ],
+      "measures": [
+        "0.9초",
+        "0.15초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "빛",
+        "로고",
+        "화면"
+      ],
+      "phaseOrder": [
+        "로고",
+        "화면",
+        "빛"
+      ]
+    },
+    {
+      "id": "icon-bounce",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.5,
+        1.4
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "0.5초",
+        "20%",
+        "1.4초"
+      ],
+      "actionCues": [
+        "작아지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "그림자",
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘",
+        "그림자",
+        "작아지"
+      ]
+    },
+    {
+      "id": "squash-pop",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        1.1
+      ],
+      "directions": [],
+      "measures": [
+        "1.35배",
+        "0.65배",
+        "1.1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘",
+        "점"
+      ]
+    },
+    {
+      "id": "orbit-in",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        1.8
+      ],
+      "directions": [
+        "가운데",
+        "뒤"
+      ],
+      "measures": [
+        "1.8초",
+        "40%",
+        "100%",
+        "3개"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘"
+      ]
+    },
+    {
+      "id": "spin-settle",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        1.8
+      ],
+      "directions": [],
+      "measures": [
+        "60%",
+        "100%",
+        "1.8초",
+        "15도"
+      ],
+      "actionCues": [
+        "돌",
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘",
+        "흔들"
+      ]
+    },
+    {
+      "id": "confetti-pop",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.5,
+        1.6
+      ],
+      "directions": [],
+      "measures": [
+        "0.5초",
+        "1.6초"
+      ],
+      "actionCues": [
+        "사라",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘",
+        "튀",
+        "사라"
+      ]
+    },
+    {
+      "id": "ripple-ring",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.5,
+        0.35,
+        1.4
+      ],
+      "directions": [],
+      "measures": [
+        "0.5초",
+        "0.35초",
+        "3개",
+        "2.4배",
+        "1.4초"
+      ],
+      "actionCues": [
+        "사라",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "고리",
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘",
+        "튀",
+        "고리",
+        "사라"
+      ]
+    },
+    {
+      "id": "check-draw",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.45,
+        0.45,
+        0.55
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "0.45초",
+        "0.55초",
+        "9%"
+      ],
+      "actionCues": [
+        "그려",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "튀",
+        "그려"
+      ]
+    },
+    {
+      "id": "heart-burst",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.24,
+        0.36,
+        0.7
+      ],
+      "directions": [],
+      "measures": [
+        "0.24초",
+        "125%",
+        "0.36초",
+        "100%",
+        "8개",
+        "0.7초"
+      ],
+      "actionCues": [
+        "사라",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "튀",
+        "사라"
+      ]
+    },
+    {
+      "id": "bell-shake",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        1.2,
+        0.4
+      ],
+      "directions": [
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "25도",
+        "1.2초",
+        "0.4초"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "흔들",
+        "점"
+      ]
+    },
+    {
+      "id": "star-fill",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.9,
+        0.5,
+        0.6
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.9초",
+        "0.5초",
+        "0.6초"
+      ],
+      "actionCues": [
+        "차오르",
+        "사라",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "별"
+      ],
+      "phaseOrder": [
+        "별",
+        "차오르",
+        "튀",
+        "사라"
+      ]
+    },
+    {
+      "id": "toggle-on",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.45,
+        0.3
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "0.45초",
+        "0.3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "badge-count",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        0.45,
+        0.35
+      ],
+      "directions": [
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "0.45초",
+        "0.35초",
+        "130%",
+        "100%"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "숫자",
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘",
+        "숫자"
+      ]
+    },
+    {
+      "id": "spinner-arc",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        1.0,
+        1.6
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "1초",
+        "1.6초",
+        "20%",
+        "75%"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원"
+      ]
+    },
+    {
+      "id": "dots-wave",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        1.0,
+        0.15
+      ],
+      "directions": [],
+      "measures": [
+        "3개",
+        "1초",
+        "0.15초",
+        "1.8배"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "breathe-pulse",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "2초",
+        "100%",
+        "106%",
+        "1.7배",
+        "18%"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘",
+        "원"
+      ]
+    },
+    {
+      "id": "float-bob",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        2.0,
+        4.0
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "2초",
+        "6%",
+        "4초",
+        "3.5도"
+      ],
+      "actionCues": [
+        "작아지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "그림자",
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "아이콘",
+        "그림자",
+        "작아지"
+      ]
+    },
+    {
+      "id": "wiggle-hint",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        4.0,
+        2.4,
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "4초",
+        "2.4초",
+        "1초",
+        "12도"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "흔들"
+      ]
+    },
+    {
+      "id": "shine-sweep",
+      "familyId": "family-13",
+      "sourceDurationSeconds": [
+        2.67,
+        1.2
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "20도",
+        "55%",
+        "2.67초",
+        "1.2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "로고"
+      ],
+      "phaseOrder": [
+        "로고"
+      ]
+    },
+    {
+      "id": "subscribe-button",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.45,
+        1.4,
+        0.4,
+        0.9
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "0.45초",
+        "1.4초",
+        "92%",
+        "0.4초",
+        "0.9초"
+      ],
+      "actionCues": [
+        "흔들",
+        "바뀌",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "튀",
+        "바뀌",
+        "흔들"
+      ]
+    },
+    {
+      "id": "follow-pill",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.5,
+        1.9,
+        0.35
+      ],
+      "directions": [
+        "왼쪽"
+      ],
+      "measures": [
+        "0.5초",
+        "1.9초",
+        "0.35초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원"
+      ]
+    },
+    {
+      "id": "like-counter",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        1.3,
+        0.4,
+        1.6
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "1.3초",
+        "0.4초",
+        "130%",
+        "1.6초",
+        "5개"
+      ],
+      "actionCues": [
+        "돌",
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "바뀌",
+        "돌아",
+        "숫자"
+      ]
+    },
+    {
+      "id": "save-bookmark",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.6,
+        1.2,
+        0.5,
+        1.8,
+        1.4
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.6초",
+        "1.2초",
+        "0.5초",
+        "1.8초",
+        "1.4초"
+      ],
+      "actionCues": [
+        "사라"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "사라"
+      ]
+    },
+    {
+      "id": "share-fling",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.4,
+        1.3,
+        0.8,
+        2.2
+      ],
+      "directions": [
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.4초",
+        "1.3초",
+        "0.8초",
+        "2.2초"
+      ],
+      "actionCues": [
+        "사라",
+        "작아지",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "튀",
+        "작아지",
+        "사라"
+      ]
+    },
+    {
+      "id": "swipe-up-hint",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        1.6
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "1.6초",
+        "12%"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "chat-bubble-pop",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.9,
+        0.4
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "3개",
+        "0.9초",
+        "0.4초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "튀"
+      ]
+    },
+    {
+      "id": "typing-bubble",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.35,
+        2.0,
+        2.4,
+        0.35,
+        0.3
+      ],
+      "directions": [],
+      "measures": [
+        "0.35초",
+        "3개",
+        "2초",
+        "2.4초",
+        "0.3초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "글자",
+        "물결"
+      ],
+      "phaseOrder": [
+        "튀",
+        "점",
+        "물결",
+        "글자"
+      ]
+    },
+    {
+      "id": "comment-rise",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.8,
+        0.35
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.8초",
+        "0.35초",
+        "18%",
+        "4줄"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "reply-thread",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.8,
+        0.4
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "0.8초",
+        "2개",
+        "0.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "reaction-float",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        4.6,
+        2.2
+      ],
+      "directions": [
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "14개",
+        "4.6초",
+        "2.2초",
+        "30%"
+      ],
+      "actionCues": [
+        "흔들",
+        "사라"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "흔들",
+        "사라"
+      ]
+    },
+    {
+      "id": "poll-bars",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        1.2,
+        1.2
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "2줄",
+        "1.2초",
+        "64%",
+        "36%"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대",
+        "숫자"
+      ],
+      "phaseOrder": [
+        "막대",
+        "숫자"
+      ]
+    },
+    {
+      "id": "toast-slide",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.5,
+        2.3,
+        3.2,
+        0.4
+      ],
+      "directions": [
+        "왼쪽",
+        "위"
+      ],
+      "measures": [
+        "0.5초",
+        "2.3초",
+        "3.2초",
+        "0.4초"
+      ],
+      "actionCues": [
+        "사라"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드",
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "카드",
+        "사라",
+        "아이콘"
+      ]
+    },
+    {
+      "id": "notification-stack",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.9,
+        0.45
+      ],
+      "directions": [
+        "아래",
+        "앞",
+        "뒤"
+      ],
+      "measures": [
+        "3개",
+        "0.9초",
+        "0.45초",
+        "6%",
+        "25%"
+      ],
+      "actionCues": [
+        "작아지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드",
+        "작아지"
+      ]
+    },
+    {
+      "id": "live-badge",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.4,
+        1.0,
+        8.0
+      ],
+      "directions": [
+        "왼쪽",
+        "위"
+      ],
+      "measures": [
+        "0.4초",
+        "1초",
+        "8초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "튀",
+        "점"
+      ]
+    },
+    {
+      "id": "new-tag-flash",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.8,
+        0.4,
+        1.3,
+        0.6
+      ],
+      "directions": [
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "0.8초",
+        "10도",
+        "0.4초",
+        "1.3초",
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "빛",
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드",
+        "빛"
+      ]
+    },
+    {
+      "id": "countdown-chip",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        1.2,
+        0.18,
+        0.4
+      ],
+      "directions": [
+        "시계 방향"
+      ],
+      "measures": [
+        "1.2초",
+        "0.18초",
+        "0.4초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자",
+        "원",
+        "튀"
+      ]
+    },
+    {
+      "id": "story-progress",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "왼쪽",
+        "위",
+        "아래",
+        "가운데"
+      ],
+      "measures": [
+        "4개",
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "island-alert",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.55,
+        2.0,
+        0.4
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "0.55초",
+        "80%",
+        "2초",
+        "0.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "원"
+      ]
+    },
+    {
+      "id": "location-pin",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.5,
+        0.3,
+        1.1,
+        0.5
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "0.5초",
+        "0.3초",
+        "1.1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "남",
+        "밀려"
+      ]
+    },
+    {
+      "id": "caption-pop",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.35,
+        0.3
+      ],
+      "directions": [],
+      "measures": [
+        "0.35초",
+        "0.3초",
+        "115%"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "튀",
+        "글자"
+      ]
+    },
+    {
+      "id": "sticker-slap",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.3,
+        0.25
+      ],
+      "directions": [],
+      "measures": [
+        "180%",
+        "35도",
+        "0.3초",
+        "100%",
+        "7도",
+        "0.25초",
+        "50%"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "흔들"
+      ]
+    },
+    {
+      "id": "arrow-point",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.8,
+        1.15,
+        0.3,
+        1.4
+      ],
+      "directions": [
+        "위",
+        "앞"
+      ],
+      "measures": [
+        "0.8초",
+        "1.15초",
+        "0.3초",
+        "1.4초"
+      ],
+      "actionCues": [
+        "그려",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "화살촉"
+      ],
+      "phaseOrder": [
+        "그려",
+        "화살촉",
+        "튀",
+        "점"
+      ]
+    },
+    {
+      "id": "highlight-box",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.8,
+        0.9,
+        1.8,
+        0.35
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "0.8초",
+        "0.9초",
+        "1.8초",
+        "0.35초"
+      ],
+      "actionCues": [
+        "그려",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "그려",
+        "튀"
+      ]
+    },
+    {
+      "id": "before-after-label",
+      "familyId": "family-14",
+      "sourceDurationSeconds": [
+        0.4,
+        1.2,
+        4.0
+      ],
+      "directions": [
+        "위",
+        "가운데"
+      ],
+      "measures": [
+        "0.4초",
+        "1.2초",
+        "4초",
+        "12%"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "화면"
+      ],
+      "phaseOrder": [
+        "원",
+        "튀",
+        "화면"
+      ]
+    },
+    {
+      "id": "motion-path",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        4.6
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래",
+        "앞"
+      ],
+      "measures": [
+        "4.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "점"
+      ]
+    },
+    {
+      "id": "ping-pong",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        2.0,
+        2.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "돌아"
+      ]
+    },
+    {
+      "id": "pendulum",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        1.5,
+        6.0
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "66%",
+        "50도",
+        "1.5초",
+        "6초"
+      ],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "화면"
+      ],
+      "phaseOrder": [
+        "흔들",
+        "점",
+        "화면"
+      ]
+    },
+    {
+      "id": "chain-follow",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        4.0,
+        0.07
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "4초",
+        "11개",
+        "0.07초"
+      ],
+      "actionCues": [
+        "돌",
+        "작아지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "작아지"
+      ]
+    },
+    {
+      "id": "spring-follow",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        0.6,
+        2.6,
+        4.8,
+        0.8
+      ],
+      "directions": [],
+      "measures": [
+        "0.6초",
+        "2.6초",
+        "4.8초",
+        "0.8초"
+      ],
+      "actionCues": [
+        "돌",
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "바뀌",
+        "돌아"
+      ]
+    },
+    {
+      "id": "gravity-throw",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        1.5
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "아래"
+      ],
+      "measures": [
+        "1.5초",
+        "30%"
+      ],
+      "actionCues": [
+        "돌",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "튀",
+        "점"
+      ]
+    },
+    {
+      "id": "repeater",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        2.6
+      ],
+      "directions": [],
+      "measures": [
+        "30도",
+        "12개",
+        "2.6초",
+        "20도"
+      ],
+      "actionCues": [
+        "돌",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대"
+      ],
+      "phaseOrder": [
+        "막대",
+        "튀"
+      ]
+    },
+    {
+      "id": "grid-repeater",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        0.18
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "0.18초",
+        "4 칸",
+        "90도"
+      ],
+      "actionCues": [
+        "돌",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "격자"
+      ],
+      "phaseOrder": [
+        "격자",
+        "튀",
+        "채워"
+      ]
+    },
+    {
+      "id": "line-boil",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "위"
+      ],
+      "measures": [],
+      "actionCues": [
+        "흔들"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "별"
+      ],
+      "phaseOrder": [
+        "별",
+        "점",
+        "흔들"
+      ]
+    },
+    {
+      "id": "marching-ants",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [
+        "위",
+        "아래",
+        "가운데",
+        "시계 방향"
+      ],
+      "measures": [
+        "1초",
+        "4칸"
+      ],
+      "actionCues": [
+        "그려",
+        "겹쳐",
+        "흐르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "그려",
+        "점",
+        "겹쳐",
+        "흐르"
+      ]
+    },
+    {
+      "id": "trim-path",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "앞",
+        "뒤"
+      ],
+      "measures": [
+        "30%",
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "물결",
+        "조각"
+      ],
+      "phaseOrder": [
+        "조각",
+        "물결"
+      ]
+    },
+    {
+      "id": "variable-weight",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        2.0,
+        2.0
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대",
+        "숫자"
+      ],
+      "phaseOrder": [
+        "막대",
+        "숫자"
+      ]
+    },
+    {
+      "id": "blinds",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        0.07,
+        1.4
+      ],
+      "directions": [
+        "위",
+        "아래",
+        "가운데"
+      ],
+      "measures": [
+        "8개",
+        "0.07초",
+        "1.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "pixelate",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        1.0,
+        1.0
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "1초",
+        "22%"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "accordion-fold",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        1.4
+      ],
+      "directions": [
+        "왼쪽",
+        "뒤"
+      ],
+      "measures": [
+        "1.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "halftone-wipe",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        1.4
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "10%",
+        "75%",
+        "1.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "격자",
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "격자",
+        "원"
+      ]
+    },
+    {
+      "id": "scan-print",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        1.4
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "1.6%",
+        "1.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "가로줄"
+      ],
+      "phaseOrder": [
+        "가로줄",
+        "남"
+      ]
+    },
+    {
+      "id": "puzzle-in",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        3.2,
+        0.7
+      ],
+      "directions": [
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "3.2초",
+        "0.7초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "조각"
+      ],
+      "phaseOrder": [
+        "조각"
+      ]
+    },
+    {
+      "id": "exploded-view",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        0.9,
+        1.6,
+        6.0
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "0.9초",
+        "1.6초",
+        "6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "cutaway",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        1.0,
+        1.4,
+        6.0
+      ],
+      "directions": [
+        "위",
+        "아래",
+        "앞"
+      ],
+      "measures": [
+        "1초",
+        "1.4초",
+        "6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "turntable",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        4.0
+      ],
+      "directions": [
+        "위",
+        "앞",
+        "뒤"
+      ],
+      "measures": [
+        "4초",
+        "12개"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원"
+      ]
+    },
+    {
+      "id": "layer-peel",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        1.0,
+        1.3,
+        1.0
+      ],
+      "directions": [
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "1초",
+        "1.3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "그림자",
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드",
+        "그림자"
+      ]
+    },
+    {
+      "id": "detail-inset",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        0.8,
+        1.0,
+        1.6,
+        1.0
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "0.8초",
+        "1초",
+        "1.6초",
+        "3.8배"
+      ],
+      "actionCues": [
+        "커지"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "창"
+      ],
+      "phaseOrder": [
+        "창",
+        "커지",
+        "원"
+      ]
+    },
+    {
+      "id": "iso-build",
+      "familyId": "family-15",
+      "sourceDurationSeconds": [
+        0.45,
+        0.2
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "9개",
+        "0.45초",
+        "15%",
+        "0.2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "블록"
+      ],
+      "phaseOrder": [
+        "블록",
+        "쌓이"
+      ]
+    },
+    {
+      "id": "fluid-gradient",
+      "familyId": "family-16",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "남"
+      ]
+    },
+    {
+      "id": "flow-field",
+      "familyId": "family-16",
+      "sourceDurationSeconds": [
+        4.0,
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "200개",
+        "4초",
+        "8초"
+      ],
+      "actionCues": [
+        "나타",
+        "사라",
+        "흐르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "흐르",
+        "나타",
+        "사라"
+      ]
+    },
+    {
+      "id": "reaction-diffusion",
+      "familyId": "family-16",
+      "sourceDurationSeconds": [
+        4.0,
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "4초",
+        "8초"
+      ],
+      "actionCues": [
+        "갈라",
+        "흐르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "갈라",
+        "흐르"
+      ]
+    },
+    {
+      "id": "neon-contour",
+      "familyId": "family-16",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "빛",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "빛"
+      ]
+    },
+    {
+      "id": "network-pulse",
+      "familyId": "family-16",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점",
+        "빛",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "점",
+        "빛"
+      ]
+    },
+    {
+      "id": "aperture-grid",
+      "familyId": "family-16",
+      "sourceDurationSeconds": [
+        4.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "물결",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "물결",
+        "닫히"
+      ]
+    },
+    {
+      "id": "dot-ocean",
+      "familyId": "family-16",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "30%",
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점",
+        "배경",
+        "화면"
+      ],
+      "phaseOrder": [
+        "배경",
+        "화면",
+        "점"
+      ]
+    },
+    {
+      "id": "wireframe-terrain",
+      "familyId": "family-16",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [
+        "가운데",
+        "앞"
+      ],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "격자",
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경",
+        "격자"
+      ]
+    },
+    {
+      "id": "cloud-sky",
+      "familyId": "family-16",
+      "sourceDurationSeconds": [
+        8.0
+      ],
+      "directions": [],
+      "measures": [
+        "8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "AI 영상",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "배경"
+      ],
+      "phaseOrder": [
+        "배경"
+      ]
+    },
+    {
+      "id": "scan-reveal",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "2초",
+        "100%"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "막대"
+      ],
+      "phaseOrder": [
+        "막대"
+      ]
+    },
+    {
+      "id": "hud-assemble",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        1.0,
+        0.15,
+        2.1
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "뒤"
+      ],
+      "measures": [
+        "1초",
+        "48개",
+        "0.15초",
+        "2.1초"
+      ],
+      "actionCues": [
+        "돌",
+        "그려",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "점",
+        "원",
+        "고리",
+        "막대"
+      ],
+      "phaseOrder": [
+        "원",
+        "그려",
+        "점",
+        "고리",
+        "막대",
+        "튀"
+      ]
+    },
+    {
+      "id": "hologram",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.9,
+        1.4
+      ],
+      "directions": [
+        "위",
+        "아래",
+        "뒤"
+      ],
+      "measures": [
+        "0.9초",
+        "1.4초",
+        "3px"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "원",
+        "고리",
+        "글자",
+        "빛",
+        "주사선"
+      ],
+      "phaseOrder": [
+        "원",
+        "고리",
+        "빛",
+        "글자",
+        "주사선"
+      ]
+    },
+    {
+      "id": "matrix-reveal",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        1.4,
+        1.8
+      ],
+      "directions": [
+        "앞"
+      ],
+      "measures": [
+        "1.4초",
+        "1.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "글자",
+        "빛",
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자",
+        "글자",
+        "빛"
+      ]
+    },
+    {
+      "id": "pixel-resolve",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        2.4
+      ],
+      "directions": [
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "1px",
+        "2.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자"
+      ]
+    },
+    {
+      "id": "boot-sequence",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.45,
+        2.6
+      ],
+      "directions": [],
+      "measures": [
+        "0.45초",
+        "2.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "letterbox-open",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        1.6,
+        1.6
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "1.6초",
+        "1.06배",
+        "1배"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "frame-draw",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        1.4,
+        1.8
+      ],
+      "directions": [
+        "왼쪽",
+        "위",
+        "시계 방향"
+      ],
+      "measures": [
+        "1.6px",
+        "1.4초",
+        "1.8초",
+        "12%"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "tracking-expand",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        3.0,
+        1.2,
+        1.6
+      ],
+      "directions": [
+        "아래",
+        "가운데"
+      ],
+      "measures": [
+        "3초",
+        "1.2초",
+        "1.6초",
+        "2px"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면"
+      ]
+    },
+    {
+      "id": "flash-reveal",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.7,
+        0.25,
+        1.2,
+        1.6
+      ],
+      "directions": [],
+      "measures": [
+        "0.7초",
+        "0.25초",
+        "1.2초",
+        "1.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "빛",
+        "화면"
+      ],
+      "phaseOrder": [
+        "화면",
+        "빛"
+      ]
+    },
+    {
+      "id": "spotlight-reveal",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        2.4,
+        3.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "아래"
+      ],
+      "measures": [
+        "7%",
+        "2.4초",
+        "3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "켜지"
+      ]
+    },
+    {
+      "id": "film-leader",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        1.0,
+        0.15
+      ],
+      "directions": [
+        "위",
+        "아래",
+        "뒤"
+      ],
+      "measures": [
+        "1초",
+        "0.15초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "원",
+        "화면"
+      ],
+      "phaseOrder": [
+        "원",
+        "화면"
+      ]
+    },
+    {
+      "id": "particle-form",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.9,
+        1.8,
+        3.0
+      ],
+      "directions": [],
+      "measures": [
+        "0.9초",
+        "1.8초",
+        "3초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "점",
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자",
+        "점"
+      ]
+    },
+    {
+      "id": "ink-splash",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.45,
+        0.95
+      ],
+      "directions": [],
+      "measures": [
+        "0.45초",
+        "14개",
+        "0.95초",
+        "1.6배"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "튀"
+      ]
+    },
+    {
+      "id": "paper-cut",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.35,
+        1.5
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.35초",
+        "1.5초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "그림자"
+      ],
+      "phaseOrder": [
+        "그림자"
+      ]
+    },
+    {
+      "id": "ransom-collage",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.22
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.22초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "점",
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자",
+        "점"
+      ]
+    },
+    {
+      "id": "tape-label",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.55,
+        0.2,
+        1.3
+      ],
+      "directions": [
+        "위",
+        "뒤"
+      ],
+      "measures": [
+        "0.55초",
+        "2도",
+        "0.2초",
+        "1.3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "brush-banner",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        1.0,
+        1.2
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "1초",
+        "1.2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "남"
+      ]
+    },
+    {
+      "id": "shockwave",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.45,
+        0.6,
+        0.12,
+        0.4
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "0.45초",
+        "2.4배",
+        "0.6초",
+        "1.2배",
+        "1배",
+        "0.12초",
+        "0.4초"
+      ],
+      "actionCues": [
+        "흔들",
+        "나타"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "원",
+        "고리",
+        "화면"
+      ],
+      "phaseOrder": [
+        "나타",
+        "원",
+        "고리",
+        "화면",
+        "흔들"
+      ]
+    },
+    {
+      "id": "slash-cut",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.5,
+        0.25,
+        0.7
+      ],
+      "directions": [],
+      "measures": [
+        "0.5초",
+        "20도",
+        "0.25초",
+        "22%",
+        "0.7초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "조각",
+        "화면"
+      ],
+      "phaseOrder": [
+        "조각",
+        "화면"
+      ]
+    },
+    {
+      "id": "frame-dive",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        2.2
+      ],
+      "directions": [],
+      "measures": [
+        "2.2배",
+        "2.2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "spiral-lineup",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        0.18,
+        2.0
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "0.18초",
+        "2초",
+        "60%",
+        "100%"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "글자"
+      ],
+      "phaseOrder": [
+        "글자",
+        "돌아"
+      ]
+    },
+    {
+      "id": "ribbon-reveal",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        1.8
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "20%",
+        "1.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "물결"
+      ],
+      "phaseOrder": [
+        "물결"
+      ]
+    },
+    {
+      "id": "signal-lock",
+      "familyId": "family-17",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "18개",
+        "50%",
+        "2초"
+      ],
+      "actionCues": [
+        "차오르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "AI 영상"
+      ],
+      "visualObjects": [
+        "가로줄",
+        "막대",
+        "화면"
+      ],
+      "phaseOrder": [
+        "가로줄",
+        "화면",
+        "막대",
+        "차오르"
+      ]
+    },
+    {
+      "id": "sale-price",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        0.4
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "0.4초",
+        "30%"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "튀"
+      ]
+    },
+    {
+      "id": "point-earn",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "stock-left",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        0.6
+      ],
+      "directions": [],
+      "measures": [
+        "12개",
+        "5개",
+        "0.6초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "CSS"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "남",
+        "숫자",
+        "돌아"
+      ]
+    },
+    {
+      "id": "free-ship",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "CSS"
+      ],
+      "visualObjects": [
+        "원",
+        "막대"
+      ],
+      "phaseOrder": [
+        "원",
+        "막대",
+        "남"
+      ]
+    },
+    {
+      "id": "combo-score",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "커지",
+        "튀"
+      ],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점",
+        "커지",
+        "튀"
+      ]
+    },
+    {
+      "id": "level-up",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "번쩍",
+        "차오르"
+      ],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "막대",
+        "숫자"
+      ],
+      "phaseOrder": [
+        "막대",
+        "차오르",
+        "번쩍",
+        "숫자"
+      ]
+    },
+    {
+      "id": "damage-pop",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "2배"
+      ],
+      "actionCues": [
+        "흔들",
+        "사라",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자",
+        "튀",
+        "사라",
+        "흔들"
+      ]
+    },
+    {
+      "id": "high-score",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [
+        "바뀌"
+      ],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점",
+        "바뀌"
+      ]
+    },
+    {
+      "id": "roulette",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        3.0
+      ],
+      "directions": [
+        "오른쪽"
+      ],
+      "measures": [
+        "8칸",
+        "3초"
+      ],
+      "actionCues": [
+        "돌",
+        "튀"
+      ],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자",
+        "튀"
+      ]
+    },
+    {
+      "id": "dice-roll",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        1.2
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "1.2초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자"
+      ]
+    },
+    {
+      "id": "seven-seg",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        0.15,
+        0.1
+      ],
+      "directions": [],
+      "measures": [
+        "0.15초",
+        "0.1초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자",
+        "남",
+        "켜지"
+      ]
+    },
+    {
+      "id": "needle-gauge",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [
+        "돌"
+      ],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "돌아"
+      ]
+    },
+    {
+      "id": "kpi-compare",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [],
+      "actionCues": [],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원"
+      ]
+    },
+    {
+      "id": "countdown",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        1.0,
+        1.0
+      ],
+      "directions": [],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [
+        "바뀌",
+        "튀"
+      ],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "원",
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자",
+        "튀",
+        "바뀌",
+        "원"
+      ]
+    },
+    {
+      "id": "digit-drop",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [
+        0.12
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "0.12초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "숫자"
+      ],
+      "phaseOrder": [
+        "숫자",
+        "튀"
+      ]
+    },
+    {
+      "id": "total-stack",
+      "familyId": "family-18",
+      "sourceDurationSeconds": [],
+      "directions": [],
+      "measures": [
+        "5개"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "CSS",
+        "모션 그래픽"
+      ],
+      "visualObjects": [
+        "블록"
+      ],
+      "phaseOrder": [
+        "블록"
+      ]
+    },
+    {
+      "id": "roadmap-path",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        2.4
+      ],
+      "directions": [
+        "왼쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "2.4초"
+      ],
+      "actionCues": [
+        "그려",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "그려",
+        "점",
+        "튀"
+      ]
+    },
+    {
+      "id": "arrow-chain",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.55,
+        0.3
+      ],
+      "directions": [
+        "왼쪽",
+        "아래"
+      ],
+      "measures": [
+        "0.55초",
+        "0.3초"
+      ],
+      "actionCues": [
+        "그려",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "튀",
+        "그려",
+        "점"
+      ]
+    },
+    {
+      "id": "branch-flow",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        1.0,
+        1.2
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "1초",
+        "1.2초"
+      ],
+      "actionCues": [
+        "갈라",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "마름모"
+      ],
+      "phaseOrder": [
+        "마름모",
+        "튀",
+        "갈라",
+        "점",
+        "채워"
+      ]
+    },
+    {
+      "id": "cycle-loop",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.45,
+        0.9
+      ],
+      "directions": [
+        "가운데",
+        "시계 방향"
+      ],
+      "measures": [
+        "0.45초",
+        "0.9초"
+      ],
+      "actionCues": [
+        "그려"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "그려"
+      ]
+    },
+    {
+      "id": "timeline-axis",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        1.0
+      ],
+      "directions": [
+        "앞",
+        "뒤"
+      ],
+      "measures": [
+        "1초"
+      ],
+      "actionCues": [
+        "그려",
+        "흐르"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "화살촉"
+      ],
+      "phaseOrder": [
+        "그려",
+        "점",
+        "흐르",
+        "화살촉"
+      ]
+    },
+    {
+      "id": "chevron-steps",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.45,
+        3.0
+      ],
+      "directions": [
+        "왼쪽",
+        "아래",
+        "앞",
+        "뒤"
+      ],
+      "measures": [
+        "0.45초",
+        "3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대",
+        "조각"
+      ],
+      "phaseOrder": [
+        "조각",
+        "밀려",
+        "막대"
+      ]
+    },
+    {
+      "id": "pyramid-stack",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.4
+      ],
+      "directions": [
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.4초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": []
+    },
+    {
+      "id": "tree-split",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.7,
+        0.6
+      ],
+      "directions": [
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.7초",
+        "0.6초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "튀"
+      ]
+    },
+    {
+      "id": "matrix-sort",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.7,
+        0.35
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "0.7초",
+        "0.35초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드"
+      ]
+    },
+    {
+      "id": "venn-overlap",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        1.2,
+        0.6
+      ],
+      "directions": [
+        "가운데"
+      ],
+      "measures": [
+        "1.2초",
+        "0.6초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "채워"
+      ]
+    },
+    {
+      "id": "radial-map",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.2
+      ],
+      "directions": [
+        "가운데",
+        "뒤"
+      ],
+      "measures": [
+        "0.2초"
+      ],
+      "actionCues": [
+        "돌",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "원",
+        "튀"
+      ]
+    },
+    {
+      "id": "position-map",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.7,
+        1.0
+      ],
+      "directions": [
+        "뒤"
+      ],
+      "measures": [
+        "0.7초",
+        "1초"
+      ],
+      "actionCues": [
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점",
+        "튀"
+      ]
+    },
+    {
+      "id": "before-after-card",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.5,
+        1.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "아래"
+      ],
+      "measures": [
+        "0.5초",
+        "1초"
+      ],
+      "actionCues": [
+        "그려",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드",
+        "막대"
+      ],
+      "phaseOrder": [
+        "카드",
+        "그려",
+        "튀",
+        "막대"
+      ]
+    },
+    {
+      "id": "ab-checklist",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.5
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "0.5초"
+      ],
+      "actionCues": [
+        "그려"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드",
+        "그려",
+        "켜지"
+      ]
+    },
+    {
+      "id": "pros-cons",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.3
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽"
+      ],
+      "measures": [
+        "0.3초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "점"
+      ]
+    },
+    {
+      "id": "good-bad",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        2.0
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "뒤"
+      ],
+      "measures": [
+        "2초"
+      ],
+      "actionCues": [
+        "그려"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드",
+        "그려"
+      ]
+    },
+    {
+      "id": "plan-pick",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.2,
+        1.8
+      ],
+      "directions": [
+        "위",
+        "가운데"
+      ],
+      "measures": [
+        "0.2초",
+        "1.8초",
+        "6%"
+      ],
+      "actionCues": [
+        "눌리",
+        "커지",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "카드"
+      ],
+      "phaseOrder": [
+        "카드",
+        "튀",
+        "커지",
+        "눌리"
+      ]
+    },
+    {
+      "id": "problem-solution",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.9,
+        1.4
+      ],
+      "directions": [
+        "왼쪽"
+      ],
+      "measures": [
+        "0.9초",
+        "1.4초"
+      ],
+      "actionCues": [
+        "그려",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "원"
+      ],
+      "phaseOrder": [
+        "그려",
+        "원",
+        "튀"
+      ]
+    },
+    {
+      "id": "callout-bubble",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.12
+      ],
+      "directions": [],
+      "measures": [
+        "0.12초"
+      ],
+      "actionCues": [
+        "바뀌",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "막대"
+      ],
+      "phaseOrder": [
+        "막대",
+        "바뀌",
+        "튀"
+      ]
+    },
+    {
+      "id": "row-box",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [
+        "그려"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "그려"
+      ]
+    },
+    {
+      "id": "point-three",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.35,
+        0.35
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위"
+      ],
+      "measures": [
+        "0.35초"
+      ],
+      "actionCues": [],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점",
+        "원"
+      ],
+      "phaseOrder": [
+        "점",
+        "원"
+      ]
+    },
+    {
+      "id": "caution-card",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.8
+      ],
+      "directions": [
+        "왼쪽",
+        "오른쪽",
+        "위",
+        "아래"
+      ],
+      "measures": [
+        "0.8초"
+      ],
+      "actionCues": [
+        "흔들",
+        "그려"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [],
+      "phaseOrder": [
+        "그려",
+        "흔들"
+      ]
+    },
+    {
+      "id": "leader-label",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.9,
+        0.4
+      ],
+      "directions": [
+        "위"
+      ],
+      "measures": [
+        "0.9초",
+        "0.4초"
+      ],
+      "actionCues": [
+        "그려"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "점"
+      ],
+      "phaseOrder": [
+        "그려",
+        "점"
+      ]
+    },
+    {
+      "id": "icon-tiles",
+      "familyId": "family-19",
+      "sourceDurationSeconds": [
+        0.2,
+        0.9
+      ],
+      "directions": [
+        "아래"
+      ],
+      "measures": [
+        "0.2초",
+        "0.9초"
+      ],
+      "actionCues": [
+        "그려",
+        "튀"
+      ],
+      "productionRoutes": [
+        "모션 그래픽",
+        "CSS"
+      ],
+      "visualObjects": [
+        "아이콘"
+      ],
+      "phaseOrder": [
+        "튀",
+        "아이콘",
+        "그려"
+      ]
+    }
+  ]
+}

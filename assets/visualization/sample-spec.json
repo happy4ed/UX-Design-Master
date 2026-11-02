@@ -1,0 +1,10 @@
+{
+  "schemaVersion":"1.0",
+  "purpose":"유입량의 분기와 최종 결과를 비교",
+  "source":"시연용 가상 데이터",
+  "template":"quantity-sankey",
+  "labels":["유입","직접","검색","완료","이탈"],
+  "values":[100,60,40,80,20],
+  "motion":"trace",
+  "lang":"ko"
+}

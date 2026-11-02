@@ -1,0 +1,33 @@
+{
+  "schemaVersion":"1.0",
+  "baseAreas":["meaning","reference","structure","components","content-data","geometry","typography","color","assets","interaction","motion","multilingual","render-qa"],
+  "conditionalAreas":{
+    "mobile":"touch-safe-area",
+    "landing":"section-evidence",
+    "visualization":"chart-diagram",
+    "document":"pagination-reading",
+    "presentation":"slide-narrative",
+    "infographic":"infographic-story"
+  },
+  "areaMeaning":{
+    "meaning":"사용자 과업과 화면·문서 요소의 역할",
+    "reference":"관찰한 레퍼런스와 채택 이유",
+    "structure":"기능 집단·키 프레임·정보 계층·구성 대안",
+    "components":"공통·전용 요소, 의미 역할, 상태와 결합 관계",
+    "content-data":"실제 문구·데이터 속성·초기/포화 조건",
+    "geometry":"그리드·정렬·간격·R·절대/상대 배치",
+    "typography":"폰트 로딩·굵기·크기·행간·줄바꿈",
+    "color":"색 역할·팔레트·상태 대비",
+    "assets":"이미지·아이콘·크롭·비율·출처",
+    "interaction":"터치·키보드·스크롤·레이어·포커스",
+    "motion":"변화 목록·필요성·강도·이징·정적 대안",
+    "multilingual":"긴 번역·혼합 문자·RTL",
+    "render-qa":"실제 렌더·동작·내보낸 파일 검수",
+    "touch-safe-area":"모바일 터치 영역·안전 영역·키보드",
+    "section-evidence":"랜딩 섹션의 근거와 행동까지의 순서",
+    "chart-diagram":"자료 형태·단위·시각 유형·라벨·대체 표",
+    "pagination-reading":"문서 페이지 넘김·읽기 순서·표/그림 분리",
+    "slide-narrative":"청중의 질문·슬라이드별 주장과 증거·발표/배포 크기의 판독성",
+    "infographic-story":"전체 주장·패널별 질문·원본값 계보·스캔 경로·매체별 재배치"
+  }
+}

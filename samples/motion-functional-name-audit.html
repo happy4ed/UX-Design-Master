@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>모션 기능 이름 점검</title>
+<style>
+:root{font-family:Pretendard,"Noto Sans KR",system-ui,sans-serif;background:#f3f5f7;color:#17212b}*{box-sizing:border-box}body{margin:0}.shell{max-width:1380px;margin:auto;padding:28px clamp(16px,3vw,44px) 64px}a{color:#1768bd}header{border-bottom:1px solid #d5dde5;padding-bottom:22px;margin-bottom:22px}h1{font-size:clamp(27px,3vw,40px);letter-spacing:-.04em;margin:7px 0 12px}p{line-height:1.65;margin:0 0 10px;max-width:90ch}.eyebrow{color:#1768bd;font-size:13px;font-weight:800}.summary{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.summary span{background:#fff;border:1px solid #d5dde5;border-radius:10px;padding:10px 14px;font-size:14px}.table-wrap{overflow-x:auto;border:1px solid #d5dde5;border-radius:12px;background:#fff}table{width:100%;border-collapse:collapse;table-layout:fixed;min-width:850px}th,td{padding:12px 13px;text-align:left;vertical-align:top;border-bottom:1px solid #e4e9ee;font-size:14px;line-height:1.5;overflow-wrap:anywhere;word-break:keep-all}th{position:sticky;top:0;background:#e8eff5;color:#33495b;font-size:13px}tr:last-child td{border-bottom:0}tr:hover td{background:#f7fafc}td:nth-child(2){color:#64717c}td:nth-child(3){font-weight:750}td:nth-child(4){color:#315d84}td:nth-child(5){font-weight:700}.merge{color:#0c7658!important}.note{font-size:13px;color:#596a77;margin-top:15px}a:focus-visible{outline:3px solid #1768bd;outline-offset:3px}
+</style>
+</head>
+<body><main class="shell"><header><div class="eyebrow">MOTION NAMING AUDIT</div><h1>기능 이름으로 불린 모션 점검</h1><p>기능·데이터·화면 내용이 앞선 이름만 추려, 기존 동작과 비교한 뒤 동작 이름으로 고쳤습니다. 같은 움직임은 변형 시연으로 통합했습니다.</p><a href="motion-verified-lab.html">시연 페이지로 돌아가기 ↗</a></header><div class="summary" id="summary"></div><div class="table-wrap"><table><colgroup><col style="width:6%"><col style="width:15%"><col style="width:20%"><col style="width:15%"><col style="width:15%"><col style="width:29%"></colgroup><thead><tr><th scope="col">번호</th><th scope="col">기존 이름</th><th scope="col">동작 이름</th><th scope="col">비교한 모션</th><th scope="col">판정</th><th scope="col">판단 근거</th></tr></thead><tbody id="rows"></tbody></table></div><p class="note">이 점검은 이름이 기능으로 읽히는 항목을 선별한 결과입니다. 원본 시연 전체의 품질 승인과는 별개입니다.</p></main>
+<script type="module">
+try{
+ const [audit,gallery]=await Promise.all([
+  fetch('../knowledge/motion-functional-name-audit.json?rev=2026-11-02-1').then(r=>r.json()),
+  fetch('motion-gallery-data.json?rev=2026-11-02-lite5').then(r=>r.json())
+ ]);
+ const merged=audit.decisions.filter(row=>row.decision==='merge-context-variant').length;
+ document.querySelector('#summary').replaceChildren(...[`${audit.decisions.length}개 이름 점검`,`${merged}개 기존 동작으로 통합`,`${audit.decisions.length-merged}개 동작 이름으로 교체`].map(label=>{const span=document.createElement('span');span.textContent=label;return span}));
+ const tbody=document.querySelector('#rows');
+ for(const [index,row] of audit.decisions.entries()){
+  const tr=document.createElement('tr');
+  const values=[String(index+1).padStart(2,'0'),row.oldName,row.newName,gallery.terms[row.nearestMotionId]?.name||row.nearestMotionId,row.decision==='merge-context-variant'?'변형으로 통합':'고유 동작 유지',row.reason];
+  values.forEach((value,column)=>{const td=document.createElement('td');td.textContent=value;if(column===4&&row.decision==='merge-context-variant')td.className='merge';tr.append(td)});
+  tbody.append(tr);
+ }
+}catch(error){document.querySelector('#summary').textContent='점검표를 불러오지 못했습니다: '+error.message}
+</script></body></html>

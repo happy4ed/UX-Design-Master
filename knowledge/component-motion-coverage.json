@@ -1,0 +1,2231 @@
+{
+  "schemaVersion": "1.0",
+  "source": "core-components.json",
+  "count": 122,
+  "decisionMethod": "each instance: role → actual state/event → purpose → static feedback → preview → user confirmation D",
+  "entries": [
+    {
+      "componentId": "text",
+      "name": "텍스트",
+      "family": "content",
+      "knownStates": [
+        "normal",
+        "empty",
+        "clamped"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "label",
+      "name": "레이블",
+      "family": "content",
+      "knownStates": [
+        "normal",
+        "required",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "heading",
+      "name": "제목",
+      "family": "content",
+      "knownStates": [
+        "normal",
+        "multiline"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "icon",
+      "name": "아이콘",
+      "family": "content",
+      "knownStates": [
+        "decorative",
+        "semantic"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "image",
+      "name": "이미지",
+      "family": "content",
+      "knownStates": [
+        "loading",
+        "loaded",
+        "error"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "avatar",
+      "name": "아바타",
+      "family": "content",
+      "knownStates": [
+        "image",
+        "initials",
+        "fallback"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "badge",
+      "name": "배지",
+      "family": "content",
+      "knownStates": [
+        "dot",
+        "count",
+        "status"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "tag",
+      "name": "태그",
+      "family": "content",
+      "knownStates": [
+        "normal",
+        "truncated"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "checkmark",
+      "name": "체크 표시",
+      "family": "content",
+      "knownStates": [
+        "checked",
+        "complete"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "divider",
+      "name": "구분선",
+      "family": "content",
+      "knownStates": [
+        "horizontal",
+        "vertical"
+      ],
+      "candidateEvents": [
+        "content-update",
+        "emphasis-change"
+      ],
+      "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "button",
+      "name": "버튼",
+      "family": "actions",
+      "knownStates": [
+        "default",
+        "hover",
+        "focus",
+        "pressed",
+        "disabled",
+        "loading"
+      ],
+      "candidateEvents": [
+        "press",
+        "loading",
+        "result"
+      ],
+      "staticFallback": "눌림·진행·결과의 라벨과 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "icon-button",
+      "name": "아이콘 버튼",
+      "family": "actions",
+      "knownStates": [
+        "default",
+        "focus",
+        "pressed",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "press",
+        "loading",
+        "result"
+      ],
+      "staticFallback": "눌림·진행·결과의 라벨과 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "toggle-button",
+      "name": "토글 버튼",
+      "family": "actions",
+      "knownStates": [
+        "off",
+        "on",
+        "focus",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "press",
+        "loading",
+        "result"
+      ],
+      "staticFallback": "눌림·진행·결과의 라벨과 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "split-button",
+      "name": "분할 버튼",
+      "family": "actions",
+      "knownStates": [
+        "default",
+        "menu-open",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "press",
+        "loading",
+        "result"
+      ],
+      "staticFallback": "눌림·진행·결과의 라벨과 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "fab",
+      "name": "플로팅 액션 버튼",
+      "family": "actions",
+      "knownStates": [
+        "rest",
+        "expanded",
+        "hidden"
+      ],
+      "candidateEvents": [
+        "press",
+        "loading",
+        "result"
+      ],
+      "staticFallback": "눌림·진행·결과의 라벨과 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "button-group",
+      "name": "버튼 그룹",
+      "family": "actions",
+      "knownStates": [
+        "default",
+        "wrapped",
+        "overflow"
+      ],
+      "candidateEvents": [
+        "press",
+        "loading",
+        "result"
+      ],
+      "staticFallback": "눌림·진행·결과의 라벨과 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "link",
+      "name": "링크",
+      "family": "actions",
+      "knownStates": [
+        "default",
+        "visited",
+        "focus"
+      ],
+      "candidateEvents": [
+        "press",
+        "loading",
+        "result"
+      ],
+      "staticFallback": "눌림·진행·결과의 라벨과 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "menu-button",
+      "name": "메뉴 버튼",
+      "family": "actions",
+      "knownStates": [
+        "closed",
+        "open",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "press",
+        "loading",
+        "result"
+      ],
+      "staticFallback": "눌림·진행·결과의 라벨과 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "checkbox",
+      "name": "체크박스",
+      "family": "selection",
+      "knownStates": [
+        "unchecked",
+        "checked",
+        "mixed",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "checkbox-group",
+      "name": "체크박스 그룹",
+      "family": "selection",
+      "knownStates": [
+        "none",
+        "some",
+        "all",
+        "error"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "radio",
+      "name": "라디오 버튼",
+      "family": "selection",
+      "knownStates": [
+        "unselected",
+        "selected",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "radio-group",
+      "name": "라디오 그룹",
+      "family": "selection",
+      "knownStates": [
+        "none",
+        "selected",
+        "error"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "switch",
+      "name": "스위치",
+      "family": "selection",
+      "knownStates": [
+        "off",
+        "on",
+        "disabled",
+        "pending"
+      ],
+      "candidateEvents": [
+        "checked-change"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "select",
+      "name": "선택 입력",
+      "family": "selection",
+      "knownStates": [
+        "closed",
+        "open",
+        "selected",
+        "error"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "multi-select",
+      "name": "다중 선택 입력",
+      "family": "selection",
+      "knownStates": [
+        "empty",
+        "multiple",
+        "limit",
+        "error"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "listbox",
+      "name": "리스트박스",
+      "family": "selection",
+      "knownStates": [
+        "focused",
+        "selected",
+        "multi-selected"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "combobox",
+      "name": "콤보박스",
+      "family": "selection",
+      "knownStates": [
+        "closed",
+        "open",
+        "loading",
+        "no-results",
+        "error"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "segmented-control",
+      "name": "분절 선택 컨트롤",
+      "family": "selection",
+      "knownStates": [
+        "selected",
+        "disabled",
+        "overflow"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "chip",
+      "name": "칩",
+      "family": "selection",
+      "knownStates": [
+        "default",
+        "selected",
+        "removable",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "chip-set",
+      "name": "칩 집합",
+      "family": "selection",
+      "knownStates": [
+        "empty",
+        "selected",
+        "wrapped",
+        "overflow"
+      ],
+      "candidateEvents": [
+        "select",
+        "deselect",
+        "active-indicator"
+      ],
+      "staticFallback": "선택 표시와 접근성 상태",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "text-field",
+      "name": "텍스트 필드",
+      "family": "inputs",
+      "knownStates": [
+        "empty",
+        "focused",
+        "filled",
+        "error",
+        "readonly",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "textarea",
+      "name": "여러 줄 입력",
+      "family": "inputs",
+      "knownStates": [
+        "empty",
+        "focused",
+        "filled",
+        "error",
+        "scrolling"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "password-field",
+      "name": "비밀번호 입력",
+      "family": "inputs",
+      "knownStates": [
+        "masked",
+        "revealed",
+        "error"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "number-input",
+      "name": "수치 입력",
+      "family": "inputs",
+      "knownStates": [
+        "empty",
+        "editing",
+        "valid",
+        "out-of-range"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "search-field",
+      "name": "검색 입력",
+      "family": "inputs",
+      "knownStates": [
+        "empty",
+        "typing",
+        "loading",
+        "results",
+        "no-results"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "slider",
+      "name": "슬라이더",
+      "family": "inputs",
+      "knownStates": [
+        "rest",
+        "dragging",
+        "focused",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "range-slider",
+      "name": "범위 슬라이더",
+      "family": "inputs",
+      "knownStates": [
+        "rest",
+        "dragging",
+        "overlap",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "date-picker",
+      "name": "날짜 선택기",
+      "family": "inputs",
+      "knownStates": [
+        "closed",
+        "open",
+        "selected",
+        "error"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "date-range-picker",
+      "name": "기간 선택기",
+      "family": "inputs",
+      "knownStates": [
+        "start-pending",
+        "range",
+        "invalid"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "time-picker",
+      "name": "시간 선택기",
+      "family": "inputs",
+      "knownStates": [
+        "editing",
+        "selected",
+        "invalid"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "calendar",
+      "name": "날짜 그리드",
+      "family": "inputs",
+      "knownStates": [
+        "today",
+        "selected",
+        "range",
+        "unavailable"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "color-picker",
+      "name": "색상 선택기",
+      "family": "inputs",
+      "knownStates": [
+        "editing",
+        "selected",
+        "out-of-gamut"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "file-upload",
+      "name": "파일 업로드 입력",
+      "family": "inputs",
+      "knownStates": [
+        "empty",
+        "drag-over",
+        "uploading",
+        "error",
+        "complete"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "otp-input",
+      "name": "인증 코드 입력",
+      "family": "inputs",
+      "knownStates": [
+        "empty",
+        "partial",
+        "complete",
+        "invalid"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "rich-text-editor",
+      "name": "서식 편집기",
+      "family": "inputs",
+      "knownStates": [
+        "editing",
+        "selection",
+        "readonly",
+        "error"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "canvas-input",
+      "name": "그리기 표면",
+      "family": "inputs",
+      "knownStates": [
+        "drawing",
+        "selecting",
+        "panning",
+        "readonly"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "app-bar",
+      "name": "앱 바",
+      "family": "navigation",
+      "knownStates": [
+        "expanded",
+        "collapsed",
+        "search",
+        "selection"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "toolbar",
+      "name": "도구 모음",
+      "family": "navigation",
+      "knownStates": [
+        "default",
+        "contextual",
+        "overflow"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "tab-bar",
+      "name": "탭 목록",
+      "family": "navigation",
+      "knownStates": [
+        "focused",
+        "selected",
+        "overflow"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "tab",
+      "name": "탭 항목",
+      "family": "navigation",
+      "knownStates": [
+        "unselected",
+        "selected",
+        "focused",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "active-indicator",
+        "content-switch"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "tab-panel",
+      "name": "탭 패널",
+      "family": "navigation",
+      "knownStates": [
+        "active",
+        "inactive",
+        "loading"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "breadcrumb",
+      "name": "이동 경로",
+      "family": "navigation",
+      "knownStates": [
+        "normal",
+        "collapsed"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "pagination",
+      "name": "페이지 탐색",
+      "family": "navigation",
+      "knownStates": [
+        "first",
+        "middle",
+        "last",
+        "unknown-total"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "sidebar",
+      "name": "사이드바",
+      "family": "navigation",
+      "knownStates": [
+        "expanded",
+        "collapsed",
+        "overlay"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "navigation-rail",
+      "name": "탐색 레일",
+      "family": "navigation",
+      "knownStates": [
+        "expanded",
+        "compact",
+        "selected"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "bottom-navigation",
+      "name": "하단 주요 탐색",
+      "family": "navigation",
+      "knownStates": [
+        "visible",
+        "selected",
+        "hidden"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "navigation-item",
+      "name": "탐색 항목",
+      "family": "navigation",
+      "knownStates": [
+        "default",
+        "current",
+        "focus",
+        "expanded"
+      ],
+      "candidateEvents": [
+        "active-location",
+        "navigate",
+        "expand"
+      ],
+      "staticFallback": "현재 위치와 이동 결과를 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "menu",
+      "name": "메뉴",
+      "family": "overlays",
+      "knownStates": [
+        "closed",
+        "open",
+        "submenu"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "menu-item",
+      "name": "메뉴 항목",
+      "family": "overlays",
+      "knownStates": [
+        "default",
+        "focused",
+        "checked",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "context-menu",
+      "name": "문맥 메뉴",
+      "family": "overlays",
+      "knownStates": [
+        "open",
+        "submenu",
+        "closed"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "popover",
+      "name": "팝오버",
+      "family": "overlays",
+      "knownStates": [
+        "open",
+        "repositioned",
+        "closed"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "tooltip",
+      "name": "도움말 툴팁",
+      "family": "overlays",
+      "knownStates": [
+        "hidden",
+        "visible"
+      ],
+      "candidateEvents": [
+        "show",
+        "hide"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "dialog",
+      "name": "대화상자",
+      "family": "overlays",
+      "knownStates": [
+        "open",
+        "submitting",
+        "error",
+        "closed"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "alert-dialog",
+      "name": "경고 대화상자",
+      "family": "overlays",
+      "knownStates": [
+        "open",
+        "resolved"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "bottom-sheet",
+      "name": "하단 시트",
+      "family": "overlays",
+      "knownStates": [
+        "peek",
+        "expanded",
+        "dragging",
+        "closed"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "action-sheet",
+      "name": "동작 선택 시트",
+      "family": "overlays",
+      "knownStates": [
+        "open",
+        "cancelled",
+        "chosen"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "drawer",
+      "name": "드로어",
+      "family": "overlays",
+      "knownStates": [
+        "closed",
+        "open",
+        "pinned"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "scrim",
+      "name": "스크림",
+      "family": "overlays",
+      "knownStates": [
+        "hidden",
+        "visible"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "command-palette",
+      "name": "명령 팔레트",
+      "family": "overlays",
+      "knownStates": [
+        "open",
+        "querying",
+        "no-results",
+        "closed"
+      ],
+      "candidateEvents": [
+        "open",
+        "close",
+        "focus-transfer"
+      ],
+      "staticFallback": "레이어·초점·닫기 경로를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "surface",
+      "name": "표면",
+      "family": "containers",
+      "knownStates": [
+        "flat",
+        "raised",
+        "outlined"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "card",
+      "name": "카드",
+      "family": "containers",
+      "knownStates": [
+        "static",
+        "interactive",
+        "selected",
+        "loading"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "card-group",
+      "name": "카드 집합",
+      "family": "containers",
+      "knownStates": [
+        "grid",
+        "list",
+        "carousel"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "chunk",
+      "name": "의미 청크",
+      "family": "containers",
+      "knownStates": [
+        "grouped",
+        "progressively disclosed"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "section",
+      "name": "섹션",
+      "family": "containers",
+      "knownStates": [
+        "normal",
+        "collapsed"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "fieldset",
+      "name": "입력 그룹",
+      "family": "containers",
+      "knownStates": [
+        "normal",
+        "error",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "form",
+      "name": "양식",
+      "family": "containers",
+      "knownStates": [
+        "pristine",
+        "dirty",
+        "submitting",
+        "error",
+        "success"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "accordion",
+      "name": "아코디언",
+      "family": "containers",
+      "knownStates": [
+        "collapsed",
+        "expanded",
+        "mixed"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "accordion-item",
+      "name": "아코디언 항목",
+      "family": "containers",
+      "knownStates": [
+        "collapsed",
+        "expanded"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "disclosure",
+      "name": "접기·펼치기",
+      "family": "containers",
+      "knownStates": [
+        "collapsed",
+        "expanded"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "scroll-area",
+      "name": "스크롤 영역",
+      "family": "containers",
+      "knownStates": [
+        "idle",
+        "scrolling",
+        "edge"
+      ],
+      "candidateEvents": [
+        "scroll-position",
+        "section-progress",
+        "sticky-change"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "split-pane",
+      "name": "분할 패널",
+      "family": "containers",
+      "knownStates": [
+        "balanced",
+        "resized",
+        "collapsed"
+      ],
+      "candidateEvents": [
+        "expand",
+        "collapse",
+        "reflow"
+      ],
+      "staticFallback": "열림·접힘·배치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "list",
+      "name": "목록",
+      "family": "data",
+      "knownStates": [
+        "empty",
+        "populated",
+        "loading"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "filter"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "list-item",
+      "name": "목록 항목",
+      "family": "data",
+      "knownStates": [
+        "normal",
+        "selected",
+        "expanded",
+        "disabled"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "value-update"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "description-list",
+      "name": "이름·값 목록",
+      "family": "data",
+      "knownStates": [
+        "normal",
+        "empty-value",
+        "multiline"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "value-update"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "table",
+      "name": "표",
+      "family": "data",
+      "knownStates": [
+        "empty",
+        "populated",
+        "overflow"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "value-update"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "data-grid",
+      "name": "데이터 그리드",
+      "family": "data",
+      "knownStates": [
+        "browse",
+        "editing",
+        "selected",
+        "error"
+      ],
+      "candidateEvents": [
+        "sort",
+        "filter",
+        "row-update",
+        "selection"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "tree-view",
+      "name": "트리 목록",
+      "family": "data",
+      "knownStates": [
+        "collapsed",
+        "expanded",
+        "selected"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "value-update"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "tree-grid",
+      "name": "트리 표",
+      "family": "data",
+      "knownStates": [
+        "browse",
+        "expanded",
+        "editing"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "value-update"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "timeline",
+      "name": "타임라인",
+      "family": "data",
+      "knownStates": [
+        "static",
+        "selected",
+        "zoomed"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "value-update"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "calendar-view",
+      "name": "일정 화면",
+      "family": "data",
+      "knownStates": [
+        "day",
+        "week",
+        "month",
+        "agenda"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "value-update"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "kanban",
+      "name": "칸반 보드",
+      "family": "data",
+      "knownStates": [
+        "empty",
+        "populated",
+        "dragging"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "value-update"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "carousel",
+      "name": "캐러셀",
+      "family": "data",
+      "knownStates": [
+        "idle",
+        "transitioning",
+        "paused"
+      ],
+      "candidateEvents": [
+        "slide-change",
+        "page-indicator"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "feed",
+      "name": "피드",
+      "family": "data",
+      "knownStates": [
+        "loading",
+        "populated",
+        "end",
+        "error"
+      ],
+      "candidateEvents": [
+        "insert",
+        "remove",
+        "reorder",
+        "value-update"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "alert",
+      "name": "결과 알림",
+      "family": "feedback",
+      "knownStates": [
+        "info",
+        "success",
+        "warning",
+        "error"
+      ],
+      "candidateEvents": [
+        "appear",
+        "progress",
+        "dismiss"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "banner",
+      "name": "배너",
+      "family": "feedback",
+      "knownStates": [
+        "visible",
+        "dismissed"
+      ],
+      "candidateEvents": [
+        "appear",
+        "progress",
+        "dismiss"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "toast",
+      "name": "일시 알림",
+      "family": "feedback",
+      "knownStates": [
+        "entering",
+        "visible",
+        "leaving"
+      ],
+      "candidateEvents": [
+        "appear",
+        "dismiss"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "progress-bar",
+      "name": "진행 막대",
+      "family": "feedback",
+      "knownStates": [
+        "indeterminate",
+        "progress",
+        "complete",
+        "error"
+      ],
+      "candidateEvents": [
+        "value-update",
+        "completion"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "spinner",
+      "name": "진행 표시자",
+      "family": "feedback",
+      "knownStates": [
+        "loading",
+        "stalled",
+        "complete"
+      ],
+      "candidateEvents": [
+        "appear",
+        "progress",
+        "dismiss"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "skeleton",
+      "name": "스켈레톤",
+      "family": "feedback",
+      "knownStates": [
+        "loading",
+        "replaced"
+      ],
+      "candidateEvents": [
+        "loading",
+        "content-arrival"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "empty-state",
+      "name": "빈 상태",
+      "family": "feedback",
+      "knownStates": [
+        "first-use",
+        "no-results",
+        "filtered-empty"
+      ],
+      "candidateEvents": [
+        "appear",
+        "progress",
+        "dismiss"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "error-state",
+      "name": "오류 상태",
+      "family": "feedback",
+      "knownStates": [
+        "recoverable",
+        "blocking",
+        "retrying"
+      ],
+      "candidateEvents": [
+        "appear",
+        "progress",
+        "dismiss"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "validation-message",
+      "name": "입력 검증 메시지",
+      "family": "feedback",
+      "knownStates": [
+        "helper",
+        "error",
+        "success"
+      ],
+      "candidateEvents": [
+        "appear",
+        "progress",
+        "dismiss"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "meter",
+      "name": "수치 게이지",
+      "family": "feedback",
+      "knownStates": [
+        "normal",
+        "low",
+        "high"
+      ],
+      "candidateEvents": [
+        "appear",
+        "progress",
+        "dismiss"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "status-indicator",
+      "name": "상태 표시",
+      "family": "feedback",
+      "knownStates": [
+        "idle",
+        "active",
+        "success",
+        "warning",
+        "error"
+      ],
+      "candidateEvents": [
+        "appear",
+        "progress",
+        "dismiss"
+      ],
+      "staticFallback": "상태·진행·결과 문구를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "stepper",
+      "name": "단계형 과업",
+      "family": "patterns",
+      "knownStates": [
+        "current",
+        "complete",
+        "blocked",
+        "error"
+      ],
+      "candidateEvents": [
+        "step-change",
+        "state-change",
+        "item-update"
+      ],
+      "staticFallback": "현재 단계·값·결과를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "search-results",
+      "name": "검색 결과",
+      "family": "patterns",
+      "knownStates": [
+        "loading",
+        "results",
+        "no-results",
+        "error"
+      ],
+      "candidateEvents": [
+        "step-change",
+        "state-change",
+        "item-update"
+      ],
+      "staticFallback": "현재 단계·값·결과를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "filter-bar",
+      "name": "필터 바",
+      "family": "patterns",
+      "knownStates": [
+        "default",
+        "active",
+        "overflow"
+      ],
+      "candidateEvents": [
+        "step-change",
+        "state-change",
+        "item-update"
+      ],
+      "staticFallback": "현재 단계·값·결과를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "chat-message",
+      "name": "대화 메시지",
+      "family": "patterns",
+      "knownStates": [
+        "sending",
+        "streaming",
+        "sent",
+        "error"
+      ],
+      "candidateEvents": [
+        "step-change",
+        "state-change",
+        "item-update"
+      ],
+      "staticFallback": "현재 단계·값·결과를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "chat-composer",
+      "name": "대화 입력기",
+      "family": "patterns",
+      "knownStates": [
+        "empty",
+        "editing",
+        "uploading",
+        "sending"
+      ],
+      "candidateEvents": [
+        "step-change",
+        "state-change",
+        "item-update"
+      ],
+      "staticFallback": "현재 단계·값·결과를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "media-player",
+      "name": "미디어 플레이어",
+      "family": "patterns",
+      "knownStates": [
+        "playing",
+        "paused",
+        "buffering",
+        "error"
+      ],
+      "candidateEvents": [
+        "step-change",
+        "state-change",
+        "item-update"
+      ],
+      "staticFallback": "현재 단계·값·결과를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "rating",
+      "name": "평점 입력·표시",
+      "family": "patterns",
+      "knownStates": [
+        "unrated",
+        "preview",
+        "rated",
+        "readonly"
+      ],
+      "candidateEvents": [
+        "step-change",
+        "state-change",
+        "item-update"
+      ],
+      "staticFallback": "현재 단계·값·결과를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "notification-item",
+      "name": "알림 항목",
+      "family": "patterns",
+      "knownStates": [
+        "unread",
+        "read",
+        "expanded",
+        "dismissed"
+      ],
+      "candidateEvents": [
+        "step-change",
+        "state-change",
+        "item-update"
+      ],
+      "staticFallback": "현재 단계·값·결과를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "stack",
+      "name": "스택 배치",
+      "family": "layout",
+      "knownStates": [
+        "horizontal",
+        "vertical",
+        "wrapped"
+      ],
+      "candidateEvents": [
+        "responsive-reflow",
+        "scroll-position"
+      ],
+      "staticFallback": "읽기 순서·위치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "layout-grid",
+      "name": "레이아웃 그리드",
+      "family": "layout",
+      "knownStates": [
+        "fixed",
+        "fluid",
+        "responsive"
+      ],
+      "candidateEvents": [
+        "responsive-reflow",
+        "scroll-position"
+      ],
+      "staticFallback": "읽기 순서·위치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "row",
+      "name": "행 배치",
+      "family": "layout",
+      "knownStates": [
+        "single-line",
+        "multiline",
+        "wrapped"
+      ],
+      "candidateEvents": [
+        "responsive-reflow",
+        "scroll-position"
+      ],
+      "staticFallback": "읽기 순서·위치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "splitter",
+      "name": "분할 조절자",
+      "family": "layout",
+      "knownStates": [
+        "idle",
+        "focused",
+        "dragging"
+      ],
+      "candidateEvents": [
+        "responsive-reflow",
+        "scroll-position"
+      ],
+      "staticFallback": "읽기 순서·위치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "spacer",
+      "name": "가변 여유 공간",
+      "family": "layout",
+      "knownStates": [
+        "expanded",
+        "compressed"
+      ],
+      "candidateEvents": [
+        "responsive-reflow",
+        "scroll-position"
+      ],
+      "staticFallback": "읽기 순서·위치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "container",
+      "name": "콘텐츠 컨테이너",
+      "family": "layout",
+      "knownStates": [
+        "fixed",
+        "fluid",
+        "bounded"
+      ],
+      "candidateEvents": [
+        "responsive-reflow",
+        "scroll-position"
+      ],
+      "staticFallback": "읽기 순서·위치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "page-shell",
+      "name": "화면 틀",
+      "family": "layout",
+      "knownStates": [
+        "wide",
+        "compact",
+        "overlay-navigation"
+      ],
+      "candidateEvents": [
+        "responsive-reflow",
+        "scroll-position"
+      ],
+      "staticFallback": "읽기 순서·위치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "safe-area",
+      "name": "시스템 안전 영역",
+      "family": "layout",
+      "knownStates": [
+        "portrait",
+        "landscape",
+        "keyboard-visible"
+      ],
+      "candidateEvents": [
+        "responsive-reflow",
+        "scroll-position"
+      ],
+      "staticFallback": "읽기 순서·위치를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "chart",
+      "name": "차트",
+      "family": "data",
+      "knownStates": [
+        "default",
+        "focused",
+        "changed",
+        "unavailable"
+      ],
+      "candidateEvents": [
+        "data-update",
+        "series-focus"
+      ],
+      "staticFallback": "항목 ID·순서·값·단위를 유지",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    },
+    {
+      "componentId": "keyboard",
+      "name": "시스템 키보드",
+      "family": "inputs",
+      "knownStates": [
+        "default",
+        "focused",
+        "changed",
+        "unavailable"
+      ],
+      "candidateEvents": [
+        "focus",
+        "value-change",
+        "validation"
+      ],
+      "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
+      "decision": "context-required",
+      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+    }
+  ]
+}

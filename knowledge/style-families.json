@@ -1,0 +1,807 @@
+{
+  "schemaVersion": "1.0",
+  "basis": "Internal structural similarity of one sampled homepage per site. Color is deliberately separate so a shared layout can have distinct palettes.",
+  "threshold": 0.76,
+  "families": [
+    {
+      "id": "style-family-01",
+      "representative": "notion",
+      "members": [
+        "apple",
+        "cloudflare",
+        "notion"
+      ],
+      "structure": {
+        "surfaceMode": "open",
+        "alignment": "center",
+        "toneFamily": "light-content"
+      },
+      "pairwiseMinimum": 0.813,
+      "distinctKeyColors": {
+        "apple": "#0071E3",
+        "cloudflare": "#FF5E1F",
+        "notion": "#0075DE"
+      },
+      "observedGradientMotifs": {
+        "radial-glow": 2,
+        "alpha-or-tonal-layer": 3
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-02",
+      "representative": "atlassian",
+      "members": [
+        "atlassian",
+        "gitlab",
+        "slack"
+      ],
+      "structure": {
+        "surfaceMode": "bands",
+        "alignment": "center",
+        "toneFamily": "light-content"
+      },
+      "pairwiseMinimum": 0.777,
+      "distinctKeyColors": {
+        "atlassian": "#1868DB",
+        "gitlab": "#7759C2",
+        "slack": "#730394"
+      },
+      "observedGradientMotifs": {
+        "alpha-or-tonal-layer": 6,
+        "radial-glow": 1,
+        "linear-color-or-tone": 6
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-03",
+      "representative": "bbc",
+      "members": [
+        "bbc",
+        "gov-uk",
+        "the-guardian"
+      ],
+      "structure": {
+        "surfaceMode": "ruled",
+        "alignment": "left",
+        "toneFamily": "light-content"
+      },
+      "pairwiseMinimum": 0.85,
+      "distinctKeyColors": {
+        "bbc": "#B43C43",
+        "gov-uk": "#1D70B8",
+        "the-guardian": "#052962"
+      },
+      "observedGradientMotifs": {
+        "alpha-or-tonal-layer": 4,
+        "linear-color-or-tone": 1
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-04",
+      "representative": "shopify",
+      "members": [
+        "linear",
+        "mozilla",
+        "shopify"
+      ],
+      "structure": {
+        "surfaceMode": "open",
+        "alignment": "left",
+        "toneFamily": "dark-neutral"
+      },
+      "pairwiseMinimum": 0.851,
+      "distinctKeyColors": {
+        "linear": "#7C6CF2",
+        "mozilla": "#F36F45",
+        "shopify": "#D1FF9D"
+      },
+      "observedGradientMotifs": {
+        "layered-radial-linear": 2,
+        "radial-glow": 6,
+        "alpha-or-tonal-layer": 11,
+        "linear-color-or-tone": 3
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-05",
+      "representative": "asana",
+      "members": [
+        "asana",
+        "figma"
+      ],
+      "structure": {
+        "surfaceMode": "open",
+        "alignment": "center",
+        "toneFamily": "expressive"
+      },
+      "pairwiseMinimum": 0.811,
+      "distinctKeyColors": {
+        "asana": "#F05C66",
+        "figma": "#A259FF"
+      },
+      "observedGradientMotifs": {
+        "conic": 1
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-06",
+      "representative": "ikea",
+      "members": [
+        "ikea",
+        "stripe"
+      ],
+      "structure": {
+        "surfaceMode": "bands",
+        "alignment": "left",
+        "toneFamily": "light-content"
+      },
+      "pairwiseMinimum": 0.852,
+      "distinctKeyColors": {
+        "ikea": "#007CC1",
+        "stripe": "#533AFD"
+      },
+      "observedGradientMotifs": {
+        "alpha-or-tonal-layer": 2,
+        "radial-glow": 10
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-07",
+      "representative": "mdn",
+      "members": [
+        "mdn",
+        "ramp"
+      ],
+      "structure": {
+        "surfaceMode": "ruled",
+        "alignment": "left",
+        "toneFamily": "dark-neutral"
+      },
+      "pairwiseMinimum": 0.875,
+      "distinctKeyColors": {
+        "mdn": "#A4CEFE",
+        "ramp": "#3D70E6"
+      },
+      "observedGradientMotifs": {
+        "alpha-or-tonal-layer": 8
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-08",
+      "representative": "mercury",
+      "members": [
+        "mercury",
+        "raycast"
+      ],
+      "structure": {
+        "surfaceMode": "feature",
+        "alignment": "center",
+        "toneFamily": "dark-neutral"
+      },
+      "pairwiseMinimum": 0.974,
+      "distinctKeyColors": {
+        "mercury": "#5266EB",
+        "raycast": "#C58B8C"
+      },
+      "observedGradientMotifs": {
+        "alpha-or-tonal-layer": 4,
+        "conic": 1,
+        "layered-radial-linear": 1,
+        "radial-glow": 4,
+        "linear-color-or-tone": 1
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-09",
+      "representative": "nasa",
+      "members": [
+        "nasa",
+        "square"
+      ],
+      "structure": {
+        "surfaceMode": "feature",
+        "alignment": "left",
+        "toneFamily": "dark-neutral"
+      },
+      "pairwiseMinimum": 0.881,
+      "distinctKeyColors": {
+        "nasa": "#D83933",
+        "square": "#3F6DF4"
+      },
+      "observedGradientMotifs": {
+        "alpha-or-tonal-layer": 3,
+        "linear-color-or-tone": 2
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-10",
+      "representative": "dropbox",
+      "members": [
+        "dropbox"
+      ],
+      "structure": {
+        "surfaceMode": "bands",
+        "alignment": "split",
+        "toneFamily": "light-content"
+      },
+      "pairwiseMinimum": 1,
+      "distinctKeyColors": {
+        "dropbox": "#0061FE"
+      },
+      "observedGradientMotifs": {
+        "linear-color-or-tone": 1
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-11",
+      "representative": "duolingo",
+      "members": [
+        "duolingo"
+      ],
+      "structure": {
+        "surfaceMode": "open",
+        "alignment": "split",
+        "toneFamily": "expressive"
+      },
+      "pairwiseMinimum": 1,
+      "distinctKeyColors": {
+        "duolingo": "#58CC02"
+      },
+      "observedGradientMotifs": {},
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-12",
+      "representative": "github",
+      "members": [
+        "github"
+      ],
+      "structure": {
+        "surfaceMode": "ruled",
+        "alignment": "center",
+        "toneFamily": "dark-neutral"
+      },
+      "pairwiseMinimum": 1,
+      "distinctKeyColors": {
+        "github": "#5B8DEF"
+      },
+      "observedGradientMotifs": {
+        "alpha-or-tonal-layer": 7,
+        "linear-color-or-tone": 1,
+        "radial-glow": 2
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-13",
+      "representative": "nike",
+      "members": [
+        "nike"
+      ],
+      "structure": {
+        "surfaceMode": "feature",
+        "alignment": "left",
+        "toneFamily": "expressive"
+      },
+      "pairwiseMinimum": 1,
+      "distinctKeyColors": {
+        "nike": "#D44234"
+      },
+      "observedGradientMotifs": {
+        "linear-color-or-tone": 1
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-14",
+      "representative": "smashing-magazine",
+      "members": [
+        "smashing-magazine"
+      ],
+      "structure": {
+        "surfaceMode": "ruled",
+        "alignment": "left",
+        "toneFamily": "light-content"
+      },
+      "pairwiseMinimum": 1,
+      "distinctKeyColors": {
+        "smashing-magazine": "#D33A2C"
+      },
+      "observedGradientMotifs": {
+        "linear-color-or-tone": 6
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-15",
+      "representative": "vercel",
+      "members": [
+        "vercel"
+      ],
+      "structure": {
+        "surfaceMode": "ruled",
+        "alignment": "split",
+        "toneFamily": "dark-neutral"
+      },
+      "pairwiseMinimum": 1,
+      "distinctKeyColors": {
+        "vercel": "#245BFF"
+      },
+      "observedGradientMotifs": {
+        "alpha-or-tonal-layer": 4,
+        "linear-color-or-tone": 1
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-16",
+      "representative": "wikipedia",
+      "members": [
+        "wikipedia"
+      ],
+      "structure": {
+        "surfaceMode": "open",
+        "alignment": "center",
+        "toneFamily": "light-content"
+      },
+      "pairwiseMinimum": 1,
+      "distinctKeyColors": {
+        "wikipedia": "#3366CC"
+      },
+      "observedGradientMotifs": {
+        "alpha-or-tonal-layer": 1
+      },
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    },
+    {
+      "id": "style-family-17",
+      "representative": "wise",
+      "members": [
+        "wise"
+      ],
+      "structure": {
+        "surfaceMode": "bands",
+        "alignment": "left",
+        "toneFamily": "expressive"
+      },
+      "pairwiseMinimum": 1,
+      "distinctKeyColors": {
+        "wise": "#317A52"
+      },
+      "observedGradientMotifs": {},
+      "interpretation": "Same sampled structural style family; colors, details, content and current site may differ. Keep each source profile."
+    }
+  ],
+  "nearest": {
+    "linear": [
+      {
+        "site": "shopify",
+        "structuralSimilarity": 0.9665
+      },
+      {
+        "site": "mozilla",
+        "structuralSimilarity": 0.8514
+      },
+      {
+        "site": "ramp",
+        "structuralSimilarity": 0.7367
+      }
+    ],
+    "vercel": [
+      {
+        "site": "ramp",
+        "structuralSimilarity": 0.8372
+      },
+      {
+        "site": "mdn",
+        "structuralSimilarity": 0.7295
+      },
+      {
+        "site": "github",
+        "structuralSimilarity": 0.7176
+      }
+    ],
+    "stripe": [
+      {
+        "site": "ikea",
+        "structuralSimilarity": 0.8519
+      },
+      {
+        "site": "atlassian",
+        "structuralSimilarity": 0.7915
+      },
+      {
+        "site": "wise",
+        "structuralSimilarity": 0.7409
+      }
+    ],
+    "notion": [
+      {
+        "site": "apple",
+        "structuralSimilarity": 0.8987
+      },
+      {
+        "site": "asana",
+        "structuralSimilarity": 0.8497
+      },
+      {
+        "site": "cloudflare",
+        "structuralSimilarity": 0.8338
+      }
+    ],
+    "figma": [
+      {
+        "site": "asana",
+        "structuralSimilarity": 0.811
+      },
+      {
+        "site": "duolingo",
+        "structuralSimilarity": 0.7961
+      },
+      {
+        "site": "notion",
+        "structuralSimilarity": 0.6762
+      }
+    ],
+    "raycast": [
+      {
+        "site": "mercury",
+        "structuralSimilarity": 0.9739
+      },
+      {
+        "site": "nasa",
+        "structuralSimilarity": 0.816
+      },
+      {
+        "site": "square",
+        "structuralSimilarity": 0.7405
+      }
+    ],
+    "slack": [
+      {
+        "site": "atlassian",
+        "structuralSimilarity": 0.8738
+      },
+      {
+        "site": "dropbox",
+        "structuralSimilarity": 0.7769
+      },
+      {
+        "site": "gitlab",
+        "structuralSimilarity": 0.7767
+      }
+    ],
+    "asana": [
+      {
+        "site": "notion",
+        "structuralSimilarity": 0.8497
+      },
+      {
+        "site": "figma",
+        "structuralSimilarity": 0.811
+      },
+      {
+        "site": "apple",
+        "structuralSimilarity": 0.7689
+      }
+    ],
+    "dropbox": [
+      {
+        "site": "slack",
+        "structuralSimilarity": 0.7769
+      },
+      {
+        "site": "stripe",
+        "structuralSimilarity": 0.7341
+      },
+      {
+        "site": "atlassian",
+        "structuralSimilarity": 0.6971
+      }
+    ],
+    "github": [
+      {
+        "site": "mdn",
+        "structuralSimilarity": 0.789
+      },
+      {
+        "site": "raycast",
+        "structuralSimilarity": 0.7187
+      },
+      {
+        "site": "ramp",
+        "structuralSimilarity": 0.7179
+      }
+    ],
+    "cloudflare": [
+      {
+        "site": "notion",
+        "structuralSimilarity": 0.8338
+      },
+      {
+        "site": "apple",
+        "structuralSimilarity": 0.8128
+      },
+      {
+        "site": "wikipedia",
+        "structuralSimilarity": 0.7344
+      }
+    ],
+    "shopify": [
+      {
+        "site": "linear",
+        "structuralSimilarity": 0.9665
+      },
+      {
+        "site": "mozilla",
+        "structuralSimilarity": 0.8713
+      },
+      {
+        "site": "square",
+        "structuralSimilarity": 0.7457
+      }
+    ],
+    "square": [
+      {
+        "site": "nasa",
+        "structuralSimilarity": 0.881
+      },
+      {
+        "site": "nike",
+        "structuralSimilarity": 0.7943
+      },
+      {
+        "site": "mercury",
+        "structuralSimilarity": 0.7483
+      }
+    ],
+    "wise": [
+      {
+        "site": "ikea",
+        "structuralSimilarity": 0.7537
+      },
+      {
+        "site": "stripe",
+        "structuralSimilarity": 0.7409
+      },
+      {
+        "site": "nike",
+        "structuralSimilarity": 0.5941
+      }
+    ],
+    "mercury": [
+      {
+        "site": "raycast",
+        "structuralSimilarity": 0.9739
+      },
+      {
+        "site": "nasa",
+        "structuralSimilarity": 0.8144
+      },
+      {
+        "site": "square",
+        "structuralSimilarity": 0.7483
+      }
+    ],
+    "ramp": [
+      {
+        "site": "mdn",
+        "structuralSimilarity": 0.8751
+      },
+      {
+        "site": "vercel",
+        "structuralSimilarity": 0.8372
+      },
+      {
+        "site": "gov-uk",
+        "structuralSimilarity": 0.8286
+      }
+    ],
+    "apple": [
+      {
+        "site": "notion",
+        "structuralSimilarity": 0.8987
+      },
+      {
+        "site": "cloudflare",
+        "structuralSimilarity": 0.8128
+      },
+      {
+        "site": "wikipedia",
+        "structuralSimilarity": 0.7925
+      }
+    ],
+    "nike": [
+      {
+        "site": "square",
+        "structuralSimilarity": 0.7943
+      },
+      {
+        "site": "nasa",
+        "structuralSimilarity": 0.7426
+      },
+      {
+        "site": "wise",
+        "structuralSimilarity": 0.5941
+      }
+    ],
+    "ikea": [
+      {
+        "site": "stripe",
+        "structuralSimilarity": 0.8519
+      },
+      {
+        "site": "wise",
+        "structuralSimilarity": 0.7537
+      },
+      {
+        "site": "dropbox",
+        "structuralSimilarity": 0.6861
+      }
+    ],
+    "the-guardian": [
+      {
+        "site": "bbc",
+        "structuralSimilarity": 0.9762
+      },
+      {
+        "site": "gov-uk",
+        "structuralSimilarity": 0.8497
+      },
+      {
+        "site": "smashing-magazine",
+        "structuralSimilarity": 0.7954
+      }
+    ],
+    "gov-uk": [
+      {
+        "site": "bbc",
+        "structuralSimilarity": 0.8662
+      },
+      {
+        "site": "the-guardian",
+        "structuralSimilarity": 0.8497
+      },
+      {
+        "site": "ramp",
+        "structuralSimilarity": 0.8286
+      }
+    ],
+    "nasa": [
+      {
+        "site": "square",
+        "structuralSimilarity": 0.881
+      },
+      {
+        "site": "raycast",
+        "structuralSimilarity": 0.816
+      },
+      {
+        "site": "mercury",
+        "structuralSimilarity": 0.8144
+      }
+    ],
+    "wikipedia": [
+      {
+        "site": "apple",
+        "structuralSimilarity": 0.7925
+      },
+      {
+        "site": "notion",
+        "structuralSimilarity": 0.781
+      },
+      {
+        "site": "cloudflare",
+        "structuralSimilarity": 0.7344
+      }
+    ],
+    "mdn": [
+      {
+        "site": "ramp",
+        "structuralSimilarity": 0.8751
+      },
+      {
+        "site": "github",
+        "structuralSimilarity": 0.789
+      },
+      {
+        "site": "gov-uk",
+        "structuralSimilarity": 0.7592
+      }
+    ],
+    "gitlab": [
+      {
+        "site": "atlassian",
+        "structuralSimilarity": 0.8201
+      },
+      {
+        "site": "slack",
+        "structuralSimilarity": 0.7767
+      },
+      {
+        "site": "raycast",
+        "structuralSimilarity": 0.7164
+      }
+    ],
+    "bbc": [
+      {
+        "site": "the-guardian",
+        "structuralSimilarity": 0.9762
+      },
+      {
+        "site": "gov-uk",
+        "structuralSimilarity": 0.8662
+      },
+      {
+        "site": "smashing-magazine",
+        "structuralSimilarity": 0.8038
+      }
+    ],
+    "smashing-magazine": [
+      {
+        "site": "bbc",
+        "structuralSimilarity": 0.8038
+      },
+      {
+        "site": "the-guardian",
+        "structuralSimilarity": 0.7954
+      },
+      {
+        "site": "gov-uk",
+        "structuralSimilarity": 0.75
+      }
+    ],
+    "duolingo": [
+      {
+        "site": "figma",
+        "structuralSimilarity": 0.7961
+      },
+      {
+        "site": "asana",
+        "structuralSimilarity": 0.6083
+      },
+      {
+        "site": "apple",
+        "structuralSimilarity": 0.5963
+      }
+    ],
+    "atlassian": [
+      {
+        "site": "slack",
+        "structuralSimilarity": 0.8738
+      },
+      {
+        "site": "gitlab",
+        "structuralSimilarity": 0.8201
+      },
+      {
+        "site": "stripe",
+        "structuralSimilarity": 0.7915
+      }
+    ],
+    "mozilla": [
+      {
+        "site": "shopify",
+        "structuralSimilarity": 0.8713
+      },
+      {
+        "site": "linear",
+        "structuralSimilarity": 0.8514
+      },
+      {
+        "site": "square",
+        "structuralSimilarity": 0.6306
+      }
+    ]
+  }
+}

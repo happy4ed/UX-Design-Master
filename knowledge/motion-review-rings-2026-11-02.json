@@ -1,0 +1,11 @@
+[
+  {
+    "a": "dot-rings",
+    "b": "concentric-arcs",
+    "kind": "same-core-context-variant",
+    "canonicalMotionId": "concentric-arcs",
+    "reason": "원본 두 장면 모두 같은 중심의 여러 반지름에 놓인 원형 표식들이 고리마다 다른 방향·속도로 회전한다. 점으로 원 전체를 구성한 경우와 끊긴 굵은 원호를 쓴 경우는 표식 모양과 개수의 변형이다. 원본의 시작·회전 중간 화면 및 동작 코드를 대조했고 내부 시연 일치는 별도다.",
+    "mechanismEvidence": "Dot Rings sets an alternating angular rotation for each concentric ring of dots; Concentric Arcs rotates three partial annular strokes around the same fixed center. The live board shows ring-angle changes without translation of the common center.",
+    "sourceFrames": []
+  }
+]

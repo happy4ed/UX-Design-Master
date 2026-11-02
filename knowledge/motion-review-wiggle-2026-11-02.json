@@ -1,0 +1,11 @@
+[
+  {
+    "a": "bell-shake",
+    "b": "wiggle-hint",
+    "kind": "same-core-context-variant",
+    "canonicalMotionId": "wiggle-hint",
+    "reason": "원본을 재생해 짧은 좌우 회전 후 진폭이 줄어 멈추는 사건 순서를 비교했다. 두 구현 모두 몇 차례의 사인 곡선 회전에 (1-progress) 감쇠를 곱한다. 종의 위쪽 축과 아이콘 중앙 축, 빨간 알림 점, 반복 간격은 대상·상태·매개변수 차이다. 내부 시연의 원본 일치는 별도로 검사한다.",
+    "mechanismEvidence": "Original bell-shake: sin(p*7π)*.45*(1-p), pivot at bell tip. Original wiggle-hint: sin(q*6π)*.22*(1-q), pivot at icon center. Live source board and three captured states confirm finite damped rotation rather than translation or continuous pendulum swing.",
+    "sourceFrames": []
+  }
+]

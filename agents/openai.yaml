@@ -1,0 +1,6 @@
+interface:
+  display_name: "UX-design-master"
+  short_description: "내용 구조, 와이어프레임, 시각 시스템과 다이어그램을 설계하고 검수"
+  default_prompt: "$ux-design-master를 사용해 앱·웹·문서의 내용과 역할을 분석하고, 실제 레퍼런스와 구조 와이어프레임을 비교한 뒤 시각 디자인을 진행해줘."
+policy:
+  allow_implicit_invocation: true

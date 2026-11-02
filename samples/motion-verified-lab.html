@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>고유 모션 343종 · 중복 통합 시연</title>
+<style>
+:root{font-family:Pretendard,"Noto Sans KR",system-ui,sans-serif;color:#18222d;background:#f3f5f7}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #1b78e5;outline-offset:3px}a{color:#1768bd}.shell{max-width:1480px;margin:auto;padding:28px clamp(18px,3vw,48px) 70px}.top{display:flex;justify-content:space-between;gap:20px;align-items:start;padding-bottom:20px;border-bottom:1px solid #d9e0e7}.eyebrow{font-size:13px;font-weight:800;color:#1768bd}.top h1{font-size:clamp(28px,3vw,43px);line-height:1.15;letter-spacing:-.04em;margin:7px 0 10px}.top p{margin:0;max-width:77ch;color:#52616e;line-height:1.65}.top nav{white-space:nowrap;font-size:14px;margin-top:8px}.stats{display:flex;gap:9px;flex-wrap:wrap;margin:19px 0 24px}.stats span{padding:8px 12px;border:1px solid #d9e0e7;border-radius:10px;background:#fff;font-size:13px}.stats strong{font-size:19px;margin-right:5px}.layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,.75fr);gap:24px;align-items:start}.viewer{position:sticky;top:16px;min-width:0}.stage-head{display:flex;justify-content:space-between;gap:16px;align-items:end;margin-bottom:11px}.stage-head h2{font-size:24px;letter-spacing:-.03em;margin:0}.stage-head p{font-size:13px;color:#63717e;margin:4px 0 0}.stage{width:100%;display:block;aspect-ratio:800/254;background:#141821;border-radius:17px;box-shadow:0 16px 36px #1c2d4020}.controls{display:grid;grid-template-columns:auto auto minmax(80px,1fr) auto;gap:9px;align-items:center;background:#fff;border:1px solid #dce4ec;border-radius:15px;margin-top:11px;padding:10px}.controls button{border:1px solid #cad5df;background:white;border-radius:9px;min-height:42px;padding:0 14px;color:#1e4e7f;font-size:13px;font-weight:750}.controls button.primary{background:#1768bd;color:white;border-color:#1768bd}.controls input{width:100%;accent-color:#1768bd}.controls output{min-width:55px;text-align:right;font-size:13px;font-variant-numeric:tabular-nums}.subcontrols{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}.subcontrols label{font-size:13px;color:#5a6875}.subcontrols select,.subcontrols button{height:38px;border-radius:8px;border:1px solid #cad5df;background:#fff;color:#244464;padding:0 10px;font:inherit;font-size:13px}.meta{margin-top:12px;background:#fff;border:1px solid #dce4ec;border-radius:15px;padding:17px 19px}.meta p{margin:0 0 10px;line-height:1.6}.meta dl{margin:0;display:grid;grid-template-columns:105px minmax(0,1fr);gap:7px 12px;font-size:13px}.meta dt{color:#64727e}.meta dd{margin:0;overflow-wrap:anywhere}.meta small{display:block;color:#697784;margin-top:12px;line-height:1.5}.library{min-width:0}.library h2{font-size:19px;margin:0 0 5px}.library>p{font-size:13px;color:#5f6e7c;margin:0 0 13px;line-height:1.55}.items{display:grid;gap:5px}.item{width:100%;text-align:left;background:transparent;border:1px solid transparent;border-radius:10px;padding:10px 12px;min-height:60px;display:flex;justify-content:space-between;gap:12px;align-items:center}.item:hover{background:#e7eef6}.item[aria-current=true]{background:#e2efff;border-color:#a7c7ec}.item strong{display:block;font-size:14px}.item small{display:block;font-size:12px;color:#65717e;margin-top:2px}.item em{font-style:normal;font-size:11px;color:#1768bd;white-space:nowrap}.note{margin-top:22px;font-size:13px;color:#5d6b79;line-height:1.6}.note a{font-weight:650}@media(max-width:900px){.layout{grid-template-columns:1fr}.viewer{position:static}.items{grid-template-columns:repeat(2,minmax(0,1fr))}.top{display:block}.top nav{margin-top:15px}}@media(max-width:530px){.shell{padding:18px 14px 45px}.items{grid-template-columns:1fr}.controls{grid-template-columns:1fr 1fr}.controls input{grid-column:1/-1;grid-row:2}.controls output{grid-column:2;grid-row:3}.meta dl{grid-template-columns:82px minmax(0,1fr)}.stage{border-radius:11px}}
+</style>
+<style>
+.library-tools{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;margin:0 0 8px}
+.library-tools input,.library-tools select{min-width:0;min-height:42px;border:1px solid #bdcbd7;border-radius:9px;background:#fff;padding:0 10px;color:#18222d;font-size:14px}
+.library-count{font-size:13px;color:#5f6e7c;margin:0 0 9px}
+.item small,.item em{font-size:13px}
+.pagination{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:12px 0 16px}
+.pagination button{min-width:40px;min-height:40px;padding:0 10px;border:1px solid #bdcbd7;border-radius:9px;background:#fff;color:#244464;font-size:14px}
+.pagination button[aria-current="page"]{background:#1768bd;border-color:#1768bd;color:#fff;font-weight:700}
+.pagination button:disabled{opacity:.45;cursor:default}
+.pagination button:focus-visible,.library-tools select:focus-visible{outline:3px solid #1b78e5;outline-offset:3px}
+</style>
+</head>
+<body>
+<main class="shell">
+ <header class="top"><div><div class="eyebrow">APP · WEB · DOCUMENT MOTION</div><h1 id="pageTitle">고유 모션 343종</h1><p>원본 414개 이름을 동작 기준으로 분류해 고유 모션 343종을 확정했습니다. 355개 시연을 직접 재생할 수 있습니다. 새로 제작한 103개는 브라우저 동작과 화면을 점검했고 사용자 검토 전입니다.</p></div><nav><a href="motion-dedup-audit.html">원본 이름 판정 기록 ↗</a> · <a href="motion-functional-name-audit.html">기능 이름 점검 33건 ↗</a> · <a href="motion-component-graph.html">모션 × 컴포넌트 그래프 ↗</a></nav></header>
+ <div class="stats"><span><strong id="demoCount">–</strong>실행 가능한 시연</span><span><strong id="upperCount">–</strong>고유 모션 확정 수</span><span><strong id="coreCount">–</strong>중복 통합 완료 그룹</span><span><strong id="termCount">–</strong>이 그룹에 속한 원본 이름</span><span><strong id="pendingCount">–</strong>독립 동작 판정 보류</span></div>
+ <section class="layout" aria-label="확정 모션 시연">
+  <div class="viewer"><div class="stage-head"><div><h2 id="motionName">모션 준비 중</h2><p id="motionEnglish"></p></div><span id="position" class="eyebrow"></span></div><canvas id="stage" class="stage" width="800" height="254" role="img" aria-label="선택한 모션 동작 시연"></canvas>
+   <div class="controls"><button id="play" class="primary" type="button">일시정지</button><button id="replay" type="button">처음부터</button><input id="seek" type="range" min="0" max="1000" value="0" aria-label="시연 위치"><output id="time">0.0초</output></div>
+   <div class="subcontrols"><label for="speed">재생 속도</label><select id="speed"><option value="0.5">0.5배</option><option value="0.75">0.75배</option><option value="1" selected>1배</option><option value="1.5">1.5배</option></select><button id="all" type="button">확정 그룹 차례로 보기</button><span id="deviceMotion" role="status"></span></div>
+   <div class="meta"><p id="behavior"></p><dl><dt>통합한 이름</dt><dd id="aliases"></dd><dt>원본 대조</dt><dd><a id="sourceEvidence" target="_blank" rel="noopener">원본 장면 열기</a></dd><dt>시연 상태</dt><dd id="reviewState"></dd><dt>적용 판단</dt><dd>실제 제품 적용 전, 대상 화면의 시작 사건·종료 상태·모션 감소를 확인합니다.</dd></dl><small>고유 모션 343종은 원본 이름을 분류한 수입니다. 각 시연의 원본 일치 여부는 별도 검증 대상입니다.</small></div>
+  </div>
+  <aside class="library"><h2>모션 시연 목록</h2><p>한 페이지에 100개씩 보여 줍니다. 새로 만든 103개도 별도로 골라 볼 수 있습니다.</p><div class="library-tools"><input id="motionSearch" type="search" placeholder="모션 이름 검색" aria-label="모션 이름 검색"><select id="motionFilter" aria-label="모션 시연 종류"><option value="all">전체</option><option value="new">새 시연 103개</option><option value="existing">기존 시연 252개</option><option value="variant">변형 시연 10개</option></select></div><p class="library-count" id="visibleCount" aria-live="polite"></p><nav class="pagination" id="pageNav" aria-label="모션 목록 페이지"></nav><div class="items" id="items"></div><nav class="pagination" id="pageNavBottom" aria-label="모션 목록 페이지"></nav></aside>
+ </section>
+ <p class="note"><strong id="countExplanation"></strong> 전체 판정 근거는 <a href="motion-dedup-audit.html">중복 검토표</a>에 있습니다. 고유 모션 수는 개념 분류 결과이며 시연의 원본 일치 판정과 구분합니다.</p>
+</main>
+<script type="module">
+try {
+const {renderVerified,implementedIds,durations,contextVariantIds,supplementIds}=await import('../assets/layout/motion-verified-engine.mjs?rev=2026-11-02-lite5');
+const $=s=>document.querySelector(s);
+const [progress,galleryData]=await Promise.all([
+ fetch('../knowledge/motion-core-progress.json?rev=2026-11-02-lite5'),
+ fetch('motion-gallery-data.json?rev=2026-11-02-lite5')
+].map(async request=>{const response=await request;if(!response.ok)throw new Error('데이터 요청 실패: '+response.status);return response.json()}));
+if(!Array.isArray(progress.standaloneUniqueMotionIds)||!galleryData.terms)throw new Error('저장된 데이터 형식이 오래되었습니다.');
+const byId=new Map(Object.entries(galleryData.terms));
+const sourceById=byId;
+const standaloneIds=['dot-wave','blob-morph','halftone-pulse','nested-squares','drop-zoom','stack-cards','icon-bounce','squash-pop','star-fill','toggle-on','spinner-arc','percent-ring','typing-bubble','chat-bubble-pop','reaction-float','confetti-fall','elastic-slide','line-boil','stop-motion','marching-ants','turntable','ink-splash','ransom-collage','paper-cut','icon-tiles','hud-assemble','waterfall-steps','sparkline-scroll','line-chart-draw','dot-globe','treemap-split','ink-bleed','blur-focus','text-mosaic','mosaic-flash','text-flag','underwater-warp','text-fan','accordion-fold','time-lapse','speed-ramp','squeeze-swap','word-morph','split-invert','diagonal-split','text-sandwich','text-cylinder','ring-text','network-pulse','branch-flow','subscribe-button','follow-pill','swipe-up-hint','arrow-point','location-pin','scramble-decode','reply-thread','comment-rise','hex-grid','eclipse-circle','karaoke-ball','highlighter','outline-fill','punch-zoom','text-zoom-through','headline-swap','iso-build','isometric-grid','story-progress','bar-grow','isotype-row','gradient-flow','fluid-gradient','split-halves','lens-flare','boot-sequence','color-blocks','cloud-sky','dice-roll','grid-zoom','badge-count','bar-race','domino-letters','wave-letters','ripple-ring','live-badge','new-tag-flash','square-snap','ping-pong','trim-path','ripple-interference','dot-spiral','gravity-flip','magnet-pull','toast-slide','crumble-down','comic-dots','jitter-settle','donut-split','pie-sweep','spin-settle','breathe-pulse','text-vortex','punch-in','snap-zoom','push','curtain-slide','island-alert','perspective-grid','notification-stack','arc','sliding-bands','roulette','crosshatch','waffle-fill','stretch-text','speed-lines','dot-matrix','dolly-zoom','perspective-tilt','clock-wipe','blinds','scan-print','camera-2-5d','roll','split-join','pan','tilt','dolly','pedestal'];
+standaloneIds.push('zoom','panel-zoom-out','equalizer-stripes','letter-slam','gravity-throw','block-wipe','ripple-wipe','halftone-gradient','moire-grid','triple-split','freeze-frame','repeater','save-bookmark','share-fling','spring-follow','rack-focus','cross-dissolve','pixel-dissolve','diamond-wipe','whip-pan','corner-wipe','impact-flash','circle-split','drip-wipe','quad-open','four-panel','frame-stack','impact-shake','rgb-split','glitch','film-grain','light-leak','bloom-glow','datamosh','vector-crt','match-cut','strobe','particles','tv-off','squeeze-line','film-burn','vhs-rewind','roll-up','paper-tear','page-curl','glass-shatter','magnifier-lens','water-reflection','long-shadow','letter-rain','disintegrate','weight-grow','layer-peel','detail-inset','flow-field','exploded-view','cutaway','pixelate','halftone-wipe','neon-contour','dot-ocean','wireframe-terrain','reaction-diffusion','hologram','shockwave','slash-cut','flash-reveal','particle-form','film-leader','spotlight-reveal','tracking-expand','tape-label');
+const groupedSourceIds=new Set(progress.canonicalGroups.flatMap(group=>group.members));
+standaloneIds.push(...progress.standaloneUniqueMotionIds.filter(id=>implementedIds.includes(id)&&!groupedSourceIds.has(id)&&!standaloneIds.includes(id)));
+const groups=[...progress.canonicalGroups.filter(g=>implementedIds.includes(g.canonicalMotionId)),...standaloneIds.map(id=>({canonicalMotionId:id,members:[id],standaloneCandidate:true})),...contextVariantIds.map(id=>({canonicalMotionId:id,members:[id],contextVariant:true}))];
+const groupByName=new Map(groups.flatMap(g=>g.members.map(id=>[id,g])));
+$('#demoCount').textContent=groups.length+'개';$('#upperCount').textContent=progress.finalizedStandaloneCoreCount+'종';$('#coreCount').textContent=progress.verifiedSharedCoreGroupCount+'개';$('#termCount').textContent=progress.sourceTermsInVerifiedGroups+'개';$('#pendingCount').textContent=progress.standaloneTermsWithoutPassReview.length+'개';$('#pageTitle').textContent='고유 모션 '+progress.finalizedStandaloneCoreCount+'종';document.title='고유 모션 '+progress.finalizedStandaloneCoreCount+'종 · 중복 통합 시연';
+$('#countExplanation').textContent=`${groups.length}개 시연 = ${progress.finalizedStandaloneCoreCount}개 고유 동작 + ${contextVariantIds.length}개 변형 + 2개 원칙 시연. `;
+$('#all').textContent=groups.length+'개 그룹 차례로 보기';
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+$('#deviceMotion').textContent=reduced?'기기 설정: 움직임 줄이기 켜짐':'기기 설정: 움직임 줄이기 꺼짐';
+const pageSize=100;
+let selected=groupByName.get(location.hash.slice(1))||groups[0],time=0,playing=!reduced,all=false,last=0,page=0;
+const setPlaying=state=>{playing=state;$('#play').textContent=state?'일시정지':'시연 재생'};
+function filteredGroups(){
+ const kind=$('#motionFilter').value,query=$('#motionSearch').value.trim().toLocaleLowerCase();
+ return groups.filter(g=>{
+  const id=g.canonicalMotionId,e=byId.get(id);
+  const matchKind=kind==='all'||kind==='new'&&supplementIds.includes(id)||kind==='variant'&&g.contextVariant||kind==='existing'&&!supplementIds.includes(id);
+  const matchText=!query||[id,e?.name,e?.english,...g.members.map(member=>byId.get(member)?.name)].some(value=>String(value||'').toLocaleLowerCase().includes(query));
+  return matchKind&&matchText;
+ });
+}
+function renderList(){
+ const visible=filteredGroups(),pages=Math.max(1,Math.ceil(visible.length/pageSize));
+ page=Math.max(0,Math.min(page,pages-1));
+ const start=page*pageSize,shown=visible.slice(start,start+pageSize);
+ $('#visibleCount').textContent=visible.length?`${visible.length}개 중 ${start+1}–${start+shown.length}개 · ${page+1}/${pages}페이지`:'검색 결과 없음';
+ $('#items').replaceChildren(...shown.map(g=>{const e=byId.get(g.canonicalMotionId),b=document.createElement('button');b.type='button';b.className='item';b.setAttribute('aria-current',String(g===selected));b.innerHTML='<span><strong></strong><small></small></span><em></em>';b.querySelector('strong').textContent=e.name;b.querySelector('small').textContent=e.english;b.querySelector('em').textContent=g.contextVariant?'변형':String(groups.indexOf(g)+1).padStart(2,'0');b.addEventListener('click',()=>select(g));return b}));
+ for(const nav of [$('#pageNav'),$('#pageNavBottom')]){
+  nav.replaceChildren();nav.hidden=pages===1;
+  if(pages===1)continue;
+  const add=(label,target,disabled,current=false)=>{const button=document.createElement('button');button.type='button';button.textContent=label;button.disabled=disabled;if(current)button.setAttribute('aria-current','page');button.addEventListener('click',()=>{page=target;select(visible[page*pageSize])});nav.append(button)};
+  add('이전',page-1,page===0);
+  for(let index=0;index<pages;index++)add(String(index+1),index,false,index===page);
+  add('다음',page+1,page===pages-1);
+ }
+}
+function select(g){
+ selected=g;const filteredIndex=filteredGroups().indexOf(g);if(filteredIndex>=0)page=Math.floor(filteredIndex/pageSize);time=0;history.replaceState(null,'','#'+g.canonicalMotionId);const e=byId.get(g.canonicalMotionId);
+ $('#motionName').textContent=e.name;$('#motionEnglish').textContent=e.english;$('#position').textContent=(groups.indexOf(g)+1)+' / '+groups.length;
+ $('#behavior').textContent=g.canonicalMotionId==='isometric-grid'?'아이소메트릭 격자의 좌표에 맞춰 입체 블록이 차례로 솟아 글자 A를 완성한다.':g.canonicalMotionId==='ripple-ring'?'아이콘이 튀어나온 뒤 아이콘과 같은 둥근 사각 외곽에서 파문 세 개가 차례로 퍼지며 옅어진다.':g.canonicalMotionId==='stamp-in'?'도장이 내려앉아 찍히는 순간 흔들리고, 도장과 같은 둥근 사각 외곽에서 충격 파문이 퍼진다.':g.canonicalMotionId==='paper-cut'?'종이에 글자 외곽을 따라 칼집이 나고, 오려낸 글자 조각이 종이에서 분리되어 떠오른다.':g.canonicalMotionId==='turntable'?'바닥 원판의 표시와 위의 입체 물체가 같은 각도로 함께 회전한다.':g.canonicalMotionId==='breathe-pulse'?'아이콘이 호흡하듯 커졌다 작아지고, 아이콘과 같은 둥근 사각형 빛이 뒤에서 함께 숨쉰다.':g.canonicalMotionId==='text-vortex'?'문장 맨 끝 글자부터 제자리에서 늘어나며 회전해 중심으로 빨려 들어간다. 가까워질수록 회전이 빨라지고 작아져 사라진다.':sourceById.get(g.canonicalMotionId)?.behavior||'';
+ if(g.canonicalMotionId==='moire-grid')$('#behavior').textContent='간격이 거의 같은 두 선 격자를 조금 어긋나게 겹친다. 두 격자의 차이에서 생기는 큰 밝고 어두운 띠가 천천히 이동한다.';
+ if(g.canonicalMotionId==='share-fling')$('#behavior').textContent='접힌 날개가 보이는 종이비행기가 기수를 오른쪽 위로 유지한 채 멀어지며 작아진다. 전송이 끝나면 확인 문구가 나타난다.';
+ $('#aliases').textContent=g.members.filter(id=>id!==g.canonicalMotionId).map(id=>byId.get(id)?.name||id).join(' · ')||'없음';
+ const evidence=$('#sourceEvidence');evidence.hidden=true;
+ $('#reviewState').textContent=g.canonicalMotionId==='morph-cut'
+   ? '원리 설명용 2D 비교 · 실제 얼굴 추적·광학 흐름 구현 아님 · 사용자 검토 전'
+   : supplementIds.includes(g.canonicalMotionId)
+   ? '새로 제작한 시연 · 브라우저 재생과 화면 검수 완료 · 사용자 검토 전'
+   : g.contextVariant
+   ? '기존 시연의 맥락 변형 · 고유 모션 수에 추가하지 않음 · 사용자 시각 검토 통과'
+   : ['shutter-wipe','brush-wipe','kaleidoscope','stamp-in','paper-cut','turntable','breathe-pulse','text-vortex','moire-grid','share-fling'].includes(g.canonicalMotionId)
+   ? '요청한 동작 의미에 맞춰 재해석 · 사용자 시각 검토 통과'
+   : g.standaloneCandidate
+   ? '고유 목록의 개별 동작 · 사용자 시각 검토 통과'
+   : '기존 전용 시연 · 사용자 시각 검토 통과';
+ $('#stage').setAttribute('aria-label',e.name+' 동작 시연');renderList();draw();setPlaying(true);
+}
+function draw(){const duration=durations[selected.canonicalMotionId];renderVerified($('#stage'),selected.canonicalMotionId,time);$('#seek').value=Math.round(time/duration*1000);$('#time').textContent=time.toFixed(1)+'초'}
+function frame(now){if(last&&playing){time+=(now-last)/1000*Number($('#speed').value);const duration=durations[selected.canonicalMotionId];if(time>=duration){if(all){const visible=filteredGroups();if(visible.length){const next=(visible.indexOf(selected)+1)%visible.length;select(visible[next])}else all=false}else time%=duration}draw()}last=now;requestAnimationFrame(frame)}
+$('#play').addEventListener('click',()=>setPlaying(!playing));$('#replay').addEventListener('click',()=>{time=0;draw();setPlaying(true)});
+$('#seek').addEventListener('input',()=>{time=durations[selected.canonicalMotionId]*Number($('#seek').value)/1000;draw();setPlaying(false)});
+$('#all').addEventListener('click',()=>{all=!all;const visible=filteredGroups();$('#all').textContent=all?'차례 보기 중지':visible.length+'개 시연 차례로 보기';if(all&&visible.length&&!visible.includes(selected))select(visible[0]);time=0;setPlaying(true)});
+function updateLibrary(){const visible=filteredGroups();page=0;if(visible.length)select(visible[0]);else renderList();$('#all').textContent=all?'차례 보기 중지':visible.length+'개 시연 차례로 보기'}
+$('#motionFilter').addEventListener('change',updateLibrary);$('#motionSearch').addEventListener('input',updateLibrary);
+document.addEventListener('keydown',event=>{if(/INPUT|SELECT|BUTTON/.test(document.activeElement.tagName))return;const visible=filteredGroups();if(!visible.length)return;if(event.key==='ArrowDown'||event.key==='ArrowRight'){event.preventDefault();select(visible[(visible.indexOf(selected)+1)%visible.length])}if(event.key==='ArrowUp'||event.key==='ArrowLeft'){event.preventDefault();select(visible[(visible.indexOf(selected)-1+visible.length)%visible.length])}});
+select(selected);const auditPhase=new URLSearchParams(location.search).get('phase');if(auditPhase!==null){time=durations[selected.canonicalMotionId]*Math.max(0,Math.min(1,Number(auditPhase)||0));draw();setPlaying(false)}else if(reduced)setPlaying(false);requestAnimationFrame(frame);
+} catch(error) {
+ document.querySelector('#motionName').textContent='시연을 불러오지 못했습니다';
+ document.querySelector('#visibleCount').textContent='페이지를 새로고침해 주세요. 문제가 계속되면 서버 주소를 확인해 주세요.';
+ document.querySelector('#behavior').textContent=String(error?.message||error);
+ console.error('Motion gallery load failed',error);
+}
+</script>
+</body>
+</html>

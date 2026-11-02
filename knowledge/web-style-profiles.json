@@ -1,0 +1,3310 @@
+{
+  "schemaVersion": "1.0",
+  "checkedAt": "2026-10-27",
+  "interpretation": "source CSS samples and our reusable projection are separate; not official brand tokens",
+  "profiles": [
+    {
+      "id": "linear",
+      "name": "Linear",
+      "kind": "product",
+      "url": "https://linear.app/",
+      "observed": {
+        "heading": {
+          "text": "The product development system for teams and agents The product develo",
+          "box": {
+            "x": 78,
+            "y": 272,
+            "w": 1282,
+            "h": 128
+          },
+          "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "64px",
+          "fontWeight": "510",
+          "lineHeight": "64px",
+          "color": "rgb(247, 248, 248)",
+          "margin": "0px 0px 0px -2px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 73
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 16
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 5
+          },
+          {
+            "cssPx": 6.0,
+            "sampleCount": 5
+          },
+          {
+            "cssPx": 2.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 16
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 4
+          },
+          {
+            "cssPx": 6.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 9.0,
+            "sampleCount": 2
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            3
+          ],
+          [
+            80,
+            2
+          ],
+          [
+            372,
+            2
+          ],
+          [
+            48,
+            2
+          ],
+          [
+            300,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 50,
+          "iconFonts": 6,
+          "images": 7,
+          "use": 3
+        }
+      },
+      "projection": {
+        "background": "#08090a",
+        "ink": "#f7f8f8",
+        "accent": "#d0d6e0",
+        "tone": "dark",
+        "alignment": "left",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "quiet",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "kind": "developer",
+      "url": "https://vercel.com/",
+      "observed": {
+        "heading": {
+          "text": "Agentic Infrastructure",
+          "box": {
+            "x": 24,
+            "y": 328,
+            "w": 444,
+            "h": 128
+          },
+          "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+          "fontSize": "64px",
+          "fontWeight": "400",
+          "lineHeight": "64px",
+          "color": "rgb(23, 23, 23)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 64
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 12.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 44.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 6.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 8.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 32.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 6.0,
+            "sampleCount": 3
+          }
+        ],
+        "leftAnchors": [
+          [
+            24,
+            7
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            64,
+            1
+          ],
+          [
+            1052,
+            1
+          ],
+          [
+            1084,
+            1
+          ],
+          [
+            496,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 10,
+          "iconFonts": 0,
+          "images": 2,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#171717",
+        "accent": "#171717",
+        "tone": "mono",
+        "alignment": "split",
+        "surfaceMode": "ruled",
+        "surfaceDescription": "선·행·열로 구분",
+        "iconTreatment": "quiet",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 50,
+          "body": 15,
+          "line": 1.55,
+          "radius": 6,
+          "gap": 16,
+          "section": 64,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "kind": "finance",
+      "url": "https://stripe.com/",
+      "observed": {
+        "heading": {
+          "text": "Financial infrastructure to grow your revenue. Accept payments, handle",
+          "box": {
+            "x": 208,
+            "y": 258,
+            "w": 1018,
+            "h": 221
+          },
+          "fontFamily": "sohne-var, \"SF Pro Display\", sans-serif",
+          "fontSize": "48px",
+          "fontWeight": "300",
+          "lineHeight": "55.2px",
+          "color": "rgb(129, 184, 26)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 76
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 14.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 3.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 3.2,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 4.0,
+            "sampleCount": 11
+          },
+          {
+            "cssPx": 6.0,
+            "sampleCount": 8
+          },
+          {
+            "cssPx": 5.0,
+            "sampleCount": 5
+          },
+          {
+            "cssPx": 3.0,
+            "sampleCount": 2
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            4
+          ],
+          [
+            208,
+            2
+          ],
+          [
+            104,
+            2
+          ],
+          [
+            128,
+            2
+          ],
+          [
+            960,
+            2
+          ],
+          [
+            88,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 51,
+          "iconFonts": 8,
+          "images": 2,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#061b31",
+        "accent": "#533afd",
+        "tone": "bright",
+        "alignment": "left",
+        "surfaceMode": "bands",
+        "surfaceDescription": "배경 구획으로 구분",
+        "iconTreatment": "outline",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 52,
+          "body": 16,
+          "line": 1.5,
+          "radius": 8,
+          "gap": 18,
+          "section": 72,
+          "nav": 32
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "kind": "product",
+      "url": "https://www.notion.com/",
+      "observed": {
+        "heading": {
+          "text": "Where teams and agents Think together.",
+          "box": {
+            "x": 94,
+            "y": 144,
+            "w": 1252,
+            "h": 210
+          },
+          "fontFamily": "NotionInter, Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "fontSize": "96px",
+          "fontWeight": "600",
+          "lineHeight": "100px",
+          "color": "rgba(0, 0, 0, 0.95)",
+          "margin": "0px 0px 12px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 64
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 10
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 24.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 32.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 13
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 9
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 5
+          }
+        ],
+        "leftAnchors": [
+          [
+            108,
+            5
+          ],
+          [
+            96,
+            3
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            132,
+            2
+          ],
+          [
+            732,
+            2
+          ],
+          [
+            128,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 4,
+          "iconFonts": 1,
+          "images": 33,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#181818",
+        "accent": "#0075de",
+        "tone": "warm",
+        "alignment": "center",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 56,
+          "body": 16,
+          "line": 1.55,
+          "radius": 10,
+          "gap": 20,
+          "section": 80,
+          "nav": 32
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "kind": "creative",
+      "url": "https://www.figma.com/",
+      "observed": {
+        "heading": {
+          "text": "The full-stack creative canvas",
+          "box": {
+            "x": 40,
+            "y": 424,
+            "w": 328,
+            "h": 168
+          },
+          "fontFamily": "figmaSans, \"figmaSans Fallback\", \"SF Pro Display\", system-ui, helvetica, sans-serif",
+          "fontSize": "56px",
+          "fontWeight": "400",
+          "lineHeight": "56px",
+          "color": "rgb(0, 0, 0)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 78
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 12.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 8.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 24.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 2.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            5
+          ],
+          [
+            40,
+            4
+          ],
+          [
+            956,
+            3
+          ],
+          [
+            268,
+            2
+          ],
+          [
+            84,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 7,
+          "iconFonts": 1,
+          "images": 0,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#000000",
+        "accent": "#000000",
+        "tone": "bold",
+        "alignment": "split",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 64,
+          "body": 16,
+          "line": 1.45,
+          "radius": 4,
+          "gap": 20,
+          "section": 86,
+          "nav": 40
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "raycast",
+      "name": "Raycast",
+      "kind": "product",
+      "url": "https://www.raycast.com/",
+      "observed": {
+        "heading": {
+          "text": "Your shortcut to everything.",
+          "box": {
+            "x": 450,
+            "y": 373,
+            "w": 540,
+            "h": 141
+          },
+          "fontFamily": "Inter, \"Inter Fallback\", sans-serif",
+          "fontSize": "64px",
+          "fontWeight": "600",
+          "lineHeight": "70.4px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": null,
+          "padding": null,
+          "gap": null
+        },
+        "gaps": [
+          {
+            "cssPx": 12.0,
+            "sampleCount": 7
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 32.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 48.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 85.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 11.0,
+            "sampleCount": 78
+          },
+          {
+            "cssPx": 6.0,
+            "sampleCount": 9
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 43.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            144,
+            2
+          ],
+          [
+            452,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 31,
+          "iconFonts": 0,
+          "images": 0,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#07080a",
+        "ink": "#ffffff",
+        "accent": "#c58b8c",
+        "tone": "dark",
+        "alignment": "center",
+        "surfaceMode": "feature",
+        "surfaceDescription": "미디어/기능 표면만 강조",
+        "iconTreatment": "outline",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "kind": "product",
+      "url": "https://slack.com/",
+      "observed": {
+        "heading": {
+          "text": "All your people and AI agents working together",
+          "box": {
+            "x": 259,
+            "y": 112,
+            "w": 923,
+            "h": 136
+          },
+          "fontFamily": "Salesforce-Avant-Garde, system-ui, -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, \"Helvetica Neue\", arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+          "fontSize": "64px",
+          "fontWeight": "700",
+          "lineHeight": "68px",
+          "color": "rgb(24, 24, 24)",
+          "margin": "0px 153.75px 20px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 80
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 24.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 30.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 4.0,
+            "sampleCount": 11
+          },
+          {
+            "cssPx": 32.0,
+            "sampleCount": 6
+          },
+          {
+            "cssPx": 100.0,
+            "sampleCount": 5
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            5
+          ],
+          [
+            104,
+            4
+          ],
+          [
+            232,
+            1
+          ],
+          [
+            260,
+            1
+          ],
+          [
+            456,
+            1
+          ],
+          [
+            420,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 5,
+          "iconFonts": 13,
+          "images": 7,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#181818",
+        "accent": "#730394",
+        "tone": "bright",
+        "alignment": "center",
+        "surfaceMode": "bands",
+        "surfaceDescription": "배경 구획으로 구분",
+        "iconTreatment": "filled",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 52,
+          "body": 16,
+          "line": 1.5,
+          "radius": 8,
+          "gap": 18,
+          "section": 72,
+          "nav": 32
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "asana",
+      "name": "Asana",
+      "kind": "product",
+      "url": "https://asana.com/",
+      "observed": {
+        "heading": {
+          "text": "The OS for human-agent teams",
+          "box": {
+            "x": 283,
+            "y": 253,
+            "w": 873,
+            "h": 184
+          },
+          "fontFamily": "\"TWK Lausanne\", \"Helvetica Neue\", Helvetica, sans-serif",
+          "fontSize": "102px",
+          "fontWeight": "300",
+          "lineHeight": "91.8px",
+          "color": "rgb(13, 14, 16)",
+          "margin": "0px 0px 28px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 68
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 4
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 40.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 30.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 100.0,
+            "sampleCount": 12
+          },
+          {
+            "cssPx": 3.0,
+            "sampleCount": 4
+          },
+          {
+            "cssPx": 20.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            76,
+            6
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            284,
+            1
+          ],
+          [
+            460,
+            1
+          ],
+          [
+            452,
+            1
+          ],
+          [
+            848,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 14,
+          "iconFonts": 2,
+          "images": 18,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#0d0e10",
+        "accent": "#0d0e10",
+        "tone": "bold",
+        "alignment": "center",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 64,
+          "body": 16,
+          "line": 1.45,
+          "radius": 4,
+          "gap": 20,
+          "section": 86,
+          "nav": 40
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "kind": "product",
+      "url": "https://www.dropbox.com/",
+      "observed": {
+        "heading": {
+          "text": "One place to store, share, and collaborate",
+          "box": {
+            "x": 48,
+            "y": 351,
+            "w": 513,
+            "h": 96
+          },
+          "fontFamily": "\"Sharp Grotesk\", SharpGrotesk, \"Sharp Grotesk KR\", \"Sharp Grotesk Thai\", \"Atlas Grotesk Web\", \"Atlas Grotesk\", AtlasGrotesk, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "fontSize": "40px",
+          "fontWeight": "500",
+          "lineHeight": "48px",
+          "color": "rgb(30, 25, 25)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 57,
+            "w": 1440,
+            "h": 72
+          },
+          "padding": "16px 24px",
+          "gap": "normal"
+        },
+        "gaps": [],
+        "radii": [
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            124,
+            4
+          ],
+          [
+            536,
+            4
+          ],
+          [
+            952,
+            4
+          ],
+          [
+            48,
+            3
+          ],
+          [
+            308,
+            3
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "iconElements": {
+          "svg": 18,
+          "iconFonts": 39,
+          "images": 46,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#f7f5f2",
+        "ink": "#1e1919",
+        "accent": "#0061fe",
+        "tone": "warm",
+        "alignment": "split",
+        "surfaceMode": "bands",
+        "surfaceDescription": "배경 구획으로 구분",
+        "iconTreatment": "filled",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 56,
+          "body": 16,
+          "line": 1.55,
+          "radius": 10,
+          "gap": 20,
+          "section": 80,
+          "nav": 32
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "kind": "developer",
+      "url": "https://github.com/",
+      "observed": {
+        "heading": {
+          "text": "The future of building happens together",
+          "box": {
+            "x": 258,
+            "y": 164,
+            "w": 924,
+            "h": 138
+          },
+          "fontFamily": "\"Mona Sans\", MonaSansFallback, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+          "fontSize": "64px",
+          "fontWeight": "425",
+          "lineHeight": "69.12px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 72
+          },
+          "padding": "16px 0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 96.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 8.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 60.0,
+            "sampleCount": 7
+          },
+          {
+            "cssPx": 6.0,
+            "sampleCount": 5
+          },
+          {
+            "cssPx": 8.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 48.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            4
+          ],
+          [
+            80,
+            2
+          ],
+          [
+            236,
+            1
+          ],
+          [
+            260,
+            1
+          ],
+          [
+            420,
+            1
+          ],
+          [
+            348,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 36,
+          "iconFonts": 9,
+          "images": 1,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#0d1117",
+        "ink": "#ffffff",
+        "accent": "#8b949e",
+        "tone": "dark",
+        "alignment": "center",
+        "surfaceMode": "ruled",
+        "surfaceDescription": "선·행·열로 구분",
+        "iconTreatment": "outline",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "kind": "developer",
+      "url": "https://www.cloudflare.com/",
+      "observed": {
+        "heading": {
+          "text": "Everything we learned from powering 20% of the Internet—yours by defau",
+          "box": {
+            "x": 180,
+            "y": 289,
+            "w": 1080,
+            "h": 111
+          },
+          "fontFamily": "\"STK Bureau Sans\", sans-serif",
+          "fontSize": "56px",
+          "fontWeight": "500",
+          "lineHeight": "55.44px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 72
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 40.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 24.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 8.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 6.0,
+            "sampleCount": 6
+          },
+          {
+            "cssPx": 3.0,
+            "sampleCount": 4
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            5
+          ],
+          [
+            152,
+            2
+          ],
+          [
+            552,
+            2
+          ],
+          [
+            952,
+            2
+          ],
+          [
+            284,
+            2
+          ],
+          [
+            180,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 29,
+          "iconFonts": 0,
+          "images": 2,
+          "use": 18
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#262626",
+        "accent": "#ff5e1f",
+        "tone": "bright",
+        "alignment": "center",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "outline",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 52,
+          "body": 16,
+          "line": 1.5,
+          "radius": 8,
+          "gap": 18,
+          "section": 72,
+          "nav": 32
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "kind": "commerce",
+      "url": "https://www.shopify.com/",
+      "observed": {
+        "heading": {
+          "text": "Your brand has entered the chat",
+          "box": {
+            "x": 130,
+            "y": 1436,
+            "w": 550,
+            "h": 121
+          },
+          "fontFamily": "Shopify-Inter, Helvetica, Arial, sans-serif",
+          "fontSize": "56px",
+          "fontWeight": "330",
+          "lineHeight": "60.48px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 72
+          },
+          "padding": "0px 90px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 16.0,
+            "sampleCount": 3
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 4
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            6
+          ],
+          [
+            92,
+            3
+          ],
+          [
+            408,
+            2
+          ],
+          [
+            728,
+            2
+          ],
+          [
+            1044,
+            2
+          ],
+          [
+            132,
+            2
+          ]
+        ],
+        "iconElements": {
+          "svg": 2,
+          "iconFonts": 0,
+          "images": 4,
+          "use": 3
+        }
+      },
+      "projection": {
+        "background": "#02090a",
+        "ink": "#ffffff",
+        "accent": "#d1ff9d",
+        "tone": "dark",
+        "alignment": "left",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "square",
+      "name": "Square",
+      "kind": "commerce",
+      "url": "https://squareup.com/us/en",
+      "observed": {
+        "heading": {
+          "text": "Local legend or global icon. Make it big on your block.",
+          "box": {
+            "x": 60,
+            "y": 307,
+            "w": 1320,
+            "h": 162
+          },
+          "fontFamily": "\"Square Sans Display VF\", \"Square Sans Display\", Helvetica, Arial, \"Hiragino Sans\", \"ヒラギノ角ゴ Pro W3\", メイリオ, Meiryo, \"ＭＳ Ｐゴシック\", sans-serif",
+          "fontSize": "64px",
+          "fontWeight": "400",
+          "lineHeight": "0px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 72
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 20.0,
+            "sampleCount": 7
+          },
+          {
+            "cssPx": 40.0,
+            "sampleCount": 5
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 60.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 20.0,
+            "sampleCount": 14
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 11
+          },
+          {
+            "cssPx": 50.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 5.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            60,
+            6
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            168,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 3,
+          "iconFonts": 2,
+          "images": 29,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#000000",
+        "ink": "#ffffff",
+        "accent": "#ffffff",
+        "tone": "dark",
+        "alignment": "left",
+        "surfaceMode": "feature",
+        "surfaceDescription": "미디어/기능 표면만 강조",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "wise",
+      "name": "Wise",
+      "kind": "finance",
+      "url": "https://wise.com/",
+      "observed": {
+        "heading": {
+          "text": "The fast way to send money abroad",
+          "box": {
+            "x": 100,
+            "y": 151,
+            "w": 1239,
+            "h": 152
+          },
+          "fontFamily": "\"Wise Sans\", Inter, sans-serif",
+          "fontSize": "89.1428px",
+          "fontWeight": "900",
+          "lineHeight": "75.7714px",
+          "color": "rgb(22, 51, 0)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 76
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 7
+          },
+          {
+            "cssPx": 37.5385,
+            "sampleCount": 6
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 6.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 9.38462,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 18.7693,
+            "sampleCount": 29
+          },
+          {
+            "cssPx": 10.0,
+            "sampleCount": 4
+          },
+          {
+            "cssPx": 37.5385,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 2.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            116,
+            9
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1088,
+            4
+          ],
+          [
+            512,
+            3
+          ],
+          [
+            800,
+            3
+          ],
+          [
+            100,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 34,
+          "iconFonts": 65,
+          "images": 7,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#9fe870",
+        "ink": "#163300",
+        "accent": "#163300",
+        "tone": "lime",
+        "alignment": "left",
+        "surfaceMode": "bands",
+        "surfaceDescription": "배경 구획으로 구분",
+        "iconTreatment": "solid",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 60,
+          "body": 16,
+          "line": 1.55,
+          "radius": 20,
+          "gap": 20,
+          "section": 76,
+          "nav": 32
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "kind": "finance",
+      "url": "https://mercury.com/",
+      "observed": {
+        "heading": {
+          "text": "Radically different banking",
+          "box": {
+            "x": 384,
+            "y": 144,
+            "w": 672,
+            "h": 54
+          },
+          "fontFamily": "arcadiaDisplay, \"arcadiaDisplay Fallback\"",
+          "fontSize": "49.3472px",
+          "fontWeight": "480",
+          "lineHeight": "54.2819px",
+          "color": "rgb(237, 237, 243)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 49,
+            "w": 1440,
+            "h": 72
+          },
+          "padding": "16px 32px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 40.0,
+            "sampleCount": 7
+          },
+          {
+            "cssPx": 32.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            3
+          ],
+          [
+            956,
+            1
+          ],
+          [
+            384,
+            1
+          ],
+          [
+            452,
+            1
+          ],
+          [
+            256,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 7,
+          "iconFonts": 1,
+          "images": 1,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#171721",
+        "ink": "#ededf3",
+        "accent": "#5266eb",
+        "tone": "dark",
+        "alignment": "center",
+        "surfaceMode": "feature",
+        "surfaceDescription": "미디어/기능 표면만 강조",
+        "iconTreatment": "outline",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "kind": "finance",
+      "url": "https://ramp.com/",
+      "observed": {
+        "heading": {
+          "text": "Time is money. Save both.",
+          "box": {
+            "x": 64,
+            "y": 229,
+            "w": 1050,
+            "h": 46
+          },
+          "fontFamily": "Lausanne, Arial, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": "400",
+          "lineHeight": "64px",
+          "color": "lab(2.83994 0.367254 0.969091)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 102
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 7
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 24.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 12.0,
+            "sampleCount": 25
+          },
+          {
+            "cssPx": 6.0,
+            "sampleCount": 12
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 8
+          },
+          {
+            "cssPx": 10.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            6
+          ],
+          [
+            64,
+            3
+          ],
+          [
+            1072,
+            2
+          ],
+          [
+            460,
+            1
+          ],
+          [
+            96,
+            1
+          ],
+          [
+            764,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 7,
+          "iconFonts": 10,
+          "images": 4,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#111111",
+        "accent": "#111111",
+        "tone": "mono",
+        "alignment": "left",
+        "surfaceMode": "ruled",
+        "surfaceDescription": "선·행·열로 구분",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 50,
+          "body": 15,
+          "line": 1.55,
+          "radius": 6,
+          "gap": 16,
+          "section": 64,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "kind": "commerce",
+      "url": "https://www.apple.com/",
+      "observed": {
+        "heading": {
+          "text": "iPad mini",
+          "box": {
+            "x": 512,
+            "y": 286,
+            "w": 417,
+            "h": 66
+          },
+          "fontFamily": "\"SF Pro Text\", \"SF Pro Icons\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "fontSize": "25.5px",
+          "fontWeight": "600",
+          "lineHeight": "37.5px",
+          "color": "rgb(29, 29, 31)",
+          "margin": "5px 0px -5px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 44
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 12.0,
+            "sampleCount": 2
+          }
+        ],
+        "radii": [],
+        "leftAnchors": [
+          [
+            0,
+            4
+          ],
+          [
+            512,
+            3
+          ],
+          [
+            580,
+            2
+          ],
+          [
+            552,
+            2
+          ],
+          [
+            964,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 25,
+          "iconFonts": 0,
+          "images": 6,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#f5f5f7",
+        "ink": "#1d1d1f",
+        "accent": "#0071e3",
+        "tone": "soft",
+        "alignment": "center",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 54,
+          "body": 16,
+          "line": 1.55,
+          "radius": 20,
+          "gap": 24,
+          "section": 80,
+          "nav": 36
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "nike",
+      "name": "Nike",
+      "kind": "commerce",
+      "url": "https://www.nike.com/",
+      "observed": {
+        "heading": {
+          "text": "HAUNT THE HARDWOOD",
+          "box": {
+            "x": 48,
+            "y": 588,
+            "w": 1392,
+            "h": 68
+          },
+          "fontFamily": "\"Nike Futura ND\", \"Helvetica Now Text Medium\", Helvetica, Arial, sans-serif",
+          "fontSize": "76px",
+          "fontWeight": "500",
+          "lineHeight": "68.4px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 96
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 4.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 24.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 30.0,
+            "sampleCount": 6
+          },
+          {
+            "cssPx": 24.0,
+            "sampleCount": 2
+          }
+        ],
+        "leftAnchors": [
+          [
+            1156,
+            13
+          ],
+          [
+            612,
+            12
+          ],
+          [
+            572,
+            12
+          ],
+          [
+            716,
+            12
+          ],
+          [
+            1008,
+            12
+          ],
+          [
+            1048,
+            11
+          ]
+        ],
+        "iconElements": {
+          "svg": 13,
+          "iconFonts": 4,
+          "images": 3,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#f5f5f5",
+        "ink": "#111111",
+        "accent": "#111111",
+        "tone": "bold",
+        "alignment": "left",
+        "surfaceMode": "feature",
+        "surfaceDescription": "미디어/기능 표면만 강조",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 64,
+          "body": 16,
+          "line": 1.45,
+          "radius": 4,
+          "gap": 20,
+          "section": 86,
+          "nav": 40
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "ikea",
+      "name": "IKEA",
+      "kind": "commerce",
+      "url": "https://www.ikea.com/us/en/",
+      "observed": {
+        "heading": {
+          "text": "Holiday hosting? This year, your kitchen will shine.",
+          "box": {
+            "x": 80,
+            "y": 1201,
+            "w": 169,
+            "h": 68
+          },
+          "fontFamily": "\"Omani Rial\", \"Emirati Dirham\", \"Saudi Riyal\", \"Noto IKEA\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans\", Roboto, \"Open Sans\", system-ui, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "lineHeight": "22.5px",
+          "color": "rgb(17, 17, 17)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 138
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 4.0,
+            "sampleCount": 8
+          },
+          {
+            "cssPx": 8.0,
+            "sampleCount": 7
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 20.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 24.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 64.0,
+            "sampleCount": 30
+          },
+          {
+            "cssPx": 100.0,
+            "sampleCount": 2
+          }
+        ],
+        "leftAnchors": [
+          [
+            48,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            748,
+            2
+          ],
+          [
+            188,
+            1
+          ],
+          [
+            1076,
+            1
+          ],
+          [
+            68,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 23,
+          "iconFonts": 40,
+          "images": 23,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#111111",
+        "accent": "#007cc1",
+        "tone": "catalog",
+        "alignment": "left",
+        "surfaceMode": "bands",
+        "surfaceDescription": "배경 구획으로 구분",
+        "iconTreatment": "solid",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 44,
+          "body": 15,
+          "line": 1.55,
+          "radius": 4,
+          "gap": 16,
+          "section": 56,
+          "nav": 32
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "the-guardian",
+      "name": "The Guardian",
+      "kind": "editorial",
+      "url": "https://www.theguardian.com/international",
+      "observed": {
+        "heading": {
+          "text": "Support the Guardian",
+          "box": {
+            "x": 90,
+            "y": 304,
+            "w": 307,
+            "h": 28
+          },
+          "fontFamily": "\"GH Guardian Headline\", \"Guardian Egyptian Web\", Georgia, serif",
+          "fontSize": "24px",
+          "fontWeight": "700",
+          "lineHeight": "27.6px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 295,
+            "w": 1440,
+            "h": 369
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 4.0,
+            "sampleCount": 6
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 20.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 36.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 24.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            332,
+            11
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            92,
+            2
+          ],
+          [
+            340,
+            1
+          ],
+          [
+            660,
+            1
+          ],
+          [
+            980,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 11,
+          "iconFonts": 1,
+          "images": 14,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#121212",
+        "accent": "#052962",
+        "tone": "editorial",
+        "alignment": "left",
+        "surfaceMode": "ruled",
+        "surfaceDescription": "선·행·열로 구분",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "Georgia, serif",
+          "heading": 54,
+          "body": 17,
+          "line": 1.62,
+          "radius": 2,
+          "gap": 18,
+          "section": 64,
+          "nav": 30
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "gov-uk",
+      "name": "GOV.UK",
+      "kind": "public",
+      "url": "https://www.gov.uk/",
+      "observed": {
+        "heading": {
+          "text": "Cookies on GOV.UK",
+          "box": {
+            "x": 240,
+            "y": 20,
+            "w": 630,
+            "h": 30
+          },
+          "fontFamily": "\"GDS Transport\", arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "700",
+          "lineHeight": "30px",
+          "color": "rgb(11, 12, 12)",
+          "margin": "0px 0px 20px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 324,
+            "w": 1440,
+            "h": 62
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 15.0,
+            "sampleCount": 4
+          }
+        ],
+        "radii": [],
+        "leftAnchors": [
+          [
+            240,
+            27
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            996,
+            4
+          ],
+          [
+            900,
+            2
+          ]
+        ],
+        "iconElements": {
+          "svg": 9,
+          "iconFonts": 20,
+          "images": 4,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#f4f8fb",
+        "ink": "#0b0c0c",
+        "accent": "#1d70b8",
+        "tone": "utility",
+        "alignment": "left",
+        "surfaceMode": "ruled",
+        "surfaceDescription": "선·행·열로 구분",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 44,
+          "body": 17,
+          "line": 1.55,
+          "radius": 0,
+          "gap": 16,
+          "section": 56,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "nasa",
+      "name": "NASA",
+      "kind": "public",
+      "url": "https://www.nasa.gov/",
+      "observed": {
+        "heading": {
+          "text": "To the Moon",
+          "box": {
+            "x": 24,
+            "y": 236,
+            "w": 689,
+            "h": 76
+          },
+          "fontFamily": "inter, sans-serif",
+          "fontSize": "72px",
+          "fontWeight": "700",
+          "lineHeight": "75.6px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "59.76px 0px 8px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1425,
+            "h": 86
+          },
+          "padding": "16px",
+          "gap": "normal"
+        },
+        "gaps": [],
+        "radii": [
+          {
+            "cssPx": 4.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            3
+          ],
+          [
+            24,
+            3
+          ],
+          [
+            1072,
+            2
+          ],
+          [
+            80,
+            2
+          ],
+          [
+            828,
+            1
+          ],
+          [
+            368,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 18,
+          "iconFonts": 0,
+          "images": 12,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#000000",
+        "ink": "#ffffff",
+        "accent": "#d83933",
+        "tone": "dark",
+        "alignment": "left",
+        "surfaceMode": "feature",
+        "surfaceDescription": "미디어/기능 표면만 강조",
+        "iconTreatment": "outline",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia",
+      "kind": "knowledge",
+      "url": "https://www.wikipedia.org/",
+      "observed": {
+        "heading": {
+          "text": "Wikipedia The Free Encyclopedia",
+          "box": {
+            "x": 632,
+            "y": 52,
+            "w": 176,
+            "h": 69
+          },
+          "fontFamily": "\"Linux Libertine\", \"Hoefler Text\", Georgia, \"Times New Roman\", Times, serif",
+          "fontSize": "32px",
+          "fontWeight": "700",
+          "lineHeight": "33px",
+          "color": "rgb(32, 33, 34)",
+          "margin": "12px 0px"
+        },
+        "nav": {
+          "box": {
+            "x": 447,
+            "y": 138,
+            "w": 546,
+            "h": 325
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [],
+        "radii": [
+          {
+            "cssPx": 2.0,
+            "sampleCount": 13
+          },
+          {
+            "cssPx": 21.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 25.5,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 10.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            1188,
+            4
+          ],
+          [
+            20,
+            3
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            632,
+            1
+          ],
+          [
+            448,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 4,
+          "iconFonts": 21,
+          "images": 1,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#202122",
+        "accent": "#36c",
+        "tone": "knowledge",
+        "alignment": "center",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 44,
+          "body": 16,
+          "line": 1.55,
+          "radius": 2,
+          "gap": 16,
+          "section": 64,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "mdn",
+      "name": "MDN",
+      "kind": "knowledge",
+      "url": "https://developer.mozilla.org/en-US/",
+      "observed": {
+        "heading": {
+          "text": "Resources for Developers, by Developers",
+          "box": {
+            "x": 329,
+            "y": 205,
+            "w": 591,
+            "h": 120
+          },
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "40px",
+          "fontWeight": "400",
+          "lineHeight": "60px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px 0px 26.8px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 91,
+            "w": 1425,
+            "h": 98
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 16.0,
+            "sampleCount": 2
+          },
+          {
+            "cssPx": 8.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 32.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 8
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            328,
+            15
+          ],
+          [
+            348,
+            8
+          ],
+          [
+            740,
+            8
+          ],
+          [
+            720,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            284,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 4,
+          "iconFonts": 1,
+          "images": 1,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#212426",
+        "ink": "#ffffff",
+        "accent": "#a4cefe",
+        "tone": "dark",
+        "alignment": "left",
+        "surfaceMode": "ruled",
+        "surfaceDescription": "선·행·열로 구분",
+        "iconTreatment": "outline",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "kind": "developer",
+      "url": "https://about.gitlab.com/",
+      "observed": {
+        "heading": {
+          "text": "Speed you can trust, all the way to production",
+          "box": {
+            "x": 165,
+            "y": 218,
+            "w": 1111,
+            "h": 200
+          },
+          "fontFamily": "\"GitLab Sans\", sans-serif",
+          "fontSize": "96px",
+          "fontWeight": "660",
+          "lineHeight": "99.84px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 52,
+            "w": 1440,
+            "h": 69
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 24.0,
+            "sampleCount": 4
+          },
+          {
+            "cssPx": 64.0,
+            "sampleCount": 4
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 3
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 4.0,
+            "sampleCount": 11
+          }
+        ],
+        "leftAnchors": [
+          [
+            0,
+            7
+          ],
+          [
+            164,
+            4
+          ],
+          [
+            200,
+            3
+          ],
+          [
+            764,
+            3
+          ],
+          [
+            560,
+            2
+          ],
+          [
+            928,
+            2
+          ]
+        ],
+        "iconElements": {
+          "svg": 15,
+          "iconFonts": 16,
+          "images": 24,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#171321",
+        "ink": "#ffffff",
+        "accent": "#7759c2",
+        "tone": "dark",
+        "alignment": "center",
+        "surfaceMode": "bands",
+        "surfaceDescription": "배경 구획으로 구분",
+        "iconTreatment": "outline",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "bbc",
+      "name": "BBC",
+      "kind": "editorial",
+      "url": "https://www.bbc.com/",
+      "observed": {
+        "heading": {
+          "text": "Israel and the US are both going to the polls - the consequences will ",
+          "box": {
+            "x": 412,
+            "y": 800,
+            "w": 616,
+            "h": 64
+          },
+          "fontFamily": "\"BBC Reith Serif\", BBCReithSerif-fallback, serif",
+          "fontSize": "28px",
+          "fontWeight": "500",
+          "lineHeight": "32px",
+          "color": "rgb(32, 34, 36)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 278,
+            "w": 1440,
+            "h": 81
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 8.0,
+            "sampleCount": 23
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 12
+          },
+          {
+            "cssPx": 16.0,
+            "sampleCount": 4
+          },
+          {
+            "cssPx": 20.0,
+            "sampleCount": 2
+          }
+        ],
+        "radii": [],
+        "leftAnchors": [
+          [
+            0,
+            8
+          ],
+          [
+            96,
+            8
+          ],
+          [
+            1044,
+            8
+          ],
+          [
+            412,
+            2
+          ],
+          [
+            728,
+            2
+          ],
+          [
+            284,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 7,
+          "iconFonts": 8,
+          "images": 19,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#202224",
+        "accent": "#202224",
+        "tone": "editorial",
+        "alignment": "left",
+        "surfaceMode": "ruled",
+        "surfaceDescription": "선·행·열로 구분",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "Georgia, serif",
+          "heading": 54,
+          "body": 17,
+          "line": 1.62,
+          "radius": 2,
+          "gap": 18,
+          "section": 64,
+          "nav": 30
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "smashing-magazine",
+      "name": "Smashing Magazine",
+      "kind": "editorial",
+      "url": "https://www.smashingmagazine.com/",
+      "observed": {
+        "heading": {
+          "text": "Accordion Icons: Which Work Best?",
+          "box": {
+            "x": 320,
+            "y": 273,
+            "w": 489,
+            "h": 107
+          },
+          "fontFamily": "Mija",
+          "fontSize": "44.72px",
+          "fontWeight": "700",
+          "lineHeight": "53.664px",
+          "color": "rgb(51, 51, 51)",
+          "margin": "15.652px 0px 11.18px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 103
+          },
+          "padding": "16px 40.8172px",
+          "gap": "normal 10px"
+        },
+        "gaps": [],
+        "radii": [
+          {
+            "cssPx": 11.0,
+            "sampleCount": 28
+          },
+          {
+            "cssPx": 11.104,
+            "sampleCount": 12
+          },
+          {
+            "cssPx": 24.4903,
+            "sampleCount": 3
+          }
+        ],
+        "leftAnchors": [
+          [
+            108,
+            8
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            976,
+            5
+          ],
+          [
+            228,
+            3
+          ],
+          [
+            808,
+            3
+          ],
+          [
+            256,
+            2
+          ]
+        ],
+        "iconElements": {
+          "svg": 1,
+          "iconFonts": 0,
+          "images": 7,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#333333",
+        "accent": "#d33a2c",
+        "tone": "editorial",
+        "alignment": "left",
+        "surfaceMode": "ruled",
+        "surfaceDescription": "선·행·열로 구분",
+        "iconTreatment": "illustrated",
+        "tokens": {
+          "family": "Georgia, serif",
+          "heading": 54,
+          "body": 17,
+          "line": 1.62,
+          "radius": 2,
+          "gap": 18,
+          "section": 64,
+          "nav": 30
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "kind": "product",
+      "url": "https://www.duolingo.com/",
+      "observed": {
+        "heading": {
+          "text": "The most fun way to learn languages, chess, and more!",
+          "box": {
+            "x": 734,
+            "y": 325,
+            "w": 480,
+            "h": 88
+          },
+          "fontFamily": "duolingo-sans, sans-serif",
+          "fontSize": "32px",
+          "fontWeight": "700",
+          "lineHeight": "normal",
+          "color": "rgb(75, 75, 75)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          "padding": "70px 0px 0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 24.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 12.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 23.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 30.0,
+            "sampleCount": 1
+          },
+          {
+            "cssPx": 80.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 12.0,
+            "sampleCount": 2
+          }
+        ],
+        "leftAnchors": [
+          [
+            228,
+            7
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            740,
+            2
+          ],
+          [
+            736,
+            1
+          ],
+          [
+            176,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 3,
+          "iconFonts": 0,
+          "images": 47,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#3c3c3c",
+        "accent": "#58cc02",
+        "tone": "playful",
+        "alignment": "split",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "illustrated",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 50,
+          "body": 17,
+          "line": 1.55,
+          "radius": 18,
+          "gap": 20,
+          "section": 76,
+          "nav": 30
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian",
+      "kind": "product",
+      "url": "https://www.atlassian.com/",
+      "observed": {
+        "heading": {
+          "text": "FEATURED APPS",
+          "box": {
+            "x": 460,
+            "y": 112,
+            "w": 632,
+            "h": 21
+          },
+          "fontFamily": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Noto Sans\", Ubuntu, \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "color": "rgb(16, 18, 20)",
+          "margin": "0px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 68
+          },
+          "padding": "0px 32px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 32.0,
+            "sampleCount": 10
+          },
+          {
+            "cssPx": 6.0,
+            "sampleCount": 5
+          },
+          {
+            "cssPx": 2.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 24.0,
+            "sampleCount": 3
+          },
+          {
+            "cssPx": 4.0,
+            "sampleCount": 2
+          }
+        ],
+        "radii": [
+          {
+            "cssPx": 4.0,
+            "sampleCount": 8
+          },
+          {
+            "cssPx": 20.0,
+            "sampleCount": 7
+          },
+          {
+            "cssPx": 3.0,
+            "sampleCount": 6
+          },
+          {
+            "cssPx": 40.0,
+            "sampleCount": 1
+          }
+        ],
+        "leftAnchors": [
+          [
+            460,
+            3
+          ],
+          [
+            336,
+            3
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            236,
+            2
+          ],
+          [
+            136,
+            2
+          ],
+          [
+            656,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 21,
+          "iconFonts": 5,
+          "images": 10,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#ffffff",
+        "ink": "#292a2e",
+        "accent": "#1868db",
+        "tone": "bright",
+        "alignment": "center",
+        "surfaceMode": "bands",
+        "surfaceDescription": "배경 구획으로 구분",
+        "iconTreatment": "outline",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 52,
+          "body": 16,
+          "line": 1.5,
+          "radius": 8,
+          "gap": 18,
+          "section": 72,
+          "nav": 32
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    },
+    {
+      "id": "mozilla",
+      "name": "Mozilla",
+      "kind": "public",
+      "url": "https://www.mozilla.org/en-US/",
+      "observed": {
+        "heading": {
+          "text": "Welcome to Mozilla",
+          "box": {
+            "x": 32,
+            "y": 169,
+            "w": 912,
+            "h": 256
+          },
+          "fontFamily": "\"Mozilla Headline\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif",
+          "fontSize": "128px",
+          "fontWeight": "600",
+          "lineHeight": "128px",
+          "color": "rgb(255, 255, 255)",
+          "margin": "0px 0px 16px"
+        },
+        "nav": {
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 57
+          },
+          "padding": "0px",
+          "gap": "normal"
+        },
+        "gaps": [
+          {
+            "cssPx": 16.0,
+            "sampleCount": 1
+          }
+        ],
+        "radii": [],
+        "leftAnchors": [
+          [
+            32,
+            9
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            844,
+            1
+          ]
+        ],
+        "iconElements": {
+          "svg": 3,
+          "iconFonts": 0,
+          "images": 2,
+          "use": 0
+        }
+      },
+      "projection": {
+        "background": "#161616",
+        "ink": "#ffffff",
+        "accent": "#ffffff",
+        "tone": "dark",
+        "alignment": "left",
+        "surfaceMode": "open",
+        "surfaceDescription": "섹션 여백·타이포 우선",
+        "iconTreatment": "minimal",
+        "tokens": {
+          "family": "system-ui, sans-serif",
+          "heading": 48,
+          "body": 15,
+          "line": 1.55,
+          "radius": 8,
+          "gap": 16,
+          "section": 72,
+          "nav": 24
+        },
+        "reason": "관찰 화면의 색·헤딩·구획 경향을 기존 KB 역할에 맞게 재해석한 시연 토큰. 원본 CSS/브랜드 가이드의 복제나 정확한 토큰 추출이 아님."
+      }
+    }
+  ]
+}

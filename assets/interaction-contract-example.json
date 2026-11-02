@@ -1,0 +1,49 @@
+{
+  "stage": "design",
+  "components": [
+    {
+      "id": "save-button",
+      "screen": "editor",
+      "role": "save current document",
+      "variant": "ordinary button",
+      "hitArea": "44x44 CSS px",
+      "stateChange": "idle to saving to saved or error",
+      "conflicts": "repeat tap during saving is ignored",
+      "verification": "mouse, touch and keyboard pending",
+      "hoverAlternative": "focus and persistent label",
+      "modes": {
+        "clickTap": {"status": "supported", "behavior": "execute save once on release"},
+        "hover": {"status": "supported", "behavior": "show background change; label remains visible"},
+        "longPress": {"status": "unsupported", "behavior": "no extra command; normal action on release"},
+        "dragDrop": {"status": "unsupported", "behavior": "button has no movable content or drop target"},
+        "swipe": {"status": "unsupported", "behavior": "button has no directional action"},
+        "keyboard": {"status": "supported", "behavior": "Tab focuses; Enter or Space saves"}
+      }
+    },
+    {
+      "id": "row-reorder-handle",
+      "screen": "editor",
+      "role": "move a row to another position",
+      "variant": "reorder handle button",
+      "hitArea": "44x44 CSS px, separate from row open action",
+      "stateChange": "idle to dragging to moved or canceled",
+      "conflicts": "drag only starts from handle; row body remains selectable; pointercancel restores order",
+      "verification": "mouse, touch and keyboard pending",
+      "dragStart": "handle movement past project threshold",
+      "dropTarget": "valid position between rows",
+      "cancel": "Escape or pointercancel restores original order and focus",
+      "nonDragAlternative": "move up/down buttons",
+      "longPressThreshold": "touch hold duration set and measured per platform",
+      "longPressAlternative": "visible move up/down buttons",
+      "hoverAlternative": "persistent handle and keyboard focus indicator",
+      "modes": {
+        "clickTap": {"status": "supported", "behavior": "reveal move controls"},
+        "hover": {"status": "supported", "behavior": "show grab cursor; handle remains visible"},
+        "longPress": {"status": "conditional", "condition": "touch on handle", "behavior": "enter move mode; suppress following click"},
+        "dragDrop": {"status": "supported", "behavior": "move row through valid positions from handle"},
+        "swipe": {"status": "unsupported", "behavior": "row movement uses the handle, not a swipe"},
+        "keyboard": {"status": "supported", "behavior": "Tab to handle; move up/down controls; Escape cancels"}
+      }
+    }
+  ]
+}

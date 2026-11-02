@@ -1,0 +1,4424 @@
+{
+  "schemaVersion": "1.0",
+  "checkedAt": "2026-10-28",
+  "method": "Manual reading of published raster screenshots. Bounds and HEX are image evidence, not pt/dp, verified touch targets, or platform tokens. Fourteen additional screens retain full node evidence in mobile-platform-analysis-full.json; shared values require independent comparable samples.",
+  "screens": [
+    {
+      "id": "ios27-calendar-event-detail",
+      "platform": "iOS 27",
+      "app": "Calendar",
+      "state": "event detail",
+      "imageSize": [
+        2000,
+        1000
+      ],
+      "frame": [
+        550,
+        100,
+        350,
+        800
+      ],
+      "sourcePage": "https://9to5mac.com/2026/09/03/apples-calendar-app-in-ios-27-has-brand-new-design-for-key-features/",
+      "sourceClass": "third-party comparison; left phone is iOS 27, right phone is iOS 26",
+      "confidence": "medium",
+      "purpose": "Review one event and act on it",
+      "hierarchy": [
+        "event identity and time",
+        "time-block visualization",
+        "location",
+        "event options",
+        "destructive action"
+      ],
+      "regions": [
+        {
+          "id": "chrome",
+          "box": [
+            550,
+            150,
+            350,
+            78
+          ],
+          "role": "dismiss and edit controls"
+        },
+        {
+          "id": "identity",
+          "box": [
+            562,
+            235,
+            325,
+            105
+          ],
+          "role": "event title and time"
+        },
+        {
+          "id": "timeline",
+          "box": [
+            560,
+            345,
+            330,
+            145
+          ],
+          "role": "schedule visualization"
+        },
+        {
+          "id": "location",
+          "box": [
+            560,
+            500,
+            330,
+            105
+          ],
+          "role": "location preview"
+        },
+        {
+          "id": "options",
+          "box": [
+            560,
+            610,
+            330,
+            265
+          ],
+          "role": "editable properties"
+        }
+      ],
+      "components": [
+        {
+          "role": "dismiss",
+          "type": "button",
+          "evidence": "visible X glyph; action inferred"
+        },
+        {
+          "role": "edit",
+          "type": "button",
+          "evidence": "visible Edit label"
+        },
+        {
+          "role": "event schedule",
+          "type": "timeline visualization",
+          "evidence": "time ticks and event blocks"
+        },
+        {
+          "role": "event location",
+          "type": "map preview",
+          "evidence": "address and small map"
+        },
+        {
+          "role": "properties",
+          "type": "grouped list rows",
+          "evidence": "Calendar, Show As, Alert, Travel Time rows"
+        },
+        {
+          "role": "delete",
+          "type": "destructive button",
+          "evidence": "Delete Event label"
+        }
+      ],
+      "style": {
+        "surface": "pale neutral canvas with white grouped surfaces",
+        "layout": "top action row, then vertical content sections",
+        "alignment": "left content axis within rounded inset groups",
+        "spacing": "section breaks are larger than row separators; exact pt unknown",
+        "shape": "rounded grouped fields and floating footer action"
+      },
+      "colors": [
+        {
+          "role": "canvas",
+          "hex": "#F3F2F7",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "surface",
+          "hex": "#FFFFFF",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "event accent",
+          "hex": "#187BD6",
+          "evidence": "raster pixel sample; event color may be user-selected"
+        }
+      ],
+      "seedReason": "Blue is an event/category color, not a verified app-wide accent.",
+      "screenFamily": "event-detail",
+      "seed": null
+    },
+    {
+      "id": "ios27-calendar-event-create",
+      "platform": "iOS 27",
+      "app": "Calendar",
+      "state": "new event form",
+      "imageSize": [
+        2000,
+        1000
+      ],
+      "frame": [
+        550,
+        100,
+        350,
+        800
+      ],
+      "sourcePage": "https://9to5mac.com/2026/09/03/apples-calendar-app-in-ios-27-has-brand-new-design-for-key-features/",
+      "sourceClass": "third-party comparison; left phone is iOS 27, right phone is iOS 26",
+      "confidence": "medium",
+      "purpose": "Create an event or reminder",
+      "hierarchy": [
+        "composer mode",
+        "title and time",
+        "people and place",
+        "options",
+        "details"
+      ],
+      "regions": [
+        {
+          "id": "chrome",
+          "box": [
+            550,
+            155,
+            350,
+            70
+          ],
+          "role": "dismiss, mode choice and completion"
+        },
+        {
+          "id": "primary-fields",
+          "box": [
+            560,
+            225,
+            330,
+            115
+          ],
+          "role": "title and date-time"
+        },
+        {
+          "id": "people-place",
+          "box": [
+            560,
+            350,
+            330,
+            180
+          ],
+          "role": "location and invitees"
+        },
+        {
+          "id": "options",
+          "box": [
+            560,
+            545,
+            330,
+            195
+          ],
+          "role": "calendar and alerts"
+        },
+        {
+          "id": "details",
+          "box": [
+            560,
+            745,
+            330,
+            150
+          ],
+          "role": "notes and attachments"
+        }
+      ],
+      "components": [
+        {
+          "role": "event/reminder mode",
+          "type": "segmented control",
+          "evidence": "two mutually exclusive composer modes"
+        },
+        {
+          "role": "dismiss",
+          "type": "button",
+          "evidence": "X glyph"
+        },
+        {
+          "role": "complete",
+          "type": "button",
+          "evidence": "checkmark; disabled appearance in this state"
+        },
+        {
+          "role": "title",
+          "type": "text input",
+          "evidence": "Title or Describe Event placeholder"
+        },
+        {
+          "role": "date and time",
+          "type": "value row",
+          "evidence": "date and time on one grouped surface"
+        },
+        {
+          "role": "location and invitees",
+          "type": "form fields",
+          "evidence": "labeled sections with input rows"
+        },
+        {
+          "role": "options",
+          "type": "grouped list rows",
+          "evidence": "Calendar, Alert, Travel Time"
+        }
+      ],
+      "style": {
+        "surface": "pale neutral canvas with white form rows",
+        "layout": "single scroll column below mode chooser",
+        "alignment": "field text and section labels share left inset",
+        "spacing": "section gaps larger than within-group row gaps; exact pt unknown",
+        "shape": "pill fields and softly rounded groups"
+      },
+      "colors": [
+        {
+          "role": "canvas",
+          "hex": "#F3F2F7",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "surface",
+          "hex": "#FFFFFF",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "event accent",
+          "hex": "#0B8AF3",
+          "evidence": "raster pixel sample; event color may be user-selected"
+        }
+      ],
+      "seedReason": "Blue event stripe is data-dependent.",
+      "screenFamily": "event-form",
+      "seed": null
+    },
+    {
+      "id": "ios27-passwords-progress",
+      "platform": "iOS 27",
+      "app": "Passwords",
+      "state": "password repair progress",
+      "imageSize": [
+        372,
+        452
+      ],
+      "frame": [
+        0,
+        0,
+        372,
+        452
+      ],
+      "sourcePage": "https://www.apple.com/os/ios/",
+      "sourceClass": "Apple product illustration; partial screen, not full device capture",
+      "confidence": "medium",
+      "purpose": "Show progress across multiple password fixes",
+      "hierarchy": [
+        "progress statement",
+        "explanation",
+        "per-account status list"
+      ],
+      "regions": [
+        {
+          "id": "intro",
+          "box": [
+            70,
+            35,
+            240,
+            115
+          ],
+          "role": "progress and explanation"
+        },
+        {
+          "id": "status-list",
+          "box": [
+            56,
+            164,
+            264,
+            250
+          ],
+          "role": "account status rows"
+        }
+      ],
+      "components": [
+        {
+          "role": "progress title",
+          "type": "status heading",
+          "evidence": "Fixing Passwords text"
+        },
+        {
+          "role": "account status",
+          "type": "status list row",
+          "evidence": "icon, name, completed/in-progress text"
+        },
+        {
+          "role": "more information",
+          "type": "icon button candidate",
+          "evidence": "circled information glyph; interaction not verified"
+        },
+        {
+          "role": "current progress",
+          "type": "spinner",
+          "evidence": "spinner on final row"
+        }
+      ],
+      "style": {
+        "surface": "white canvas and one lightly bounded list",
+        "layout": "intro followed by compact vertical progress list",
+        "alignment": "icon/name/status columns repeat",
+        "spacing": "tight within-row text, larger between intro and list",
+        "shape": "single rounded status container; not separate cards per row"
+      },
+      "colors": [
+        {
+          "role": "canvas",
+          "hex": "#FFFFFF",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "success status",
+          "hex": "#A9E2B7",
+          "evidence": "raster pixel sample; status semantics"
+        }
+      ],
+      "seedReason": "Green indicates completed status and should not become the default brand accent.",
+      "screenFamily": "progress-list",
+      "seed": null
+    },
+    {
+      "id": "oneui9-settings-home",
+      "platform": "One UI 9",
+      "app": "Settings",
+      "state": "home",
+      "imageSize": [
+        1175,
+        2520
+      ],
+      "frame": [
+        0,
+        0,
+        1175,
+        2520
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/others/one-ui-8-5-vs-one-ui-9-bedah-perbedaan-amp-fitur-baru-di-galaxy/td-p/39487394/highlight/true/page/2",
+      "sourceClass": "Samsung Members user screenshot, labeled One UI 9; not official design guidance",
+      "confidence": "medium",
+      "purpose": "Browse settings categories and search",
+      "hierarchy": [
+        "large page title",
+        "account",
+        "featured care item",
+        "settings groups",
+        "persistent search"
+      ],
+      "regions": [
+        {
+          "id": "title",
+          "box": [
+            76,
+            227,
+            1021,
+            605
+          ],
+          "role": "page identity and reach space"
+        },
+        {
+          "id": "account",
+          "box": [
+            78,
+            883,
+            1021,
+            257
+          ],
+          "role": "account entry"
+        },
+        {
+          "id": "feature",
+          "box": [
+            78,
+            1198,
+            1021,
+            159
+          ],
+          "role": "care shortcut"
+        },
+        {
+          "id": "settings-list",
+          "box": [
+            78,
+            1415,
+            1021,
+            933
+          ],
+          "role": "category navigation"
+        },
+        {
+          "id": "search",
+          "box": [
+            227,
+            2333,
+            731,
+            159
+          ],
+          "role": "floating search"
+        }
+      ],
+      "components": [
+        {
+          "role": "page title",
+          "type": "heading",
+          "evidence": "large Settings text"
+        },
+        {
+          "role": "account",
+          "type": "navigation row",
+          "evidence": "identity and avatar"
+        },
+        {
+          "role": "care",
+          "type": "navigation row",
+          "evidence": "icon and Warranty and care label"
+        },
+        {
+          "role": "settings categories",
+          "type": "grouped navigation list",
+          "evidence": "row labels and icon anchors; separator lines inside groups"
+        },
+        {
+          "role": "search",
+          "type": "search control",
+          "evidence": "Search label and microphone glyph; search behavior inferred"
+        }
+      ],
+      "style": {
+        "surface": "warm pale canvas and white rounded list groups",
+        "layout": "large upper title space, controls in lower reach region",
+        "alignment": "icons form one left axis, labels a second axis",
+        "spacing": "group gaps exceed within-group separators; exact dp unknown",
+        "shape": "pill-shaped groups and floating search bar"
+      },
+      "colors": [
+        {
+          "role": "canvas",
+          "hex": "#F3EFEE",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "surface",
+          "hex": "#FFFFFF",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "title accent",
+          "hex": "#4222C3",
+          "evidence": "raster pixel sample"
+        }
+      ],
+      "seed": {
+        "hex": "#4222C3",
+        "role": "ui-accent",
+        "background": "#F3EFEE"
+      },
+      "screenFamily": "settings-list"
+    },
+    {
+      "id": "oneui9-calendar-month",
+      "platform": "One UI 9",
+      "app": "Calendar",
+      "state": "month with events",
+      "imageSize": [
+        1175,
+        2520
+      ],
+      "frame": [
+        0,
+        0,
+        1175,
+        2520
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/others/one-ui-8-5-vs-one-ui-9-bedah-perbedaan-amp-fitur-baru-di-galaxy/td-p/39487394/highlight/true/page/2",
+      "sourceClass": "Samsung Members user screenshot, labeled One UI 9; not official design guidance",
+      "confidence": "medium",
+      "purpose": "Scan a month, inspect selected date and add an event",
+      "hierarchy": [
+        "month and actions",
+        "weekday rail",
+        "date/event grid",
+        "persistent add action"
+      ],
+      "regions": [
+        {
+          "id": "top-bar",
+          "box": [
+            88,
+            141,
+            996,
+            166
+          ],
+          "role": "month navigation and tools"
+        },
+        {
+          "id": "weekdays",
+          "box": [
+            88,
+            313,
+            996,
+            76
+          ],
+          "role": "weekday labels"
+        },
+        {
+          "id": "month-grid",
+          "box": [
+            76,
+            391,
+            1021,
+            1907
+          ],
+          "role": "dates and event snippets"
+        },
+        {
+          "id": "add",
+          "box": [
+            214,
+            2331,
+            741,
+            161
+          ],
+          "role": "add on selected date"
+        }
+      ],
+      "components": [
+        {
+          "role": "month title",
+          "type": "title/navigation candidate",
+          "evidence": "May text; tap behavior unverified"
+        },
+        {
+          "role": "search",
+          "type": "icon button",
+          "evidence": "magnifier glyph"
+        },
+        {
+          "role": "calendar mode or today",
+          "type": "icon button candidate",
+          "evidence": "calendar glyph with 17; exact action unverified"
+        },
+        {
+          "role": "dates",
+          "type": "calendar grid cells",
+          "evidence": "seven aligned columns"
+        },
+        {
+          "role": "selected day",
+          "type": "selection state",
+          "evidence": "outlined day 1"
+        },
+        {
+          "role": "events",
+          "type": "data marks",
+          "evidence": "colored strips and text; colors reflect event categories"
+        },
+        {
+          "role": "add",
+          "type": "primary action bar",
+          "evidence": "Add on May 1 and plus glyph"
+        }
+      ],
+      "style": {
+        "surface": "mostly open white calendar grid",
+        "layout": "seven-column dense month field",
+        "alignment": "weekday and date columns share grid axes",
+        "spacing": "cell boundaries and event insets are tighter than top/bottom regions",
+        "shape": "little card framing in grid; bottom action floats"
+      },
+      "colors": [
+        {
+          "role": "canvas",
+          "hex": "#FDFDFD",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "event pink",
+          "hex": "#FC9A99",
+          "evidence": "raster pixel sample; user data"
+        },
+        {
+          "role": "event purple",
+          "hex": "#9986FC",
+          "evidence": "raster pixel cluster; user data"
+        }
+      ],
+      "seedReason": "Event colors encode user data, not a stable app accent.",
+      "screenFamily": "calendar-grid",
+      "seed": null
+    },
+    {
+      "id": "oneui9-calculator-scientific",
+      "platform": "One UI 9",
+      "app": "Calculator",
+      "state": "scientific keypad",
+      "imageSize": [
+        1175,
+        2520
+      ],
+      "frame": [
+        0,
+        0,
+        1175,
+        2520
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/others/one-ui-8-5-vs-one-ui-9-bedah-perbedaan-amp-fitur-baru-di-galaxy/td-p/39487394/highlight/true/page/2",
+      "sourceClass": "Samsung Members user screenshot, labeled One UI 9; not official design guidance",
+      "confidence": "medium",
+      "purpose": "Enter and calculate expressions",
+      "hierarchy": [
+        "entry display",
+        "scientific functions",
+        "number keypad",
+        "operators"
+      ],
+      "regions": [
+        {
+          "id": "tools",
+          "box": [
+            88,
+            161,
+            996,
+            121
+          ],
+          "role": "history and tools"
+        },
+        {
+          "id": "display",
+          "box": [
+            88,
+            378,
+            996,
+            782
+          ],
+          "role": "expression and result"
+        },
+        {
+          "id": "scientific",
+          "box": [
+            106,
+            1216,
+            963,
+            457
+          ],
+          "role": "functions"
+        },
+        {
+          "id": "keypad",
+          "box": [
+            106,
+            1690,
+            963,
+            815
+          ],
+          "role": "numbers and operators"
+        }
+      ],
+      "components": [
+        {
+          "role": "display",
+          "type": "numeric text field/output",
+          "evidence": "large right-aligned zero and caret"
+        },
+        {
+          "role": "scientific operations",
+          "type": "function keys",
+          "evidence": "sin, cos, tan, log, etc."
+        },
+        {
+          "role": "digits",
+          "type": "keypad buttons",
+          "evidence": "four-column regular grid"
+        },
+        {
+          "role": "operators",
+          "type": "operator buttons",
+          "evidence": "separate darker fourth column"
+        },
+        {
+          "role": "equals",
+          "type": "primary calculation button",
+          "evidence": "= key"
+        }
+      ],
+      "style": {
+        "surface": "warm pale canvas, no surrounding card containers",
+        "layout": "display above dense, regular four-column keypad",
+        "alignment": "key centers form strict rows and columns; display aligns right",
+        "spacing": "fixed rhythm within keypad; large separation above keypad",
+        "shape": "individual pill keys and large rounded operator keys"
+      },
+      "colors": [
+        {
+          "role": "canvas",
+          "hex": "#F5EFEF",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "operator",
+          "hex": "#994255",
+          "evidence": "raster pixel sample"
+        },
+        {
+          "role": "digit surface",
+          "hex": "#EBE1EA",
+          "evidence": "raster pixel cluster"
+        }
+      ],
+      "seed": {
+        "hex": "#994255",
+        "role": "ui-accent",
+        "background": "#F5EFEF"
+      },
+      "screenFamily": "keypad"
+    },
+    {
+      "id": "oneui9-weather-metrics",
+      "platform": "One UI 9",
+      "app": "Weather",
+      "state": "metrics",
+      "imageSize": [
+        1175,
+        2520
+      ],
+      "frame": [
+        0,
+        0,
+        1175,
+        2520
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/others/one-ui-8-5-vs-one-ui-9-bedah-perbedaan-amp-fitur-baru-di-galaxy/td-p/39487394/highlight/true/page/2",
+      "sourceClass": "Samsung Members user screenshot, labeled One UI 9; not official design guidance",
+      "confidence": "medium",
+      "purpose": "Read current conditions and supporting metrics",
+      "hierarchy": [
+        "location",
+        "priority UV/humidity",
+        "wind/dew point",
+        "pressure/visibility",
+        "navigation"
+      ],
+      "regions": [
+        {
+          "id": "location",
+          "box": [
+            76,
+            129,
+            1021,
+            156
+          ],
+          "role": "location selector"
+        },
+        {
+          "id": "metrics",
+          "box": [
+            76,
+            298,
+            1021,
+            2106
+          ],
+          "role": "two-column metric chunks"
+        },
+        {
+          "id": "bottom-nav",
+          "box": [
+            76,
+            2422,
+            1021,
+            88
+          ],
+          "role": "navigation and search"
+        }
+      ],
+      "components": [
+        {
+          "role": "location",
+          "type": "selection chip",
+          "evidence": "location glyph and Sisir label"
+        },
+        {
+          "role": "UV index",
+          "type": "metric visualization",
+          "evidence": "value and multicolor gauge"
+        },
+        {
+          "role": "humidity",
+          "type": "metric visualization",
+          "evidence": "percentage and horizontal bar"
+        },
+        {
+          "role": "wind",
+          "type": "radial direction diagram",
+          "evidence": "compass and speed"
+        },
+        {
+          "role": "pressure",
+          "type": "radial gauge",
+          "evidence": "circular scale"
+        },
+        {
+          "role": "weather metrics",
+          "type": "data tiles",
+          "evidence": "two-column repeated regions; tap behavior unverified"
+        },
+        {
+          "role": "search",
+          "type": "icon button",
+          "evidence": "magnifier at bottom"
+        }
+      ],
+      "style": {
+        "surface": "weather-responsive full-bleed gradient under translucent metric regions",
+        "layout": "two-column metric grid",
+        "alignment": "tile edges share vertical grid; labels align to repeated left insets",
+        "spacing": "consistent inter-tile gutters; exact dp unknown",
+        "shape": "rounded translucent chunks; data groups, not navigation cards"
+      },
+      "colors": [
+        {
+          "role": "sky blue",
+          "hex": "#5490CC",
+          "evidence": "raster pixel sample; weather data dependent"
+        },
+        {
+          "role": "blue-green",
+          "hex": "#5E9995",
+          "evidence": "raster pixel sample; weather data dependent"
+        },
+        {
+          "role": "lower blue",
+          "hex": "#3C88DC",
+          "evidence": "raster pixel sample; weather data dependent"
+        }
+      ],
+      "observedGradient": {
+        "kind": "full-bleed blue-to-green-to-blue field",
+        "stopsAreApproximate": true,
+        "colors": [
+          "#5490CC",
+          "#5E9995",
+          "#3C88DC"
+        ],
+        "note": "raster sample from positions, not source gradient CSS or canonical tokens"
+      },
+      "seedReason": "Gradient responds to displayed weather/location; no stable app-wide key color inferred.",
+      "screenFamily": "data-dashboard",
+      "seed": null
+    },
+    {
+      "id": "oneui9-study-q",
+      "platform": "One UI 9",
+      "app": "Quick Panel",
+      "state": "사용자 배치",
+      "screenFamily": "quick-controls",
+      "imageSize": [
+        1440,
+        3120
+      ],
+      "frame": [
+        0,
+        0,
+        1440,
+        3120
+      ],
+      "sourcePage": "https://eu.community.samsung.com/t5/galaxy-s26-series/control-panel-oneui-9-beta/td-p/14927952",
+      "sourceClass": "기존 수동 분석 캡처 · One UI 9 Beta",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "시간·연결 상태를 확인하고 밝기·음량·연결·장치 기능을 빠르게 조정하는 시스템 패널.",
+      "hierarchy": [
+        "연결·배터리 상태 읽기",
+        "시각 정보와 패널 관리",
+        "범위 조절·빠른 연결/기능",
+        "그리드형 빠른 동작 집단",
+        "미디어 시작/열기 + 출력 대상 선택 합성",
+        "기능 바로가기",
+        "최근 앱·홈·뒤로"
+      ],
+      "regions": [
+        {
+          "id": "Q1",
+          "box": [
+            55,
+            140,
+            1327,
+            85
+          ],
+          "role": "연결·배터리 상태 읽기"
+        },
+        {
+          "id": "Q2",
+          "box": [
+            84,
+            310,
+            1260,
+            95
+          ],
+          "role": "시각 정보와 패널 관리"
+        },
+        {
+          "id": "Q3",
+          "box": [
+            84,
+            465,
+            1298,
+            1210
+          ],
+          "role": "범위 조절·빠른 연결/기능"
+        },
+        {
+          "id": "Q4",
+          "box": [
+            58,
+            1710,
+            1324,
+            588
+          ],
+          "role": "그리드형 빠른 동작 집단"
+        },
+        {
+          "id": "Q6",
+          "box": [
+            58,
+            2640,
+            1324,
+            285
+          ],
+          "role": "기능 바로가기"
+        },
+        {
+          "id": "Q7",
+          "box": [
+            200,
+            3005,
+            1040,
+            90
+          ],
+          "role": "최근 앱·홈·뒤로"
+        }
+      ],
+      "components": [
+        {
+          "role": "배치 편집 진입",
+          "type": "command",
+          "evidence": "편집",
+          "sourceNodeId": "Q22",
+          "catalogMapping": "EXISTING",
+          "box": [
+            985,
+            322,
+            78,
+            74
+          ]
+        },
+        {
+          "role": "전원 관련 명령 열기",
+          "type": "command",
+          "evidence": "전원",
+          "sourceNodeId": "Q23",
+          "catalogMapping": "EXISTING",
+          "box": [
+            1110,
+            322,
+            78,
+            74
+          ]
+        },
+        {
+          "role": "설정 화면 이동",
+          "type": "navigation",
+          "evidence": "설정",
+          "sourceNodeId": "Q24",
+          "catalogMapping": "EXISTING",
+          "box": [
+            1242,
+            322,
+            78,
+            74
+          ]
+        },
+        {
+          "role": "화면 밝기 범위 값 조절",
+          "type": "slider",
+          "evidence": "밝기",
+          "sourceNodeId": "Q31",
+          "catalogMapping": "EXISTING",
+          "box": [
+            84,
+            465,
+            254,
+            895
+          ]
+        },
+        {
+          "role": "음량 범위 값 조절",
+          "type": "slider",
+          "evidence": "음량",
+          "sourceNodeId": "Q32",
+          "catalogMapping": "EXISTING",
+          "box": [
+            424,
+            465,
+            254,
+            895
+          ]
+        },
+        {
+          "role": "외형상 모드 전환 후보",
+          "type": "toggle",
+          "evidence": "달 아이콘 · 다크 모드 후보",
+          "sourceNodeId": "Q33",
+          "catalogMapping": "EXISTING",
+          "box": [
+            86,
+            1409,
+            248,
+            248
+          ]
+        },
+        {
+          "role": "다중 소리 상태 선택/순환 후보",
+          "type": "cycle",
+          "evidence": "무음 아이콘 · 소리 모드 후보",
+          "sourceNodeId": "Q34",
+          "catalogMapping": "EXISTING",
+          "box": [
+            426,
+            1409,
+            248,
+            248
+          ]
+        },
+        {
+          "role": "연결 상태 표시 + 연결 설정/전환 후보",
+          "type": "row",
+          "evidence": "Wi-Fi · 025_5GHz",
+          "sourceNodeId": "Q35",
+          "catalogMapping": "EXISTING",
+          "box": [
+            736,
+            465,
+            646,
+            280
+          ]
+        },
+        {
+          "role": "모바일 데이터 on/off 후보",
+          "type": "toggle",
+          "evidence": "Mobile data",
+          "sourceNodeId": "Q36",
+          "catalogMapping": "EXISTING",
+          "box": [
+            736,
+            775,
+            646,
+            280
+          ]
+        },
+        {
+          "role": "블루투스 상태·설정/전환 후보",
+          "type": "row",
+          "evidence": "Bluetooth",
+          "sourceNodeId": "Q37",
+          "catalogMapping": "EXISTING",
+          "box": [
+            736,
+            1084,
+            646,
+            280
+          ]
+        },
+        {
+          "role": "손전등 on/off 후보",
+          "type": "toggle",
+          "evidence": "Flashlight",
+          "sourceNodeId": "Q38",
+          "catalogMapping": "EXISTING",
+          "box": [
+            736,
+            1395,
+            646,
+            280
+          ]
+        },
+        {
+          "role": "명칭 없는 기능 타일 후보",
+          "type": "command",
+          "evidence": "시계 형태",
+          "sourceNodeId": "Q41",
+          "catalogMapping": "EXISTING",
+          "box": [
+            178,
+            1800,
+            164,
+            164
+          ]
+        },
+        {
+          "role": "명칭 없는 기능 타일 후보",
+          "type": "toggle",
+          "evidence": "방패 형태",
+          "sourceNodeId": "Q42",
+          "catalogMapping": "EXISTING",
+          "box": [
+            486,
+            1800,
+            164,
+            164
+          ]
+        },
+        {
+          "role": "명칭 없는 기능 타일 후보",
+          "type": "toggle",
+          "evidence": "Dolby 형태",
+          "sourceNodeId": "Q43",
+          "catalogMapping": "EXISTING",
+          "box": [
+            793,
+            1800,
+            164,
+            164
+          ]
+        },
+        {
+          "role": "명칭 없는 기능 타일 후보",
+          "type": "toggle",
+          "evidence": "자물쇠 형태",
+          "sourceNodeId": "Q44",
+          "catalogMapping": "EXISTING",
+          "box": [
+            1101,
+            1800,
+            164,
+            164
+          ]
+        },
+        {
+          "role": "명칭 없는 기능 타일 후보",
+          "type": "toggle",
+          "evidence": "비행기",
+          "sourceNodeId": "Q45",
+          "catalogMapping": "EXISTING",
+          "box": [
+            178,
+            2050,
+            164,
+            164
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "기능별 로컬 그리드: 두 slider 열 + 우측 넓은 타일 열. 아래 그룹은 4열. 전체 화면에 하나의 균일 열 그리드를 강요하지 않음.",
+        "alignment": "이미지 x 정렬선: 58, 84, 338, 424, 678, 736, 1382",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [
+        {
+          "role": "반투명 배경 외형",
+          "hex": "#7F6D6D",
+          "evidence": "image appearance; not design token"
+        },
+        {
+          "role": "원형 컨트롤 외형",
+          "hex": "#D5D5D5",
+          "evidence": "image appearance; not design token"
+        }
+      ],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "Q",
+      "seed": null
+    },
+    {
+      "id": "ios27-study-a",
+      "platform": "iOS 27",
+      "app": "AirPods",
+      "state": "상단 설정",
+      "screenFamily": "settings-detail",
+      "imageSize": [
+        1205,
+        2620
+      ],
+      "frame": [
+        0,
+        0,
+        1205,
+        2620
+      ],
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/14/",
+      "sourceClass": "기존 수동 분석 캡처 · iOS 27",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "AirPods 좌·우·케이스의 배터리를 확인하고 청취 모드와 음량을 조정하며 상세 설정으로 이동하는 화면이다.",
+      "hierarchy": [
+        "상태 정보와 뒤로 탐색",
+        "기기별 정보·현재 배터리 표시",
+        "장치 이름 설정 진입",
+        "선택한 음향 처리 모드",
+        "장치 음량 제어",
+        "도메인 설정으로 이동"
+      ],
+      "regions": [
+        {
+          "id": "A1",
+          "box": [
+            0,
+            0,
+            1205,
+            330
+          ],
+          "role": "상태 정보와 뒤로 탐색"
+        },
+        {
+          "id": "A2",
+          "box": [
+            140,
+            440,
+            900,
+            510
+          ],
+          "role": "기기별 정보·현재 배터리 표시"
+        },
+        {
+          "id": "A4",
+          "box": [
+            50,
+            1265,
+            1108,
+            330
+          ],
+          "role": "선택한 음향 처리 모드"
+        },
+        {
+          "id": "A5",
+          "box": [
+            50,
+            1650,
+            1108,
+            230
+          ],
+          "role": "장치 음량 제어"
+        },
+        {
+          "id": "A6",
+          "box": [
+            50,
+            1980,
+            1108,
+            640
+          ],
+          "role": "도메인 설정으로 이동"
+        }
+      ],
+      "components": [
+        {
+          "role": "상위 화면으로 이동",
+          "type": "navigation",
+          "evidence": "뒤로",
+          "sourceNodeId": "A12",
+          "catalogMapping": "EXISTING",
+          "box": [
+            48,
+            190,
+            135,
+            135
+          ]
+        },
+        {
+          "role": "기기별 정보·현재 배터리 표시",
+          "type": "device-battery-summary",
+          "evidence": "좌·우·케이스 상태 요약",
+          "sourceNodeId": "A2",
+          "catalogMapping": "NEW_COMPOSITION_CANDIDATE",
+          "box": [
+            140,
+            440,
+            900,
+            510
+          ]
+        },
+        {
+          "role": "배터리 값 읽기 · 입력 아님",
+          "type": "gauge",
+          "evidence": "왼쪽 100%",
+          "sourceNodeId": "A21",
+          "catalogMapping": "EXISTING",
+          "box": [
+            195,
+            762,
+            120,
+            120
+          ]
+        },
+        {
+          "role": "배터리 값 읽기 · 입력 아님",
+          "type": "gauge",
+          "evidence": "오른쪽 85%",
+          "sourceNodeId": "A22",
+          "catalogMapping": "EXISTING",
+          "box": [
+            400,
+            762,
+            120,
+            120
+          ]
+        },
+        {
+          "role": "배터리 값 읽기 · 입력 아님",
+          "type": "gauge",
+          "evidence": "케이스 79%",
+          "sourceNodeId": "A23",
+          "catalogMapping": "EXISTING",
+          "box": [
+            750,
+            762,
+            120,
+            120
+          ]
+        },
+        {
+          "role": "장치 이름 설정 진입",
+          "type": "navigation",
+          "evidence": "Name · 장치 이름",
+          "sourceNodeId": "A3",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1038,
+            1108,
+            151
+          ]
+        },
+        {
+          "role": "기능 모드 값 선택 · 콘텐츠 패널 탭 아님",
+          "type": "choice-group",
+          "evidence": "청취 모드 단일 선택",
+          "sourceNodeId": "A42",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1336,
+            1108,
+            255
+          ]
+        },
+        {
+          "role": "모드 선택 항목",
+          "type": "choice",
+          "evidence": "Transparency",
+          "sourceNodeId": "A421",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1340,
+            305,
+            250
+          ]
+        },
+        {
+          "role": "모드 선택 항목",
+          "type": "choice",
+          "evidence": "Adaptive",
+          "sourceNodeId": "A422",
+          "catalogMapping": "EXISTING",
+          "box": [
+            400,
+            1340,
+            400,
+            250
+          ]
+        },
+        {
+          "role": "모드 선택 항목",
+          "type": "choice",
+          "evidence": "Noise Cancellation",
+          "sourceNodeId": "A423",
+          "catalogMapping": "EXISTING",
+          "box": [
+            890,
+            1340,
+            268,
+            250
+          ]
+        },
+        {
+          "role": "음량 범위 값 입력",
+          "type": "slider",
+          "evidence": "음량 조절",
+          "sourceNodeId": "A52",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1710,
+            1108,
+            170
+          ]
+        },
+        {
+          "role": "하위 설정 탐색",
+          "type": "navigation",
+          "evidence": "Audio & Routing",
+          "sourceNodeId": "A61",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1980,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "본문 열부터 구분",
+          "type": "divider",
+          "evidence": "들여쓴 구분선",
+          "sourceNodeId": "A61d",
+          "catalogMapping": "EXISTING",
+          "box": [
+            210,
+            2128,
+            900,
+            2
+          ]
+        },
+        {
+          "role": "하위 설정 탐색",
+          "type": "navigation",
+          "evidence": "Hearing Health",
+          "sourceNodeId": "A62",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            2130,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "본문 열부터 구분",
+          "type": "divider",
+          "evidence": "들여쓴 구분선",
+          "sourceNodeId": "A62d",
+          "catalogMapping": "EXISTING",
+          "box": [
+            210,
+            2278,
+            900,
+            2
+          ]
+        },
+        {
+          "role": "하위 설정 탐색",
+          "type": "navigation",
+          "evidence": "Controls & Gestures",
+          "sourceNodeId": "A63",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            2280,
+            1108,
+            150
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "표면 x≈50, 텍스트 x≈98/210. 청취 모드 레이블은 1–2줄이며 아이콘 윗선으로 정렬.",
+        "alignment": "이미지 x 정렬선: 50, 98, 210, 285, 590, 1050, 1112, 1158",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [
+        {
+          "role": "화면 배경",
+          "hex": "#F2F2F6",
+          "evidence": "image appearance; not design token"
+        },
+        {
+          "role": "흰 행 표면",
+          "hex": "#FFFFFF",
+          "evidence": "image appearance; not design token"
+        }
+      ],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "A",
+      "seed": null
+    },
+    {
+      "id": "ios27-study-b",
+      "platform": "iOS 27",
+      "app": "AirPods",
+      "state": "아래로 스크롤",
+      "screenFamily": "settings-detail",
+      "imageSize": [
+        1205,
+        2620
+      ],
+      "frame": [
+        0,
+        0,
+        1205,
+        2620
+      ],
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/14/",
+      "sourceClass": "기존 수동 분석 캡처 · iOS 27",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "AirPods 설정의 아래 영역을 확인한다.",
+      "hierarchy": [
+        "상태 정보와 뒤로 탐색",
+        "앞선 범위 조절의 가시 부분",
+        "설정 하위 탐색",
+        "배터리·찾기·개인정보",
+        "정보 진입과 테스트 명령",
+        "읽기 전용 모델 정보"
+      ],
+      "regions": [
+        {
+          "id": "B1",
+          "box": [
+            0,
+            0,
+            1205,
+            330
+          ],
+          "role": "상태 정보와 뒤로 탐색"
+        },
+        {
+          "id": "B3",
+          "box": [
+            50,
+            360,
+            1108,
+            750
+          ],
+          "role": "설정 하위 탐색"
+        },
+        {
+          "id": "B4",
+          "box": [
+            50,
+            1215,
+            1108,
+            450
+          ],
+          "role": "배터리·찾기·개인정보"
+        },
+        {
+          "id": "B5",
+          "box": [
+            50,
+            1770,
+            1108,
+            500
+          ],
+          "role": "정보 진입과 테스트 명령"
+        },
+        {
+          "id": "B6",
+          "box": [
+            50,
+            2330,
+            1108,
+            290
+          ],
+          "role": "읽기 전용 모델 정보"
+        }
+      ],
+      "components": [
+        {
+          "role": "상위 화면으로 이동",
+          "type": "navigation",
+          "evidence": "뒤로",
+          "sourceNodeId": "B12",
+          "catalogMapping": "EXISTING",
+          "box": [
+            48,
+            190,
+            135,
+            135
+          ]
+        },
+        {
+          "role": "앞선 범위 조절의 가시 부분",
+          "type": "slider",
+          "evidence": "앞선 음량 영역 일부",
+          "sourceNodeId": "B2",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            0,
+            1108,
+            255
+          ]
+        },
+        {
+          "role": "하위 설정 탐색",
+          "type": "navigation",
+          "evidence": "Audio & Routing",
+          "sourceNodeId": "B31",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            360,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "하위 설정 탐색",
+          "type": "navigation",
+          "evidence": "Hearing Health",
+          "sourceNodeId": "B32",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            510,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "하위 설정 탐색",
+          "type": "navigation",
+          "evidence": "Controls & Gestures",
+          "sourceNodeId": "B33",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            660,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "하위 설정 탐색",
+          "type": "navigation",
+          "evidence": "Live Translation (Beta)",
+          "sourceNodeId": "B34",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            810,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "하위 설정 탐색",
+          "type": "navigation",
+          "evidence": "Accessibility",
+          "sourceNodeId": "B35",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            960,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "장치 관리 탐색",
+          "type": "navigation",
+          "evidence": "Battery",
+          "sourceNodeId": "B41",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1215,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "장치 관리 탐색",
+          "type": "navigation",
+          "evidence": "Find My",
+          "sourceNodeId": "B42",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1365,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "장치 관리 탐색",
+          "type": "navigation",
+          "evidence": "Privacy",
+          "sourceNodeId": "B43",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1515,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "착용 안내로 이동",
+          "type": "navigation",
+          "evidence": "About AirPods Pro Fit",
+          "sourceNodeId": "B52",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1835,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "음향 밀착 테스트 시작",
+          "type": "command",
+          "evidence": "Test Acoustic Seal",
+          "sourceNodeId": "B53",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            1985,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "레이블/값 읽기 · 탐색 근거 없음",
+          "type": "row",
+          "evidence": "Model Name · AirPods Pro",
+          "sourceNodeId": "B62",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            2375,
+            1108,
+            150
+          ]
+        },
+        {
+          "role": "기기 모델 번호 읽기",
+          "type": "row",
+          "evidence": "Model Number · 일부 노출",
+          "sourceNodeId": "B63",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            2525,
+            1108,
+            95
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "A와 같은 정렬선을 아래 스크롤 화면에 적용한 가설.",
+        "alignment": "이미지 x 정렬선: 50, 98, 210, 1112, 1158",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [
+        {
+          "role": "화면 배경",
+          "hex": "#F2F2F6",
+          "evidence": "image appearance; not design token"
+        },
+        {
+          "role": "그룹 표면",
+          "hex": "#FFFFFF",
+          "evidence": "image appearance; not design token"
+        }
+      ],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "B",
+      "seed": null
+    },
+    {
+      "id": "oneui9-study-p",
+      "platform": "One UI 9",
+      "app": "위치 권한",
+      "state": "정밀도와 허용 범위",
+      "screenFamily": "permission-choice",
+      "imageSize": [
+        488,
+        1057
+      ],
+      "frame": [
+        0,
+        0,
+        488,
+        1057
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "sourceClass": "기존 수동 분석 캡처 · One UI 9 Beta",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "드라이빙 인사이트의 위치 접근 요청이다.",
+      "hierarchy": [
+        "앱 배경 · 원본 편집 가능",
+        "정밀도 선택 + 허용 응답",
+        "시스템 제스처 표시 · 버튼 아님"
+      ],
+      "regions": [
+        {
+          "id": "P2",
+          "box": [
+            0,
+            40,
+            488,
+            432
+          ],
+          "role": "앱 배경 · 원본 편집 가능"
+        }
+      ],
+      "components": [
+        {
+          "role": "정밀도 선택 + 허용 응답",
+          "type": "dialog",
+          "evidence": "위치 접근 요청",
+          "sourceNodeId": "P3",
+          "catalogMapping": "EXISTING",
+          "box": [
+            12,
+            472,
+            464,
+            562
+          ]
+        },
+        {
+          "role": "정확/대략 한 값 선택",
+          "type": "choice-group",
+          "evidence": "위치 정밀도",
+          "sourceNodeId": "P33",
+          "catalogMapping": "COMPOSITION",
+          "box": [
+            60,
+            618,
+            366,
+            177
+          ]
+        },
+        {
+          "role": "정밀도 선택 항목",
+          "type": "choice",
+          "evidence": "정확한 위치",
+          "sourceNodeId": "P331",
+          "catalogMapping": "VARIANT",
+          "box": [
+            60,
+            618,
+            177,
+            177
+          ]
+        },
+        {
+          "role": "정밀도 선택 항목",
+          "type": "choice",
+          "evidence": "대략적인 위치",
+          "sourceNodeId": "P332",
+          "catalogMapping": "VARIANT",
+          "box": [
+            249,
+            618,
+            177,
+            177
+          ]
+        },
+        {
+          "role": "권한 요청 확정 응답",
+          "type": "command",
+          "evidence": "앱 사용 중에만 허용",
+          "sourceNodeId": "P34",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            827,
+            388,
+            54
+          ]
+        },
+        {
+          "role": "권한 요청 확정 응답",
+          "type": "command",
+          "evidence": "이번만 허용",
+          "sourceNodeId": "P35",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            886,
+            388,
+            54
+          ]
+        },
+        {
+          "role": "권한 요청 확정 응답",
+          "type": "command",
+          "evidence": "허용 안함",
+          "sourceNodeId": "P36",
+          "catalogMapping": "EXISTING",
+          "box": [
+            50,
+            947,
+            388,
+            54
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "오버레이 내부 로컬 2열 choice 카드, 아래 full-width 명령 3행. 배경 정보는 편집 가능성이 있어 미확정.",
+        "alignment": "이미지 x 정렬선: 12, 52, 60, 238, 249, 426, 476",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [
+        {
+          "role": "편집 가능 배경",
+          "hex": "#C7C7C7",
+          "evidence": "image appearance; not design token"
+        },
+        {
+          "role": "요청 표면",
+          "hex": "#FCFCFC",
+          "evidence": "image appearance; not design token"
+        }
+      ],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "P",
+      "seed": null
+    },
+    {
+      "id": "ios27-study-c",
+      "platform": "iOS 27",
+      "app": "Calendar",
+      "state": "일정 생성 입력",
+      "screenFamily": "event-form",
+      "imageSize": [
+        1205,
+        2620
+      ],
+      "frame": [
+        0,
+        0,
+        1205,
+        2620
+      ],
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/9/",
+      "sourceClass": "기존 수동 분석 캡처 · iOS 27",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "자연어로 일정을 입력하고 제목·시간을 확인한다.",
+      "hierarchy": [
+        "취소·객체 유형·확정",
+        "주 입력과 해석 결과",
+        "장소·초대 대상·추가 옵션",
+        "포커스된 필드의 입력·추천·확정"
+      ],
+      "regions": [
+        {
+          "id": "C1",
+          "box": [
+            30,
+            175,
+            1145,
+            232
+          ],
+          "role": "취소·객체 유형·확정"
+        },
+        {
+          "id": "C2",
+          "box": [
+            78,
+            416,
+            1076,
+            500
+          ],
+          "role": "주 입력과 해석 결과"
+        },
+        {
+          "id": "C3",
+          "box": [
+            48,
+            1018,
+            1106,
+            618
+          ],
+          "role": "장소·초대 대상·추가 옵션"
+        }
+      ],
+      "components": [
+        {
+          "role": "작성을 취소/닫기",
+          "type": "command",
+          "evidence": "취소 X",
+          "sourceNodeId": "C11",
+          "catalogMapping": "EXISTING",
+          "box": [
+            48,
+            214,
+            133,
+            132
+          ]
+        },
+        {
+          "role": "생성 객체 종류 선택",
+          "type": "choice-group",
+          "evidence": "Event / Reminder",
+          "sourceNodeId": "C12",
+          "catalogMapping": "EXISTING",
+          "box": [
+            211,
+            211,
+            771,
+            144
+          ]
+        },
+        {
+          "role": "생성 유형의 한 값",
+          "type": "choice",
+          "evidence": "Event",
+          "sourceNodeId": "C121",
+          "catalogMapping": "EXISTING",
+          "box": [
+            220,
+            220,
+            364,
+            123
+          ]
+        },
+        {
+          "role": "생성 유형의 한 값",
+          "type": "choice",
+          "evidence": "Reminder",
+          "sourceNodeId": "C122",
+          "catalogMapping": "EXISTING",
+          "box": [
+            609,
+            220,
+            364,
+            123
+          ]
+        },
+        {
+          "role": "입력한 일정 확정",
+          "type": "command",
+          "evidence": "생성 확정 체크",
+          "sourceNodeId": "C13",
+          "catalogMapping": "EXISTING",
+          "box": [
+            1015,
+            214,
+            133,
+            132
+          ]
+        },
+        {
+          "role": "자연어 일정 입력",
+          "type": "text-input",
+          "evidence": "Call Ternus at 3pm for 2 hours",
+          "sourceNodeId": "C21",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            127,
+            449,
+            951,
+            147
+          ]
+        },
+        {
+          "role": "추출된 제목 필드 후보",
+          "type": "text-input",
+          "evidence": "Title: Call Ternus",
+          "sourceNodeId": "C22",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            114,
+            624,
+            995,
+            117
+          ]
+        },
+        {
+          "role": "해석된 일시 요약/편집 진입 후보",
+          "type": "row",
+          "evidence": "날짜 · 3PM–5PM",
+          "sourceNodeId": "C23",
+          "catalogMapping": "EXISTING",
+          "box": [
+            81,
+            801,
+            1070,
+            115
+          ]
+        },
+        {
+          "role": "장소/화상 통화 입력 후보",
+          "type": "text-input",
+          "evidence": "Location or Video Call",
+          "sourceNodeId": "C31",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            48,
+            1100,
+            1106,
+            159
+          ]
+        },
+        {
+          "role": "초대 대상 선택 진입",
+          "type": "navigation",
+          "evidence": "Invitees",
+          "sourceNodeId": "C32",
+          "catalogMapping": "EXISTING",
+          "box": [
+            48,
+            1365,
+            1106,
+            159
+          ]
+        },
+        {
+          "role": "포커스된 필드의 입력·추천·확정",
+          "type": "keyboard",
+          "evidence": "시스템 키보드",
+          "sourceNodeId": "Ckbd",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            0,
+            1642,
+            1205,
+            978
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 48, 96, 1151",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "C",
+      "seed": null
+    },
+    {
+      "id": "ios27-study-m",
+      "platform": "iOS 27",
+      "app": "Mail",
+      "state": "검색과 결과",
+      "screenFamily": "search-results",
+      "imageSize": [
+        1200,
+        2620
+      ],
+      "frame": [
+        0,
+        0,
+        1200,
+        2620
+      ],
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/10/",
+      "sourceClass": "기존 수동 분석 캡처 · iOS 27",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "검색 범위를 고르고 하단 검색어를 입력해 메일을 찾는 화면.",
+      "hierarchy": [
+        "검색 결과 선택 모드 진입 후보",
+        "검색 대상 범위 한 값 선택",
+        "결과 정보와 탐색",
+        "검색어 편집·지우기·종료",
+        "포커스된 필드의 입력·추천·확정"
+      ],
+      "regions": [
+        {
+          "id": "M3",
+          "box": [
+            60,
+            522,
+            1080,
+            690
+          ],
+          "role": "결과 정보와 탐색"
+        },
+        {
+          "id": "M4",
+          "box": [
+            18,
+            1476,
+            1167,
+            153
+          ],
+          "role": "검색어 편집·지우기·종료"
+        }
+      ],
+      "components": [
+        {
+          "role": "검색 결과 선택 모드 진입 후보",
+          "type": "command",
+          "evidence": "Select",
+          "sourceNodeId": "M1",
+          "catalogMapping": "EXISTING",
+          "box": [
+            930,
+            183,
+            225,
+            117
+          ]
+        },
+        {
+          "role": "검색 대상 범위 한 값 선택",
+          "type": "choice-group",
+          "evidence": "All Mailboxes / Current Mailbox",
+          "sourceNodeId": "M2",
+          "catalogMapping": "EXISTING",
+          "box": [
+            45,
+            336,
+            1110,
+            102
+          ]
+        },
+        {
+          "role": "전체 범위 선택",
+          "type": "choice",
+          "evidence": "All Mailboxes",
+          "sourceNodeId": "M21",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            342,
+            546,
+            90
+          ]
+        },
+        {
+          "role": "현재 범위 선택",
+          "type": "choice",
+          "evidence": "Current Mailbox",
+          "sourceNodeId": "M22",
+          "catalogMapping": "EXISTING",
+          "box": [
+            603,
+            342,
+            543,
+            90
+          ]
+        },
+        {
+          "role": "결과 메일/대화 열기",
+          "type": "navigation",
+          "evidence": "Myke Hurley · Re: Ticci bio",
+          "sourceNodeId": "M32",
+          "catalogMapping": "EXISTING",
+          "box": [
+            66,
+            615,
+            1065,
+            240
+          ]
+        },
+        {
+          "role": "검색 조건 추가/연락처 범위 제안 후보",
+          "type": "command",
+          "evidence": "Myke Hurley 연락처 추천",
+          "sourceNodeId": "M34",
+          "catalogMapping": "EXISTING",
+          "box": [
+            72,
+            1032,
+            1050,
+            126
+          ]
+        },
+        {
+          "role": "검색어 편집",
+          "type": "text-input",
+          "evidence": "Email from Myke in 2013",
+          "sourceNodeId": "M41",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            30,
+            1479,
+            978,
+            138
+          ]
+        },
+        {
+          "role": "입력값만 지우기",
+          "type": "command",
+          "evidence": "검색어 지우기 X",
+          "sourceNodeId": "M42",
+          "catalogMapping": "EXISTING",
+          "box": [
+            906,
+            1518,
+            54,
+            54
+          ]
+        },
+        {
+          "role": "검색 모드 종료 후보",
+          "type": "command",
+          "evidence": "검색 종료 X",
+          "sourceNodeId": "M43",
+          "catalogMapping": "EXISTING",
+          "box": [
+            1035,
+            1479,
+            138,
+            135
+          ]
+        },
+        {
+          "role": "포커스된 필드의 입력·추천·확정",
+          "type": "keyboard",
+          "evidence": "시스템 키보드",
+          "sourceNodeId": "Mkbd",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            0,
+            1647,
+            1200,
+            972
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 45, 96, 231, 1140",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "M",
+      "seed": null
+    },
+    {
+      "id": "ios27-study-u",
+      "platform": "iOS 27",
+      "app": "Music",
+      "state": "아티스트 상세",
+      "screenFamily": "media-detail",
+      "imageSize": [
+        1205,
+        2620
+      ],
+      "frame": [
+        0,
+        0,
+        1205,
+        2620
+      ],
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/10/",
+      "sourceClass": "기존 수동 분석 캡처 · iOS 27",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "아티스트 소개와 곡을 탐색하고 재생·즐겨찾기·공유를 수행한다.",
+      "hierarchy": [
+        "아티스트 식별·주 행동",
+        "아티스트가 고정한 앨범 정보/탐색",
+        "곡 목록 탐색·재생",
+        "별도 현재 곡 컨텍스트",
+        "앱 주요 섹션 전환"
+      ],
+      "regions": [
+        {
+          "id": "U1",
+          "box": [
+            0,
+            145,
+            1205,
+            1361
+          ],
+          "role": "아티스트 식별·주 행동"
+        },
+        {
+          "id": "U3",
+          "box": [
+            54,
+            1958,
+            1103,
+            660
+          ],
+          "role": "곡 목록 탐색·재생"
+        },
+        {
+          "id": "U4",
+          "box": [
+            60,
+            2199,
+            1085,
+            151
+          ],
+          "role": "별도 현재 곡 컨텍스트"
+        },
+        {
+          "id": "U5",
+          "box": [
+            60,
+            2359,
+            1085,
+            187
+          ],
+          "role": "앱 주요 섹션 전환"
+        }
+      ],
+      "components": [
+        {
+          "role": "이전 화면 탐색",
+          "type": "navigation",
+          "evidence": "뒤로",
+          "sourceNodeId": "U12",
+          "catalogMapping": "EXISTING",
+          "box": [
+            48,
+            187,
+            130,
+            129
+          ]
+        },
+        {
+          "role": "아티스트 공유",
+          "type": "command",
+          "evidence": "공유",
+          "sourceNodeId": "U13",
+          "catalogMapping": "EXISTING",
+          "box": [
+            865,
+            193,
+            141,
+            120
+          ]
+        },
+        {
+          "role": "아티스트 추가 명령",
+          "type": "command",
+          "evidence": "더보기",
+          "sourceNodeId": "U14",
+          "catalogMapping": "EXISTING",
+          "box": [
+            1006,
+            193,
+            145,
+            120
+          ]
+        },
+        {
+          "role": "공연 정보 탐색 후보",
+          "type": "navigation",
+          "evidence": "Upcoming Concerts",
+          "sourceNodeId": "U15",
+          "catalogMapping": "EXISTING",
+          "box": [
+            386,
+            853,
+            448,
+            72
+          ]
+        },
+        {
+          "role": "아티스트 곡 재생",
+          "type": "command",
+          "evidence": "아티스트 재생",
+          "sourceNodeId": "U16",
+          "catalogMapping": "EXISTING",
+          "box": [
+            497,
+            1232,
+            226,
+            226
+          ]
+        },
+        {
+          "role": "아티스트 소개",
+          "type": "command",
+          "evidence": "소개 i",
+          "sourceNodeId": "U17",
+          "catalogMapping": "EXISTING",
+          "box": [
+            277,
+            1265,
+            148,
+            148
+          ]
+        },
+        {
+          "role": "아티스트 즐겨찾기 상태",
+          "type": "toggle",
+          "evidence": "즐겨찾기 별",
+          "sourceNodeId": "U18",
+          "catalogMapping": "EXISTING",
+          "box": [
+            792,
+            1265,
+            148,
+            148
+          ]
+        },
+        {
+          "role": "아티스트가 고정한 앨범 정보/탐색",
+          "type": "row",
+          "evidence": "고정 앨범 Sugar",
+          "sourceNodeId": "U2",
+          "catalogMapping": "EXISTING",
+          "box": [
+            57,
+            1521,
+            1100,
+            356
+          ]
+        },
+        {
+          "role": "곡 목록 확장 탐색",
+          "type": "navigation",
+          "evidence": "Top Songs 더보기",
+          "sourceNodeId": "U31",
+          "catalogMapping": "EXISTING",
+          "box": [
+            60,
+            1958,
+            633,
+            78
+          ]
+        },
+        {
+          "role": "곡 정보와 재생/추가 명령",
+          "type": "row",
+          "evidence": "Jamie All Over",
+          "sourceNodeId": "U32",
+          "catalogMapping": "EXISTING",
+          "box": [
+            60,
+            2036,
+            1085,
+            145
+          ]
+        },
+        {
+          "role": "곡 정보와 재생/추가 명령",
+          "type": "row",
+          "evidence": "곡 일부 노출",
+          "sourceNodeId": "U33",
+          "catalogMapping": "EXISTING",
+          "box": [
+            60,
+            2187,
+            1085,
+            145
+          ]
+        },
+        {
+          "role": "곡 정보와 재생/추가 명령",
+          "type": "row",
+          "evidence": "Miserable at Best 일부 노출",
+          "sourceNodeId": "U34",
+          "catalogMapping": "EXISTING",
+          "box": [
+            60,
+            2338,
+            1085,
+            144
+          ]
+        },
+        {
+          "role": "현재 곡 재생/일시정지",
+          "type": "command",
+          "evidence": "현재 곡 재생",
+          "sourceNodeId": "U42",
+          "catalogMapping": "EXISTING",
+          "box": [
+            886,
+            2229,
+            72,
+            82
+          ]
+        },
+        {
+          "role": "대기열 다음 곡",
+          "type": "command",
+          "evidence": "다음 곡",
+          "sourceNodeId": "U43",
+          "catalogMapping": "EXISTING",
+          "box": [
+            994,
+            2229,
+            90,
+            82
+          ]
+        },
+        {
+          "role": "앱 섹션 탐색",
+          "type": "navigation",
+          "evidence": "Home",
+          "sourceNodeId": "U51",
+          "catalogMapping": "EXISTING",
+          "box": [
+            69,
+            2377,
+            208,
+            150
+          ]
+        },
+        {
+          "role": "앱 섹션 탐색",
+          "type": "navigation",
+          "evidence": "New",
+          "sourceNodeId": "U52",
+          "catalogMapping": "EXISTING",
+          "box": [
+            283,
+            2377,
+            208,
+            150
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 54, 105, 271, 1039, 1151",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "U",
+      "seed": null
+    },
+    {
+      "id": "ios27-study-s",
+      "platform": "iOS 27",
+      "app": "Sounds & Haptics",
+      "state": "연동 설정",
+      "screenFamily": "settings-detail",
+      "imageSize": [
+        1205,
+        2620
+      ],
+      "frame": [
+        0,
+        0,
+        1205,
+        2620
+      ],
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/9/",
+      "sourceClass": "기존 수동 분석 캡처 · iOS 27",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "소리 유형별 음량을 조절한다.",
+      "hierarchy": [
+        "페이지 탐색·제목",
+        "해당 소리 그룹의 설정·설명",
+        "해당 소리 그룹의 설정·설명",
+        "해당 소리 그룹의 설정·설명",
+        "알림 유형별 음원 설정"
+      ],
+      "regions": [
+        {
+          "id": "S1",
+          "box": [
+            45,
+            169,
+            1115,
+            171
+          ],
+          "role": "페이지 탐색·제목"
+        },
+        {
+          "id": "S2",
+          "box": [
+            54,
+            392,
+            1103,
+            846
+          ],
+          "role": "해당 소리 그룹의 설정·설명"
+        },
+        {
+          "id": "S3",
+          "box": [
+            54,
+            1241,
+            1103,
+            515
+          ],
+          "role": "해당 소리 그룹의 설정·설명"
+        },
+        {
+          "id": "S4",
+          "box": [
+            54,
+            1774,
+            1103,
+            512
+          ],
+          "role": "해당 소리 그룹의 설정·설명"
+        },
+        {
+          "id": "S5",
+          "box": [
+            54,
+            2368,
+            1103,
+            241
+          ],
+          "role": "알림 유형별 음원 설정"
+        }
+      ],
+      "components": [
+        {
+          "role": "상위 설정 이동",
+          "type": "navigation",
+          "evidence": "뒤로",
+          "sourceNodeId": "S11",
+          "catalogMapping": "EXISTING",
+          "box": [
+            48,
+            181,
+            130,
+            129
+          ]
+        },
+        {
+          "role": "벨소리 범위 값 조절",
+          "type": "slider",
+          "evidence": "벨소리 음량",
+          "sourceNodeId": "S21",
+          "catalogMapping": "EXISTING",
+          "box": [
+            102,
+            476,
+            1004,
+            108
+          ]
+        },
+        {
+          "role": "Ringtone · Reflection Dreamer의 의미 행",
+          "type": "navigation",
+          "evidence": "Ringtone · Reflection Dreamer",
+          "sourceNodeId": "S22",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            624,
+            1103,
+            150
+          ]
+        },
+        {
+          "role": "물리 버튼으로 변경할지 설정",
+          "type": "row",
+          "evidence": "Change with Buttons",
+          "sourceNodeId": "S23",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            774,
+            1103,
+            151
+          ]
+        },
+        {
+          "role": "벨소리에 물리 버튼 조절 적용",
+          "type": "switch",
+          "evidence": "Change with Buttons 스위치",
+          "sourceNodeId": "S231",
+          "catalogMapping": "EXISTING",
+          "box": [
+            931,
+            807,
+            175,
+            76
+          ]
+        },
+        {
+          "role": "무음 모드 햅틱 설정 행",
+          "type": "navigation",
+          "evidence": "Haptics · Don’t Play in Silent Mode",
+          "sourceNodeId": "S24",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            925,
+            1103,
+            147
+          ]
+        },
+        {
+          "role": "Match Ringtone Volume의 의미 행",
+          "type": "row",
+          "evidence": "Match Ringtone Volume",
+          "sourceNodeId": "S31",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            1280,
+            1103,
+            166
+          ]
+        },
+        {
+          "role": "벨소리 값 연동 여부",
+          "type": "switch",
+          "evidence": "Match Ringtone Volume 스위치",
+          "sourceNodeId": "S311",
+          "catalogMapping": "EXISTING",
+          "box": [
+            931,
+            1319,
+            175,
+            76
+          ]
+        },
+        {
+          "role": "해당 소리 그룹 범위 값 조절",
+          "type": "slider",
+          "evidence": "Alarms and Timers 음량",
+          "sourceNodeId": "S32",
+          "catalogMapping": "EXISTING",
+          "box": [
+            102,
+            1452,
+            1004,
+            105
+          ]
+        },
+        {
+          "role": "Match Ringtone Volume의 의미 행",
+          "type": "row",
+          "evidence": "Match Ringtone Volume",
+          "sourceNodeId": "S41",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            1856,
+            1103,
+            147
+          ]
+        },
+        {
+          "role": "벨소리 값 연동 여부",
+          "type": "switch",
+          "evidence": "Match Ringtone Volume 스위치",
+          "sourceNodeId": "S411",
+          "catalogMapping": "EXISTING",
+          "box": [
+            931,
+            1892,
+            175,
+            75
+          ]
+        },
+        {
+          "role": "해당 소리 그룹 범위 값 조절",
+          "type": "slider",
+          "evidence": "Alerts and System Sounds 음량",
+          "sourceNodeId": "S42",
+          "catalogMapping": "EXISTING",
+          "box": [
+            102,
+            2024,
+            1004,
+            100
+          ]
+        },
+        {
+          "role": "Text Tone · None의 의미 행",
+          "type": "navigation",
+          "evidence": "Text Tone · None",
+          "sourceNodeId": "S51",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            2368,
+            1103,
+            147
+          ]
+        },
+        {
+          "role": "New Voicemail · Droplet의 의미 행",
+          "type": "navigation",
+          "evidence": "New Voicemail · Droplet",
+          "sourceNodeId": "S52",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            2515,
+            1103,
+            94
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 54, 102, 922, 1115",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "S",
+      "seed": null
+    },
+    {
+      "id": "ios27-study-f",
+      "platform": "iOS 27",
+      "app": "Safari",
+      "state": "자동 분류 하위 메뉴",
+      "screenFamily": "overlay-menu",
+      "imageSize": [
+        1200,
+        2620
+      ],
+      "frame": [
+        0,
+        0,
+        1200,
+        2620
+      ],
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/12/",
+      "sourceClass": "기존 수동 분석 캡처 · iOS 27",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "열린 탭을 관리하는 화면 위에서 Organize Tabs 메뉴의 자동 주제 분류 설정을 선택하는 상태다.",
+      "hierarchy": [
+        "검색·메뉴 명령",
+        "탭·주제 카드 탐색",
+        "분류 조건과 하위 설정 진입",
+        "자동 주제 분류 설정",
+        "추가·문맥 전환·완료"
+      ],
+      "regions": [
+        {
+          "id": "F1",
+          "box": [
+            48,
+            183,
+            1110,
+            147
+          ],
+          "role": "검색·메뉴 명령"
+        },
+        {
+          "id": "F2",
+          "box": [
+            45,
+            372,
+            1110,
+            1887
+          ],
+          "role": "탭·주제 카드 탐색"
+        },
+        {
+          "id": "F5",
+          "box": [
+            42,
+            2370,
+            1116,
+            165
+          ],
+          "role": "추가·문맥 전환·완료"
+        }
+      ],
+      "components": [
+        {
+          "role": "열린 탭 검색",
+          "type": "command",
+          "evidence": "탭 검색",
+          "sourceNodeId": "F11",
+          "catalogMapping": "EXISTING",
+          "box": [
+            51,
+            195,
+            126,
+            126
+          ]
+        },
+        {
+          "role": "추가 탭 관리 명령",
+          "type": "command",
+          "evidence": "더보기",
+          "sourceNodeId": "F12",
+          "catalogMapping": "EXISTING",
+          "box": [
+            1029,
+            195,
+            126,
+            126
+          ]
+        },
+        {
+          "role": "고정 웹페이지 탐색",
+          "type": "row",
+          "evidence": "고정 탭 링크 집단",
+          "sourceNodeId": "F21",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            372,
+            1095,
+            330
+          ]
+        },
+        {
+          "role": "해당 웹 문서 정보·탐색",
+          "type": "row",
+          "evidence": "웹 탭 카드",
+          "sourceNodeId": "F22",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            798,
+            498,
+            744
+          ]
+        },
+        {
+          "role": "관련 탭 집단 탐색",
+          "type": "row",
+          "evidence": "MacStories 주제 카드",
+          "sourceNodeId": "F23",
+          "catalogMapping": "EXISTING",
+          "box": [
+            600,
+            798,
+            546,
+            744
+          ]
+        },
+        {
+          "role": "다른 웹 문서 탭",
+          "type": "row",
+          "evidence": "웹 탭 카드 2",
+          "sourceNodeId": "F24",
+          "catalogMapping": "EXISTING",
+          "box": [
+            54,
+            1632,
+            498,
+            624
+          ]
+        },
+        {
+          "role": "분류 조건과 하위 설정 진입",
+          "type": "menu",
+          "evidence": "Filter By 상위 메뉴",
+          "sourceNodeId": "F3",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            225,
+            192,
+            717,
+            825
+          ]
+        },
+        {
+          "role": "자동 주제 분류 설정",
+          "type": "menu",
+          "evidence": "Organize Tabs 하위 메뉴",
+          "sourceNodeId": "F4",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            225,
+            411,
+            720,
+            603
+          ]
+        },
+        {
+          "role": "자동/안함 중 한 값 선택",
+          "type": "choice-group",
+          "evidence": "주제 생성 정책",
+          "sourceNodeId": "F42",
+          "catalogMapping": "EXISTING",
+          "box": [
+            273,
+            708,
+            621,
+            267
+          ]
+        },
+        {
+          "role": "자동 분류 사용",
+          "type": "choice",
+          "evidence": "Automatically Create Topics",
+          "sourceNodeId": "F421",
+          "catalogMapping": "EXISTING",
+          "box": [
+            279,
+            711,
+            603,
+            144
+          ]
+        },
+        {
+          "role": "자동 분류 사용 안함",
+          "type": "choice",
+          "evidence": "Never",
+          "sourceNodeId": "F422",
+          "catalogMapping": "EXISTING",
+          "box": [
+            363,
+            900,
+            480,
+            72
+          ]
+        },
+        {
+          "role": "새 탭 생성",
+          "type": "command",
+          "evidence": "새 탭 +",
+          "sourceNodeId": "F51",
+          "catalogMapping": "EXISTING",
+          "box": [
+            120,
+            2382,
+            135,
+            135
+          ]
+        },
+        {
+          "role": "브라우징 문맥 선택",
+          "type": "choice-group",
+          "evidence": "Private / 18 Tabs",
+          "sourceNodeId": "F52",
+          "catalogMapping": "EXISTING",
+          "box": [
+            279,
+            2388,
+            654,
+            123
+          ]
+        },
+        {
+          "role": "탭 관리 종료",
+          "type": "command",
+          "evidence": "완료 체크",
+          "sourceNodeId": "F53",
+          "catalogMapping": "EXISTING",
+          "box": [
+            1011,
+            2376,
+            141,
+            141
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 45, 75, 225, 330, 960, 1146",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "F",
+      "seed": null
+    },
+    {
+      "id": "oneui9-study-n",
+      "platform": "One UI 9",
+      "app": "Samsung Notes",
+      "state": "펜 설정",
+      "screenFamily": "editor-tools",
+      "imageSize": [
+        486,
+        1058
+      ],
+      "frame": [
+        0,
+        0,
+        486,
+        1058
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "sourceClass": "기존 수동 분석 캡처 · One UI 9 Beta",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "펜 종류·두께·선·색을 조정한다.",
+      "hierarchy": [
+        "노트 탐색·제목·명령",
+        "입력 모드·도구·undo/redo",
+        "선택 도구로 쓰기/그리기",
+        "현재 펜의 여러 속성 조정",
+        "펜 관련 보조 명령 후보"
+      ],
+      "regions": [
+        {
+          "id": "N1",
+          "box": [
+            15,
+            61,
+            455,
+            48
+          ],
+          "role": "노트 탐색·제목·명령"
+        },
+        {
+          "id": "N2",
+          "box": [
+            10,
+            111,
+            467,
+            48
+          ],
+          "role": "입력 모드·도구·undo/redo"
+        },
+        {
+          "id": "N4",
+          "box": [
+            63,
+            176,
+            359,
+            489
+          ],
+          "role": "현재 펜의 여러 속성 조정"
+        }
+      ],
+      "components": [
+        {
+          "role": "목록 복귀",
+          "type": "navigation",
+          "evidence": "뒤로",
+          "sourceNodeId": "N11",
+          "catalogMapping": "EXISTING",
+          "box": [
+            21,
+            67,
+            30,
+            36
+          ]
+        },
+        {
+          "role": "문서 제목 입력 후보",
+          "type": "text-input",
+          "evidence": "제목",
+          "sourceNodeId": "N12",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            64,
+            64,
+            248,
+            38
+          ]
+        },
+        {
+          "role": "문서 관련 명령",
+          "type": "command",
+          "evidence": "읽기 보기",
+          "sourceNodeId": "N13",
+          "catalogMapping": "EXISTING",
+          "box": [
+            362,
+            67,
+            16,
+            33
+          ]
+        },
+        {
+          "role": "문서 관련 명령",
+          "type": "command",
+          "evidence": "삽입 +",
+          "sourceNodeId": "N14",
+          "catalogMapping": "EXISTING",
+          "box": [
+            411,
+            67,
+            15,
+            33
+          ]
+        },
+        {
+          "role": "문서 관련 명령",
+          "type": "command",
+          "evidence": "더보기",
+          "sourceNodeId": "N15",
+          "catalogMapping": "EXISTING",
+          "box": [
+            453,
+            67,
+            16,
+            33
+          ]
+        },
+        {
+          "role": "텍스트 입력 진입",
+          "type": "command",
+          "evidence": "키보드 모드",
+          "sourceNodeId": "N21",
+          "catalogMapping": "EXISTING",
+          "box": [
+            17,
+            118,
+            32,
+            33
+          ]
+        },
+        {
+          "role": "현재 편집 도구 선택",
+          "type": "choice-group",
+          "evidence": "펜·형광펜·지우개·선택 도구",
+          "sourceNodeId": "N22",
+          "catalogMapping": "EXISTING",
+          "box": [
+            77,
+            117,
+            149,
+            35
+          ]
+        },
+        {
+          "role": "AI 편집 명령",
+          "type": "command",
+          "evidence": "AI 도구",
+          "sourceNodeId": "N23",
+          "catalogMapping": "EXISTING",
+          "box": [
+            245,
+            118,
+            27,
+            31
+          ]
+        },
+        {
+          "role": "이전 편집 취소",
+          "type": "command",
+          "evidence": "실행 취소",
+          "sourceNodeId": "N24",
+          "catalogMapping": "EXISTING",
+          "box": [
+            300,
+            118,
+            29,
+            31
+          ]
+        },
+        {
+          "role": "취소한 편집 복원",
+          "type": "command",
+          "evidence": "다시 실행",
+          "sourceNodeId": "N25",
+          "catalogMapping": "EXISTING",
+          "box": [
+            354,
+            118,
+            29,
+            31
+          ]
+        },
+        {
+          "role": "선택 도구로 쓰기/그리기",
+          "type": "canvas-input",
+          "evidence": "노트 입력 표면",
+          "sourceNodeId": "N3",
+          "catalogMapping": "CATALOG_GAP",
+          "box": [
+            0,
+            163,
+            486,
+            881
+          ]
+        },
+        {
+          "role": "팔레트 닫기",
+          "type": "command",
+          "evidence": "팔레트 닫기 X",
+          "sourceNodeId": "N41",
+          "catalogMapping": "EXISTING",
+          "box": [
+            364,
+            198,
+            25,
+            24
+          ]
+        },
+        {
+          "role": "펜 프리셋 관련 명령 후보",
+          "type": "command",
+          "evidence": "즐겨찾기 별",
+          "sourceNodeId": "N42",
+          "catalogMapping": "EXISTING",
+          "box": [
+            320,
+            197,
+            26,
+            27
+          ]
+        },
+        {
+          "role": "펜 종류 단일 선택",
+          "type": "choice-group",
+          "evidence": "펜촉 종류",
+          "sourceNodeId": "N43",
+          "catalogMapping": "EXISTING",
+          "box": [
+            94,
+            256,
+            298,
+            110
+          ]
+        },
+        {
+          "role": "펜 두께 범위 값",
+          "type": "slider",
+          "evidence": "두께 30",
+          "sourceNodeId": "N44",
+          "catalogMapping": "EXISTING",
+          "box": [
+            137,
+            392,
+            214,
+            34
+          ]
+        },
+        {
+          "role": "펜 두께 감소",
+          "type": "command",
+          "evidence": "두께 감소 −",
+          "sourceNodeId": "N441",
+          "catalogMapping": "EXISTING",
+          "box": [
+            96,
+            396,
+            30,
+            27
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 17, 63, 94, 399, 463",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "N",
+      "seed": null
+    },
+    {
+      "id": "oneui9-study-l",
+      "platform": "One UI 9",
+      "app": "앱 알림",
+      "state": "목록과 메뉴",
+      "screenFamily": "settings-list",
+      "imageSize": [
+        488,
+        1057
+      ],
+      "frame": [
+        0,
+        0,
+        488,
+        1057
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "sourceClass": "기존 수동 분석 캡처 · One UI 9 Beta",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "개인 프로필 앱별 알림 허용을 관리하는 목록 위에 추가 메뉴가 열린 상태.",
+      "hierarchy": [
+        "제목·뒤로·대상 범위",
+        "앱별 알림 허용 설정",
+        "목록 추가 명령·조건"
+      ],
+      "regions": [
+        {
+          "id": "L1",
+          "box": [
+            15,
+            144,
+            456,
+            293
+          ],
+          "role": "제목·뒤로·대상 범위"
+        },
+        {
+          "id": "L2",
+          "box": [
+            16,
+            429,
+            456,
+            623
+          ],
+          "role": "앱별 알림 허용 설정"
+        }
+      ],
+      "components": [
+        {
+          "role": "설정 상위 화면",
+          "type": "navigation",
+          "evidence": "뒤로",
+          "sourceNodeId": "L12",
+          "catalogMapping": "EXISTING",
+          "box": [
+            32,
+            315,
+            24,
+            36
+          ]
+        },
+        {
+          "role": "설정할 앱 프로필 범위",
+          "type": "choice-group",
+          "evidence": "개인 프로필",
+          "sourceNodeId": "L13",
+          "catalogMapping": "EXISTING",
+          "box": [
+            29,
+            373,
+            220,
+            48
+          ]
+        },
+        {
+          "role": "앱 식별·알림 설정 소유 행",
+          "type": "row",
+          "evidence": "갤러리 알림 행",
+          "sourceNodeId": "L21",
+          "catalogMapping": "EXISTING",
+          "box": [
+            16,
+            429,
+            456,
+            61
+          ]
+        },
+        {
+          "role": "앱 알림 on/off",
+          "type": "switch",
+          "evidence": "갤러리 알림 허용",
+          "sourceNodeId": "L21s",
+          "catalogMapping": "EXISTING",
+          "box": [
+            412,
+            443,
+            38,
+            25
+          ]
+        },
+        {
+          "role": "앱 식별·알림 설정 소유 행",
+          "type": "row",
+          "evidence": "갤럭시 테마 알림 행",
+          "sourceNodeId": "L22",
+          "catalogMapping": "EXISTING",
+          "box": [
+            16,
+            490,
+            456,
+            61
+          ]
+        },
+        {
+          "role": "앱 알림 on/off",
+          "type": "switch",
+          "evidence": "갤럭시 테마 알림 허용",
+          "sourceNodeId": "L22s",
+          "catalogMapping": "EXISTING",
+          "box": [
+            412,
+            504,
+            38,
+            25
+          ]
+        },
+        {
+          "role": "앱 식별·알림 설정 소유 행",
+          "type": "row",
+          "evidence": "게이밍 허브 알림 행",
+          "sourceNodeId": "L23",
+          "catalogMapping": "EXISTING",
+          "box": [
+            16,
+            551,
+            456,
+            61
+          ]
+        },
+        {
+          "role": "앱 알림 on/off",
+          "type": "switch",
+          "evidence": "게이밍 허브 알림 허용",
+          "sourceNodeId": "L23s",
+          "catalogMapping": "EXISTING",
+          "box": [
+            412,
+            565,
+            38,
+            25
+          ]
+        },
+        {
+          "role": "앱 식별·알림 설정 소유 행",
+          "type": "row",
+          "evidence": "광주 와뱅크 알림 행",
+          "sourceNodeId": "L24",
+          "catalogMapping": "EXISTING",
+          "box": [
+            16,
+            612,
+            456,
+            61
+          ]
+        },
+        {
+          "role": "앱 알림 on/off",
+          "type": "switch",
+          "evidence": "광주 와뱅크 알림 허용",
+          "sourceNodeId": "L24s",
+          "catalogMapping": "EXISTING",
+          "box": [
+            412,
+            626,
+            38,
+            25
+          ]
+        },
+        {
+          "role": "앱 식별·알림 설정 소유 행",
+          "type": "row",
+          "evidence": "국세청 손택스 알림 행",
+          "sourceNodeId": "L25",
+          "catalogMapping": "EXISTING",
+          "box": [
+            16,
+            673,
+            456,
+            61
+          ]
+        },
+        {
+          "role": "앱 알림 on/off",
+          "type": "switch",
+          "evidence": "국세청 손택스 알림 허용",
+          "sourceNodeId": "L25s",
+          "catalogMapping": "EXISTING",
+          "box": [
+            412,
+            687,
+            38,
+            25
+          ]
+        },
+        {
+          "role": "앱 식별·알림 설정 소유 행",
+          "type": "row",
+          "evidence": "나무증권 알림 행",
+          "sourceNodeId": "L26",
+          "catalogMapping": "EXISTING",
+          "box": [
+            16,
+            734,
+            456,
+            61
+          ]
+        },
+        {
+          "role": "앱 알림 on/off",
+          "type": "switch",
+          "evidence": "나무증권 알림 허용",
+          "sourceNodeId": "L26s",
+          "catalogMapping": "EXISTING",
+          "box": [
+            412,
+            748,
+            38,
+            25
+          ]
+        },
+        {
+          "role": "앱 식별·알림 설정 소유 행",
+          "type": "row",
+          "evidence": "날씨 알림 행",
+          "sourceNodeId": "L27",
+          "catalogMapping": "EXISTING",
+          "box": [
+            16,
+            795,
+            456,
+            61
+          ]
+        },
+        {
+          "role": "앱 알림 on/off",
+          "type": "switch",
+          "evidence": "날씨 알림 허용",
+          "sourceNodeId": "L27s",
+          "catalogMapping": "EXISTING",
+          "box": [
+            412,
+            809,
+            38,
+            25
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 16, 34, 89, 396, 464",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "L",
+      "seed": null
+    },
+    {
+      "id": "oneui9-study-r",
+      "platform": "One UI 9",
+      "app": "모드 및 루틴",
+      "state": "추천 탐색",
+      "screenFamily": "discovery-list",
+      "imageSize": [
+        488,
+        1057
+      ],
+      "frame": [
+        0,
+        0,
+        488,
+        1057
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "sourceClass": "기존 수동 분석 캡처 · One UI 9 Beta",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "상황별 루틴 제안을 읽고 템플릿을 열어 설정하는 화면.",
+      "hierarchy": [
+        "뒤로·검색·더보기",
+        "추천의 목적과 보조 이미지",
+        "상황별 추천 집단",
+        "상황별 추천 집단",
+        "상황별 추천 집단",
+        "주요 뷰 탐색"
+      ],
+      "regions": [
+        {
+          "id": "R1",
+          "box": [
+            18,
+            68,
+            464,
+            49
+          ],
+          "role": "뒤로·검색·더보기"
+        },
+        {
+          "id": "R2",
+          "box": [
+            30,
+            124,
+            428,
+            203
+          ],
+          "role": "추천의 목적과 보조 이미지"
+        },
+        {
+          "id": "R3",
+          "box": [
+            18,
+            338,
+            454,
+            211
+          ],
+          "role": "상황별 추천 집단"
+        },
+        {
+          "id": "R4",
+          "box": [
+            18,
+            586,
+            454,
+            211
+          ],
+          "role": "상황별 추천 집단"
+        },
+        {
+          "id": "R5",
+          "box": [
+            18,
+            798,
+            454,
+            211
+          ],
+          "role": "상황별 추천 집단"
+        },
+        {
+          "id": "R6",
+          "box": [
+            98,
+            977,
+            286,
+            60
+          ],
+          "role": "주요 뷰 탐색"
+        }
+      ],
+      "components": [
+        {
+          "role": "루틴 화면 관련 뒤로",
+          "type": "navigation",
+          "evidence": "뒤로",
+          "sourceNodeId": "R11",
+          "catalogMapping": "EXISTING",
+          "box": [
+            30,
+            72,
+            15,
+            34
+          ]
+        },
+        {
+          "role": "루틴 화면 관련 검색",
+          "type": "command",
+          "evidence": "검색",
+          "sourceNodeId": "R12",
+          "catalogMapping": "EXISTING",
+          "box": [
+            421,
+            72,
+            15,
+            34
+          ]
+        },
+        {
+          "role": "루틴 화면 관련 더보기",
+          "type": "command",
+          "evidence": "더보기",
+          "sourceNodeId": "R13",
+          "catalogMapping": "EXISTING",
+          "box": [
+            464,
+            72,
+            14,
+            34
+          ]
+        },
+        {
+          "role": "해당 집단의 나머지 추천",
+          "type": "navigation",
+          "evidence": "이동할 때 유용한 더보기",
+          "sourceNodeId": "R3h",
+          "catalogMapping": "EXISTING",
+          "box": [
+            32,
+            338,
+            427,
+            30
+          ]
+        },
+        {
+          "role": "추천 템플릿 설정 진입",
+          "type": "navigation",
+          "evidence": "Galaxy Buds4 Pro(으)로 출퇴근하기",
+          "sourceNodeId": "R31",
+          "catalogMapping": "EXISTING",
+          "box": [
+            30,
+            378,
+            428,
+            81
+          ]
+        },
+        {
+          "role": "추천 템플릿 설정 진입",
+          "type": "navigation",
+          "evidence": "알림 읽어주기",
+          "sourceNodeId": "R32",
+          "catalogMapping": "EXISTING",
+          "box": [
+            30,
+            464,
+            428,
+            80
+          ]
+        },
+        {
+          "role": "해당 집단의 나머지 추천",
+          "type": "navigation",
+          "evidence": "특정 시간이나 장소에서 유용한 더보기",
+          "sourceNodeId": "R4h",
+          "catalogMapping": "EXISTING",
+          "box": [
+            32,
+            586,
+            427,
+            30
+          ]
+        },
+        {
+          "role": "추천 템플릿 설정 진입",
+          "type": "navigation",
+          "evidence": "Now brief 열기",
+          "sourceNodeId": "R41",
+          "catalogMapping": "EXISTING",
+          "box": [
+            30,
+            626,
+            428,
+            80
+          ]
+        },
+        {
+          "role": "추천 템플릿 설정 진입",
+          "type": "navigation",
+          "evidence": "아침 음악",
+          "sourceNodeId": "R42",
+          "catalogMapping": "EXISTING",
+          "box": [
+            30,
+            711,
+            428,
+            81
+          ]
+        },
+        {
+          "role": "해당 집단의 나머지 추천",
+          "type": "navigation",
+          "evidence": "배터리 더보기",
+          "sourceNodeId": "R5h",
+          "catalogMapping": "EXISTING",
+          "box": [
+            32,
+            798,
+            427,
+            30
+          ]
+        },
+        {
+          "role": "추천 템플릿 설정 진입",
+          "type": "navigation",
+          "evidence": "무선 충전 시각 효과",
+          "sourceNodeId": "R51",
+          "catalogMapping": "EXISTING",
+          "box": [
+            30,
+            838,
+            428,
+            81
+          ]
+        },
+        {
+          "role": "추천 템플릿 설정 진입",
+          "type": "navigation",
+          "evidence": "배터리 부족 알림",
+          "sourceNodeId": "R52",
+          "catalogMapping": "EXISTING",
+          "box": [
+            30,
+            924,
+            428,
+            80
+          ]
+        },
+        {
+          "role": "모드/루틴 앱 주요 뷰",
+          "type": "navigation",
+          "evidence": "모드",
+          "sourceNodeId": "R61",
+          "catalogMapping": "EXISTING",
+          "box": [
+            105,
+            982,
+            83,
+            49
+          ]
+        },
+        {
+          "role": "모드/루틴 앱 주요 뷰",
+          "type": "navigation",
+          "evidence": "루틴",
+          "sourceNodeId": "R62",
+          "catalogMapping": "EXISTING",
+          "box": [
+            201,
+            982,
+            83,
+            49
+          ]
+        },
+        {
+          "role": "모드/루틴 앱 주요 뷰",
+          "type": "navigation",
+          "evidence": "추천",
+          "sourceNodeId": "R63",
+          "catalogMapping": "EXISTING",
+          "box": [
+            296,
+            982,
+            83,
+            49
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 18, 39, 92, 458",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "R",
+      "seed": null
+    },
+    {
+      "id": "oneui9-study-t",
+      "platform": "One UI 9",
+      "app": "전화",
+      "state": "통화 중 상세 카드",
+      "screenFamily": "call-controls",
+      "imageSize": [
+        491,
+        1061
+      ],
+      "frame": [
+        0,
+        0,
+        491,
+        1061
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "sourceClass": "기존 수동 분석 캡처 · One UI 9 Beta",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "통화 상대·시간·텍스트 변환 상태를 확인하고 음소거·출력·키패드·통화 종료를 제어한다.",
+      "hierarchy": [
+        "통화 대상·시간·처리 상태",
+        "과거 통화 맥락 정보",
+        "부가 기능과 주요 모드",
+        "현재 통화 끝내기"
+      ],
+      "regions": [
+        {
+          "id": "T1",
+          "box": [
+            52,
+            59,
+            398,
+            159
+          ],
+          "role": "통화 대상·시간·처리 상태"
+        },
+        {
+          "id": "T2",
+          "box": [
+            68,
+            226,
+            355,
+            157
+          ],
+          "role": "과거 통화 맥락 정보"
+        },
+        {
+          "id": "T3",
+          "box": [
+            80,
+            533,
+            343,
+            356
+          ],
+          "role": "부가 기능과 주요 모드"
+        }
+      ],
+      "components": [
+        {
+          "role": "영상 통화 전환 후보",
+          "type": "command",
+          "evidence": "영상 전환 아이콘",
+          "sourceNodeId": "T12",
+          "catalogMapping": "EXISTING",
+          "box": [
+            410,
+            68,
+            31,
+            30
+          ]
+        },
+        {
+          "role": "상세 카드 접기 후보",
+          "type": "command",
+          "evidence": "카드 접기 형태 아이콘",
+          "sourceNodeId": "T23",
+          "catalogMapping": "EXISTING",
+          "box": [
+            378,
+            247,
+            27,
+            27
+          ]
+        },
+        {
+          "role": "AI 통화 관련 보조 명령",
+          "type": "command",
+          "evidence": "AI 아이콘",
+          "sourceNodeId": "T31",
+          "catalogMapping": "EXISTING",
+          "box": [
+            344,
+            533,
+            49,
+            50
+          ]
+        },
+        {
+          "role": "녹음/텍스트 변환 아이콘 기능",
+          "type": "command",
+          "evidence": "녹음/텍스트 변환 아이콘",
+          "sourceNodeId": "T32",
+          "catalogMapping": "EXISTING",
+          "box": [
+            90,
+            613,
+            77,
+            110
+          ]
+        },
+        {
+          "role": "내 소리 차단 기능",
+          "type": "toggle",
+          "evidence": "내 소리 차단",
+          "sourceNodeId": "T33",
+          "catalogMapping": "EXISTING",
+          "box": [
+            211,
+            613,
+            77,
+            110
+          ]
+        },
+        {
+          "role": "Bluetooth 출력 기능",
+          "type": "command",
+          "evidence": "Bluetooth 출력",
+          "sourceNodeId": "T34",
+          "catalogMapping": "EXISTING",
+          "box": [
+            336,
+            613,
+            78,
+            110
+          ]
+        },
+        {
+          "role": "스피커 기능",
+          "type": "toggle",
+          "evidence": "스피커",
+          "sourceNodeId": "T35",
+          "catalogMapping": "EXISTING",
+          "box": [
+            90,
+            744,
+            77,
+            104
+          ]
+        },
+        {
+          "role": "키패드 기능",
+          "type": "command",
+          "evidence": "키패드",
+          "sourceNodeId": "T36",
+          "catalogMapping": "EXISTING",
+          "box": [
+            211,
+            744,
+            77,
+            104
+          ]
+        },
+        {
+          "role": "더보기 기능",
+          "type": "command",
+          "evidence": "더보기",
+          "sourceNodeId": "T37",
+          "catalogMapping": "EXISTING",
+          "box": [
+            336,
+            744,
+            78,
+            104
+          ]
+        },
+        {
+          "role": "현재 통화 끝내기",
+          "type": "command",
+          "evidence": "통화 종료",
+          "sourceNodeId": "T4",
+          "catalogMapping": "EXISTING",
+          "box": [
+            203,
+            883,
+            85,
+            85
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 68, 103, 177, 246, 313, 425",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "T",
+      "seed": null
+    },
+    {
+      "id": "oneui9-study-k",
+      "platform": "One UI 9",
+      "app": "잠금화면",
+      "state": "미디어 제어",
+      "screenFamily": "media-controls",
+      "imageSize": [
+        488,
+        1057
+      ],
+      "frame": [
+        0,
+        0,
+        488,
+        1057
+      ],
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "sourceClass": "기존 수동 분석 캡처 · One UI 9 Beta",
+      "confidence": "중간 · 화면 역할은 수동 가설, 전체 노드 근거 보존",
+      "purpose": "잠금화면에서 음악을 확인하고 재생을 제어한다.",
+      "hierarchy": [
+        "시스템 정보",
+        "현재 재생 콘텐츠",
+        "출력·시간·주 명령"
+      ],
+      "regions": [
+        {
+          "id": "K1",
+          "box": [
+            27,
+            57,
+            433,
+            269
+          ],
+          "role": "시스템 정보"
+        },
+        {
+          "id": "K2",
+          "box": [
+            27,
+            344,
+            433,
+            421
+          ],
+          "role": "현재 재생 콘텐츠"
+        },
+        {
+          "id": "K3",
+          "box": [
+            43,
+            792,
+            394,
+            210
+          ],
+          "role": "출력·시간·주 명령"
+        }
+      ],
+      "components": [
+        {
+          "role": "출력 대상 선택",
+          "type": "command",
+          "evidence": "출력 대상 아이콘",
+          "sourceNodeId": "K32",
+          "catalogMapping": "EXISTING",
+          "box": [
+            403,
+            792,
+            26,
+            27
+          ]
+        },
+        {
+          "role": "곡 재생 위치 표시·탐색 후보",
+          "type": "slider",
+          "evidence": "재생 위치 타임라인",
+          "sourceNodeId": "K33",
+          "catalogMapping": "EXISTING",
+          "box": [
+            52,
+            853,
+            377,
+            28
+          ]
+        },
+        {
+          "role": "좋아요 의미 역할",
+          "type": "toggle",
+          "evidence": "좋아요",
+          "sourceNodeId": "K35",
+          "catalogMapping": "EXISTING",
+          "box": [
+            74,
+            915,
+            52,
+            61
+          ]
+        },
+        {
+          "role": "이전 곡 의미 역할",
+          "type": "command",
+          "evidence": "이전 곡",
+          "sourceNodeId": "K36",
+          "catalogMapping": "EXISTING",
+          "box": [
+            137,
+            915,
+            51,
+            61
+          ]
+        },
+        {
+          "role": "일시정지 의미 역할",
+          "type": "command",
+          "evidence": "일시정지",
+          "sourceNodeId": "K37",
+          "catalogMapping": "EXISTING",
+          "box": [
+            210,
+            915,
+            51,
+            61
+          ]
+        },
+        {
+          "role": "다음 곡 의미 역할",
+          "type": "command",
+          "evidence": "다음 곡",
+          "sourceNodeId": "K38",
+          "catalogMapping": "EXISTING",
+          "box": [
+            283,
+            915,
+            51,
+            61
+          ]
+        },
+        {
+          "role": "셔플 의미 역할",
+          "type": "toggle",
+          "evidence": "셔플",
+          "sourceNodeId": "K39",
+          "catalogMapping": "EXISTING",
+          "box": [
+            365,
+            915,
+            51,
+            61
+          ]
+        }
+      ],
+      "style": {
+        "surface": "원본 화면과 상세 노드 분석 참조",
+        "layout": "정렬선은 이미지 좌표. 실제 단위 미확인.",
+        "alignment": "이미지 x 정렬선: 27, 49, 122, 192, 260, 329, 415, 464",
+        "spacing": "정확한 pt/dp와 토큰 미확인",
+        "shape": "한 장의 캡처에서 R을 일반화하지 않음"
+      },
+      "colors": [],
+      "seedReason": "캡처의 외형색만으로 앱·플랫폼의 고정 강조색을 정할 수 없습니다.",
+      "fullAnalysisScreenId": "K",
+      "seed": null
+    }
+  ]
+}

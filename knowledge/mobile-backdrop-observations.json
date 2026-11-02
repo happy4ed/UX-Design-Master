@@ -1,0 +1,6409 @@
+{
+  "schemaVersion": "2.0",
+  "method": "Screen-rooted layer tree; region roles and components from semantic analysis; manually reviewed region colors/occlusion; raw edge pixels remain unassigned",
+  "screens": [
+    {
+      "screenId": "ios27-calendar-event-detail",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "Calendar",
+      "state": "event detail",
+      "sourcePage": "https://9to5mac.com/2026/09/03/apples-calendar-app-in-ios-27-has-brand-new-design-for-key-features/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            550,
+            100,
+            350,
+            800
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#F3F2F7",
+            "status": "raster-observed",
+            "sourceRole": "canvas",
+            "evidence": "raster pixel sample"
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "chrome",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "dismiss and edit controls",
+          "box": [
+            550,
+            150,
+            350,
+            78
+          ],
+          "base": {
+            "kind": "transparent/inherited",
+            "status": "manual-raster-inference",
+            "evidence": "원본에서 별도 채움면이 보이지 않고 부모 바탕이 이어짐",
+            "color": null
+          },
+          "components": [
+            {
+              "role": "dismiss",
+              "type": "button",
+              "assignment": "manual"
+            },
+            {
+              "role": "edit",
+              "type": "button",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "identity",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "event title and time",
+          "box": [
+            562,
+            235,
+            325,
+            105
+          ],
+          "base": {
+            "kind": "transparent/inherited",
+            "status": "manual-raster-inference",
+            "evidence": "원본에서 별도 채움면이 보이지 않고 부모 바탕이 이어짐",
+            "color": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "timeline",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "schedule visualization",
+          "box": [
+            560,
+            345,
+            330,
+            145
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#FFFFFF",
+            "status": "manual-raster-inference",
+            "sourceRole": "surface",
+            "evidence": "raster pixel sample; region association manually reviewed"
+          },
+          "components": [
+            {
+              "role": "event schedule",
+              "type": "timeline visualization",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [
+            {
+              "role": "event accent",
+              "hex": "#187BD6",
+              "status": "raster-observed",
+              "evidence": "raster pixel sample; event color may be user-selected; region association manually reviewed"
+            }
+          ],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "location",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "location preview",
+          "box": [
+            560,
+            500,
+            330,
+            105
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#FFFFFF",
+            "status": "manual-raster-inference",
+            "sourceRole": "surface",
+            "evidence": "raster pixel sample; region association manually reviewed"
+          },
+          "components": [
+            {
+              "role": "event location",
+              "type": "map preview",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "options",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "editable properties",
+          "box": [
+            560,
+            610,
+            330,
+            265
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#FFFFFF",
+            "status": "manual-raster-inference",
+            "sourceRole": "surface",
+            "evidence": "raster pixel sample; region association manually reviewed"
+          },
+          "components": [
+            {
+              "role": "properties",
+              "type": "grouped list rows",
+              "assignment": "manual"
+            },
+            {
+              "role": "delete",
+              "type": "destructive button",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              564,
+              212
+            ],
+            "hex": "#EEEDF2"
+          },
+          {
+            "position": [
+              564,
+              436
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              564,
+              676
+            ],
+            "hex": "#F7F7F9"
+          },
+          {
+            "position": [
+              886,
+              212
+            ],
+            "hex": "#F2F1F6"
+          },
+          {
+            "position": [
+              886,
+              436
+            ],
+            "hex": "#FFFFFB"
+          },
+          {
+            "position": [
+              886,
+              676
+            ],
+            "hex": "#F3F2F7"
+          },
+          {
+            "position": [
+              725,
+              132
+            ],
+            "hex": "#000000"
+          },
+          {
+            "position": [
+              725,
+              868
+            ],
+            "hex": "#FFF9FC"
+          }
+        ],
+        "dominantEdgeFamily": "#F0F0F0",
+        "support": 3,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "ios27-calendar-event-create",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "Calendar",
+      "state": "new event form",
+      "sourcePage": "https://9to5mac.com/2026/09/03/apples-calendar-app-in-ios-27-has-brand-new-design-for-key-features/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            550,
+            100,
+            350,
+            800
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#F3F2F7",
+            "status": "raster-observed",
+            "sourceRole": "canvas",
+            "evidence": "raster pixel sample"
+          },
+          "components": [
+            {
+              "role": "event/reminder mode",
+              "type": "segmented control",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "dismiss",
+              "type": "button",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "complete",
+              "type": "button",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "title",
+              "type": "text input",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "date and time",
+              "type": "value row",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "location and invitees",
+              "type": "form fields",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "options",
+              "type": "grouped list rows",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "chrome",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "dismiss, mode choice and completion",
+          "box": [
+            550,
+            155,
+            350,
+            70
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "primary-fields",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "title and date-time",
+          "box": [
+            560,
+            225,
+            330,
+            115
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "people-place",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "location and invitees",
+          "box": [
+            560,
+            350,
+            330,
+            180
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "options",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "calendar and alerts",
+          "box": [
+            560,
+            545,
+            330,
+            195
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "details",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "notes and attachments",
+          "box": [
+            560,
+            745,
+            330,
+            150
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [
+        {
+          "role": "surface",
+          "hex": "#FFFFFF",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        },
+        {
+          "role": "event accent",
+          "hex": "#0B8AF3",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        }
+      ],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              564,
+              212
+            ],
+            "hex": "#EFEEF3"
+          },
+          {
+            "position": [
+              564,
+              436
+            ],
+            "hex": "#F3F2F7"
+          },
+          {
+            "position": [
+              564,
+              676
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              886,
+              212
+            ],
+            "hex": "#F1F0F5"
+          },
+          {
+            "position": [
+              886,
+              436
+            ],
+            "hex": "#F2F1F6"
+          },
+          {
+            "position": [
+              886,
+              676
+            ],
+            "hex": "#FFFFFD"
+          },
+          {
+            "position": [
+              725,
+              132
+            ],
+            "hex": "#000000"
+          },
+          {
+            "position": [
+              725,
+              868
+            ],
+            "hex": "#FFFFFF"
+          }
+        ],
+        "dominantEdgeFamily": "#F0F0F0",
+        "support": 4,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "ios27-passwords-progress",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "Passwords",
+      "state": "password repair progress",
+      "sourcePage": "https://www.apple.com/os/ios/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            372,
+            452
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#FFFFFF",
+            "status": "raster-observed",
+            "sourceRole": "canvas",
+            "evidence": "raster pixel sample"
+          },
+          "components": [
+            {
+              "role": "progress title",
+              "type": "status heading",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "account status",
+              "type": "status list row",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "more information",
+              "type": "icon button candidate",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "current progress",
+              "type": "spinner",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "intro",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "progress and explanation",
+          "box": [
+            70,
+            35,
+            240,
+            115
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "status-list",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "account status rows",
+          "box": [
+            56,
+            164,
+            264,
+            250
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [
+        {
+          "role": "success status",
+          "hex": "#A9E2B7",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        }
+      ],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              15,
+              63
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              15,
+              190
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              15,
+              325
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              357,
+              63
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              357,
+              190
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              357,
+              325
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              186,
+              18
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              186,
+              434
+            ],
+            "hex": "#FFFFFF"
+          }
+        ],
+        "dominantEdgeFamily": "#FFFFFF",
+        "support": 8,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-settings-home",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "Settings",
+      "state": "home",
+      "sourcePage": "https://r1.community.samsung.com/t5/others/one-ui-8-5-vs-one-ui-9-bedah-perbedaan-amp-fitur-baru-di-galaxy/td-p/39487394/highlight/true/page/2",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1175,
+            2520
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#F3EFEE",
+            "status": "raster-observed",
+            "sourceRole": "canvas",
+            "evidence": "raster pixel sample"
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "title",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "page identity and reach space",
+          "box": [
+            76,
+            227,
+            1021,
+            605
+          ],
+          "base": {
+            "kind": "transparent/inherited",
+            "status": "manual-raster-inference",
+            "evidence": "원본에서 별도 채움면이 보이지 않고 부모 바탕이 이어짐",
+            "color": null
+          },
+          "components": [
+            {
+              "role": "page title",
+              "type": "heading",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [
+            {
+              "role": "title accent",
+              "hex": "#4222C3",
+              "status": "raster-observed",
+              "evidence": "raster pixel sample; region association manually reviewed"
+            }
+          ],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "account",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "account entry",
+          "box": [
+            78,
+            883,
+            1021,
+            257
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#FFFFFF",
+            "status": "manual-raster-inference",
+            "sourceRole": "surface",
+            "evidence": "raster pixel sample; region association manually reviewed"
+          },
+          "components": [
+            {
+              "role": "account",
+              "type": "navigation row",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "feature",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "care shortcut",
+          "box": [
+            78,
+            1198,
+            1021,
+            159
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#FFFFFF",
+            "status": "manual-raster-inference",
+            "sourceRole": "surface",
+            "evidence": "raster pixel sample; region association manually reviewed"
+          },
+          "components": [
+            {
+              "role": "care",
+              "type": "navigation row",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "care-icon",
+          "parentId": "feature",
+          "depthBand": "component",
+          "role": "care 아이콘 배지",
+          "box": [
+            124,
+            1220,
+            82,
+            82
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#6CC34B",
+            "status": "raster-observed",
+            "evidence": "원본 이미지 (155,1260) 5×5 중앙값; 배지 내부 수동 확인",
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "Warranty and care icon",
+              "type": "icon badge",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "부모 표면 안에서 별도 채움이 보이는 컴포넌트; CSS z-index 값은 미확인"
+        },
+        {
+          "id": "settings-list",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "category navigation",
+          "box": [
+            78,
+            1415,
+            1021,
+            933
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#FFFFFF",
+            "status": "manual-raster-inference",
+            "sourceRole": "surface",
+            "evidence": "raster pixel sample; region association manually reviewed"
+          },
+          "components": [
+            {
+              "role": "settings categories",
+              "type": "grouped navigation list",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "connection-icon",
+          "parentId": "settings-list",
+          "depthBand": "component",
+          "role": "Connections 아이콘 배지",
+          "box": [
+            124,
+            1460,
+            82,
+            82
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#377AFC",
+            "status": "raster-observed",
+            "evidence": "원본 이미지 (150,1500) 5×5 중앙값; 배지 내부 수동 확인",
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "Connections icon",
+              "type": "icon badge",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "부모 표면 안에서 별도 채움이 보이는 컴포넌트; CSS z-index 값은 미확인"
+        },
+        {
+          "id": "search",
+          "parentId": "screen",
+          "depthBand": "floating",
+          "role": "floating search",
+          "box": [
+            227,
+            2333,
+            731,
+            159
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#FFFFFF",
+            "status": "manual-raster-inference",
+            "sourceRole": "surface",
+            "evidence": "raster pixel sample; region association manually reviewed"
+          },
+          "components": [
+            {
+              "role": "search",
+              "type": "search control",
+              "assignment": "manual"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "raster-observed",
+              "kind": "shadow-appearance",
+              "parametersStatus": "not-measured",
+              "note": "이 영역 아래의 부드러운 그림자가 보임; offset·blur·spread·alpha 미측정"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "겹침을 눈으로 확인한 떠 있는 영역"
+        }
+      ],
+      "occlusionRelations": [
+        {
+          "above": "search",
+          "below": "settings-list",
+          "status": "visual-observed",
+          "evidence": "원본 캡처의 겹침"
+        }
+      ],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              47,
+              353
+            ],
+            "hex": "#F5F0F1"
+          },
+          {
+            "position": [
+              47,
+              1058
+            ],
+            "hex": "#F5F0F1"
+          },
+          {
+            "position": [
+              47,
+              1814
+            ],
+            "hex": "#F5F0F1"
+          },
+          {
+            "position": [
+              1128,
+              353
+            ],
+            "hex": "#FFFBFA"
+          },
+          {
+            "position": [
+              1128,
+              1058
+            ],
+            "hex": "#FFFDFE"
+          },
+          {
+            "position": [
+              1128,
+              1814
+            ],
+            "hex": "#FFFBFA"
+          },
+          {
+            "position": [
+              588,
+              101
+            ],
+            "hex": "#F5EFEF"
+          },
+          {
+            "position": [
+              588,
+              2419
+            ],
+            "hex": "#F9F9F9"
+          }
+        ],
+        "dominantEdgeFamily": "#F0F0F0",
+        "support": 4,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-calendar-month",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "Calendar",
+      "state": "month with events",
+      "sourcePage": "https://r1.community.samsung.com/t5/others/one-ui-8-5-vs-one-ui-9-bedah-perbedaan-amp-fitur-baru-di-galaxy/td-p/39487394/highlight/true/page/2",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1175,
+            2520
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#FDFDFD",
+            "status": "raster-observed",
+            "sourceRole": "canvas",
+            "evidence": "raster pixel sample"
+          },
+          "components": [
+            {
+              "role": "month title",
+              "type": "title/navigation candidate",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "search",
+              "type": "icon button",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "calendar mode or today",
+              "type": "icon button candidate",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "dates",
+              "type": "calendar grid cells",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "selected day",
+              "type": "selection state",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "events",
+              "type": "data marks",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "add",
+              "type": "primary action bar",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "top-bar",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "month navigation and tools",
+          "box": [
+            88,
+            141,
+            996,
+            166
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "weekdays",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "weekday labels",
+          "box": [
+            88,
+            313,
+            996,
+            76
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "month-grid",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "dates and event snippets",
+          "box": [
+            76,
+            391,
+            1021,
+            1907
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "add",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "add on selected date",
+          "box": [
+            214,
+            2331,
+            741,
+            161
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [
+        {
+          "role": "event pink",
+          "hex": "#FC9A99",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        },
+        {
+          "role": "event purple",
+          "hex": "#9986FC",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        }
+      ],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              47,
+              353
+            ],
+            "hex": "#FDFDFD"
+          },
+          {
+            "position": [
+              47,
+              1058
+            ],
+            "hex": "#FCFCFE"
+          },
+          {
+            "position": [
+              47,
+              1814
+            ],
+            "hex": "#FDFCF8"
+          },
+          {
+            "position": [
+              1128,
+              353
+            ],
+            "hex": "#FEFEFE"
+          },
+          {
+            "position": [
+              1128,
+              1058
+            ],
+            "hex": "#FEFEFE"
+          },
+          {
+            "position": [
+              1128,
+              1814
+            ],
+            "hex": "#FEFEFE"
+          },
+          {
+            "position": [
+              588,
+              101
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              588,
+              2419
+            ],
+            "hex": "#FCFCFC"
+          }
+        ],
+        "dominantEdgeFamily": "#FFFFFF",
+        "support": 8,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-calculator-scientific",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "Calculator",
+      "state": "scientific keypad",
+      "sourcePage": "https://r1.community.samsung.com/t5/others/one-ui-8-5-vs-one-ui-9-bedah-perbedaan-amp-fitur-baru-di-galaxy/td-p/39487394/highlight/true/page/2",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1175,
+            2520
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#F5EFEF",
+            "status": "raster-observed",
+            "sourceRole": "canvas",
+            "evidence": "raster pixel sample"
+          },
+          "components": [
+            {
+              "role": "display",
+              "type": "numeric text field/output",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "scientific operations",
+              "type": "function keys",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "digits",
+              "type": "keypad buttons",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "operators",
+              "type": "operator buttons",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "equals",
+              "type": "primary calculation button",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "tools",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "history and tools",
+          "box": [
+            88,
+            161,
+            996,
+            121
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "display",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "expression and result",
+          "box": [
+            88,
+            378,
+            996,
+            782
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "scientific",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "functions",
+          "box": [
+            106,
+            1216,
+            963,
+            457
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "keypad",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "numbers and operators",
+          "box": [
+            106,
+            1690,
+            963,
+            815
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [
+        {
+          "role": "operator",
+          "hex": "#994255",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        },
+        {
+          "role": "digit surface",
+          "hex": "#EBE1EA",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        }
+      ],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              47,
+              353
+            ],
+            "hex": "#F5F0F1"
+          },
+          {
+            "position": [
+              47,
+              1058
+            ],
+            "hex": "#F5F0F1"
+          },
+          {
+            "position": [
+              47,
+              1814
+            ],
+            "hex": "#F5F0F1"
+          },
+          {
+            "position": [
+              1128,
+              353
+            ],
+            "hex": "#FFFBFA"
+          },
+          {
+            "position": [
+              1128,
+              1058
+            ],
+            "hex": "#FFFBFA"
+          },
+          {
+            "position": [
+              1128,
+              1814
+            ],
+            "hex": "#FFFBFA"
+          },
+          {
+            "position": [
+              588,
+              101
+            ],
+            "hex": "#F5EFEF"
+          },
+          {
+            "position": [
+              588,
+              2419
+            ],
+            "hex": "#F5EFEF"
+          }
+        ],
+        "dominantEdgeFamily": "#F0F0F0",
+        "support": 5,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-weather-metrics",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "Weather",
+      "state": "metrics",
+      "sourcePage": "https://r1.community.samsung.com/t5/others/one-ui-8-5-vs-one-ui-9-bedah-perbedaan-amp-fitur-baru-di-galaxy/td-p/39487394/highlight/true/page/2",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1175,
+            2520
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "location",
+              "type": "selection chip",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "UV index",
+              "type": "metric visualization",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "humidity",
+              "type": "metric visualization",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "wind",
+              "type": "radial direction diagram",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "pressure",
+              "type": "radial gauge",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "weather metrics",
+              "type": "data tiles",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "search",
+              "type": "icon button",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "location",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "location selector",
+          "box": [
+            76,
+            129,
+            1021,
+            156
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "metrics",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "two-column metric chunks",
+          "box": [
+            76,
+            298,
+            1021,
+            2106
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "bottom-nav",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "navigation and search",
+          "box": [
+            76,
+            2422,
+            1021,
+            88
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [
+        {
+          "role": "sky blue",
+          "hex": "#5490CC",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        },
+        {
+          "role": "blue-green",
+          "hex": "#5E9995",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        },
+        {
+          "role": "lower blue",
+          "hex": "#3C88DC",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        }
+      ],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              47,
+              353
+            ],
+            "hex": "#6499E4"
+          },
+          {
+            "position": [
+              47,
+              1058
+            ],
+            "hex": "#79B296"
+          },
+          {
+            "position": [
+              47,
+              1814
+            ],
+            "hex": "#72A9D1"
+          },
+          {
+            "position": [
+              1128,
+              353
+            ],
+            "hex": "#D1EAF4"
+          },
+          {
+            "position": [
+              1128,
+              1058
+            ],
+            "hex": "#D6EEE5"
+          },
+          {
+            "position": [
+              1128,
+              1814
+            ],
+            "hex": "#D1EAF2"
+          },
+          {
+            "position": [
+              588,
+              101
+            ],
+            "hex": "#4894E1"
+          },
+          {
+            "position": [
+              588,
+              2419
+            ],
+            "hex": "#368AE4"
+          }
+        ],
+        "dominantEdgeFamily": "#D0F0F0",
+        "support": 2,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-study-q",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "Quick Panel",
+      "state": "사용자 배치",
+      "sourcePage": "https://eu.community.samsung.com/t5/galaxy-s26-series/control-panel-oneui-9-beta/td-p/14927952",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1440,
+            3120
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "Q1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "연결·배터리 상태 읽기",
+          "box": [
+            55,
+            140,
+            1327,
+            85
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "Q2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "시각 정보와 패널 관리",
+          "box": [
+            84,
+            310,
+            1260,
+            95
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "배치 편집 진입",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "전원 관련 명령 열기",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "설정 화면 이동",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "Q3",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "범위 조절·빠른 연결/기능",
+          "box": [
+            84,
+            465,
+            1298,
+            1210
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "화면 밝기 범위 값 조절",
+              "type": "slider",
+              "assignment": "geometry"
+            },
+            {
+              "role": "음량 범위 값 조절",
+              "type": "slider",
+              "assignment": "geometry"
+            },
+            {
+              "role": "외형상 모드 전환 후보",
+              "type": "toggle",
+              "assignment": "geometry"
+            },
+            {
+              "role": "다중 소리 상태 선택/순환 후보",
+              "type": "cycle",
+              "assignment": "geometry"
+            },
+            {
+              "role": "연결 상태 표시 + 연결 설정/전환 후보",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "모바일 데이터 on/off 후보",
+              "type": "toggle",
+              "assignment": "geometry"
+            },
+            {
+              "role": "블루투스 상태·설정/전환 후보",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "손전등 on/off 후보",
+              "type": "toggle",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "Q4",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "그리드형 빠른 동작 집단",
+          "box": [
+            58,
+            1710,
+            1324,
+            588
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "명칭 없는 기능 타일 후보",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "명칭 없는 기능 타일 후보",
+              "type": "toggle",
+              "assignment": "geometry"
+            },
+            {
+              "role": "명칭 없는 기능 타일 후보",
+              "type": "toggle",
+              "assignment": "geometry"
+            },
+            {
+              "role": "명칭 없는 기능 타일 후보",
+              "type": "toggle",
+              "assignment": "geometry"
+            },
+            {
+              "role": "명칭 없는 기능 타일 후보",
+              "type": "toggle",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "Q6",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "기능 바로가기",
+          "box": [
+            58,
+            2640,
+            1324,
+            285
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "Q7",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "최근 앱·홈·뒤로",
+          "box": [
+            200,
+            3005,
+            1040,
+            90
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [
+        {
+          "role": "반투명 배경 외형",
+          "hex": "#7F6D6D",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        },
+        {
+          "role": "원형 컨트롤 외형",
+          "hex": "#D5D5D5",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        }
+      ],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              58,
+              437
+            ],
+            "hex": "#757479"
+          },
+          {
+            "position": [
+              58,
+              1310
+            ],
+            "hex": "#9D827A"
+          },
+          {
+            "position": [
+              58,
+              2246
+            ],
+            "hex": "#67646F"
+          },
+          {
+            "position": [
+              1382,
+              437
+            ],
+            "hex": "#6C6C6E"
+          },
+          {
+            "position": [
+              1382,
+              1310
+            ],
+            "hex": "#A08983"
+          },
+          {
+            "position": [
+              1382,
+              2246
+            ],
+            "hex": "#4B4E5F"
+          },
+          {
+            "position": [
+              720,
+              125
+            ],
+            "hex": "#646464"
+          },
+          {
+            "position": [
+              720,
+              2995
+            ],
+            "hex": "#42475B"
+          }
+        ],
+        "dominantEdgeFamily": "#707080",
+        "support": 1,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "ios27-study-a",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "AirPods",
+      "state": "상단 설정",
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/14/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1205,
+            2620
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#F2F2F6",
+            "status": "raster-observed",
+            "sourceRole": "화면 배경",
+            "evidence": "image appearance; not design token"
+          },
+          "components": [
+            {
+              "role": "장치 이름 설정 진입",
+              "type": "navigation",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "A1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "상태 정보와 뒤로 탐색",
+          "box": [
+            0,
+            0,
+            1205,
+            330
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "상위 화면으로 이동",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "A2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "기기별 정보·현재 배터리 표시",
+          "box": [
+            140,
+            440,
+            900,
+            510
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "기기별 정보·현재 배터리 표시",
+              "type": "device-battery-summary",
+              "assignment": "geometry"
+            },
+            {
+              "role": "배터리 값 읽기 · 입력 아님",
+              "type": "gauge",
+              "assignment": "geometry"
+            },
+            {
+              "role": "배터리 값 읽기 · 입력 아님",
+              "type": "gauge",
+              "assignment": "geometry"
+            },
+            {
+              "role": "배터리 값 읽기 · 입력 아님",
+              "type": "gauge",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "A4",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "선택한 음향 처리 모드",
+          "box": [
+            50,
+            1265,
+            1108,
+            330
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "기능 모드 값 선택 · 콘텐츠 패널 탭 아님",
+              "type": "choice-group",
+              "assignment": "geometry"
+            },
+            {
+              "role": "모드 선택 항목",
+              "type": "choice",
+              "assignment": "geometry"
+            },
+            {
+              "role": "모드 선택 항목",
+              "type": "choice",
+              "assignment": "geometry"
+            },
+            {
+              "role": "모드 선택 항목",
+              "type": "choice",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "A5",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "장치 음량 제어",
+          "box": [
+            50,
+            1650,
+            1108,
+            230
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "음량 범위 값 입력",
+              "type": "slider",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "A6",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "도메인 설정으로 이동",
+          "box": [
+            50,
+            1980,
+            1108,
+            640
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "하위 설정 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "본문 열부터 구분",
+              "type": "divider",
+              "assignment": "geometry"
+            },
+            {
+              "role": "하위 설정 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "본문 열부터 구분",
+              "type": "divider",
+              "assignment": "geometry"
+            },
+            {
+              "role": "하위 설정 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [
+        {
+          "role": "흰 행 표면",
+          "hex": "#FFFFFF",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        }
+      ],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              48,
+              367
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              48,
+              1100
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              48,
+              1886
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              1157,
+              367
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              1157,
+              1100
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              1157,
+              1886
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              602,
+              105
+            ],
+            "hex": "#000000"
+          },
+          {
+            "position": [
+              602,
+              2515
+            ],
+            "hex": "#FFFFFF"
+          }
+        ],
+        "dominantEdgeFamily": "#F0F0F0",
+        "support": 5,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "ios27-study-b",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "AirPods",
+      "state": "아래로 스크롤",
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/14/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1205,
+            2620
+          ],
+          "base": {
+            "kind": "solid",
+            "color": "#F2F2F6",
+            "status": "raster-observed",
+            "sourceRole": "화면 배경",
+            "evidence": "image appearance; not design token"
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "B1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "상태 정보와 뒤로 탐색",
+          "box": [
+            0,
+            0,
+            1205,
+            330
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "상위 화면으로 이동",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앞선 범위 조절의 가시 부분",
+              "type": "slider",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "B3",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "설정 하위 탐색",
+          "box": [
+            50,
+            360,
+            1108,
+            750
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "하위 설정 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "하위 설정 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "하위 설정 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "하위 설정 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "하위 설정 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "B4",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "배터리·찾기·개인정보",
+          "box": [
+            50,
+            1215,
+            1108,
+            450
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "장치 관리 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "장치 관리 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "장치 관리 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "B5",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "정보 진입과 테스트 명령",
+          "box": [
+            50,
+            1770,
+            1108,
+            500
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "착용 안내로 이동",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "음향 밀착 테스트 시작",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "B6",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "읽기 전용 모델 정보",
+          "box": [
+            50,
+            2330,
+            1108,
+            290
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "레이블/값 읽기 · 탐색 근거 없음",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "기기 모델 번호 읽기",
+              "type": "row",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [
+        {
+          "role": "그룹 표면",
+          "hex": "#FFFFFF",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        }
+      ],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              48,
+              367
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              48,
+              1100
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              48,
+              1886
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              1157,
+              367
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              1157,
+              1100
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              1157,
+              1886
+            ],
+            "hex": "#F5F6F7"
+          },
+          {
+            "position": [
+              602,
+              105
+            ],
+            "hex": "#000000"
+          },
+          {
+            "position": [
+              602,
+              2515
+            ],
+            "hex": "#FFFFFF"
+          }
+        ],
+        "dominantEdgeFamily": "#F0F0F0",
+        "support": 6,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-study-p",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "위치 권한",
+      "state": "정밀도와 허용 범위",
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            488,
+            1057
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "정밀도 선택 + 허용 응답",
+              "type": "dialog",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "정확/대략 한 값 선택",
+              "type": "choice-group",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "정밀도 선택 항목",
+              "type": "choice",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "정밀도 선택 항목",
+              "type": "choice",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "권한 요청 확정 응답",
+              "type": "command",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "권한 요청 확정 응답",
+              "type": "command",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "권한 요청 확정 응답",
+              "type": "command",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "P2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "앱 배경 · 원본 편집 가능",
+          "box": [
+            0,
+            40,
+            488,
+            432
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [
+        {
+          "role": "편집 가능 배경",
+          "hex": "#C7C7C7",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        },
+        {
+          "role": "요청 표면",
+          "hex": "#FCFCFC",
+          "reason": "소속 층을 확인하지 않아 자동 배정하지 않음"
+        }
+      ],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              20,
+              148
+            ],
+            "hex": "#C7C7C7"
+          },
+          {
+            "position": [
+              20,
+              444
+            ],
+            "hex": "#C7C7C7"
+          },
+          {
+            "position": [
+              20,
+              761
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              468,
+              148
+            ],
+            "hex": "#C7C7C7"
+          },
+          {
+            "position": [
+              468,
+              444
+            ],
+            "hex": "#C7C7C7"
+          },
+          {
+            "position": [
+              468,
+              761
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              244,
+              42
+            ],
+            "hex": "#C7C7C7"
+          },
+          {
+            "position": [
+              244,
+              1015
+            ],
+            "hex": "#FCFCFC"
+          }
+        ],
+        "dominantEdgeFamily": "#C0C0C0",
+        "support": 5,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "ios27-study-c",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "Calendar",
+      "state": "일정 생성 입력",
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/9/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1205,
+            2620
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "포커스된 필드의 입력·추천·확정",
+              "type": "keyboard",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "C1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "취소·객체 유형·확정",
+          "box": [
+            30,
+            175,
+            1145,
+            232
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "작성을 취소/닫기",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "생성 객체 종류 선택",
+              "type": "choice-group",
+              "assignment": "geometry"
+            },
+            {
+              "role": "생성 유형의 한 값",
+              "type": "choice",
+              "assignment": "geometry"
+            },
+            {
+              "role": "생성 유형의 한 값",
+              "type": "choice",
+              "assignment": "geometry"
+            },
+            {
+              "role": "입력한 일정 확정",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "C2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "주 입력과 해석 결과",
+          "box": [
+            78,
+            416,
+            1076,
+            500
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "자연어 일정 입력",
+              "type": "text-input",
+              "assignment": "geometry"
+            },
+            {
+              "role": "추출된 제목 필드 후보",
+              "type": "text-input",
+              "assignment": "geometry"
+            },
+            {
+              "role": "해석된 일시 요약/편집 진입 후보",
+              "type": "row",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "C3",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "장소·초대 대상·추가 옵션",
+          "box": [
+            48,
+            1018,
+            1106,
+            618
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "장소/화상 통화 입력 후보",
+              "type": "text-input",
+              "assignment": "geometry"
+            },
+            {
+              "role": "초대 대상 선택 진입",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              48,
+              367
+            ],
+            "hex": "#F9F9FF"
+          },
+          {
+            "position": [
+              48,
+              1100
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              48,
+              1886
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              1157,
+              367
+            ],
+            "hex": "#F9F9FF"
+          },
+          {
+            "position": [
+              1157,
+              1100
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              1157,
+              1886
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              602,
+              105
+            ],
+            "hex": "#000000"
+          },
+          {
+            "position": [
+              602,
+              2515
+            ],
+            "hex": "#E2E3E7"
+          }
+        ],
+        "dominantEdgeFamily": "#FFFFFF",
+        "support": 4,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "ios27-study-m",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "Mail",
+      "state": "검색과 결과",
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/10/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1200,
+            2620
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "검색 결과 선택 모드 진입 후보",
+              "type": "command",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "검색 대상 범위 한 값 선택",
+              "type": "choice-group",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "전체 범위 선택",
+              "type": "choice",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "현재 범위 선택",
+              "type": "choice",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "포커스된 필드의 입력·추천·확정",
+              "type": "keyboard",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "M3",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "결과 정보와 탐색",
+          "box": [
+            60,
+            522,
+            1080,
+            690
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "결과 메일/대화 열기",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "검색 조건 추가/연락처 범위 제안 후보",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "M4",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "검색어 편집·지우기·종료",
+          "box": [
+            18,
+            1476,
+            1167,
+            153
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "검색어 편집",
+              "type": "text-input",
+              "assignment": "geometry"
+            },
+            {
+              "role": "입력값만 지우기",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "검색 모드 종료 후보",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              48,
+              367
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              48,
+              1100
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              48,
+              1886
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              1152,
+              367
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              1152,
+              1100
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              1152,
+              1886
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              600,
+              105
+            ],
+            "hex": "#000000"
+          },
+          {
+            "position": [
+              600,
+              2515
+            ],
+            "hex": "#E2E3E7"
+          }
+        ],
+        "dominantEdgeFamily": "#FFFFFF",
+        "support": 6,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "ios27-study-u",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "Music",
+      "state": "아티스트 상세",
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/10/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1205,
+            2620
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "아티스트가 고정한 앨범 정보/탐색",
+              "type": "row",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "곡 정보와 재생/추가 명령",
+              "type": "row",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "곡 정보와 재생/추가 명령",
+              "type": "row",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "현재 곡 재생/일시정지",
+              "type": "command",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "대기열 다음 곡",
+              "type": "command",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "앱 섹션 탐색",
+              "type": "navigation",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "앱 섹션 탐색",
+              "type": "navigation",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "U1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "아티스트 식별·주 행동",
+          "box": [
+            0,
+            145,
+            1205,
+            1361
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "이전 화면 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "아티스트 공유",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "아티스트 추가 명령",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "공연 정보 탐색 후보",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "아티스트 곡 재생",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "아티스트 소개",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "아티스트 즐겨찾기 상태",
+              "type": "toggle",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "U3",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "곡 목록 탐색·재생",
+          "box": [
+            54,
+            1958,
+            1103,
+            660
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "곡 목록 확장 탐색",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "곡 정보와 재생/추가 명령",
+              "type": "row",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "U4",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "별도 현재 곡 컨텍스트",
+          "box": [
+            60,
+            2199,
+            1085,
+            151
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "U5",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "앱 주요 섹션 전환",
+          "box": [
+            60,
+            2359,
+            1085,
+            187
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              48,
+              367
+            ],
+            "hex": "#6A6857"
+          },
+          {
+            "position": [
+              48,
+              1100
+            ],
+            "hex": "#031613"
+          },
+          {
+            "position": [
+              48,
+              1886
+            ],
+            "hex": "#011615"
+          },
+          {
+            "position": [
+              1157,
+              367
+            ],
+            "hex": "#E0E0D9"
+          },
+          {
+            "position": [
+              1157,
+              1100
+            ],
+            "hex": "#2F3D3B"
+          },
+          {
+            "position": [
+              1157,
+              1886
+            ],
+            "hex": "#011615"
+          },
+          {
+            "position": [
+              602,
+              105
+            ],
+            "hex": "#000000"
+          },
+          {
+            "position": [
+              602,
+              2515
+            ],
+            "hex": "#1E2C2B"
+          }
+        ],
+        "dominantEdgeFamily": "#001010",
+        "support": 3,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "ios27-study-s",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "Sounds & Haptics",
+      "state": "연동 설정",
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/9/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1205,
+            2620
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "S1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "페이지 탐색·제목",
+          "box": [
+            45,
+            169,
+            1115,
+            171
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "상위 설정 이동",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "S2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "해당 소리 그룹의 설정·설명",
+          "box": [
+            54,
+            392,
+            1103,
+            846
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "벨소리 범위 값 조절",
+              "type": "slider",
+              "assignment": "geometry"
+            },
+            {
+              "role": "Ringtone · Reflection Dreamer의 의미 행",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "물리 버튼으로 변경할지 설정",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "벨소리에 물리 버튼 조절 적용",
+              "type": "switch",
+              "assignment": "geometry"
+            },
+            {
+              "role": "무음 모드 햅틱 설정 행",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "S3",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "해당 소리 그룹의 설정·설명",
+          "box": [
+            54,
+            1241,
+            1103,
+            515
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "Match Ringtone Volume의 의미 행",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "벨소리 값 연동 여부",
+              "type": "switch",
+              "assignment": "geometry"
+            },
+            {
+              "role": "해당 소리 그룹 범위 값 조절",
+              "type": "slider",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "S4",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "해당 소리 그룹의 설정·설명",
+          "box": [
+            54,
+            1774,
+            1103,
+            512
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "Match Ringtone Volume의 의미 행",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "벨소리 값 연동 여부",
+              "type": "switch",
+              "assignment": "geometry"
+            },
+            {
+              "role": "해당 소리 그룹 범위 값 조절",
+              "type": "slider",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "S5",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "알림 유형별 음원 설정",
+          "box": [
+            54,
+            2368,
+            1103,
+            241
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "Text Tone · None의 의미 행",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "New Voicemail · Droplet의 의미 행",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              48,
+              367
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              48,
+              1100
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              48,
+              1886
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              1157,
+              367
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              1157,
+              1100
+            ],
+            "hex": "#F2F2F6"
+          },
+          {
+            "position": [
+              1157,
+              1886
+            ],
+            "hex": "#FFFFFF"
+          },
+          {
+            "position": [
+              602,
+              105
+            ],
+            "hex": "#000000"
+          },
+          {
+            "position": [
+              602,
+              2515
+            ],
+            "hex": "#FFFFFF"
+          }
+        ],
+        "dominantEdgeFamily": "#F0F0F0",
+        "support": 5,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "ios27-study-f",
+      "sourceType": "raster",
+      "platform": "iOS 27",
+      "app": "Safari",
+      "state": "자동 분류 하위 메뉴",
+      "sourcePage": "https://www.macstories.net/stories/ios-and-ipados-27-review/12/",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            1200,
+            2620
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "F1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "검색·메뉴 명령",
+          "box": [
+            48,
+            183,
+            1110,
+            147
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "열린 탭 검색",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "추가 탭 관리 명령",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "F2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "탭·주제 카드 탐색",
+          "box": [
+            45,
+            372,
+            1110,
+            1887
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "고정 웹페이지 탐색",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "해당 웹 문서 정보·탐색",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "관련 탭 집단 탐색",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "다른 웹 문서 탭",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "분류 조건과 하위 설정 진입",
+              "type": "menu",
+              "assignment": "geometry"
+            },
+            {
+              "role": "자동 주제 분류 설정",
+              "type": "menu",
+              "assignment": "geometry"
+            },
+            {
+              "role": "자동/안함 중 한 값 선택",
+              "type": "choice-group",
+              "assignment": "geometry"
+            },
+            {
+              "role": "자동 분류 사용",
+              "type": "choice",
+              "assignment": "geometry"
+            },
+            {
+              "role": "자동 분류 사용 안함",
+              "type": "choice",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "F5",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "추가·문맥 전환·완료",
+          "box": [
+            42,
+            2370,
+            1116,
+            165
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "새 탭 생성",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "브라우징 문맥 선택",
+              "type": "choice-group",
+              "assignment": "geometry"
+            },
+            {
+              "role": "탭 관리 종료",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              48,
+              367
+            ],
+            "hex": "#E7CBDF"
+          },
+          {
+            "position": [
+              48,
+              1100
+            ],
+            "hex": "#D8BDCF"
+          },
+          {
+            "position": [
+              48,
+              1886
+            ],
+            "hex": "#C4BDCF"
+          },
+          {
+            "position": [
+              1152,
+              367
+            ],
+            "hex": "#E0C5D8"
+          },
+          {
+            "position": [
+              1152,
+              1100
+            ],
+            "hex": "#FDE5F4"
+          },
+          {
+            "position": [
+              1152,
+              1886
+            ],
+            "hex": "#DFCEE4"
+          },
+          {
+            "position": [
+              600,
+              105
+            ],
+            "hex": "#000000"
+          },
+          {
+            "position": [
+              600,
+              2515
+            ],
+            "hex": "#CBCADD"
+          }
+        ],
+        "dominantEdgeFamily": "#E0D0E0",
+        "support": 2,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-study-n",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "Samsung Notes",
+      "state": "펜 설정",
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            486,
+            1058
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "N1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "노트 탐색·제목·명령",
+          "box": [
+            15,
+            61,
+            455,
+            48
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "목록 복귀",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "문서 제목 입력 후보",
+              "type": "text-input",
+              "assignment": "geometry"
+            },
+            {
+              "role": "문서 관련 명령",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "문서 관련 명령",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "문서 관련 명령",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "N2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "입력 모드·도구·undo/redo",
+          "box": [
+            10,
+            111,
+            467,
+            48
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "텍스트 입력 진입",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "현재 편집 도구 선택",
+              "type": "choice-group",
+              "assignment": "geometry"
+            },
+            {
+              "role": "AI 편집 명령",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "이전 편집 취소",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "취소한 편집 복원",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "N4",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "현재 펜의 여러 속성 조정",
+          "box": [
+            63,
+            176,
+            359,
+            489
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "선택 도구로 쓰기/그리기",
+              "type": "canvas-input",
+              "assignment": "geometry"
+            },
+            {
+              "role": "팔레트 닫기",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "펜 프리셋 관련 명령 후보",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "펜 종류 단일 선택",
+              "type": "choice-group",
+              "assignment": "geometry"
+            },
+            {
+              "role": "펜 두께 범위 값",
+              "type": "slider",
+              "assignment": "geometry"
+            },
+            {
+              "role": "펜 두께 감소",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              19,
+              148
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              19,
+              444
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              19,
+              762
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              467,
+              148
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              467,
+              444
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              467,
+              762
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              243,
+              42
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              243,
+              1016
+            ],
+            "hex": "#FCFCFC"
+          }
+        ],
+        "dominantEdgeFamily": "#FFFFFF",
+        "support": 8,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-study-l",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "앱 알림",
+      "state": "목록과 메뉴",
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            488,
+            1057
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "L1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "제목·뒤로·대상 범위",
+          "box": [
+            15,
+            144,
+            456,
+            293
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "설정 상위 화면",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "설정할 앱 프로필 범위",
+              "type": "choice-group",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "L2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "앱별 알림 허용 설정",
+          "box": [
+            16,
+            429,
+            456,
+            623
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "앱 식별·알림 설정 소유 행",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 알림 on/off",
+              "type": "switch",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 식별·알림 설정 소유 행",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 알림 on/off",
+              "type": "switch",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 식별·알림 설정 소유 행",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 알림 on/off",
+              "type": "switch",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 식별·알림 설정 소유 행",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 알림 on/off",
+              "type": "switch",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 식별·알림 설정 소유 행",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 알림 on/off",
+              "type": "switch",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 식별·알림 설정 소유 행",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 알림 on/off",
+              "type": "switch",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 식별·알림 설정 소유 행",
+              "type": "row",
+              "assignment": "geometry"
+            },
+            {
+              "role": "앱 알림 on/off",
+              "type": "switch",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              20,
+              148
+            ],
+            "hex": "#F3F3F3"
+          },
+          {
+            "position": [
+              20,
+              444
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              20,
+              761
+            ],
+            "hex": "#FCFCFA"
+          },
+          {
+            "position": [
+              468,
+              148
+            ],
+            "hex": "#F3F3F3"
+          },
+          {
+            "position": [
+              468,
+              444
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              468,
+              761
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              244,
+              42
+            ],
+            "hex": "#F3F3F3"
+          },
+          {
+            "position": [
+              244,
+              1015
+            ],
+            "hex": "#FCFCFC"
+          }
+        ],
+        "dominantEdgeFamily": "#FFFFFF",
+        "support": 5,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-study-r",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "모드 및 루틴",
+      "state": "추천 탐색",
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            488,
+            1057
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "모드/루틴 앱 주요 뷰",
+              "type": "navigation",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "모드/루틴 앱 주요 뷰",
+              "type": "navigation",
+              "assignment": "unassigned"
+            },
+            {
+              "role": "모드/루틴 앱 주요 뷰",
+              "type": "navigation",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "R1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "뒤로·검색·더보기",
+          "box": [
+            18,
+            68,
+            464,
+            49
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "루틴 화면 관련 뒤로",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "루틴 화면 관련 검색",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "루틴 화면 관련 더보기",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "R2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "추천의 목적과 보조 이미지",
+          "box": [
+            30,
+            124,
+            428,
+            203
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "R3",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "상황별 추천 집단",
+          "box": [
+            18,
+            338,
+            454,
+            211
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "해당 집단의 나머지 추천",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "추천 템플릿 설정 진입",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "추천 템플릿 설정 진입",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "R4",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "상황별 추천 집단",
+          "box": [
+            18,
+            586,
+            454,
+            211
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "해당 집단의 나머지 추천",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "추천 템플릿 설정 진입",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "추천 템플릿 설정 진입",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "R5",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "상황별 추천 집단",
+          "box": [
+            18,
+            798,
+            454,
+            211
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "해당 집단의 나머지 추천",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "추천 템플릿 설정 진입",
+              "type": "navigation",
+              "assignment": "geometry"
+            },
+            {
+              "role": "추천 템플릿 설정 진입",
+              "type": "navigation",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "R6",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "주요 뷰 탐색",
+          "box": [
+            98,
+            977,
+            286,
+            60
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              20,
+              148
+            ],
+            "hex": "#F3F3F3"
+          },
+          {
+            "position": [
+              20,
+              444
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              20,
+              761
+            ],
+            "hex": "#F3F3F3"
+          },
+          {
+            "position": [
+              468,
+              148
+            ],
+            "hex": "#F3F3F3"
+          },
+          {
+            "position": [
+              468,
+              444
+            ],
+            "hex": "#FCFCFC"
+          },
+          {
+            "position": [
+              468,
+              761
+            ],
+            "hex": "#F3F3F3"
+          },
+          {
+            "position": [
+              244,
+              42
+            ],
+            "hex": "#F3F3F3"
+          },
+          {
+            "position": [
+              244,
+              1015
+            ],
+            "hex": "#DADADA"
+          }
+        ],
+        "dominantEdgeFamily": "#F0F0F0",
+        "support": 5,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-study-t",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "전화",
+      "state": "통화 중 상세 카드",
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            491,
+            1061
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "현재 통화 끝내기",
+              "type": "command",
+              "assignment": "unassigned"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "T1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "통화 대상·시간·처리 상태",
+          "box": [
+            52,
+            59,
+            398,
+            159
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "영상 통화 전환 후보",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "T2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "과거 통화 맥락 정보",
+          "box": [
+            68,
+            226,
+            355,
+            157
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "상세 카드 접기 후보",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "T3",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "부가 기능과 주요 모드",
+          "box": [
+            80,
+            533,
+            343,
+            356
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "AI 통화 관련 보조 명령",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "녹음/텍스트 변환 아이콘 기능",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "내 소리 차단 기능",
+              "type": "toggle",
+              "assignment": "geometry"
+            },
+            {
+              "role": "Bluetooth 출력 기능",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "스피커 기능",
+              "type": "toggle",
+              "assignment": "geometry"
+            },
+            {
+              "role": "키패드 기능",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "더보기 기능",
+              "type": "command",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              20,
+              149
+            ],
+            "hex": "#0F1015"
+          },
+          {
+            "position": [
+              20,
+              446
+            ],
+            "hex": "#333862"
+          },
+          {
+            "position": [
+              20,
+              764
+            ],
+            "hex": "#7D7582"
+          },
+          {
+            "position": [
+              471,
+              149
+            ],
+            "hex": "#1E1029"
+          },
+          {
+            "position": [
+              471,
+              446
+            ],
+            "hex": "#75423F"
+          },
+          {
+            "position": [
+              471,
+              764
+            ],
+            "hex": "#9A8A69"
+          },
+          {
+            "position": [
+              246,
+              42
+            ],
+            "hex": "#0B0A12"
+          },
+          {
+            "position": [
+              246,
+              1019
+            ],
+            "hex": "#828395"
+          }
+        ],
+        "dominantEdgeFamily": "#101010",
+        "support": 2,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    },
+    {
+      "screenId": "oneui9-study-k",
+      "sourceType": "raster",
+      "platform": "One UI 9",
+      "app": "잠금화면",
+      "state": "미디어 제어",
+      "sourcePage": "https://r1.community.samsung.com/t5/갤럭시-s/후기-oneui9-beta-변경점-살펴보기-달라진-점은/td-p/38008048",
+      "layers": [
+        {
+          "id": "screen",
+          "depthBand": "canvas",
+          "role": "화면 전체 바탕",
+          "box": [
+            0,
+            0,
+            488,
+            1057
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 전체의 가장 아래 시각 면; 다른 층의 부모. CSS z-index 값 아님",
+          "parentId": null
+        },
+        {
+          "id": "K1",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "시스템 정보",
+          "box": [
+            27,
+            57,
+            433,
+            269
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "K2",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "현재 재생 콘텐츠",
+          "box": [
+            27,
+            344,
+            433,
+            421
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        },
+        {
+          "id": "K3",
+          "parentId": "screen",
+          "depthBand": "content",
+          "role": "출력·시간·주 명령",
+          "box": [
+            43,
+            792,
+            394,
+            210
+          ],
+          "base": {
+            "kind": "unknown",
+            "status": "unknown",
+            "evidence": "영역별 바탕색을 아직 판정하지 않음",
+            "color": null,
+            "sourceRole": null
+          },
+          "components": [
+            {
+              "role": "출력 대상 선택",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "곡 재생 위치 표시·탐색 후보",
+              "type": "slider",
+              "assignment": "geometry"
+            },
+            {
+              "role": "좋아요 의미 역할",
+              "type": "toggle",
+              "assignment": "geometry"
+            },
+            {
+              "role": "이전 곡 의미 역할",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "일시정지 의미 역할",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "다음 곡 의미 역할",
+              "type": "command",
+              "assignment": "geometry"
+            },
+            {
+              "role": "셔플 의미 역할",
+              "type": "toggle",
+              "assignment": "geometry"
+            }
+          ],
+          "accentColors": [],
+          "effects": {
+            "shadow": {
+              "status": "not-measured",
+              "kind": "box-shadow",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            },
+            "blur": {
+              "status": "not-measured",
+              "kind": "backdrop-filter",
+              "note": "정적 캡처에서 수치·실제 렌더 속성 미확인"
+            }
+          },
+          "zEvidence": "화면 안의 의미 영역; 형제 영역 간 앞뒤 순서는 미확인"
+        }
+      ],
+      "occlusionRelations": [],
+      "unassignedColorSamples": [],
+      "edgeClues": {
+        "samples": [
+          {
+            "position": [
+              20,
+              148
+            ],
+            "hex": "#9E8365"
+          },
+          {
+            "position": [
+              20,
+              444
+            ],
+            "hex": "#3A4352"
+          },
+          {
+            "position": [
+              20,
+              761
+            ],
+            "hex": "#6B5A47"
+          },
+          {
+            "position": [
+              468,
+              148
+            ],
+            "hex": "#9C816A"
+          },
+          {
+            "position": [
+              468,
+              444
+            ],
+            "hex": "#9B8267"
+          },
+          {
+            "position": [
+              468,
+              761
+            ],
+            "hex": "#6B5A4A"
+          },
+          {
+            "position": [
+              244,
+              42
+            ],
+            "hex": "#9C8566"
+          },
+          {
+            "position": [
+              244,
+              1015
+            ],
+            "hex": "#352C23"
+          }
+        ],
+        "dominantEdgeFamily": "#A08060",
+        "support": 3,
+        "sampleCount": 8,
+        "interpretation": "화면 가장자리 픽셀군 후보. 사진·오버레이·기기 프레임이 섞일 수 있어 배경 역할 판정에 직접 사용 금지"
+      },
+      "evidenceClass": "manual-raster-layer-hypothesis",
+      "zLimit": "부모-자식 구성과 시각적 겹침만 기록. 형제의 CSS/네이티브 z-index와 실제 stacking context는 단일 캡처에서 측정 불가"
+    }
+  ]
+}

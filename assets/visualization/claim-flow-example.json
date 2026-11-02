@@ -1,0 +1,29 @@
+{
+  "id": "claim-flow",
+  "title": "가족 의료비 청구 흐름",
+  "description": "영수증 등록부터 청구 묶음 생성과 제출까지의 경로와 두 가지 되돌림",
+  "displayWidth": 640,
+  "nodes": [
+    {"id":"upload","label":"영수증 올리기","subtitle":"사진·PDF"},
+    {"id":"extract","label":"자동 추출","subtitle":"날짜·병원·금액"},
+    {"id":"verify","label":"추출값 맞나요?","shape":"diamond"},
+    {"id":"save","label":"정리함 저장","subtitle":"가족·월별"},
+    {"id":"select","label":"청구할 영수증 고르기"},
+    {"id":"insurer","label":"보험사·가족 선택"},
+    {"id":"documents","label":"필요 서류 다 있나요?","shape":"diamond"},
+    {"id":"bundle","label":"묶음 PDF·요약표"},
+    {"id":"submit","label":"제출·기록","emphasis":true}
+  ],
+  "edges": [
+    {"from":"upload","to":"extract"},
+    {"from":"extract","to":"verify"},
+    {"from":"verify","to":"save","label":"예"},
+    {"from":"save","to":"select"},
+    {"from":"select","to":"insurer"},
+    {"from":"insurer","to":"documents"},
+    {"from":"documents","to":"bundle","label":"예"},
+    {"from":"bundle","to":"submit"},
+    {"from":"verify","to":"extract","kind":"return","label":"아니오 → 직접 고치기·다시 찍기"},
+    {"from":"documents","to":"upload","kind":"return","label":"아니오 → 서류 추가로 올리기"}
+  ]
+}

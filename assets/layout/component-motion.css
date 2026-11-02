@@ -1,0 +1,62 @@
+/* Example tokens. Replace these after the component motion review. */
+:root {
+  --motion-press: 100ms;
+  --motion-state: 190ms;
+  --motion-distance: 9px;
+  --motion-enter-scale: .98;
+  --motion-press-scale: .97;
+  --motion-ease: cubic-bezier(.25,.75,.25,1);
+}
+
+/* Keep the state readable without animation. */
+.motion-button {
+  position: relative;
+  min-height: 44px;
+  cursor: pointer;
+  transition: transform var(--motion-press) var(--motion-ease),
+              background-color var(--motion-state) var(--motion-ease);
+}
+.motion-button:active:not(:disabled) { transform: scale(var(--motion-press-scale)); }
+.motion-button:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.motion-button:disabled { cursor: wait; }
+.motion-button[data-state="done"] { background-color: var(--motion-success, #126b68); }
+.motion-button[data-state="error"] { background-color: var(--motion-error, #a04431); }
+:root[data-motion-strength="static"] .motion-button:active:not(:disabled) { transform: none; }
+
+.motion-list-item[data-entering="true"] {
+  animation: motion-list-enter var(--motion-state) var(--motion-ease) both;
+}
+@keyframes motion-list-enter {
+  from { opacity: 0; transform: translateY(var(--motion-distance)); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.motion-toggle-thumb,.motion-tab-indicator,.motion-progress-fill,.motion-carousel-track,.motion-card {
+  transition: transform var(--motion-state) var(--motion-ease),
+              background-color var(--motion-state) var(--motion-ease),
+              opacity var(--motion-state) var(--motion-ease);
+}
+.motion-accordion-content,.motion-menu-panel {
+  transition: grid-template-rows var(--motion-state) var(--motion-ease),
+              opacity var(--motion-state) var(--motion-ease),
+              transform var(--motion-state) var(--motion-ease);
+}
+.motion-reveal[data-entering="true"] {
+  animation: motion-reveal var(--motion-state) var(--motion-ease) both;
+}
+@keyframes motion-reveal {
+  from { opacity: 0; transform: translateY(var(--motion-distance)) scale(var(--motion-enter-scale)); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.motion-scroll-progress {
+  transform-origin: left center;
+  transform: scaleX(var(--scroll-progress, 0));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root:not([data-preview-override="true"]) .motion-button,:root:not([data-preview-override="true"]) .motion-toggle-thumb,:root:not([data-preview-override="true"]) .motion-tab-indicator,:root:not([data-preview-override="true"]) .motion-progress-fill,:root:not([data-preview-override="true"]) .motion-carousel-track,:root:not([data-preview-override="true"]) .motion-card,:root:not([data-preview-override="true"]) .motion-accordion-content,:root:not([data-preview-override="true"]) .motion-menu-panel { transition: none; }
+  :root:not([data-preview-override="true"]) .motion-button:active:not(:disabled) { transform: none; }
+  :root:not([data-preview-override="true"]) .motion-list-item[data-entering="true"],:root:not([data-preview-override="true"]) .motion-reveal[data-entering="true"] { animation: none; }
+  :root:not([data-preview-override="true"]) .motion-scroll-progress { transition: none; }
+}

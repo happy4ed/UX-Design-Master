@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "status": "example-only; values from one evaluated screen, not universal tokens",
+  "keyColor": "#2E65D4",
+  "canvas": {"light": "#FFFFFF", "dark": "#111419"},
+  "states": {
+    "emphasis": {"label": "강조", "symbol": "→", "light": {"text": "#2E65D4", "mark": "#4E88FA", "tintSurface": "#E9F1FE", "tintText": "#1C4BA9"}, "dark": {"text": "#87B1FF", "mark": "#6A9CFB", "tintSurface": "#1D2D4C", "tintText": "#87B1FF"}},
+    "caution": {"label": "주의", "symbol": "!", "light": {"text": "#A55401", "mark": "#D46E06", "tintSurface": "#FEECE1", "tintText": "#864404"}, "dark": {"text": "#FB9D59", "mark": "#E48233", "tintSurface": "#391F0C", "tintText": "#FB9D59"}},
+    "error": {"label": "오류", "symbol": "×", "light": {"text": "#C0312D", "mark": "#E6574D", "tintSurface": "#FEEBE9", "tintText": "#A50E15"}, "dark": {"text": "#FF968A", "mark": "#ED756A", "tintSurface": "#3B1C19", "tintText": "#FF968A"}},
+    "complete": {"label": "완료", "symbol": "✓", "light": {"text": "#04833B", "mark": "#38A65A", "tintSurface": "#E0F7E4", "tintText": "#026A2E"}, "dark": {"text": "#6FD087", "mark": "#4CB86A", "tintSurface": "#122D19", "tintText": "#6FD087"}},
+    "progress": {"label": "진행·대기", "symbol": "…", "light": {"text": "#646E7F", "mark": "#848EA0", "tintSurface": "#EDF0F6", "tintText": "#4F5869"}, "dark": {"text": "#ADB8CB", "mark": "#949FB2", "tintSurface": "#24262A", "tintText": "#ADB8CB"}}
+  },
+  "dataEncoding": {
+    "related": "연관 항목은 같은 색상각의 명도 차",
+    "categories": "서로 다른 범주는 비슷한 명도의 다른 색상각과 직접 라벨",
+    "ordered": "순서형 값은 명도 단계와 숫자 축",
+    "trend": "진행·추세는 명도 방향의 톤 그라데이션과 값 라벨"
+  }
+}

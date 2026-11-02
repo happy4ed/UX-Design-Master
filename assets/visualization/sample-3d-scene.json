@@ -1,0 +1,10 @@
+{
+  "title": "세 공간의 높이 비교",
+  "description": "입구, 작업실, 회의실의 너비, 깊이, 높이를 정사영한 예시",
+  "motion": "assemble",
+  "parts": [
+    {"label":"입구","bounds":{"x0":0,"y0":0,"z0":0,"x1":70,"y1":65,"z1":28},"top":"#e1ebf2","left":"#93b4c8","right":"#bfd2df","drop":24},
+    {"label":"작업실","bounds":{"x0":140,"y0":0,"z0":0,"x1":254,"y1":65,"z1":60},"top":"#dcece7","left":"#87b8ac","right":"#bdd8d0","drop":48},
+    {"label":"회의실","bounds":{"x0":-190,"y0":0,"z0":0,"x1":-85,"y1":58,"z1":39},"top":"#f7e8dc","left":"#d6ae91","right":"#edceb9","drop":30}
+  ]
+}

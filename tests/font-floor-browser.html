@@ -1,0 +1,13 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Rendered font floor fixture</title>
+<p id="normal" style="font:16px sans-serif">정상 크기</p>
+<p id="small" style="font:12px sans-serif">작은 HTML</p>
+<svg width="400" height="80" viewBox="0 0 1000 200" aria-label="차트 축">
+  <text id="svg-small" x="20" y="100" style="font:20px sans-serif">축 글자</text>
+</svg>
+<pre id="result"></pre>
+<script type="module">
+import {auditRenderedFontFloor} from '../assets/layout/text-region-audit.mjs';
+const result=auditRenderedFontFloor(document,{minimumPx:13});
+document.querySelector('#result').textContent=JSON.stringify(result);
+document.body.dataset.auditPass=String(result.failures.some(x=>x.id==='small')&&result.failures.some(x=>x.id==='svg-small')&&!result.failures.some(x=>x.id==='normal'));
+</script></html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>키보드 인터랙션 검토</title>
+  <style>
+    :root{font-family:Pretendard,Arial,sans-serif;color:#20313b;background:#f5f4ef}*{box-sizing:border-box}body{margin:0}main{max-width:1020px;margin:auto;padding:32px 20px 90px}h1{font-size:clamp(28px,4vw,42px);margin:0 0 8px}h2{font-size:22px;margin:0 0 8px}p{line-height:1.6;color:#52636d}.lede{max-width:760px}.jump{display:inline-block;margin:18px 0 30px;color:#126b68}.section{border-top:2px solid #20313b;padding:22px 0 30px}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.thumb{display:block;width:100%;text-align:left;background:#fff;border:1px solid #bfcec9;padding:10px;cursor:pointer;font:inherit;color:inherit}.thumb img{display:block;width:100%;height:auto;aspect-ratio:5/3;object-fit:cover}.thumb strong{display:block;margin:10px 0 3px}.thumb small{color:#52636d}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0}.toolbar button,.viewer-controls button{min-height:44px;min-width:44px;padding:9px 14px;background:#126b68;border:0;color:white;font:inherit;cursor:pointer}.viewer-controls button:disabled{opacity:.48;cursor:not-allowed}.status{font-weight:700;color:#126b68}.tabs{display:flex;border-bottom:1px solid #9eaeaa;gap:6px}.tabs button{min-height:44px;padding:10px 20px;border:1px solid transparent;background:none;font:inherit;cursor:pointer}.tabs button[aria-selected="true"]{border-color:#9eaeaa;border-bottom-color:#fff;background:#fff;font-weight:700;color:#126b68}.tabpanel{background:#fff;border:1px solid #9eaeaa;border-top:0;padding:18px;min-height:95px}.tabpanel[hidden]{display:none}.tabpanel p{margin:0}.hint{font-size:13px;color:#52636d}button:focus-visible,a:focus-visible,[tabindex="0"]:focus-visible{outline:3px solid #a2542c;outline-offset:3px}dialog{border:0;padding:0;width:min(900px,calc(100vw - 28px));max-width:none;background:#fff;color:#20313b;box-shadow:0 22px 70px #142b3670}dialog::backdrop{background:#142b36c9}.viewer-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:16px 20px}.viewer-head h2{margin:0}.viewer-head p{margin:3px 0 0;font-size:13px}.viewer-image{display:block;width:100%;height:auto;max-height:min(60vh,520px);object-fit:contain;background:#e6eeeb}.viewer-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 20px}.viewer-caption{padding:0 20px 20px;margin:0}.viewer-count{white-space:nowrap;font-weight:700}@media(max-width:650px){.gallery{grid-template-columns:1fr}.viewer-controls{flex-wrap:wrap}.viewer-count{order:-1;width:100%}}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>키보드 인터랙션 검토</h1>
+    <p class="lede">Tab으로 조작 요소 사이를 이동합니다. 이미지 버튼을 Enter 또는 Space로 열고, 크게 보기 안에서 ←/→로 이미지를 바꿉니다. Escape는 크게 보기를 닫습니다.</p>
+    <a class="jump" href="#gallery">이미지 목록으로 이동</a>
+
+    <section class="section" id="gallery" aria-labelledby="galleryTitle">
+      <h2 id="galleryTitle">연속 이미지 크게 보기</h2>
+      <p class="hint">썸네일마다 Tab으로 이동할 수 있습니다. 크게 보기 안에서도 이전·다음 버튼을 사용할 수 있습니다.</p>
+      <div class="gallery" id="galleryItems"></div>
+    </section>
+
+    <section class="section" aria-labelledby="tabsTitle">
+      <h2 id="tabsTitle">탭과 페이지 탐색</h2>
+      <p class="hint">Tab은 선택된 탭 하나로 들어옵니다. 탭 안에서는 ←/→, Home/End로 선택합니다. 다시 Tab을 누르면 내용으로 이동합니다.</p>
+      <div class="tabs" role="tablist" aria-label="검토 정보">
+        <button type="button" id="tab-purpose" role="tab" aria-selected="true" aria-controls="panel-purpose" tabindex="0">이미지의 역할</button>
+        <button type="button" id="tab-keys" role="tab" aria-selected="false" aria-controls="panel-keys" tabindex="-1">키보드 조작</button>
+      </div>
+      <div class="tabpanel" id="panel-purpose" role="tabpanel" aria-labelledby="tab-purpose" tabindex="0"><p>이미지는 정보를 확인하는 자료입니다. 각 그림의 대체 텍스트와 설명이 함께 바뀝니다.</p></div>
+      <div class="tabpanel" id="panel-keys" role="tabpanel" aria-labelledby="tab-keys" tabindex="0" hidden><p>Tab은 다른 조작 요소로 이동하고, 방향키는 현재 탭 묶음 안에서만 동작합니다.</p></div>
+    </section>
+
+    <section class="section" aria-labelledby="actionsTitle">
+      <h2 id="actionsTitle">일반 버튼의 Tab 이동</h2>
+      <div class="toolbar"><button type="button" id="save">저장</button><button type="button" id="share">공유</button><output class="status" id="actionStatus" role="status">실행 전</output></div>
+      <p class="hint">일반 버튼은 각각 Tab 정지점입니다. Enter와 Space로 동일하게 실행합니다.</p>
+    </section>
+  </main>
+
+  <dialog id="viewer" aria-labelledby="viewerTitle" aria-describedby="viewerHelp">
+    <div class="viewer-head"><div><h2 id="viewerTitle">이미지 크게 보기</h2><p id="viewerHelp">이전·다음 버튼 또는 ←/→를 사용합니다. Escape로 닫습니다.</p></div><button type="button" id="closeViewer" aria-label="이미지 크게 보기 닫기">닫기</button></div>
+    <img class="viewer-image" id="viewerImage" alt="">
+    <div class="viewer-controls"><button type="button" id="previousImage" aria-label="이전 이미지">← 이전</button><span class="viewer-count" id="viewerCount" aria-live="polite"></span><button type="button" id="nextImage" aria-label="다음 이미지">다음 →</button></div>
+    <p class="viewer-caption" id="viewerCaption"></p>
+  </dialog>
+
+  <script>
+    const images=[
+      {name:'첫 번째 풍경',alt:'연한 하늘 아래 완만한 녹색 언덕을 그린 시연용 그림',caption:'시연용 도형 이미지 1 · 완만한 언덕',sky:'#cfe8e7',land:'#4f9780',sun:'#f4b85e'},
+      {name:'두 번째 풍경',alt:'노을빛 하늘 아래 겹친 산등성이를 그린 시연용 그림',caption:'시연용 도형 이미지 2 · 겹친 산등성이',sky:'#f4d9bb',land:'#587f83',sun:'#ef9d70'},
+      {name:'세 번째 풍경',alt:'푸른 하늘 아래 높은 나무와 들판을 그린 시연용 그림',caption:'시연용 도형 이미지 3 · 나무와 들판',sky:'#c9dcf0',land:'#739366',sun:'#f7cf73'}
+    ];
+    function imageData(image){const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480"><rect width="800" height="480" fill="${image.sky}"/><circle cx="630" cy="125" r="65" fill="${image.sun}"/><path d="M0 340Q180 160 380 300T800 250V480H0Z" fill="${image.land}"/><path d="M0 410Q240 310 450 390T800 360V480H0Z" fill="#2d645d" opacity=".65"/></svg>`;return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg)}
+    images.forEach((image,index)=>{const button=document.createElement('button');button.type='button';button.className='thumb';button.setAttribute('aria-label',`${image.name} 크게 보기`);const picture=document.createElement('img');picture.src=imageData(image);picture.alt='';const name=document.createElement('strong');name.textContent=image.name;const detail=document.createElement('small');detail.textContent=image.caption;button.append(picture,name,detail);button.addEventListener('click',()=>openViewer(index,button));document.querySelector('#galleryItems').append(button)});
+    const viewer=document.querySelector('#viewer');let currentIndex=0,opener=null;
+    function showImage(index){currentIndex=index;const image=images[index];document.querySelector('#viewerImage').src=imageData(image);document.querySelector('#viewerImage').alt=image.alt;document.querySelector('#viewerCaption').textContent=image.caption;document.querySelector('#viewerCount').textContent=`${index+1} / ${images.length}`;document.querySelector('#previousImage').disabled=index===0;document.querySelector('#nextImage').disabled=index===images.length-1}
+    function openViewer(index,button){opener=button;delete viewer.dataset.focusRestored;showImage(index);viewer.showModal();document.querySelector('#closeViewer').focus()}
+    document.querySelector('#closeViewer').addEventListener('click',()=>viewer.close());
+    document.querySelector('#previousImage').addEventListener('click',()=>{if(currentIndex>0)showImage(currentIndex-1)});
+    document.querySelector('#nextImage').addEventListener('click',()=>{if(currentIndex<images.length-1)showImage(currentIndex+1)});
+    viewer.addEventListener('keydown',event=>{if(!viewer.open)return;if(event.key==='Tab'){const controls=[...viewer.querySelectorAll('button:not(:disabled)')];const first=controls[0],last=controls[controls.length-1];if(event.shiftKey&&document.activeElement===first){last.focus();event.preventDefault()}else if(!event.shiftKey&&document.activeElement===last){first.focus();event.preventDefault()}return}if(event.altKey||event.ctrlKey||event.metaKey||event.target.closest('input,textarea,select,[contenteditable="true"]'))return;if(event.key==='ArrowLeft'||event.key==='ArrowRight'){const delta=event.key==='ArrowLeft'?-1:1;showImage(Math.max(0,Math.min(images.length-1,currentIndex+delta)));event.preventDefault()}});
+    viewer.addEventListener('close',()=>{if(opener?.isConnected)opener.focus();viewer.dataset.focusRestored='true'});
+    const tabs=[...document.querySelectorAll('[role="tab"]')];
+    function selectTab(index){tabs.forEach((tab,i)=>{const selected=i===index;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;document.querySelector('#'+tab.getAttribute('aria-controls')).hidden=!selected});tabs[index].focus()}
+    tabs.forEach((tab,index)=>tab.addEventListener('click',()=>selectTab(index)));
+    document.querySelector('[role="tablist"]').addEventListener('keydown',event=>{if(!event.target.matches('[role="tab"]'))return;const index=tabs.indexOf(event.target);let next;if(event.key==='ArrowRight')next=(index+1)%tabs.length;else if(event.key==='ArrowLeft')next=(index-1+tabs.length)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else return;selectTab(next);event.preventDefault()});
+    document.querySelector('#save').addEventListener('click',()=>document.querySelector('#actionStatus').textContent='저장 실행');
+    document.querySelector('#share').addEventListener('click',()=>document.querySelector('#actionStatus').textContent='공유 실행');
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "project":"모션 검토 페이지",
+  "mode":"targeted-fix",
+  "focusAreas":["motion","render-qa"],
+  "surfaces":[{
+    "id":"component-motion-review",
+    "tags":[],
+    "knowledge":[
+      {"area":"motion","decision":"applied","reason":"모션 감소 설정에서 시연 전체가 정지했고 강도·느낌 차이가 보이지 않았다","artifact":"samples/component-motion-review.html","verification":"PASS","evidence":"브라우저에서 48개 효과·9개 느낌·1개 기준 이동을 실행하고 정지 전환도 확인"},
+      {"area":"render-qa","decision":"applied","reason":"CSS 선언 여부보다 실제 화면의 시간별 변화가 필요하다","artifact":"tests/test_motion_preview.py","verification":"PASS","evidence":"reduced-motion 환경의 Chromium 회귀 테스트 통과"}
+    ]
+  }]
+}

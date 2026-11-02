@@ -1,0 +1,32 @@
+{
+  "themes": ["light", "dark"],
+  "tokens": {
+    "color.neutral.0": {"tier": "primitive", "type": "color", "value": "#FFFFFF"},
+    "color.neutral.950": {"tier": "primitive", "type": "color", "value": "#101217"},
+    "color.blue.600": {"tier": "primitive", "type": "color", "value": "#2156C8"},
+    "color.blue.300": {"tier": "primitive", "type": "color", "value": "#A9C3FF"},
+    "space.3": {"tier": "primitive", "type": "dimension", "value": "12px"},
+    "canvas.background": {"tier": "semantic", "type": "color", "refs": {"light": "color.neutral.0", "dark": "color.neutral.950"}},
+    "canvas.foreground": {"tier": "semantic", "type": "color", "refs": {"light": "color.neutral.950", "dark": "color.neutral.0"}},
+    "action.background": {"tier": "semantic", "type": "color", "refs": {"light": "color.blue.600", "dark": "color.blue.300"}},
+    "action.foreground": {"tier": "semantic", "type": "color", "refs": {"light": "color.neutral.0", "dark": "color.neutral.950"}},
+    "space.control.inset": {"tier": "semantic", "type": "dimension", "ref": "space.3"},
+    "button.primary.background": {"tier": "component", "type": "color", "ref": "action.background"},
+    "button.primary.foreground": {"tier": "component", "type": "color", "ref": "action.foreground"},
+    "button.primary.inset": {"tier": "component", "type": "dimension", "ref": "space.control.inset"}
+  },
+  "components": {
+    "button": {
+      "tokens": ["button.primary.background", "button.primary.foreground", "button.primary.inset"],
+      "variants": ["primary", "secondary"],
+      "states": ["enabled", "disabled", "loading"]
+    }
+  },
+  "surfaces": [
+    {"id": "search", "instances": [{"id": "submit", "component": "button", "variant": "primary", "state": "enabled"}]}
+  ],
+  "contrastPairs": [
+    {"foreground": "canvas.foreground", "background": "canvas.background"},
+    {"foreground": "button.primary.foreground", "background": "button.primary.background"}
+  ]
+}
