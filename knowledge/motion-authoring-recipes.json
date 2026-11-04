@@ -23386,16 +23386,16 @@
       "name": "아코디언 접기",
       "english": "Accordion Fold",
       "classification": {
-        "useType": "physical-feedback",
-        "movementScale": "large",
+        "useType": "scene-transition",
+        "movementScale": "screen",
         "changeProperties": [
           "path",
           "shape"
         ],
         "sourceFamilyId": "family-15",
         "candidateComponentIds": [
-          "accordion",
-          "accordion-item"
+          "page-shell",
+          "image"
         ],
         "candidateStatus": "candidate_for; verify against the actual component state"
       },
@@ -23405,11 +23405,11 @@
           "설명 단계",
           "공간 조작"
         ],
-        "initialState": "입력 전 상태와 조작 대상이 명확하다",
+        "initialState": "나가는 화면과 들어올 화면의 상태가 준비된다",
         "action": "앞 장면이 세로 판 여섯 장으로 나뉘어 병풍처럼 왼쪽으로 접혀 들어가고, 판마다 번갈아 그늘이 진다.",
         "decisiveMiddle": "동작 정의의 핵심 변화가 보이는 프레임을 직접 선택·검증한다",
         "phaseCuesFromSource": [],
-        "settledState": "입력 결과와 다음 조작 가능 상태가 명확하다",
+        "settledState": "들어온 화면이 빈 프레임 없이 온전히 남는다",
         "doNotSubstitute": "↔ 한 장이 통째로 넘어가면 페이지 컬, 여러 판으로 나뉘어 병풍처럼 접히면 아코디언 폴드",
         "interruption": "재입력·취소·역전 시 현재 보이는 상태에서 잇거나 완료 상태로 즉시 정착하도록 제품에서 정한다"
       },

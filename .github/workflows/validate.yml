@@ -31,4 +31,7 @@ jobs:
           python3 tests/test_presentation_contract.py
           python3 tests/test_theme_exploration.py
           python3 tests/test_user_input_obligations.py
+          python3 tests/test_measurement_contract.py
+          node tests/test_capture_design_evidence.mjs
+          node tests/test_text_layout_binary_search.mjs
           node tests/test_motion_vocabulary.mjs
