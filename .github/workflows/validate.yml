@@ -17,6 +17,8 @@ jobs:
           node-version: '22'
       - name: Install test dependency
         run: python3 -m pip install Pillow playwright
+      - name: Install browser for rendered report verification
+        run: python3 -m playwright install chromium
       - name: Standalone package and contract regressions
         run: |
           python3 scripts/check_release_package.py
@@ -32,6 +34,10 @@ jobs:
           python3 tests/test_theme_exploration.py
           python3 tests/test_user_input_obligations.py
           python3 tests/test_measurement_contract.py
+          python3 tests/test_app_review_report.py
+          python3 tests/test_app_review_report_browser.py
+          python3 tests/test_functional_inventory.py
           node tests/test_capture_design_evidence.mjs
+          node tests/test_screen_title_copy.mjs
           node tests/test_text_layout_binary_search.mjs
           node tests/test_motion_vocabulary.mjs

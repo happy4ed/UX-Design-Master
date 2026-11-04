@@ -2,7 +2,7 @@
 
 앱·웹·문서의 기능 구조에서 실제 렌더 검수까지 이어지는 디자인 스킬입니다. 와이어프레임 이후 같은 콘텐츠로 9개 시각 테마를 비교하고, 선택한 방향을 실제 화면에 적용한 뒤 별도 에이전트가 사용자 관점에서 검증합니다.
 
-최신 릴리스: [v0.2.0](https://github.com/happy4ed/UX-Design-Master/releases/tag/v0.2.0). 이 버전은 컴포넌트별 모션 시나리오와 레퍼런스 증거 검사, 실제 화면의 정렬·상태 측정, 입력·모션 흐름 계약, 근거가 연결된 DESIGN.md 추출을 강화합니다.
+최신 릴리스: [v0.3.0](https://github.com/happy4ed/UX-Design-Master/releases/tag/v0.3.0). 기존 앱·웹 검수의 실제 화면 주석형 HTML과 단계별 사용자 피드백, 기능·정보 누락 방지 사양서를 추가했습니다.
 
 ## 진행 흐름
 
@@ -13,6 +13,12 @@
 5. 제작자가 실제 렌더를 검사하고, 별도 에이전트가 제작 맥락 없이 결과물을 검토합니다. 자동 검사 통과는 시각 품질이나 사용자 승인을 대신하지 않습니다.
 
 작은 수정에는 영향받는 단계만 적용합니다. 제품별 간격·R·모션 수치 등은 고정하지 않고 실제 목적과 기기에서 정합니다.
+
+## 기존 앱·웹 검수
+
+실행 가능한 앱·웹을 실제 기기 또는 브라우저에서 캡처해 문제 위치를 화면 위에 표시합니다. **실제 화면과 발견 → 렌더된 추천안**을 단계별 HTML로 제출하고, 실제 수정 뒤 같은 조건의 재검증 HTML을 추가합니다. 각 문제를 눌러 근거를 열고 의견을 저장·내보낼 수 있습니다. 외부 CDN 없이 단일 HTML로 열리며, React·Tailwind CSS가 있는 프로젝트는 같은 계약으로 해당 스택을 사용할 수 있습니다. 접근하지 못한 화면은 검토 완료로 표시하지 않습니다.
+
+앱·웹을 새로 설계할 때에는 기능 집단과 상하위 기능, 필수·부가·조건부 정보, 발동 조건, 입력·결과·수용 조건을 `FUNCTIONAL-SPEC.md`에 기록합니다. A2 흐름·A3 화면·B/C 실제 렌더·D 기능 검증에서 각 ID가 유지되는지 검사합니다.
 
 ## 설치
 
@@ -55,6 +61,8 @@ git clone https://github.com/happy4ed/UX-Design-Master.git ~/.claude/skills/ux-d
 | [SKILL.md](SKILL.md) | 단계별 진행과 승인·검증 계약 |
 | [9개 테마 탐색](references/theme-exploration.md) | 같은 화면에서 시각 방향 비교·선택·제작 이월 |
 | [독립 검증](references/independent-review.md) | 별도 에이전트의 최소 입력과 평가 기준 |
+| [기존 앱 주석형 보고서](references/existing-app-visual-review.md) | 실제 캡처·문제 좌표·추천안·피드백·수정 전후 HTML |
+| [기능·정보 사양서](references/functional-inventory.md) | A1 기능 계위·정보 분류와 A2~D 추적 |
 | [모션 제작](references/motion-authoring.md) | 고유 모션 제작 명세와 매체별 적용 |
 | [컴포넌트 지식](references/component-knowledge.md) | 컴포넌트 역할과 관계 |
 | [테마 비교 예시](samples/theme-nine-board.html) | 9가지 시각 표현의 브라우저 예시 |

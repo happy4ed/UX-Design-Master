@@ -23,5 +23,10 @@ export function auditVisibleCopy(root=document){
   const findings=auditCopy(text);
   const controls=[...root.querySelectorAll('button,a,[role="button"]')].filter(el=>el.getClientRects().length);
   for(const el of controls){const label=(el.getAttribute('aria-label')||el.innerText||'').trim();if(!label)findings.push({id:'unnamed-control',match:'',at:-1,advice:'조작 요소에 읽을 수 있는 이름을 넣기'});else if(label.length>28)findings.push({id:'long-control',match:label,at:-1,advice:'행동 이름을 줄이거나 버튼의 공간을 늘리기'})}
+  for(const el of root.querySelectorAll('[data-screen-title]')){
+    if(!el.getClientRects().length)continue;
+    const title=(el.innerText||el.textContent||'').trim();
+    if(title.split(/\s+/).filter(Boolean).length>2)findings.push({id:'long-screen-title',match:title,at:-1,advice:'화면의 기능·역할을 한두 단어로 명확하게 쓰기'});
+  }
   return findings;
 }

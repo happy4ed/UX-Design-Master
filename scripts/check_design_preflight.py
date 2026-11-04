@@ -16,6 +16,7 @@ REHEARSAL = (
     "multicolumnOrderAndAlignment",
     "sourceVsComputedValues",
     "priorFeedbackPropagation",
+    "functionalInventoryCoverage",
 )
 C_FIELDS = (
     "componentMeasurements",
