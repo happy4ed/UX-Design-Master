@@ -1,0 +1,11 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Visible alignment fixture</title>
+<style>
+body{font:16px Arial;margin:30px}.pair{display:flex;align-items:center;gap:24px;margin-bottom:20px}.icon{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center}.label{display:inline-block;width:130px;height:28px}.surface{width:100px;height:40px;background:#dde8e4}.marker-row{display:flex;align-items:center;margin:8px 0}.marker{display:inline-block;width:12px}
+</style>
+<div class="pair"><span id="icon-a" class="icon" data-align-group="icons" data-align-kind="icon"><svg width="32" height="32" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" fill="#123"/></svg></span><span id="icon-b" class="icon" data-align-group="icons" data-align-kind="icon"><svg width="32" height="32" viewBox="0 0 32 32"><rect x="10" y="10" width="12" height="12" fill="#123"/></svg></span></div>
+<div class="pair"><span id="line-icon" class="icon" data-align-group="lines" data-align-kind="icon"><svg width="32" height="32" viewBox="0 0 32 32"><line x1="16" y1="4" x2="16" y2="28" stroke="#123" stroke-width="3"/></svg></span></div>
+<div class="pair"><span id="text-a" class="label" data-align-group="labels" data-align-kind="text">같은 라벨</span><span id="text-b" class="label" data-align-group="labels" data-align-kind="text" style="padding-left:9px;font-size:18px">같은 라벨</span></div>
+<div id="marker-a" class="marker-row" data-measure-marker-row><b class="marker" data-list-marker>•</b><span data-list-label style="margin-left:4px">첫 번째 설명</span></div>
+<div id="marker-b" class="marker-row" data-measure-marker-row><b class="marker" data-list-marker>•</b><span data-list-label style="margin-left:17px">두 번째 설명</span></div>
+<div class="pair"><div id="surface-a" class="surface" style="border-radius:8px" data-align-group="surfaces" data-align-kind="shape"></div><div id="surface-b" class="surface" style="width:200px;height:80px;border-radius:8px" data-align-group="surfaces" data-align-kind="shape"></div></div>
+</html>

@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
-MODES = ("clickTap", "hover", "longPress", "dragDrop", "swipe", "keyboard")
+MODES = ("leftClick", "tap", "doubleTap", "rightClick", "hover", "longPress", "dragDrop", "swipe", "keyboard")
 STATUSES = {"supported", "unsupported", "conditional", "unknown"}
 
 
@@ -67,6 +67,26 @@ def validate(data):
         swipe = modes.get("swipe") or {}
         if swipe.get("status") in {"supported", "conditional"} and not component.get("nonSwipeAlternative"):
             errors.append(f"{label}: nonSwipeAlternative required")
+        double_tap = modes.get("doubleTap") or {}
+        if double_tap.get("status") in {"supported", "conditional"}:
+            for field in ("doubleTapAlternative", "tapConflictPolicy"):
+                if not isinstance(component.get(field), str) or not component[field].strip():
+                    errors.append(f"{label}: {field} required for doubleTap")
+        right_click = modes.get("rightClick") or {}
+        if right_click.get("status") in {"supported", "conditional"}:
+            for field in ("contextMenuAlternative", "contextMenuDismiss"):
+                if not isinstance(component.get(field), str) or not component[field].strip():
+                    errors.append(f"{label}: {field} required for rightClick")
+        flow = component.get("motionFlow")
+        if stage == "design":
+            if not isinstance(flow, dict):
+                errors.append(f"{label}: motionFlow required in design")
+            else:
+                for field in ("trigger", "from", "immediateFeedback", "to", "cancel", "staticFallback"):
+                    if not isinstance(flow.get(field), str) or not flow[field].strip():
+                        errors.append(f"{label}: motionFlow.{field} required")
+                if flow.get("decision") not in {"motion-candidate", "static"}:
+                    errors.append(f"{label}: motionFlow.decision must be motion-candidate or static")
     return errors
 
 

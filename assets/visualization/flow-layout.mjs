@@ -34,22 +34,22 @@ export function renderDeclarativeFlow(spec){
       if(sameRow){
         const rail=Math.max(10,a.y-20-returnIndex*14),fromX=a.cx,toX=b.cx;
         c.path(`M${fromX} ${a.y} V${rail} H${toX} V${b.y}`,'none','orange',1.7,`class="viz-edge viz-return" data-role="return" data-arrow-size="${c.arrowSize}" marker-end="url(#${c.id}-arrow-orange)"`);
-        if(edge.label)c.textBox(Math.min(fromX,toX)+10,rail-18,Math.max(80,Math.abs(fromX-toX)-20),16,edge.label,{size:11,minSize:10,maxLines:1,padding:0,color:'orange',weight:400,role:'edge-label'});
+        if(edge.label)c.textBox(Math.min(fromX,toX)+10,rail-18,Math.max(80,Math.abs(fromX-toX)-20),20,edge.label,{size:13,minSize:13,maxLines:1,padding:0,color:'orange',weight:400,role:'edge-label'});
       }else{
         const railX=margin/2-returnIndex*9,fromY=a.cy,toY=b.cy;
         c.path(`M${a.x} ${fromY} H${railX} V${toY} H${b.x}`,'none','orange',1.7,`class="viz-edge viz-return" data-role="return" data-arrow-size="${c.arrowSize}" marker-end="url(#${c.id}-arrow-orange)"`);
-        if(edge.label)c.textBox(railX+8,Math.max(a.y,b.y)+nodeHeight+8,width-margin-railX-8,20,edge.label,{size:11,minSize:10,maxLines:1,padding:0,color:'orange',weight:400,role:'edge-label'});
+        if(edge.label)c.textBox(railX+8,Math.max(a.y,b.y)+nodeHeight+8,width-margin-railX-8,20,edge.label,{size:13,minSize:13,maxLines:1,padding:0,color:'orange',weight:400,role:'edge-label'});
       }
       returnIndex++;continue;
     }
     if(a.row===b.row){
       const sign=b.cx>a.cx?1:-1;
       c.arrow(a.cx+sign*a.w/2,a.cy,b.cx-sign*b.w/2,b.cy);
-      if(edge.label)c.edgeLabel(a.cx+sign*a.w/2,a.cy,b.cx-sign*b.w/2,b.cy,edge.label,{size:11});
+      if(edge.label)c.edgeLabel(a.cx+sign*a.w/2,a.cy,b.cx-sign*b.w/2,b.cy,edge.label,{size:13,minSize:13,height:22});
     }else if(Math.abs(a.row-b.row)===1&&a.col===b.col){
       const sign=b.cy>a.cy?1:-1;
       c.arrow(a.cx,a.cy+sign*a.h/2,b.cx,b.cy-sign*b.h/2);
-      if(edge.label)c.textBox(a.cx+10,Math.min(a.cy,b.cy)+nodeHeight/2,36,20,edge.label,{size:11,minSize:11,maxLines:1,padding:0,weight:400,role:'edge-label'});
+      if(edge.label)c.textBox(a.cx+10,Math.min(a.cy,b.cy)+nodeHeight/2,36,20,edge.label,{size:13,minSize:13,maxLines:1,padding:0,weight:400,role:'edge-label'});
     }else{
       // Avoid silently drawing an arrow through unrelated nodes.
       c.warnings.push(`자동 연결 경로 미지원: ${edge.from} → ${edge.to}. 경유점 지정 또는 구조 변경 필요`);
@@ -60,7 +60,7 @@ export function renderDeclarativeFlow(spec){
     if(node.shape==='diamond'){
       c.poly(`${p.cx},${p.y} ${p.x+p.w},${p.cy} ${p.cx},${p.y+p.h} ${p.x},${p.cy}`,selected?'tealLight':'white','teal',`data-node="true" data-box-padding="12"`);
       c.shapeText(p.x,p.y,p.w,p.h,node.label,{shape:'diamond',size:fontSize,minSize:13,maxLines:2,padding:10,weight:600,role:'diamond-label'});
-    }else c.box(p.x,p.y,p.w,p.h,node.label,{fill:selected?'tealLight':'white',stroke:selected?'teal':'line',size:fontSize,weight:500,subtitle:node.subtitle??'',padding:12});
+    }else c.box(p.x,p.y,p.w,p.h,node.label,{fill:selected?'tealLight':'white',stroke:selected?'teal':'line',size:fontSize,weight:500,subtitle:node.subtitle??'',subtitleSize:13,subtitleMinSize:13,padding:12});
   }
   if(nodes.some(node=>estimatedWidth(node.label,fontSize)>nodeWidth-24))c.warnings.push('긴 노드 라벨은 두 줄로 배치됨. 실제 표시 폭에서 읽기 검수 필요');
   return {svg:c.finish(),warnings:c.warnings,metadata:c.metadata(),positions:Object.fromEntries(positions)};

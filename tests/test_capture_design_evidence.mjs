@@ -25,5 +25,7 @@ assert.equal(result.layerCandidateCount, 3);
 assert.equal(result.weighted.backgroundColor[0].value, 'rgb(250, 250, 250)');
 assert.equal(result.weighted.color[0].count, 2);
 assert.equal(result.state.screen, 'sample');
+assert.equal(result.focus, null);
+assert.equal(result.scroll.y, null);
 assert.equal(captureDesignEvidence(root, 2).truncatedNodes, 2);
 console.log('visible weighting, layer candidates, state, and truncation: PASS');

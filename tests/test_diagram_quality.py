@@ -8,7 +8,7 @@ from pathlib import Path
 from playwright.async_api import async_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKSPACE = ROOT.parents[1]
+WORKSPACE = ROOT.parent
 AUDIT_URL = "http://127.0.0.1:8000/UX-Design-Master/assets/visualization/layout-audit.mjs"
 BASE_URL = "http://127.0.0.1:8000/UX-Design-Master/samples/interaction-keyboard-review.html"
 V1 = WORKSPACE / "artifacts/design-skill-experiments/eval-2026-10-27/A/viz/d5-claim-flow-static.svg"
@@ -19,12 +19,15 @@ def render(script, data, output):
     return output.read_text(encoding="utf-8")
 
 
-async def audit(page, svg, width, *, scroll=True):
+async def audit(page, svg, width, *, scroll=True, max_display_scale=None):
     await page.set_viewport_size({"width": width, "height": 900})
     await page.goto(BASE_URL)
     body = f'<main style="width:{width}px;max-width:100%;margin:0"><div style="overflow-x:auto" role="region">{svg}</div></main>' if scroll else f'<main style="width:{width}px;max-width:100%;margin:0">{svg}</main>'
     await page.set_content(body)
-    return await page.evaluate(f"""async () => {{const m=await import('{AUDIT_URL}');return m.auditSvgLayout(document.querySelector('svg'))}}""")
+    options = {"minimumTextPx": 13, "narrowViewportWidth": 360}
+    if max_display_scale is not None:
+        options["maxDisplayScale"] = max_display_scale
+    return await page.evaluate(f"""async () => {{const m=await import('{AUDIT_URL}');return m.auditSvgLayout(document.querySelector('svg'),{json.dumps(options)})}}""")
 
 
 async def main():
@@ -52,7 +55,7 @@ async def main():
             moving = await page.evaluate(f"""async () => {{const m=await import('{AUDIT_URL}');return m.probeMotion(document.querySelector('svg'))}}""")
             assert moving["moving"] and moving["waitMs"] >= 1000, moving
 
-            old = await audit(page, V1.read_text(encoding="utf-8"), 930, scroll=False)
+            old = await audit(page, V1.read_text(encoding="utf-8"), 930, scroll=False, max_display_scale=1.25)
             assert old["displayScaleWarnings"], old
             assert old["arrowHeadWarnings"], old
             assert old["shaftWarnings"] or old["nodeGapWarnings"], old
@@ -62,7 +65,7 @@ async def main():
             dark = tmp / "dark.json"
             dark.write_text(json.dumps(spec, ensure_ascii=False), encoding="utf-8")
             run = subprocess.run(["node", str(ROOT / "scripts/render_flow_diagram.mjs"), "--input", str(dark), "--out", str(tmp / "dark.svg")], check=True, capture_output=True, text=True)
-            assert not json.loads(run.stdout)["warnings"] or all("긴 노드" in w for w in json.loads(run.stdout)["warnings"]), run.stdout
+            assert not json.loads(run.stdout)["warnings"] or all("긴 노드" in w or "도표 내부 참조" in w for w in json.loads(run.stdout)["warnings"]), run.stdout
             await browser.close()
 
         bar_data = tmp / "bar.json"

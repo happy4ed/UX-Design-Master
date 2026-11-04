@@ -12,12 +12,51 @@
       "verification": "mouse, touch and keyboard pending",
       "hoverAlternative": "focus and persistent label",
       "modes": {
-        "clickTap": {"status": "supported", "behavior": "execute save once on release"},
-        "hover": {"status": "supported", "behavior": "show background change; label remains visible"},
-        "longPress": {"status": "unsupported", "behavior": "no extra command; normal action on release"},
-        "dragDrop": {"status": "unsupported", "behavior": "button has no movable content or drop target"},
-        "swipe": {"status": "unsupported", "behavior": "button has no directional action"},
-        "keyboard": {"status": "supported", "behavior": "Tab focuses; Enter or Space saves"}
+        "leftClick": {
+          "status": "supported",
+          "behavior": "execute save once on release"
+        },
+        "tap": {
+          "status": "supported",
+          "behavior": "execute save once on release"
+        },
+        "doubleTap": {
+          "status": "unsupported",
+          "behavior": "추가 동작 없음; 단일 탭을 두 번 실행하지 않음"
+        },
+        "rightClick": {
+          "status": "unsupported",
+          "behavior": "제품 전용 문맥 메뉴 없음; 브라우저 기본 동작 유지"
+        },
+        "hover": {
+          "status": "supported",
+          "behavior": "show background change; label remains visible"
+        },
+        "longPress": {
+          "status": "unsupported",
+          "behavior": "no extra command; normal action on release"
+        },
+        "dragDrop": {
+          "status": "unsupported",
+          "behavior": "button has no movable content or drop target"
+        },
+        "swipe": {
+          "status": "unsupported",
+          "behavior": "button has no directional action"
+        },
+        "keyboard": {
+          "status": "supported",
+          "behavior": "Tab focuses; Enter or Space saves"
+        }
+      },
+      "motionFlow": {
+        "decision": "motion-candidate",
+        "trigger": "leftClick/tap/Enter/Space",
+        "from": "idle",
+        "immediateFeedback": "pressed then saving; 중복 제출 잠금",
+        "to": "saved or error after actual response",
+        "cancel": "요청 취소 또는 오류 때 저장 완료 표시 금지",
+        "staticFallback": "저장 중·완료·오류 문구와 포커스 유지"
       }
     },
     {
@@ -37,12 +76,52 @@
       "longPressAlternative": "visible move up/down buttons",
       "hoverAlternative": "persistent handle and keyboard focus indicator",
       "modes": {
-        "clickTap": {"status": "supported", "behavior": "reveal move controls"},
-        "hover": {"status": "supported", "behavior": "show grab cursor; handle remains visible"},
-        "longPress": {"status": "conditional", "condition": "touch on handle", "behavior": "enter move mode; suppress following click"},
-        "dragDrop": {"status": "supported", "behavior": "move row through valid positions from handle"},
-        "swipe": {"status": "unsupported", "behavior": "row movement uses the handle, not a swipe"},
-        "keyboard": {"status": "supported", "behavior": "Tab to handle; move up/down controls; Escape cancels"}
+        "leftClick": {
+          "status": "supported",
+          "behavior": "reveal move controls"
+        },
+        "tap": {
+          "status": "supported",
+          "behavior": "reveal move controls"
+        },
+        "doubleTap": {
+          "status": "unsupported",
+          "behavior": "추가 동작 없음; 단일 탭을 두 번 실행하지 않음"
+        },
+        "rightClick": {
+          "status": "unsupported",
+          "behavior": "제품 전용 문맥 메뉴 없음; 브라우저 기본 동작 유지"
+        },
+        "hover": {
+          "status": "supported",
+          "behavior": "show grab cursor; handle remains visible"
+        },
+        "longPress": {
+          "status": "conditional",
+          "condition": "touch on handle",
+          "behavior": "enter move mode; suppress following click"
+        },
+        "dragDrop": {
+          "status": "supported",
+          "behavior": "move row through valid positions from handle"
+        },
+        "swipe": {
+          "status": "unsupported",
+          "behavior": "row movement uses the handle, not a swipe"
+        },
+        "keyboard": {
+          "status": "supported",
+          "behavior": "Tab to handle; move up/down controls; Escape cancels"
+        }
+      },
+      "motionFlow": {
+        "decision": "motion-candidate",
+        "trigger": "drag from handle or move up/down",
+        "from": "original row position",
+        "immediateFeedback": "dragging item and valid drop position",
+        "to": "moved row at committed position",
+        "cancel": "pointercancel/Escape/invalid drop restores original order and focus",
+        "staticFallback": "위/아래 이동 버튼과 새 순서 알림"
       }
     }
   ]

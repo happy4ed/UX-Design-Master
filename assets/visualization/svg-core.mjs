@@ -99,9 +99,9 @@ export class Canvas{
     const tspans=layout.lines.map(line=>`<tspan x="${line.x.toFixed(2)}" y="${line.y.toFixed(2)}" data-line-width="${line.width.toFixed(2)}">${esc(line.text)}</tspan>`).join('');
     return this.push(`<text class="viz-text" style="--i:${this.partIndex++}" data-role="${role}" data-fit-decision="${decision}" data-shape="${typeof shape==='string'?shape:shape.kind}" data-region="${[x,y,w,h].join(',')}" x="${layout.x}" font-size="${layout.fontSize}" font-weight="${weight}" fill="${c[color]||color}" text-anchor="middle" ${this.rtl?`transform="translate(${2*layout.x} 0) scale(-1 1)"`:''}>${tspans}</text>`);
   }
-  edgeLabel(x1,y1,x2,y2,value,{gap=6,height=19,side='above',size=11,color='muted',weight=400}={}){
+  edgeLabel(x1,y1,x2,y2,value,{gap=6,height=19,side='above',size=11,minSize=9,color='muted',weight=400}={}){
     const left=Math.min(x1,x2)+3,width=Math.abs(x2-x1)-6,top=(y1+y2)/2+(side==='above'?-gap-height:gap);
-    return this.textBox(left,top,Math.max(width,14),height,value,{size,minSize:9,maxLines:1,padding:0,color,weight,role:'edge-label'});
+    return this.textBox(left,top,Math.max(width,14),height,value,{size,minSize,maxLines:1,padding:0,color,weight,role:'edge-label'});
   }
   textOnPath(d,pathLength,value,{size=13,minSize=10,color='ink',weight=500,endPadding=12,role='path-label'}={}){
     const plan=planPathText(value,{pathLength,size,minSize,endPadding}),index=this.partIndex++,id=`${this.id}-text-path-${index}`;
@@ -120,10 +120,10 @@ export class Canvas{
     this.textBox(cx-w/2,cy-h/2,w,h,value,{...options,role:options.role??'rotated-label'});
     this.push('</g>');
   }
-  box(x,y,w,h,label,{fill='white',stroke='line',size=13,max=16,weight=500,subtitle='',subtitleSize=11,subtitleWeight=400,padding=12,r=5}={}){
+  box(x,y,w,h,label,{fill='white',stroke='line',size=13,max=16,weight=500,subtitle='',subtitleSize=11,subtitleMinSize=9,subtitleWeight=400,padding=12,r=5}={}){
     this.rect(x,y,w,h,fill,stroke,r,`data-node="true" data-box-padding="${padding}"`);
     this.textBox(x+padding,y+padding,w-2*padding,subtitle?h-2*padding-subtitleSize-6:h-2*padding,label,{size,minSize:Math.min(size,10),maxLines:subtitle?2:3,padding:0,weight,role:subtitle?'box-title':'box-label'});
-    if(subtitle)this.textBox(x+padding,y+h-padding-subtitleSize-3,w-2*padding,subtitleSize+4,subtitle,{size:subtitleSize,minSize:Math.min(9,subtitleSize),maxLines:1,padding:0,color:'muted',weight:subtitleWeight,role:'box-subtitle'});
+    if(subtitle)this.textBox(x+padding,y+h-padding-subtitleSize-3,w-2*padding,subtitleSize+4,subtitle,{size:subtitleSize,minSize:Math.min(subtitleMinSize,subtitleSize),maxLines:1,padding:0,color:'muted',weight:subtitleWeight,role:'box-subtitle'});
   }
   badge(x,y,text,fill='tealLight',color='teal'){this.rect(x,y,Math.max(36,String(text).length*7+20),22,fill,'none',11);this.text(x+10,y+15,text,{size:10,color,weight:600,max:20})}
   metadata(){const scale=this.displayWidth/this.width,sizes=this.fonts.map(font=>font.size*scale);return {sourceWidth:this.width,sourceHeight:this.height,displayWidth:this.displayWidth,scale,minTextPx:sizes.length?Math.min(...sizes):null,maxTextPx:sizes.length?Math.max(...sizes):null,arrowSize:this.arrowSize,warnings:this.warnings}}
@@ -132,13 +132,13 @@ export class Canvas{
     const body=this.parts.join('');const title=esc(this.template.name);const desc=esc(`${this.template.meaning}. 예시 자료: ${this.labels.join(', ')}.`);
     let legend='',height=this.height;
     if(this.truncated.size){
-      const sep=this.height+10;legend=`<line x1="22" y1="${sep}" x2="${this.width-22}" y2="${sep}" stroke="${this.colors.line}"/><text x="24" y="${sep+21}" direction="ltr" text-anchor="start" font-size="12" font-weight="600" fill="${this.colors.ink}">전체 문구</text>`;
+      const sep=this.height+10;legend=`<line x1="22" y1="${sep}" x2="${this.width-22}" y2="${sep}" stroke="${this.colors.line}"/><text x="24" y="${sep+21}" direction="ltr" text-anchor="start" font-size="13" font-weight="600" fill="${this.colors.ink}">전체 문구</text>`;
       let y=sep+41,index=0;
       for(const item of this.truncated){
         const lines=wrap(item,48,999);const x=this.rtl?this.width-26:55,anchor='start';
-        legend+=`<text x="24" y="${y}" direction="ltr" text-anchor="start" font-size="11" fill="${this.colors.teal}">${++index}.</text>`;
-        legend+=`<text x="${x}" y="${y}" text-anchor="${anchor}" direction="${this.rtl?'rtl':'ltr'}" font-size="12" fill="${this.colors.ink}">${lines.map((line,i)=>`<tspan x="${x}" dy="${i?17:0}">${esc(line)}</tspan>`).join('')}</text>`;
-        y+=lines.length*17+12;
+        legend+=`<text x="24" y="${y}" direction="ltr" text-anchor="start" font-size="13" fill="${this.colors.teal}">${++index}.</text>`;
+        legend+=`<text x="${x}" y="${y}" text-anchor="${anchor}" direction="${this.rtl?'rtl':'ltr'}" font-size="13" fill="${this.colors.ink}">${lines.map((line,i)=>`<tspan x="${x}" dy="${i?19:0}">${esc(line)}</tspan>`).join('')}</text>`;
+        y+=lines.length*19+12;
       }
       height=y+9;
     }

@@ -47,7 +47,7 @@ def main():
         {"id": "claim-b", "dom": 1, "x": 300, "y": 0, "height": 102},
         {"id": "claim-c", "dom": 2, "x": 0, "y": 120, "height": 80},
         {"id": "claim-d", "dom": 3, "x": 300, "y": 120, "height": 80},
-    ])
+    ], "row-major", 1)
     assert layout["rowMajor"] == ["claim-a", "claim-b", "claim-c", "claim-d"]
     assert layout["columnMajor"] == ["claim-a", "claim-c", "claim-b", "claim-d"]
     assert layout["rowHeightDrift"][0]["heightDriftPx"] == 22

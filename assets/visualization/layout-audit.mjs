@@ -8,19 +8,18 @@ function screenRegion(node,x,y,w,h){
   return {left,top,width:Math.max(...points.map(p=>p.x))-left,height:Math.max(...points.map(p=>p.y))-top};
 }
 
-export function auditSvgLayout(svg,{tolerance=2}={}){
+export function auditSvgLayout(svg,{tolerance=2,minimumTextPx=13,maxTextPxByRole={},maxDisplayScale=null,narrowViewportWidth=null}={}){
   const regionOverflow=[],textOverlap=[],edgeCaptionGap=[],pathOverflow=[],shapeLineOverflow=[];
   const displayScaleWarnings=[],textSizeWarnings=[],narrowTextWarnings=[];
   const sourceWidth=Number(svg.dataset.sourceWidth??svg.viewBox.baseVal.width),shownWidth=svg.getBoundingClientRect().width,scale=shownWidth/sourceWidth;
-  if(scale>1.25+.01)displayScaleWarnings.push({scale:+scale.toFixed(2),limit:1.25,shownWidth,sourceWidth});
+  if(Number.isFinite(maxDisplayScale)&&scale>maxDisplayScale+.01)displayScaleWarnings.push({scale:+scale.toFixed(2),limit:maxDisplayScale,shownWidth,sourceWidth});
   if(svg.dataset.displayWidth&&shownWidth>Number(svg.dataset.displayWidth)+tolerance)displayScaleWarnings.push({shownWidth,intended:Number(svg.dataset.displayWidth)});
   const texts=[...svg.querySelectorAll('text')].map(node=>({node,b:box(node)}));
   for(const {node,b} of texts){
     const px=parseFloat(getComputedStyle(node).fontSize)*scale,role=node.dataset.role??'free-label';
-    const aux=role.includes('subtitle')||role.includes('edge')||role.includes('caption')||role.includes('note');
-    const min=aux?11:13,max=aux?13:16;
-    if(px<min-.2||px>max+.2)textSizeWarnings.push({text:node.textContent,role,px:+px.toFixed(1),expected:`${min}–${max}`});
-    if(px<11-.2)narrowTextWarnings.push({text:node.textContent,role,px:+px.toFixed(1),shownWidth});
+    const max=maxTextPxByRole[role];
+    if(px<minimumTextPx-.2||(Number.isFinite(max)&&px>max+.2))textSizeWarnings.push({text:node.textContent,role,px:+px.toFixed(1),expected:`at least ${minimumTextPx}${Number.isFinite(max)?`; at most ${max}`:''}`});
+    if(px<minimumTextPx-.2)narrowTextWarnings.push({text:node.textContent,role,px:+px.toFixed(1),shownWidth});
     if(!node.dataset.region)continue;
     const [x,y,w,h]=node.dataset.region.split(',').map(Number),r=screenRegion(node,x,y,w,h);
     if(b.left<r.left-tolerance||b.top<r.top-tolerance||b.right>r.left+r.width+tolerance||b.bottom>r.top+r.height+tolerance)
@@ -49,7 +48,7 @@ export function auditSvgLayout(svg,{tolerance=2}={}){
     }
   }
   const geometry=auditSvgGeometry(svg,{connectorTolerance:tolerance,centerTolerance:4});
-  const narrowViewport=window.innerWidth<=360&&narrowTextWarnings.length>0;
+  const narrowViewport=Number.isFinite(narrowViewportWidth)&&window.innerWidth<=narrowViewportWidth&&narrowTextWarnings.length>0;
   const scrollRegion=svg.closest('[role="region"]');
   const narrowAlternative=scrollRegion?.scrollWidth>scrollRegion?.clientWidth||svg.dataset.narrowAlternative==='steps';
   return {id:geometry.id,regionOverflow,pathOverflow,shapeLineOverflow,textOverlap,edgeCaptionGap,arrowGaps:geometry.arrowGaps,centerWarnings:geometry.opticalCenters,clippedText:geometry.clippedText,displayScaleWarnings,textSizeWarnings,narrowTextWarnings,narrowViewportFailure:narrowViewport&&!narrowAlternative,arrowHeadWarnings:geometry.arrowHeadWarnings,shaftWarnings:geometry.shaftWarnings,nodeGapWarnings:geometry.nodeGapWarnings,paddingWarnings:geometry.paddingWarnings,lineShapeWarnings:geometry.lineShapeWarnings,fitDecisions:[...svg.querySelectorAll('text[data-fit-decision]')].reduce((out,node)=>(out[node.dataset.fitDecision]=(out[node.dataset.fitDecision]??0)+1,out),{})};
