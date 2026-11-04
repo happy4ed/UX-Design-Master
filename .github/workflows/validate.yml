@@ -37,6 +37,8 @@ jobs:
           python3 tests/test_app_review_report.py
           python3 tests/test_app_review_report_browser.py
           python3 tests/test_functional_inventory.py
+          python3 tests/test_wireframe_variants.py
+          python3 tests/test_runtime_content_audit.py
           node tests/test_capture_design_evidence.mjs
           node tests/test_screen_title_copy.mjs
           node tests/test_text_layout_binary_search.mjs

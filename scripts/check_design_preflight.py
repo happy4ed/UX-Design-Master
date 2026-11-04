@@ -17,6 +17,8 @@ REHEARSAL = (
     "sourceVsComputedValues",
     "priorFeedbackPropagation",
     "functionalInventoryCoverage",
+    "runtimeContentAccess",
+    "actionRowDensity",
 )
 C_FIELDS = (
     "componentMeasurements",
