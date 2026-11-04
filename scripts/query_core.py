@@ -3,7 +3,10 @@ from pathlib import Path
 import argparse,json
 p=argparse.ArgumentParser(description='Core UI KB의 정의·계층·결합 관계를 검색합니다.')
 p.add_argument('--id',default='');p.add_argument('--query',default='');p.add_argument('--family',default='');p.add_argument('--level',choices=['component','visual','structure']);p.add_argument('--relations',action='store_true');p.add_argument('--limit',type=int,default=8)
-a=p.parse_args();catalog=Path(__file__).resolve().parents[1]/'knowledge';d=json.loads((catalog/'core-components.json').read_text());phrases=json.loads((catalog/'ui-role-phrases.json').read_text());terms=a.query.casefold().split();aliasIds=phrases['phrases'].get(a.query.strip(),'').split()
+a=p.parse_args();catalog=Path(__file__).resolve().parents[1]/'knowledge';d=json.loads((catalog/'core-components.json').read_text());phrases=json.loads((catalog/'ui-role-phrases.json').read_text());terms=a.query.casefold().split()
+query=a.query.strip().casefold()
+matchedPhrase=next((key for key in sorted(phrases['phrases'],key=len,reverse=True) if key.casefold()==query or ((len(key)>=4 or key in {'팝업','더보기'}) and key.casefold() in query)),None)
+aliasIds=phrases['phrases'].get(matchedPhrase,'').split()
 rows=[]
 for e in d['entries']:
  hay=' '.join([e['id'],e['name'],e['ko'],e['definition'],e['distinction'],*e['aliases'],*e['anatomy']]).casefold()
@@ -17,6 +20,7 @@ for e in d['entries']:
  rows.append((score,e))
 rows.sort(key=lambda x:-x[0]);shown=[e for _,e in rows[:max(a.limit,0)]];selected={e['id'] for e in shown}
 out=dict(counting=d['counting'],matches=len(rows),entries=shown)
+if matchedPhrase:out['matchedPhrase']=matchedPhrase
 if aliasIds:out['roleQuestion']=[row for row in phrases['confusions'] if len(set(row['ids'])&selected)>1]
 if a.relations:
  edges=[e for e in d['edges'] if e['source'] in selected or e['target'] in selected]

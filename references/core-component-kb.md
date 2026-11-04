@@ -16,7 +16,7 @@ python3 scripts/query_core.py --id toolbar --relations
 
 명령 경로는 이 스킬 디렉터리를 기준으로 한다. id/name/ko/definition/distinction/aliases/anatomy를 검색한다. `level`이 visual/structure인 항목을 조작 widget으로 자동 생성하지 않는다. Chunk는 의미 묶음, Checkmark는 상태 표시, Checkbox는 입력이다. Select/Combobox/Listbox, App Bar/Toolbar, Tabs/Segmented/주요 경로 탐색의 역할은 계약으로 구분한다.
 
-[일상어 역할 문장 30개와 혼동쌍 12개](../knowledge/ui-role-phrases.json)도 같은 검색기로 조회한다. 예: `python3 scripts/query_core.py --query "켜고 끄기"`. 결과의 후보를 모두 적용하지 말고 `roleQuestion`에 답해 실제 상태 변화와 목적지를 확정한다. 컴포넌트마다 동작 예시가 필요하면 대표 인스턴스를 실제 HTML/앱 화면에 렌더하고 초기·포화·키보드 상태를 검증한다.
+[일상어 역할 문장과 혼동쌍](../knowledge/ui-role-phrases.json)도 같은 검색기로 조회한다. 예: `python3 scripts/query_core.py --query "화면 가운데 뜨는 창"`. 입력 문장에 사전 표현이 들어 있으면 가장 구체적인 표현을 우선 연결하고, `matchedPhrase`와 `roleQuestion`을 함께 표시한다. 결과의 후보를 모두 적용하지 말고 **어떤 데이터·상태가 바뀌는지, 배경 작업을 막는지, 계속 남는지**를 확인해 한 역할로 좁힌다. 후보에 없는 복합 패턴은 기존 컴포넌트의 구성 관계로 먼저 판정한다. 컴포넌트마다 동작 예시가 필요하면 대표 인스턴스를 실제 HTML/앱 화면에 렌더하고 초기·포화·키보드 상태를 검증한다. 정적 HTML 모형을 동작 검증 완료로 표시하지 않는다.
 
 ## 관계를 해석하는 방법
 

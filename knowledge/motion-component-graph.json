@@ -5710,15 +5710,15 @@
       "english": "Accordion Fold",
       "sourceFamilyId": "family-15",
       "sourceFamily": "그래픽 기법",
-      "useType": "physical-feedback",
-      "movementScale": "large",
+      "useType": "scene-transition",
+      "movementScale": "screen",
       "motionAxes": [
         "path",
         "shape"
       ],
       "componentIds": [
-        "accordion",
-        "accordion-item"
+        "page-shell",
+        "image"
       ],
       "implementation": "implemented-preview",
       "demo": "motion-verified-lab.html#accordion-fold",
@@ -19050,12 +19050,12 @@
     },
     {
       "from": "motion:accordion-fold",
-      "to": "use:physical-feedback",
+      "to": "use:scene-transition",
       "type": "has_use"
     },
     {
       "from": "motion:accordion-fold",
-      "to": "scale:large",
+      "to": "scale:screen",
       "type": "has_scale"
     },
     {
@@ -19075,13 +19075,13 @@
     },
     {
       "from": "motion:accordion-fold",
-      "to": "component:accordion",
+      "to": "component:page-shell",
       "type": "candidate_for",
       "basis": "specific-state-rule"
     },
     {
       "from": "motion:accordion-fold",
-      "to": "component:accordion-item",
+      "to": "component:image",
       "type": "candidate_for",
       "basis": "specific-state-rule"
     },
@@ -22238,8 +22238,8 @@
     "uses": {
       "spatial-exploration": 11,
       "spatial-emphasis": 9,
-      "physical-feedback": 9,
-      "scene-transition": 59,
+      "physical-feedback": 8,
+      "scene-transition": 60,
       "graphic-explanation": 25,
       "text-reveal": 5,
       "numeric-feedback": 18,
@@ -22254,9 +22254,9 @@
       "diagram-explanation": 23
     },
     "scales": {
-      "large": 133,
+      "large": 132,
       "small": 44,
-      "screen": 59,
+      "screen": 60,
       "medium": 107
     },
     "mappingBasis": {
@@ -22264,6 +22264,6 @@
       "specific-state-rule": 94
     },
     "componentLinks": 867,
-    "linkedComponents": 47
+    "linkedComponents": 45
   }
 }

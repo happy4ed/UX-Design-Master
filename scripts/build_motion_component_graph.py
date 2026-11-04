@@ -138,7 +138,7 @@ overrides = {
     "before-after-label": ("graphic-explanation", "medium", ["image", "carousel"]),
     "marching-ants": ("graphic-explanation", "small", ["canvas-input", "image"]),
     "trim-path": ("graphic-explanation", "medium", ["chart", "icon"]),
-    "accordion-fold": ("physical-feedback", "large", ["accordion", "accordion-item"]),
+    "accordion-fold": ("scene-transition", "screen", ["page-shell", "image"]),
     "exploded-view": ("spatial-exploration", "large", ["image", "canvas-input"]),
     "cutaway": ("spatial-exploration", "large", ["image", "canvas-input"]),
     "turntable": ("spatial-exploration", "large", ["image", "canvas-input"]),

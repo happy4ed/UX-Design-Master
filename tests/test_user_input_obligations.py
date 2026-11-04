@@ -68,6 +68,11 @@ def main():
     assert reference.audit(comparison)["status"] == "PASS"
     comparison["draft"]["viewport"] = "1280x900"
     assert "VIEWPORT_MISMATCH" in {item["code"] for item in reference.audit(comparison)["findings"]}
+    comparison["draft"]["viewport"] = "390x844"
+    comparison["reference"]["sourceType"] = "live-web"
+    assert "MISSING_MEASURED_STATE" in {item["code"] for item in reference.audit(comparison)["findings"]}
+    comparison["reference"]["measuredStates"] = [{"stateId": "list", "viewport": "390x844", "capture": "capture.png", "measurement": "list.json", "truncatedNodes": 0}]
+    assert reference.audit(comparison)["status"] == "PASS"
     prototype = load_script("check_prototype_contract")
     missing_demo = prototype.check({"stage": "D", "medium": "web", "flows": []})
     assert {"NO_PROTOTYPE", "NO_FLOW", "WALKTHROUGH", "CHECK_MISSING"} <= {item["code"] for item in missing_demo["warnings"]}

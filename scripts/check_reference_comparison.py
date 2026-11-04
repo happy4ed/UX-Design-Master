@@ -20,6 +20,17 @@ def audit(data):
     for key in REFERENCE_FIELDS:
         if not reference.get(key):
             warn("MISSING_REFERENCE_EVIDENCE", f"reference.{key}", "지정 레퍼런스의 실제 관찰 근거가 필요합니다.")
+    if reference.get("sourceType") == "live-web":
+        measurements = reference.get("measuredStates", [])
+        if not measurements:
+            warn("MISSING_MEASURED_STATE", "reference.measuredStates", "웹 원본의 상태별 캡처와 실측 JSON을 연결하세요.")
+        for index, item in enumerate(measurements):
+            if not all(item.get(key) for key in ("stateId", "viewport", "capture", "measurement")):
+                warn("INCOMPLETE_MEASURED_STATE", f"reference.measuredStates[{index}]", "상태·뷰포트·캡처·실측 JSON이 한 쌍이어야 합니다.")
+            if item.get("truncatedNodes", 0) and not item.get("limitNote"):
+                warn("TRUNCATED_MEASUREMENT", f"reference.measuredStates[{index}]", "표본 제한으로 빠진 범위를 기록하세요.")
+        if measurements and reference.get("screenState") not in {item.get("stateId") for item in measurements}:
+            warn("UNMATCHED_REFERENCE_STATE", "reference.screenState", "비교 대상 상태와 일치하는 실측 기록이 없습니다.")
     for key in ("renderEvidence", "screenState", "viewport", "contentFixture", "approvedWireframeId"):
         if not draft.get(key):
             warn("MISSING_DRAFT_EVIDENCE", f"draft.{key}", "승인된 구조와 같은 콘텐츠의 실제 가안이 필요합니다.")

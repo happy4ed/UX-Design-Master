@@ -18,25 +18,54 @@ family = {
     'patterns': (['step-change','state-change','item-update'], '현재 단계·값·결과를 유지')
 }
 overrides = {
-    'scroll-area':['scroll-position','section-progress','sticky-change'],
+    'scroll-area':['scroll-position','section-progress','sticky-change','pull-refresh-threshold','refresh-result'],
     'list':['insert','remove','reorder','filter'],
+    'list-item':['insert','remove','reorder','value-update','swipe-action-reveal','swipe-commit','undo'],
     'data-grid':['sort','filter','row-update','selection'],
-    'tab':['active-indicator','content-switch'],
-    'switch':['checked-change'],
-    'dialog':['open','close','focus-transfer'],
-    'carousel':['slide-change','page-indicator'],
+    'tab':['active-indicator','content-switch','selection-label-change'],
+    'tab-bar':['active-location','navigate','active-indicator','selection-label-change'],
+    'bottom-navigation':['active-location','navigate','active-indicator','selection-label-change'],
+    'switch':['checked-change','pending-result','rollback'],
+    'checkbox':['select','deselect','mixed-change','select-all'],
+    'dialog':['open','close','focus-transfer','submit-result'],
+    'bottom-sheet':['open','drag','snap-point-change','close','keyboard-resize','focus-transfer'],
+    'carousel':['slide-change','page-indicator','drag-settle','edge-behavior'],
+    'segmented-control':['select','deselect','active-indicator','content-switch'],
+    'pagination':['page-change','active-indicator','result-update'],
+    'date-picker':['open','date-select','month-change','close'],
+    'search-field':['focus','query-change','suggestions','loading','no-results','clear'],
+    'text-field':['focus','label-change','value-change','validation','clear'],
+    'fab':['press','expand-actions','collapse-actions','scroll-visibility','drag-snap'],
+    'menu':['open','item-focus','select','close'],
+    'toast':['appear','stack','dismiss','swipe-dismiss','undo'],
+    'page-shell':['forward-navigation','back-navigation','shared-element','focus-restore'],
     'chart':['data-update','series-focus'],
     'progress-bar':['value-update','completion'],
     'skeleton':['loading','content-arrival'],
     'tooltip':['show','hide'],
-    'toast':['appear','dismiss'],
     'accordion':['expand','collapse','reflow'],
-    'button':['press','loading','result']
+    'button':['press','loading','result','hold-confirm','slide-confirm','undo-result']
 }
 rows=[]
+scenario_sources = ['app-motion-scenarios.json', 'component-motion-scenarios.json']
+scenarios = [scenario for source in scenario_sources for scenario in json.loads((ROOT/'knowledge'/source).read_text())['scenarios']]
+no_motion = {row['componentId']: row for row in json.loads((ROOT/'knowledge/component-no-motion-defaults.json').read_text())['entries']}
+scenario_index = {}
+for scenario in scenarios:
+    for component_id in scenario['components']:
+        scenario_index.setdefault(component_id, []).append(scenario['id'])
 for entry in KB['entries']:
     events,static=family[entry['family']]
-    rows.append({'componentId':entry['id'],'name':entry['ko'],'family':entry['family'],'knownStates':entry['states'],'candidateEvents':overrides.get(entry['id'],events),'staticFallback':static,'decision':'context-required','note':'가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음'})
+    component_id = entry['id']
+    scenario_ids = scenario_index.get(component_id, [])
+    no_motion_row = no_motion.get(component_id)
+    if bool(scenario_ids) == bool(no_motion_row):
+        raise ValueError(f'{component_id}: 시나리오 또는 기본 무모션 판단 중 정확히 하나가 필요')
+    row = {'componentId':component_id,'name':entry['ko'],'family':entry['family'],'knownStates':entry['states'],'candidateEvents':overrides.get(component_id,events),'staticFallback':static,'decision':'context-required','defaultMotionDecision':'candidate-scenarios' if scenario_ids else 'no-motion-by-default','scenarioIds':scenario_ids,'note':'후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음'}
+    if no_motion_row:
+        row['noMotionReason'] = no_motion_row['reason']
+        row['reconsiderWhen'] = no_motion_row['reconsiderWhen']
+    rows.append(row)
 path=ROOT/'knowledge/component-motion-coverage.json'
-path.write_text(json.dumps({'schemaVersion':'1.0','source':'core-components.json','count':len(rows),'decisionMethod':'each instance: role → actual state/event → purpose → static feedback → preview → user confirmation D','entries':rows},ensure_ascii=False,indent=2)+'\n')
+path.write_text(json.dumps({'schemaVersion':'1.1','source':'core-components.json','count':len(rows),'scenarioCount':len(scenarios),'noMotionDefaultCount':len(no_motion),'decisionMethod':'each instance: role → actual state/event → purpose → static feedback → preview → user confirmation D','entries':rows},ensure_ascii=False,indent=2)+'\n')
 print(path,len(rows))

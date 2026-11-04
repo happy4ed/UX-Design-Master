@@ -1,7 +1,9 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "source": "core-components.json",
   "count": 122,
+  "scenarioCount": 97,
+  "noMotionDefaultCount": 11,
   "decisionMethod": "each instance: role → actual state/event → purpose → static feedback → preview → user confirmation D",
   "entries": [
     {
@@ -19,7 +21,11 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "content-value-replace"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "label",
@@ -36,7 +42,11 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "field-label-lift"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "heading",
@@ -52,7 +62,11 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "content-value-replace"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "icon",
@@ -68,7 +82,11 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "semantic-icon-state"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "image",
@@ -85,7 +103,11 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "screen-shared-object"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "avatar",
@@ -102,7 +124,11 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "avatar-image-arrival"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "badge",
@@ -119,7 +145,11 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "cart-count-transfer"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "tag",
@@ -135,7 +165,11 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "tag-status-change"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "checkmark",
@@ -151,7 +185,12 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "button-result-morph",
+        "completion-ring-check"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "divider",
@@ -167,7 +206,11 @@
       ],
       "staticFallback": "내용과 위계를 정적으로도 읽을 수 있게 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "정보 구획을 표시하는 정적 선이며 자체 사건이 없다.",
+      "reconsiderWhen": "구획이 열리거나 재배치될 때는 소유 컨테이너의 시나리오를 적용"
     },
     {
       "componentId": "button",
@@ -184,11 +227,21 @@
       "candidateEvents": [
         "press",
         "loading",
-        "result"
+        "result",
+        "hold-confirm",
+        "slide-confirm",
+        "undo-result"
       ],
       "staticFallback": "눌림·진행·결과의 라벨과 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "button-confirm-progress",
+        "button-result-morph",
+        "list-swipe-reveal",
+        "cart-count-transfer"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "icon-button",
@@ -207,7 +260,11 @@
       ],
       "staticFallback": "눌림·진행·결과의 라벨과 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "icon-button-response"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "toggle-button",
@@ -226,7 +283,11 @@
       ],
       "staticFallback": "눌림·진행·결과의 라벨과 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "toggle-button-selection"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "split-button",
@@ -244,7 +305,11 @@
       ],
       "staticFallback": "눌림·진행·결과의 라벨과 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "split-button-menu-open"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "fab",
@@ -257,12 +322,18 @@
       ],
       "candidateEvents": [
         "press",
-        "loading",
-        "result"
+        "expand-actions",
+        "collapse-actions",
+        "scroll-visibility",
+        "drag-snap"
       ],
       "staticFallback": "눌림·진행·결과의 라벨과 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "fab-action-expansion"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "button-group",
@@ -280,7 +351,11 @@
       ],
       "staticFallback": "눌림·진행·결과의 라벨과 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "fab-action-expansion"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "link",
@@ -298,7 +373,11 @@
       ],
       "staticFallback": "눌림·진행·결과의 라벨과 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "link-navigation-feedback"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "menu-button",
@@ -316,7 +395,11 @@
       ],
       "staticFallback": "눌림·진행·결과의 라벨과 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "menu-button-expanded-state"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "checkbox",
@@ -331,11 +414,16 @@
       "candidateEvents": [
         "select",
         "deselect",
-        "active-indicator"
+        "mixed-change",
+        "select-all"
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "checkbox-mixed-state"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "checkbox-group",
@@ -354,7 +442,11 @@
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "checkbox-mixed-state"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "radio",
@@ -372,7 +464,11 @@
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "radio-choice-transfer"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "radio-group",
@@ -390,7 +486,11 @@
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "radio-choice-transfer"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "switch",
@@ -403,11 +503,18 @@
         "pending"
       ],
       "candidateEvents": [
-        "checked-change"
+        "checked-change",
+        "pending-result",
+        "rollback"
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "switch-state-transfer",
+        "switch-failure-return"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "select",
@@ -426,7 +533,11 @@
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "select-options-open"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "multi-select",
@@ -445,7 +556,11 @@
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "multi-select-token-change"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "listbox",
@@ -463,7 +578,11 @@
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "listbox-active-option"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "combobox",
@@ -483,7 +602,11 @@
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "combobox-result-lifecycle"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "segmented-control",
@@ -497,11 +620,16 @@
       "candidateEvents": [
         "select",
         "deselect",
-        "active-indicator"
+        "active-indicator",
+        "content-switch"
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "segmented-selection-follow"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "chip",
@@ -520,7 +648,11 @@
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "chip-selection-removal"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "chip-set",
@@ -539,7 +671,11 @@
       ],
       "staticFallback": "선택 표시와 접근성 상태",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "chip-selection-removal"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "text-field",
@@ -555,12 +691,18 @@
       ],
       "candidateEvents": [
         "focus",
+        "label-change",
         "value-change",
-        "validation"
+        "validation",
+        "clear"
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "field-label-lift"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "textarea",
@@ -580,7 +722,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "textarea-error-reflow"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "password-field",
@@ -598,7 +744,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "password-visibility-toggle"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "number-input",
@@ -617,7 +767,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "number-boundary-feedback"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "search-field",
@@ -632,12 +786,19 @@
       ],
       "candidateEvents": [
         "focus",
-        "value-change",
-        "validation"
+        "query-change",
+        "suggestions",
+        "loading",
+        "no-results",
+        "clear"
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "search-suggestion-lifecycle"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "slider",
@@ -656,7 +817,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "slider-thumb-tracking"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "range-slider",
@@ -675,7 +840,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "range-slider-boundary-tracking"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "date-picker",
@@ -688,13 +857,18 @@
         "error"
       ],
       "candidateEvents": [
-        "focus",
-        "value-change",
-        "validation"
+        "open",
+        "date-select",
+        "month-change",
+        "close"
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "date-selection-focus"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "date-range-picker",
@@ -712,7 +886,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "date-range-preview"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "time-picker",
@@ -730,7 +908,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "time-option-selection"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "calendar",
@@ -749,7 +931,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "date-selection-focus"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "color-picker",
@@ -767,7 +953,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "color-preview-commit"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "file-upload",
@@ -787,7 +977,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "file-upload-progress"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "otp-input",
@@ -806,7 +1000,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "otp-cell-advance"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "rich-text-editor",
@@ -825,7 +1023,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "editor-selection-toolbar"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "canvas-input",
@@ -844,7 +1046,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "canvas-stroke-follow"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "app-bar",
@@ -863,7 +1069,11 @@
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "app-bar-context-change"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "toolbar",
@@ -881,7 +1091,11 @@
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "toolbar-overflow-open"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "tab-bar",
@@ -895,11 +1109,17 @@
       "candidateEvents": [
         "active-location",
         "navigate",
-        "expand"
+        "active-indicator",
+        "selection-label-change"
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "tab-indicator-follow",
+        "tab-label-reveal"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "tab",
@@ -913,11 +1133,16 @@
       ],
       "candidateEvents": [
         "active-indicator",
-        "content-switch"
+        "content-switch",
+        "selection-label-change"
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "tab-indicator-follow"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "tab-panel",
@@ -935,7 +1160,11 @@
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "tab-panel-content-switch"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "breadcrumb",
@@ -952,7 +1181,11 @@
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "breadcrumb-path-collapse"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "pagination",
@@ -965,13 +1198,17 @@
         "unknown-total"
       ],
       "candidateEvents": [
-        "active-location",
-        "navigate",
-        "expand"
+        "page-change",
+        "active-indicator",
+        "result-update"
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "pagination-location"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "sidebar",
@@ -989,7 +1226,11 @@
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "sidebar-expand-collapse"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "navigation-rail",
@@ -1007,7 +1248,11 @@
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "navigation-rail-mode-change"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "bottom-navigation",
@@ -1021,11 +1266,17 @@
       "candidateEvents": [
         "active-location",
         "navigate",
-        "expand"
+        "active-indicator",
+        "selection-label-change"
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "tab-indicator-follow",
+        "tab-label-reveal"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "navigation-item",
@@ -1044,7 +1295,11 @@
       ],
       "staticFallback": "현재 위치와 이동 결과를 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "navigation-item-current"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "menu",
@@ -1057,12 +1312,17 @@
       ],
       "candidateEvents": [
         "open",
-        "close",
-        "focus-transfer"
+        "item-focus",
+        "select",
+        "close"
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "menu-open-close"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "menu-item",
@@ -1081,7 +1341,11 @@
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "menu-item-focus-travel"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "context-menu",
@@ -1099,7 +1363,11 @@
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "context-menu-anchor-open"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "popover",
@@ -1117,7 +1385,11 @@
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "popover-anchor-reposition"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "tooltip",
@@ -1133,7 +1405,11 @@
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "tooltip-help-appear"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "dialog",
@@ -1148,11 +1424,16 @@
       "candidateEvents": [
         "open",
         "close",
-        "focus-transfer"
+        "focus-transfer",
+        "submit-result"
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "dialog-focus-entry-exit"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "alert-dialog",
@@ -1169,7 +1450,11 @@
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "alert-dialog-decision"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "bottom-sheet",
@@ -1183,12 +1468,19 @@
       ],
       "candidateEvents": [
         "open",
+        "drag",
+        "snap-point-change",
         "close",
+        "keyboard-resize",
         "focus-transfer"
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "sheet-drag-snap"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "action-sheet",
@@ -1206,7 +1498,11 @@
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "action-sheet-choice"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "drawer",
@@ -1224,7 +1520,11 @@
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "drawer-navigation-open"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "scrim",
@@ -1241,7 +1541,11 @@
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "sheet-drag-snap"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "command-palette",
@@ -1260,7 +1564,11 @@
       ],
       "staticFallback": "레이어·초점·닫기 경로를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "command-palette-results"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "surface",
@@ -1278,7 +1586,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "내용을 담는 시각 표면이며 자체 행동이 없다.",
+      "reconsiderWhen": "카드·대화상자 등 행동 주체의 표면이면 그 컴포넌트의 시나리오를 사용"
     },
     {
       "componentId": "card",
@@ -1297,7 +1609,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "screen-shared-object"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "card-group",
@@ -1315,7 +1631,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "카드 집단의 소유 관계이며 개별 카드의 조작 결과와 구분한다.",
+      "reconsiderWhen": "집단 필터·정렬·배치 전환이 있으면 list 또는 layout-grid 시나리오를 사용"
     },
     {
       "componentId": "chunk",
@@ -1332,7 +1652,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "내용의 의미 묶음이며 자체 입력·상태가 없다.",
+      "reconsiderWhen": "묶음이 접히거나 순서가 바뀌면 disclosure·list 시나리오를 사용"
     },
     {
       "componentId": "section",
@@ -1349,7 +1673,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "페이지의 의미 영역이며 자체 조작이 없다.",
+      "reconsiderWhen": "스크롤 공개가 설명에 필요한 경우 화면 단위로 검토"
     },
     {
       "componentId": "fieldset",
@@ -1367,7 +1695,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "fieldset-validation-group"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "form",
@@ -1387,7 +1719,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "form-submit-lifecycle"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "accordion",
@@ -1405,7 +1741,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "accordion-group-reflow"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "accordion-item",
@@ -1422,7 +1762,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "accordion-group-reflow"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "disclosure",
@@ -1439,7 +1783,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "disclosure-content-reflow"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "scroll-area",
@@ -1453,11 +1801,17 @@
       "candidateEvents": [
         "scroll-position",
         "section-progress",
-        "sticky-change"
+        "sticky-change",
+        "pull-refresh-threshold",
+        "refresh-result"
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "pull-refresh-threshold"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "split-pane",
@@ -1475,7 +1829,11 @@
       ],
       "staticFallback": "열림·접힘·배치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "split-pane-resize"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "list",
@@ -1494,7 +1852,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "list-filter-reorder"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "list-item",
@@ -1510,11 +1872,20 @@
         "insert",
         "remove",
         "reorder",
-        "value-update"
+        "value-update",
+        "swipe-action-reveal",
+        "swipe-commit",
+        "undo"
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "list-swipe-reveal",
+        "list-commit-undo",
+        "cart-count-transfer"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "description-list",
@@ -1533,7 +1904,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "용어와 값을 읽는 정적 자료 구조다.",
+      "reconsiderWhen": "값이 갱신되면 개별 값과 출처의 변화 표시를 검토"
     },
     {
       "componentId": "table",
@@ -1552,7 +1927,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "table-sort-result"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "data-grid",
@@ -1572,7 +1951,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "data-grid-cell-commit"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "tree-view",
@@ -1591,7 +1974,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "tree-view-branch-expand"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "tree-grid",
@@ -1610,7 +1997,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "tree-view-branch-expand"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "timeline",
@@ -1629,7 +2020,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "timeline-focus-zoom"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "calendar-view",
@@ -1649,7 +2044,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "calendar-view-mode-change"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "kanban",
@@ -1668,7 +2067,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "kanban-card-transfer"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "carousel",
@@ -1681,11 +2084,17 @@
       ],
       "candidateEvents": [
         "slide-change",
-        "page-indicator"
+        "page-indicator",
+        "drag-settle",
+        "edge-behavior"
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "carousel-drag-settle"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "feed",
@@ -1705,7 +2114,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "feed-new-items-arrival"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "alert",
@@ -1724,7 +2137,11 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "alert-severity-appear"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "banner",
@@ -1741,7 +2158,11 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "banner-dismiss-reflow"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "toast",
@@ -1754,11 +2175,19 @@
       ],
       "candidateEvents": [
         "appear",
-        "dismiss"
+        "stack",
+        "dismiss",
+        "swipe-dismiss",
+        "undo"
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "toast-stack-lifecycle",
+        "list-commit-undo"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "progress-bar",
@@ -1776,7 +2205,13 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "pull-refresh-threshold",
+        "button-confirm-progress",
+        "completion-ring-check"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "spinner",
@@ -1794,7 +2229,11 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "button-result-morph"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "skeleton",
@@ -1810,7 +2249,11 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "skeleton-content-replace"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "empty-state",
@@ -1828,7 +2271,11 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "empty-state-result-change"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "error-state",
@@ -1846,7 +2293,11 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "error-state-retry"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "validation-message",
@@ -1864,7 +2315,11 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "validation-message-arrival"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "meter",
@@ -1882,7 +2337,11 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "meter-threshold-change"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "status-indicator",
@@ -1902,7 +2361,11 @@
       ],
       "staticFallback": "상태·진행·결과 문구를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "completion-ring-check"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "stepper",
@@ -1921,7 +2384,11 @@
       ],
       "staticFallback": "현재 단계·값·결과를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "stepper-current-stage"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "search-results",
@@ -1940,7 +2407,12 @@
       ],
       "staticFallback": "현재 단계·값·결과를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "search-suggestion-lifecycle",
+        "pagination-location"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "filter-bar",
@@ -1958,7 +2430,11 @@
       ],
       "staticFallback": "현재 단계·값·결과를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "filter-bar-active-set"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "chat-message",
@@ -1977,7 +2453,11 @@
       ],
       "staticFallback": "현재 단계·값·결과를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "chat-message-delivery"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "chat-composer",
@@ -1996,7 +2476,11 @@
       ],
       "staticFallback": "현재 단계·값·결과를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "chat-composer-send"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "media-player",
@@ -2015,7 +2499,11 @@
       ],
       "staticFallback": "현재 단계·값·결과를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "media-player-playback"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "rating",
@@ -2034,7 +2522,11 @@
       ],
       "staticFallback": "현재 단계·값·결과를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "rating-preview-commit"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "notification-item",
@@ -2053,7 +2545,11 @@
       ],
       "staticFallback": "현재 단계·값·결과를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "notification-item-read-dismiss"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "stack",
@@ -2070,7 +2566,11 @@
       ],
       "staticFallback": "읽기 순서·위치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "자식의 배치 규칙이며 자체 사용자 상태가 없다.",
+      "reconsiderWhen": "자식 순서가 바뀌면 목록·정렬 시나리오에서 위치 연속성을 검토"
     },
     {
       "componentId": "layout-grid",
@@ -2087,7 +2587,11 @@
       ],
       "staticFallback": "읽기 순서·위치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "layout-grid-breakpoint-change"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "row",
@@ -2104,7 +2608,11 @@
       ],
       "staticFallback": "읽기 순서·위치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "가로 배치 규칙이며 자체 사용자 상태가 없다.",
+      "reconsiderWhen": "반응형 재배치가 의미를 바꾸면 소유 화면에서 검토"
     },
     {
       "componentId": "splitter",
@@ -2121,7 +2629,11 @@
       ],
       "staticFallback": "읽기 순서·위치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "splitter-drag-tracking"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "spacer",
@@ -2137,7 +2649,11 @@
       ],
       "staticFallback": "읽기 순서·위치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "간격을 예약하는 요소이며 자체 정보·행동이 없다.",
+      "reconsiderWhen": "주변 콘텐츠 이동은 소유 컴포넌트의 모션으로 처리"
     },
     {
       "componentId": "container",
@@ -2154,7 +2670,11 @@
       ],
       "staticFallback": "읽기 순서·위치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "폭과 정렬의 경계이며 직접 조작·상태 변화가 없다.",
+      "reconsiderWhen": "폭이 바뀌는 조작은 화면 레이아웃 시나리오로 처리"
     },
     {
       "componentId": "page-shell",
@@ -2166,12 +2686,18 @@
         "overlay-navigation"
       ],
       "candidateEvents": [
-        "responsive-reflow",
-        "scroll-position"
+        "forward-navigation",
+        "back-navigation",
+        "shared-element",
+        "focus-restore"
       ],
       "staticFallback": "읽기 순서·위치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "screen-shared-object"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "safe-area",
@@ -2188,7 +2714,11 @@
       ],
       "staticFallback": "읽기 순서·위치를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음",
+      "noMotionReason": "기기 가림 영역을 피하는 공간 규칙으로 애니메이션 대상이 아니다.",
+      "reconsiderWhen": "키보드·시트 등장 시 실제 콘텐츠의 재배치를 검토"
     },
     {
       "componentId": "chart",
@@ -2206,7 +2736,11 @@
       ],
       "staticFallback": "항목 ID·순서·값·단위를 유지",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "chart-data-value-transition"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     },
     {
       "componentId": "keyboard",
@@ -2225,7 +2759,11 @@
       ],
       "staticFallback": "값·오류·도움말을 문구와 상태로 표시",
       "decision": "context-required",
-      "note": "가능한 사건 목록이며 이 컴포넌트의 모션 적용을 승인하거나 강제하지 않음"
+      "defaultMotionDecision": "candidate-scenarios",
+      "scenarioIds": [
+        "keyboard-viewport-reflow"
+      ],
+      "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
     }
   ]
 }

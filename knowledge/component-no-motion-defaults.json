@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "meaning": "기본 역할만 수행할 때 움직임이 필요 없는 구조·표현 요소. 인스턴스에 실제 상태 변화가 생기면 다시 판정한다.",
+  "entries": [
+    {"componentId":"divider","reason":"정보 구획을 표시하는 정적 선이며 자체 사건이 없다.","reconsiderWhen":"구획이 열리거나 재배치될 때는 소유 컨테이너의 시나리오를 적용"},
+    {"componentId":"stack","reason":"자식의 배치 규칙이며 자체 사용자 상태가 없다.","reconsiderWhen":"자식 순서가 바뀌면 목록·정렬 시나리오에서 위치 연속성을 검토"},
+    {"componentId":"row","reason":"가로 배치 규칙이며 자체 사용자 상태가 없다.","reconsiderWhen":"반응형 재배치가 의미를 바꾸면 소유 화면에서 검토"},
+    {"componentId":"spacer","reason":"간격을 예약하는 요소이며 자체 정보·행동이 없다.","reconsiderWhen":"주변 콘텐츠 이동은 소유 컴포넌트의 모션으로 처리"},
+    {"componentId":"container","reason":"폭과 정렬의 경계이며 직접 조작·상태 변화가 없다.","reconsiderWhen":"폭이 바뀌는 조작은 화면 레이아웃 시나리오로 처리"},
+    {"componentId":"safe-area","reason":"기기 가림 영역을 피하는 공간 규칙으로 애니메이션 대상이 아니다.","reconsiderWhen":"키보드·시트 등장 시 실제 콘텐츠의 재배치를 검토"},
+    {"componentId":"surface","reason":"내용을 담는 시각 표면이며 자체 행동이 없다.","reconsiderWhen":"카드·대화상자 등 행동 주체의 표면이면 그 컴포넌트의 시나리오를 사용"},
+    {"componentId":"chunk","reason":"내용의 의미 묶음이며 자체 입력·상태가 없다.","reconsiderWhen":"묶음이 접히거나 순서가 바뀌면 disclosure·list 시나리오를 사용"},
+    {"componentId":"section","reason":"페이지의 의미 영역이며 자체 조작이 없다.","reconsiderWhen":"스크롤 공개가 설명에 필요한 경우 화면 단위로 검토"},
+    {"componentId":"card-group","reason":"카드 집단의 소유 관계이며 개별 카드의 조작 결과와 구분한다.","reconsiderWhen":"집단 필터·정렬·배치 전환이 있으면 list 또는 layout-grid 시나리오를 사용"},
+    {"componentId":"description-list","reason":"용어와 값을 읽는 정적 자료 구조다.","reconsiderWhen":"값이 갱신되면 개별 값과 출처의 변화 표시를 검토"}
+  ]
+}

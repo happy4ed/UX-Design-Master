@@ -35,10 +35,11 @@ by_id = {m["id"]: m for m in graph["motions"]}
 for motion, component in {
     "toggle-on": "switch",
     "goal-fill": "progress-bar",
-    "accordion-fold": "accordion",
+    "accordion-fold": "page-shell",
     "typing-bubble": "chat-message",
     "toast-slide": "toast",
     "matrix-sort": "data-grid",
 }.items():
     assert component in by_id[motion]["componentIds"], (motion, component)
+assert "accordion" not in by_id["accordion-fold"]["componentIds"], "Scene folding is not UI accordion expansion"
 print("motion component graph: PASS")
