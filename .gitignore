@@ -6,3 +6,7 @@ node_modules/
 .venv/
 dist/
 build/
+.gstack/
+
+# Local research and original comparison material
+feedback/

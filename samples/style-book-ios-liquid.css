@@ -1,0 +1,77 @@
+/* iOS Liquid Glass study. CSS/SVG approximation of a system-rendered material, not a platform asset. */
+.ios-filter-defs{position:absolute;pointer-events:none}
+.ios{
+  --ios-art:radial-gradient(ellipse at 77% 29%,#fffaf6c9 0 5%,transparent 19%),radial-gradient(ellipse at 17% 19%,#c9e7ff 0 13%,transparent 39%),linear-gradient(165deg,transparent 0 52%,#72a8af 52.5% 57%,#427a89 57.5% 70%,transparent 70.5%),linear-gradient(145deg,transparent 0 63%,#69799c 63.5% 69%,#3c5a83 69.5% 82%,transparent 82.5%),linear-gradient(165deg,#b9d9f8 0%,#9fc8ef 46%,#ddd8f0 72%,#f4c9ce 100%);
+  --ios-glass-fill:#f8fbff25;
+  --ios-glass-edge:#ffffffd4;
+  --ios-glass-shadow:inset 0 1px 1px #ffffffdc,inset 0 -1px 1px #f8fbff91,0 2px 7px #00163128;
+}
+.light .ios{--ios-glass-fill:#ffffff18;--ios-glass-edge:#ffffffd8;--ios-glass-shadow:inset 0 1px 1px #fff,inset 0 -1px 1px #ffffff94,0 2px 6px #28334b25;background-image:radial-gradient(circle at 20% 8%,#d7e7fb80,transparent 37%),radial-gradient(circle at 90% 34%,#f4dcee60,transparent 45%)}
+.ios-glass-scene{display:none}
+.board .ios .ios-glass-scene{display:block;position:relative;grid-column:1/-1;height:178px;margin:14px 0 4px;overflow:hidden;border-radius:26px;background-image:var(--ios-art);background-size:100% 100%;box-shadow:inset 0 0 0 1px #ffffff5e}
+.ios .ios-scene-copy{position:absolute;top:17px;left:20px;right:20px;display:flex;flex-direction:column;gap:3px;color:#fff;text-shadow:0 1px 6px #172249b5;z-index:1}
+.ios .ios-scene-copy strong{font-size:19px;line-height:1.25}
+.ios .ios-scene-copy span{font-size:14px;line-height:1.35}
+.ios .ios-liquid-lens{position:absolute;left:10%;right:10%;bottom:17px;height:67px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;overflow:hidden;isolation:isolate;border-radius:999px;border:1px solid var(--ios-glass-edge);background:var(--ios-glass-fill);box-shadow:var(--ios-glass-shadow);backdrop-filter:blur(1.5px) saturate(1.1);-webkit-backdrop-filter:blur(1.5px) saturate(1.1);color:#fff;z-index:2;text-shadow:0 1px 4px #152341c4}
+.ios .ios-liquid-lens::before{content:"";position:absolute;inset:0;z-index:-2;background-image:var(--ios-art);background-size:125% 178px;background-position:center -89px;filter:url(#ios-liquid-refraction);opacity:.92;pointer-events:none}
+.ios .ios-liquid-lens::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(170deg,#ffffff80 0%,#ffffff10 19%,transparent 52%,#ffffff15 100%);box-shadow:inset 0 1px 2px #fff,inset 0 -1px 2px #ffffff85;border-radius:inherit;pointer-events:none}
+.ios .ios-lens-label{font-size:16px;font-weight:650;letter-spacing:-.025em}
+.ios .ios-lens-mark{font-size:25px;line-height:1}
+.ios .poster{background-image:var(--ios-art);background-size:100% 100%}
+.ios .ios-poster-lens{top:20px;bottom:auto;height:61px}
+.ios .ios-poster-lens::before{background-size:125% 195px;background-position:center -11px}
+.board .ios{--motion-time:310ms;--motion-ease:cubic-bezier(.2,.75,.2,1);--press-move:scale(.97)}
+.board .ios :is(.small-icon,.search,.tabset,.bottom-nav,.sheet,.board-dialog){background:var(--ios-glass-fill);border:1px solid var(--ios-glass-edge);box-shadow:var(--ios-glass-shadow);backdrop-filter:blur(15px) saturate(1.55);-webkit-backdrop-filter:blur(15px) saturate(1.55)}
+.board .ios .small-icon{border-radius:50%}
+.board .ios .tabset{padding:4px;gap:3px;border-radius:999px}
+.board .ios .tabset button{border:0;background:transparent;box-shadow:none}
+.board .ios .tabset button[aria-selected=true]{background:#e8f1ff54;color:#101b32;box-shadow:inset 0 1px 1px #ffffff7c,0 1px 3px #001e3a32}
+.board .ios .bottom-nav{position:sticky;bottom:5px;border-radius:999px;padding:5px;gap:2px;z-index:3}
+.board .ios .bottom-nav button{border:0;background:transparent;box-shadow:none}
+.board .ios .bottom-nav button[aria-current=true]{background:#e8f1ff54;color:#101b32;box-shadow:inset 0 1px 1px #ffffff7c,0 1px 3px #001e3a32}
+.board .ios .btn.primary{border:0;background:var(--accent);color:var(--on-accent)}
+.board .ios .btn.outline{background:var(--ios-glass-fill);border-color:var(--ios-glass-edge);box-shadow:var(--ios-glass-shadow);backdrop-filter:blur(12px)}
+.board .ios :is(.card,.state,.list .row,.choice label){backdrop-filter:none;background:var(--surface);box-shadow:none}
+.board .ios .sheet{border-radius:30px 30px 0 0}
+.board .ios .board-dialog{color:var(--fg)}
+.light .board .ios :is(.tabset button[aria-selected=true],.bottom-nav button[aria-current=true]){background:#ffffff62;color:#17213b;box-shadow:inset 0 1px 1px #ffffffa8,0 1px 3px #27324a24}
+.light .board .ios .ios-liquid-lens{color:#fff}
+.ios .icon-btn,.ios .skip,.ios .volume-row button,.ios .search{background:var(--ios-glass-fill);border:1px solid var(--ios-glass-edge);box-shadow:var(--ios-glass-shadow);backdrop-filter:blur(15px) saturate(1.55);-webkit-backdrop-filter:blur(15px) saturate(1.55)}
+.ios .media,.ios .row{backdrop-filter:none}
+.light .ios .ios-poster-lens{color:#fff}
+@media(forced-colors:active){.ios .ios-liquid-lens,.board .ios :is(.small-icon,.search,.tabset,.bottom-nav,.sheet,.board-dialog){background:Canvas;color:CanvasText;border:1px solid CanvasText;backdrop-filter:none}}
+@media(prefers-reduced-transparency:reduce){.ios .ios-liquid-lens,.board .ios :is(.small-icon,.search,.tabset,.bottom-nav,.sheet,.board-dialog){background:var(--surface);backdrop-filter:none;-webkit-backdrop-filter:none}.ios .ios-liquid-lens::before{display:none}}
+
+/* The clear specimen sits over media; ordinary navigation uses the regular, adaptive material. */
+.ios .ios-scene-copy{color:#172f4e;text-shadow:0 1px 2px #ffffffe0}
+.ios .ios-liquid-lens{color:#172f4e;text-shadow:0 1px 2px #ffffffd0}
+.ios .ios-lens-label{background:#ffffffa8;border-radius:999px;padding:5px 9px;white-space:nowrap}
+.ios .ios-lens-label,.light .ios .ios-lens-label{color:#172f4e;text-shadow:none}
+.light .board .ios .ios-liquid-lens{color:#172f4e}
+.ios .ios-lens-mark{font-size:28px;font-weight:300;color:#173653}
+.ios .ios-liquid-lens::before{opacity:1}
+.ios .ios-liquid-lens::after{background:linear-gradient(110deg,transparent 25%,#ffffff9c 48%,transparent 58%),linear-gradient(170deg,#ffffff74 0%,transparent 25%,transparent 70%,#ffffff20 100%);background-size:250% 100%,100% 100%;background-position:120% 0,0 0}
+.board .ios{--motion-time:360ms;--motion-ease:cubic-bezier(.2,1.24,.25,1)}
+.board .ios .ios-liquid-lens{transition:right 500ms cubic-bezier(.22,1.17,.28,1),transform 360ms cubic-bezier(.2,1.24,.25,1),box-shadow 360ms ease-out}
+.board .ios .ios-liquid-lens:active{transform:scale(.965)}
+.board .ios .ios-liquid-lens[aria-expanded=true]{right:calc(6% + 112px);padding-inline:10px}
+.board .ios .ios-liquid-lens[aria-expanded=true] .ios-lens-label{padding:4px 7px}
+.board .ios .ios-liquid-lens[aria-expanded=true] .ios-lens-mark{font-size:20px}
+.board .ios .ios-liquid-lens[aria-expanded=true]::after{animation:ios-glass-sheen 620ms ease-out both}
+.board .ios .ios-glass-actions{position:absolute;right:6%;bottom:17px;width:104px;height:67px;display:flex;align-items:center;gap:8px;z-index:2;opacity:0;visibility:hidden;pointer-events:none;transform:translateX(-95px) scale(.35);transform-origin:left center;transition:transform 500ms cubic-bezier(.22,1.17,.28,1),opacity 240ms ease-out,visibility 0s linear 500ms}
+.board .ios .ios-glass-actions[aria-hidden=false]{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(0) scale(1);transition:transform 500ms cubic-bezier(.22,1.17,.28,1),opacity 240ms ease-out,visibility 0s}
+.board .ios .ios-glass-actions button{box-sizing:border-box;flex:none;width:48px;height:48px;min-width:48px;min-height:48px;padding:0;border:1px solid #ffffffd8;border-radius:50%;background:#ffffff2b;color:#173653;box-shadow:inset 0 1px 1px #fff,0 2px 6px #1833532b;backdrop-filter:blur(2px) saturate(1.1);-webkit-backdrop-filter:blur(2px) saturate(1.1)}
+.board .ios .ios-glass-actions button:active{transform:scale(.9)}
+@keyframes ios-glass-sheen{from{background-position:120% 0,0 0}to{background-position:-120% 0,0 0}}
+
+/* A single glass indicator moves between destinations instead of new pills popping in. */
+.board .ios :is(.tabset,.bottom-nav){position:relative;isolation:isolate;--ios-index:0}
+.board .ios :is(.tabset,.bottom-nav)::before{content:"";position:absolute;left:4px;top:4px;bottom:4px;width:calc((100% - 8px)/3);border-radius:999px;background:#ffffff75;border:1px solid #ffffffc6;box-shadow:inset 0 1px 1px #fff,0 1px 3px #1b344a30;transform:translateX(calc(var(--ios-index)*100%));transition:transform 470ms cubic-bezier(.22,1.13,.3,1),background 280ms ease-out;z-index:-1}
+.board .ios :is(.tabset,.bottom-nav) button[aria-selected=true],.board .ios .bottom-nav button[aria-current=true],.light .board .ios :is(.tabset,.bottom-nav) button[aria-selected=true],.light .board .ios .bottom-nav button[aria-current=true]{background:transparent;box-shadow:none;color:var(--fg)}
+.board .ios .sheet:not([hidden]){animation:ios-sheet-arrive 470ms cubic-bezier(.22,1.1,.28,1) both}
+.board .ios .board-dialog:modal{animation:ios-dialog-arrive 390ms cubic-bezier(.22,1.1,.28,1) both}
+@keyframes ios-sheet-arrive{from{transform:translateY(32px) scale(.96);opacity:.2;border-radius:40px}to{transform:translateY(0) scale(1);opacity:1;border-radius:30px 30px 0 0}}
+@keyframes ios-dialog-arrive{from{transform:scale(.82);opacity:0}to{transform:scale(1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.board .ios .ios-liquid-lens,.board .ios .ios-glass-actions,.board .ios :is(.tabset,.bottom-nav)::before{transition:none}.board .ios .ios-liquid-lens[aria-expanded=true]::after,.board .ios .sheet:not([hidden]),.board .ios .board-dialog:modal{animation:none}}
+.light .ios{--ios-glass-shadow:inset 0 1px 1px #ffffffb4,0 1px 3px #28334b18}
+.light .board .ios :is(.tabset,.bottom-nav)::before{background:#ffffff4a;border-color:#ffffffa1;box-shadow:inset 0 1px 1px #fff,0 1px 2px #1b344a1f}

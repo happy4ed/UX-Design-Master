@@ -1,0 +1,49 @@
+/* User-named style families: visual expression beyond a palette change. */
+.phone.bento-grid,.phone.dark-tech,.phone.kinetic-typography,.phone.scroll-3d,.phone.grainy-gradient,.phone.retro-pixel,.phone.swiss-grid{font-family:var(--style-font,system-ui,"Noto Sans KR",sans-serif)}
+.phone.bento-grid{--style-font:system-ui,"Noto Sans KR",sans-serif;--poster:linear-gradient(135deg,#355f50,#a1c494);--panel-border:1px solid var(--line)}
+.bento-grid .inner,.bento-grid .board-inner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-content:start}
+.bento-grid .appbar,.bento-grid .bar,.bento-grid .search,.bento-grid .chips,.bento-grid .tabset,.bento-grid .poster,.bento-grid .media,.bento-grid .bottom-nav{grid-column:1/-1}
+.bento-grid .media{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.bento-grid .media h2,.bento-grid .media .artist,.bento-grid .media .scrub,.bento-grid .media .times,.bento-grid .media .transport{grid-column:1/-1}
+.bento-grid .media .volume{grid-column:1/-1}
+.bento-grid .block{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--card-r);padding:12px;min-width:0}
+.bento-grid .block[data-component=list],.bento-grid .block[data-component=sliders],.bento-grid .block[data-component=buttons]{grid-column:1/-1}
+.bento-grid .block h2{margin-top:0}
+.bento-grid .section{grid-column:1/-1}
+.bento-grid .row{min-width:0;border-radius:var(--card-r)!important}
+.phone.dark-tech{--style-font:ui-sans-serif,"Noto Sans KR",sans-serif;--poster:linear-gradient(145deg,#07121e 5%,#164456 52%,#0c1822);--panel-border:1px solid #4a8d8b}
+.dark-tech .appbar,.dark-tech .bar{border-bottom:1px solid var(--line)}
+.dark-tech .chip[aria-pressed=true],.dark-tech .tabset [aria-selected=true],.dark-tech .chipset [aria-pressed=true],.dark-tech .btn.primary{box-shadow:0 0 14px #45d7c563}
+.dark-tech .poster{background-image:linear-gradient(90deg,transparent 49%,#a1fff019 50%,transparent 51%),repeating-linear-gradient(0deg,transparent 0 6px,#8dd2d00b 6px 7px),var(--poster)}
+.dark-tech .media,.dark-tech .card{border:1px solid var(--line)}
+.phone.kinetic-typography{--style-font:Arial,"Noto Sans KR",sans-serif;--poster:linear-gradient(125deg,#1e1e23,#706243);--panel-border:0}
+.kinetic-typography .appbar strong,.kinetic-typography .bar strong{font-size:25px;line-height:1.06;letter-spacing:-.065em;font-weight:900}
+.kinetic-typography .poster-label strong{font-size:clamp(34px,7vw,55px);line-height:.95;letter-spacing:-.07em;font-weight:900}
+.kinetic-typography .media{background:transparent;border-top:3px solid var(--fg);border-bottom:1px solid var(--line);border-radius:0;padding:18px 0}
+.kinetic-typography .media h2{font-size:27px;line-height:1.05;letter-spacing:-.055em}
+.kinetic-typography .block{border-top:2px solid var(--line);padding-top:9px}
+.kinetic-typography .card{background:transparent;border:0;padding:0}
+.phone.scroll-3d{--style-font:system-ui,"Noto Sans KR",sans-serif;--poster:radial-gradient(circle at 52% 44%,#a5dbff,#305e91 42%,#15273c 65%,#091421);--panel-border:1px solid #8fb6d888;perspective:850px}
+.scroll-3d .poster{transform-style:preserve-3d;box-shadow:inset 0 0 35px #85c8ff55,0 20px 45px #0009}
+.scroll-3d .poster:before{content:"";position:absolute;inset:15% 25%;border:2px solid #caeaff;transform:rotateX(48deg) rotateY(-28deg) translateZ(35px);box-shadow:0 0 25px #a0d7ff;z-index:1}
+.scroll-3d .media,.scroll-3d .block{position:relative;z-index:2}
+.phone.grainy-gradient{--style-font:system-ui,"Noto Sans KR",sans-serif;--poster:radial-gradient(circle at 25% 30%,#e7a392,transparent 40%),radial-gradient(circle at 75% 60%,#a386c6,transparent 48%),linear-gradient(130deg,#5b456e,#cd887e);--panel-border:1px solid #ffffff44}
+.grainy-gradient .poster:before{content:"";position:absolute;inset:0;z-index:1;opacity:.18;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E")}
+.grainy-gradient .poster-label{z-index:2}
+.grainy-gradient .media,.grainy-gradient .card{box-shadow:0 13px 35px #140a1c44}
+.phone.retro-pixel{--style-font:ui-monospace,"Noto Sans KR",monospace;--poster:repeating-linear-gradient(90deg,#5c4a86 0 12px,#776398 12px 24px,#b58a69 24px 36px);--panel-border:4px solid var(--line)}
+.retro-pixel .poster,.retro-pixel .media,.retro-pixel .card,.retro-pixel .row{border:3px solid var(--line);box-shadow:5px 5px 0 #07070e}
+.retro-pixel .chip,.retro-pixel .play,.retro-pixel .skip,.retro-pixel .btn,.retro-pixel .small-icon{border:3px solid var(--line);box-shadow:3px 3px 0 #07070e}
+.retro-pixel .chip:active,.retro-pixel .btn:active{transform:translate(3px,3px);box-shadow:0 0 0 #07070e}
+.retro-pixel .poster-label strong{font-family:ui-monospace,"Noto Sans KR",monospace;font-weight:900;text-shadow:3px 3px 0 #241a42}
+.phone.swiss-grid{--style-font:Arial,"Noto Sans KR",sans-serif;--poster:linear-gradient(90deg,#d6d4c7 0 36%,#e54c3c 36% 58%,#272b2c 58%);--panel-border:0}
+.swiss-grid .appbar,.swiss-grid .bar{border-bottom:2px solid var(--fg);align-items:end}
+.swiss-grid .appbar strong,.swiss-grid .bar strong{font-weight:800;letter-spacing:-.045em}
+.swiss-grid .poster{border-radius:0}
+.swiss-grid .media,.swiss-grid .card{background:transparent;border:0;border-top:2px solid var(--fg);border-radius:0;padding:13px 0}
+.swiss-grid .chip,.swiss-grid .btn,.swiss-grid .tabset button,.swiss-grid .chipset button{border-radius:0}
+.swiss-grid .row{background:transparent;border-top:1px solid var(--line);border-bottom:0;padding-left:0}
+.swiss-grid .section,.swiss-grid .block h2{text-transform:uppercase;letter-spacing:.08em}
+.phone.bento-grid,.phone.dark-tech,.phone.kinetic-typography,.phone.scroll-3d,.phone.grainy-gradient,.phone.retro-pixel,.phone.swiss-grid{scrollbar-width:thin;scrollbar-color:var(--accent) var(--bg)}
+.phone.bento-grid input[type=range],.phone.dark-tech input[type=range],.phone.kinetic-typography input[type=range],.phone.scroll-3d input[type=range],.phone.grainy-gradient input[type=range],.phone.retro-pixel input[type=range],.phone.swiss-grid input[type=range]{accent-color:var(--accent)}
+@media(max-width:500px){.bento-grid .board-inner .block{grid-column:1/-1}}

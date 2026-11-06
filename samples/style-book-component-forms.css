@@ -1,0 +1,250 @@
+/* Component-specific preview hypotheses. Source grades are in each guide E.2. */
+.board .phone{--motion-time:180ms;--motion-ease:ease-out;--press-move:translateY(1px)}
+.board .phone button{transition:transform var(--motion-time) var(--motion-ease),box-shadow var(--motion-time) var(--motion-ease),background var(--motion-time) var(--motion-ease),filter var(--motion-time) var(--motion-ease)}
+.board .phone button:active{transform:var(--press-move)}
+.board .phone :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button):disabled{opacity:.55;cursor:not-allowed}
+.board .phone .choice input{cursor:pointer}
+
+/* Material: role-shaped controls, a thick active rail and outlined secondary action. */
+.board .material{--motion-time:240ms;--motion-ease:cubic-bezier(.2,0,0,1);--press-move:scale(.98)}
+.board .material .bar{padding-bottom:8px}
+.board .material :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button){border:0;border-radius:14px;box-shadow:none}
+.board .material .btn.primary{border-radius:24px;background:var(--accent);color:var(--on-accent)}
+.board .material .btn.outline{border:1px solid var(--line);background:transparent;border-radius:14px}
+.board .material .chipset button{border-radius:9px;border:1px solid var(--line)}
+.board .material .tabset{border-bottom:1px solid var(--line)}
+.board .material .tabset button{border-radius:16px 16px 0 0}
+.board .material .tabset button[aria-selected=true]{background:var(--surface);color:var(--fg);box-shadow:inset 0 -4px 0 var(--accent)}
+.board .material .choice label{border-radius:12px;background:var(--surface)}
+.board .material :is(.card,.state,.sheet,.board-dialog){border:0;border-radius:18px;background:var(--surface)}
+.board .material .list .row{background:var(--surface);border-color:var(--line)}
+.board .material .bottom-nav{border:0;background:var(--surface);padding:8px;border-radius:18px}
+.board .material :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:material-settle 260ms cubic-bezier(.2,0,0,1)}
+@keyframes material-settle{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+
+/* Audio hardware: walnut outside, legible metal faceplates and tactile switches. */
+.board .hifi{--motion-time:130ms;--motion-ease:ease-out;--press-move:translateY(2px)}
+.board .hifi :is(.tabset button,.chipset button,.bottom-nav button){min-width:48px;min-height:48px}
+.board .hifi :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button,.choice label){color:#191612;border:1px solid #60584f;border-radius:4px;background:linear-gradient(120deg,#ddd8d0,#a7a19a 48%,#cbc4b8);box-shadow:inset 0 2px 2px #fff9,0 3px 4px #0009;text-shadow:0 1px 0 #fff7}
+.board .hifi :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:linear-gradient(120deg,#f2d3ad,#c89468 48%,#edc69e);color:#21160e;box-shadow:inset 0 2px 2px #fff9,inset 0 -2px 3px #56382288,0 2px 3px #0009}
+.board .hifi .search{color:#191612;background:linear-gradient(120deg,#c3bdb5,#958878);box-shadow:inset 0 3px 5px #0007;border:2px solid #665c52}
+.board .hifi .search::placeholder{color:#191612;opacity:1}
+.board .hifi :is(.card,.state,.sheet,.board-dialog){color:#191612;border:2px solid #6b645d;border-radius:4px;background:linear-gradient(120deg,#d2cbc2,#aaa197 55%,#c2b9ad);box-shadow:inset 0 2px 2px #fff9,0 6px 12px #0009}
+.board .hifi .list{border:2px solid #6b645d;border-radius:4px;box-shadow:0 5px 10px #0009}
+.board .hifi .list .row{color:#191612;background:linear-gradient(120deg,#c3bdb5,#958878);border-color:#6b645d}
+.board .hifi .bottom-nav{border:0}
+.board .hifi .block h2{color:var(--fg);letter-spacing:.08em;text-transform:uppercase}
+.board .hifi progress{appearance:none;border:2px solid #6b645d;height:15px;border-radius:2px;box-shadow:inset 0 2px 4px #0008}
+.board .hifi progress::-webkit-progress-bar{background:#60564d}
+.board .hifi progress::-webkit-progress-value{background:linear-gradient(90deg,#a66b40,#f6c48f)}
+.board .hifi :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:hifi-click 180ms ease-out}
+@keyframes hifi-click{45%{transform:translateY(3px);box-shadow:inset 0 3px 5px #0007}100%{transform:translateY(0)}}
+
+/* Glass: the translucent layer is shared by controls, fields and overlays. */
+.board .glassmorphism{--motion-time:260ms;--motion-ease:cubic-bezier(.2,.7,.2,1);--press-move:scale(.98)}
+.board .glassmorphism :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button,.choice label,.card,.state,.sheet,.board-dialog){background:#ffffff20;border:1px solid #ffffff68;box-shadow:inset 0 1px 0 #ffffff65,0 10px 22px #06102780;backdrop-filter:blur(15px)}
+.board .glassmorphism :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:var(--accent);color:var(--on-accent);box-shadow:0 7px 20px #031a26aa}
+.board .glassmorphism .search{background:#ffffff25;backdrop-filter:blur(12px)}
+.board .glassmorphism .list .row{background:#ffffff18;border-color:#ffffff45}
+.board .glassmorphism :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:glass-focus 360ms ease-out}
+@keyframes glass-focus{0%{opacity:.5;backdrop-filter:blur(0)}100%{opacity:1;backdrop-filter:blur(15px)}}
+
+/* Neumorphism: one material, raised actions, recessed input/selection/progress. */
+.board .neumorphism{--motion-time:220ms;--motion-ease:cubic-bezier(.2,.7,.2,1);--press-move:translate(2px,2px)}
+.board .neumorphism :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button){background:var(--bg);border:1px solid transparent;box-shadow:var(--control-shadow)}
+.board .neumorphism :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:var(--bg);color:var(--accent);box-shadow:inset 4px 4px 8px #131824,inset -4px -4px 8px #394452}
+.light .board .neumorphism :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){box-shadow:inset 4px 4px 8px #bbc4cf,inset -4px -4px 8px #fff}
+.board .neumorphism :is(.search,.choice label){background:var(--bg);border:1px solid transparent;box-shadow:inset 4px 4px 8px #131824,inset -4px -4px 8px #394452}
+.light .board .neumorphism :is(.search,.choice label){box-shadow:inset 4px 4px 8px #bbc4cf,inset -4px -4px 8px #fff}
+.board .neumorphism :is(.card,.state,.sheet,.board-dialog){background:var(--bg);border:0;box-shadow:var(--panel-shadow)}
+.board .neumorphism .list{padding:5px;border-radius:var(--card-r);box-shadow:inset 4px 4px 8px #131824,inset -4px -4px 8px #394452}
+.light .board .neumorphism .list{box-shadow:inset 4px 4px 8px #bbc4cf,inset -4px -4px 8px #fff}
+.board .neumorphism .list .row{background:transparent;border:0;border-radius:0;box-shadow:none}
+.board .neumorphism .list .row+.row{border-top:1px solid var(--line)}
+.board .neumorphism progress{appearance:none;border-radius:99px;box-shadow:inset 3px 3px 6px #151922,inset -3px -3px 6px #353d4a;background:var(--bg)}
+.board .neumorphism progress::-webkit-progress-bar{background:transparent;border-radius:99px}
+.board .neumorphism progress::-webkit-progress-value{background:var(--accent);border-radius:99px}
+.board .neumorphism .bottom-nav{border:0}
+.board .neumorphism :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:neu-sink 280ms ease-out}
+@keyframes neu-sink{0%{transform:translateY(-2px);filter:brightness(1.15)}100%{transform:none;filter:none}}
+
+/* Clay: inflated controls and softly weighted panels; repeated list rows stay grouped. */
+.board .claymorphism{--motion-time:330ms;--motion-ease:cubic-bezier(.2,1.35,.45,1);--press-move:translateY(3px) scale(.98)}
+.board .claymorphism :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button){background:var(--ctrl);border:1px solid #ffffff45;box-shadow:var(--control-shadow);border-radius:28px;font-weight:700}
+.board .claymorphism :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:var(--accent);color:var(--on-accent);box-shadow:inset 0 3px 5px #fff8,inset 0 -5px 7px #6a2e5944,0 8px 12px #1b102880}
+.light .board .claymorphism :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){color:#341426}
+.board .claymorphism :is(.search,.choice label){background:var(--surface);border:1px solid #ffffff50;border-radius:26px;box-shadow:inset 0 5px 8px #2415336b,inset 0 -2px 5px #ffffff45}
+.board .claymorphism :is(.card,.state,.sheet,.board-dialog){background:var(--surface);border:1px solid #ffffff45;border-radius:32px;box-shadow:var(--panel-shadow)}
+.board .claymorphism .list{padding:4px 11px;background:var(--surface);border-radius:28px;box-shadow:var(--panel-shadow)}
+.board .claymorphism .list .row{background:transparent;border:0;box-shadow:none}
+.board .claymorphism .list .row+.row{border-top:1px solid var(--line)}
+.board .claymorphism progress{appearance:none;height:20px;border-radius:99px;box-shadow:inset 0 4px 6px #2013298c;background:var(--surface)}
+.board .claymorphism progress::-webkit-progress-bar{background:transparent;border-radius:99px}
+.board .claymorphism progress::-webkit-progress-value{background:var(--accent);border-radius:99px;box-shadow:inset 0 3px 4px #fff8}
+.board .claymorphism .bottom-nav{border:0}
+.board .claymorphism :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:clay-settle 430ms cubic-bezier(.2,1.35,.45,1)}
+@keyframes clay-settle{0%{transform:scale(1)}60%{transform:scale(1.045)}100%{transform:scale(1)}}
+
+/* Flat 2.0: hierarchy comes from surface blocks and clear state, never depth. */
+.board .flat-2{--motion-time:130ms;--motion-ease:linear;--press-move:none}
+.board .flat-2 :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button,.card,.state,.choice label){box-shadow:none;border:0;border-radius:2px}
+.board .flat-2 .search{box-shadow:none;border-width:0 0 2px;border-radius:0}
+.board .flat-2 .tabset button[aria-selected=true]{border-bottom:4px solid var(--fg)}
+.board .flat-2 .list .row{border-bottom:2px solid var(--line)}
+.board .flat-2 :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:flat-swap 150ms linear}
+@keyframes flat-swap{0%{opacity:.65}100%{opacity:1}}
+
+/* Neo-brutalism: thick edges, offset hard shadows and physical pressed offset. */
+.board .neo-brutalism{--motion-time:85ms;--motion-ease:steps(2,end);--press-move:translate(4px,4px)}
+.board .neo-brutalism :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button,.choice label,.card,.state,.sheet,.board-dialog){border:3px solid var(--line);border-radius:0;box-shadow:var(--control-shadow);font-weight:800}
+.board .neo-brutalism :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:var(--accent);color:var(--on-accent);box-shadow:var(--control-shadow)}
+.board .neo-brutalism :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button):active{box-shadow:0 0 0 transparent}
+.board .neo-brutalism .search{border:3px solid var(--line);border-radius:0;box-shadow:4px 4px 0 #07060b}
+.board .neo-brutalism .list{border:3px solid var(--line);border-radius:0;box-shadow:var(--panel-shadow)}
+.board .neo-brutalism .list .row{border:0;border-radius:0}
+.board .neo-brutalism .list .row+.row{border-top:3px solid var(--line)}
+.board .neo-brutalism .block h2{text-transform:uppercase;letter-spacing:.07em}
+.board .neo-brutalism progress{appearance:none;border:3px solid var(--line);border-radius:0;height:19px}
+.board .neo-brutalism progress::-webkit-progress-bar{background:var(--bg)}
+.board .neo-brutalism progress::-webkit-progress-value{background:var(--accent)}
+.board .neo-brutalism .bottom-nav{border:0}
+.board .neo-brutalism :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:brutal-hit 150ms steps(2,end)}
+@keyframes brutal-hit{0%{transform:translate(4px,4px);box-shadow:none}100%{transform:none}}
+
+/* Bauhaus/Swiss: aligned grid, ruled fields and geometric markers, no depth. */
+.board .bauhaus-swiss{--motion-time:160ms;--motion-ease:cubic-bezier(.4,0,.2,1);--press-move:none}
+.board .bauhaus-swiss .bar{border-bottom:4px solid var(--accent);padding-bottom:9px}
+.board .bauhaus-swiss .block h2{font-size:14px;text-transform:uppercase;letter-spacing:.12em;border-left:5px solid var(--accent);padding-left:9px}
+.board .bauhaus-swiss :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button){border:0;border-radius:0;box-shadow:none;text-transform:uppercase;font-weight:750;letter-spacing:.04em}
+.board .bauhaus-swiss :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:var(--accent);color:var(--on-accent)}
+.board .bauhaus-swiss .tabset{border-bottom:2px solid var(--line);gap:0}
+.board .bauhaus-swiss .tabset button[aria-selected=true]{box-shadow:inset 0 -4px 0 var(--fg)}
+.board .bauhaus-swiss .search{border:0;border-bottom:2px solid var(--line);border-radius:0;background:transparent}
+.board .bauhaus-swiss .choice label{border:1px solid var(--line);border-radius:0;background:transparent}
+.board .bauhaus-swiss :is(.card,.state,.sheet,.board-dialog){border:0;border-left:5px solid var(--accent);border-radius:0;box-shadow:none;background:var(--surface)}
+.board .bauhaus-swiss .list{border-top:2px solid var(--line);border-bottom:2px solid var(--line);border-radius:0}
+.board .bauhaus-swiss .list .row{border:0;border-radius:0;background:transparent}
+.board .bauhaus-swiss .list .row+.row{border-top:1px solid var(--line)}
+.board .bauhaus-swiss progress{appearance:none;height:8px;border-radius:0}
+.board .bauhaus-swiss progress::-webkit-progress-bar{background:var(--ctrl)}
+.board .bauhaus-swiss progress::-webkit-progress-value{background:var(--accent)}
+.board .bauhaus-swiss :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:bauhaus-mark 220ms cubic-bezier(.4,0,.2,1)}
+@keyframes bauhaus-mark{0%{clip-path:inset(0 100% 0 0)}100%{clip-path:inset(0)}}
+
+/* Memphis: patterned accent corners, varied geometry, solid text surfaces. */
+.board .memphis{--motion-time:230ms;--motion-ease:cubic-bezier(.1,.9,.3,1.3);--press-move:rotate(-2deg) scale(.98)}
+.board .memphis :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button){border:2px solid var(--line);box-shadow:4px 4px 0 #101129;font-weight:800}
+.board .memphis .btn.primary{border-radius:8px 24px 8px 24px}
+.board .memphis .chipset button:nth-child(2){border-radius:4px 20px 4px 20px;transform:rotate(-2deg)}
+.board .memphis :is(.card,.state,.sheet,.board-dialog){border:2px solid var(--line);box-shadow:var(--panel-shadow);background:var(--surface)}
+.board .memphis .list{border:2px solid var(--line);border-radius:8px 24px 8px 24px}
+.board .memphis .list .row{border:0;border-radius:0}
+.board .memphis .list .row+.row{border-top:2px dashed var(--line)}
+.board .memphis :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:memphis-hop 330ms cubic-bezier(.1,.9,.3,1.3)}
+@keyframes memphis-hop{0%{transform:rotate(-5deg) scale(1)}65%{transform:rotate(2deg) scale(1.06)}100%{transform:none}}
+
+/* Chrome: recessed fields, convex buttons, reflective selected state and floating metal. */
+.board .y2k-chrome{--motion-time:300ms;--motion-ease:cubic-bezier(.2,.85,.2,1);--press-move:translateY(2px) scale(.985)}
+.board .y2k-chrome :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button){background:var(--ctrl);color:#201942;border:1px solid #fff9;box-shadow:inset 0 3px 3px #fff, inset 0 -5px 7px #34305c88,0 5px 9px #09082299;text-shadow:0 1px 0 #fff8}
+.board .y2k-chrome :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:linear-gradient(155deg,#ffffff 0%,var(--accent) 20%,#ffffff 43%,var(--accent) 64%,#6d6fa5 100%);color:#1d1644;box-shadow:inset 0 3px 2px #fff,0 0 0 2px #fff8,0 7px 16px #a6ffeb66}
+.light .board .y2k-chrome :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:linear-gradient(155deg,#fff 0%,#c4a2eb 18%,#fff 40%,#7955ad 68%,#372161 100%);color:#1d1644}
+.board .y2k-chrome :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button):active{filter:brightness(.86);box-shadow:inset 0 4px 9px #242044aa}
+.board .y2k-chrome .search{border:2px solid #bdb8e8;background:linear-gradient(160deg,#211941,#40366b 55%,#211941);box-shadow:inset 3px 5px 9px #08051bbb,inset -2px -2px 3px #a9a1d255;color:#fff}
+.board .y2k-chrome .search::placeholder{color:#e9e2ff;opacity:1}
+.light .board .y2k-chrome .search{background:linear-gradient(160deg,#b7b1d8,#fff 55%,#c5c0e6);color:#241b47}
+.light .board .y2k-chrome .search::placeholder{color:#453766;opacity:1}
+.board .y2k-chrome :is(.card,.state,.sheet,.board-dialog){background:linear-gradient(155deg,#48427a,#29214d 55%,#463e70);border:1px solid #dcd9fa99;box-shadow:inset 0 2px 2px #ffffff70,0 12px 23px #090620b3}
+.light .board .y2k-chrome :is(.card,.state,.sheet,.board-dialog){background:linear-gradient(155deg,#fff,#cecae9 55%,#f7f6ff);color:#241b47}
+.board .y2k-chrome .choice label{background:var(--ctrl);color:#201942;border:1px solid #fff9;box-shadow:inset 0 2px 2px #fff9,0 4px 8px #09082299}
+.board .y2k-chrome .list{border:1px solid #dcd9fa88;border-radius:24px;box-shadow:0 10px 20px #08051b99}
+.board .y2k-chrome .list .row{background:var(--surface);border-color:#dcd9fa55}
+.board .y2k-chrome progress{appearance:none;border-radius:99px;height:17px;box-shadow:inset 0 2px 6px #08051b}
+.board .y2k-chrome progress::-webkit-progress-bar{background:#241b47;border-radius:99px}
+.board .y2k-chrome progress::-webkit-progress-value{background:linear-gradient(90deg,#7fd6d3,#fff,#a6ffeb);border-radius:99px}
+.board .y2k-chrome :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){position:relative;overflow:hidden;animation:chrome-glow 760ms ease-out}
+.board .y2k-chrome :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true])::after{content:"";position:absolute;inset:0 auto 0 -45%;width:32%;background:linear-gradient(90deg,transparent,#fff9,transparent);transform:skewX(-25deg);animation:chrome-glint 760ms ease-out 1;pointer-events:none}
+@keyframes chrome-glint{to{left:125%}}
+@keyframes chrome-glow{0%{filter:brightness(.7)}45%{filter:brightness(1.24)}100%{filter:brightness(1)}}
+
+/* Maximalist hierarchy: dense but deliberately separated patterns and blocks. */
+.board .maximalism{--motion-time:260ms;--motion-ease:cubic-bezier(.25,.9,.3,1.2);--press-move:scale(.96)}
+.board .maximalism :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button,.choice label,.card,.state,.sheet,.board-dialog){border:3px solid var(--line);box-shadow:var(--panel-shadow);font-weight:800}
+.light .board .maximalism :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){color:#201018}
+.board .maximalism .card{background:linear-gradient(135deg,var(--surface) 0 85%,var(--accent) 85%)}
+.board .maximalism .list{border:3px solid var(--line);box-shadow:var(--panel-shadow)}
+.board .maximalism .list .row{border:0}
+.board .maximalism .list .row+.row{border-top:3px solid var(--line)}
+.board .maximalism .block h2{font-weight:900;letter-spacing:.05em;text-transform:uppercase}
+.board .maximalism :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:max-punch 320ms cubic-bezier(.25,.9,.3,1.2)}
+@keyframes max-punch{0%{transform:scale(1)}55%{transform:scale(1.07)}100%{transform:scale(1)}}
+
+/* Editorial: typography, rules and columns, with no raised controls. */
+.board .editorial-print{--motion-time:200ms;--motion-ease:ease;--press-move:none}
+.board .editorial-print .bar{border-bottom:1px solid var(--line);padding-bottom:8px}
+.board .editorial-print .block h2{font-family:Georgia,"Noto Serif KR",serif;font-style:italic;font-size:16px;font-weight:400}
+.board .editorial-print :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button){border:0;border-radius:0;background:transparent;box-shadow:none;font-family:Georgia,"Noto Serif KR",serif}
+.board .editorial-print :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:transparent;color:var(--fg);border-bottom:2px solid var(--accent)}
+.board .editorial-print .search{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent}
+.board .editorial-print :is(.card,.state,.sheet,.board-dialog){border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none;background:transparent}
+.board .editorial-print .list .row{border:0;border-radius:0;background:transparent}
+.board .editorial-print .list .row+.row{border-top:1px solid var(--line)}
+.board .editorial-print :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:editorial-ink 320ms ease-out}
+@keyframes editorial-ink{0%{text-decoration-color:transparent;opacity:.45}100%{opacity:1}}
+
+/* Minimal: reduced surfaces with explicit focus and active marker. */
+.board .minimalism{--motion-time:170ms;--motion-ease:ease-out;--press-move:none}
+.board .minimalism :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button){border:1px solid transparent;background:transparent;box-shadow:none;font-weight:500}
+.board .minimalism :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:transparent;color:var(--fg);border-color:var(--fg)}
+.board .minimalism .search{background:transparent;border:1px solid var(--line)}
+.board .minimalism :is(.card,.state,.sheet,.board-dialog){background:transparent;border:1px solid var(--line);box-shadow:none}
+.board .minimalism .list .row{background:transparent;border-color:var(--line)}
+.board .minimalism :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:minimal-appear 200ms ease-out}
+@keyframes minimal-appear{0%{opacity:.45}100%{opacity:1}}
+
+/* Cinematic: controls recede; content surfaces have one directional depth. */
+.board .dark-cinematic{--motion-time:360ms;--motion-ease:cubic-bezier(.2,.65,.3,1);--press-move:scale(.98)}
+.board .dark-cinematic :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button){background:#ffffff12;border:1px solid #ffffff50;box-shadow:none}
+.board .dark-cinematic :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:var(--accent);color:var(--on-accent)}
+.board .dark-cinematic :is(.card,.state,.sheet,.board-dialog){border:1px solid #ffffff28;box-shadow:0 16px 30px #0009}
+.board .dark-cinematic .list .row{background:transparent;border-color:var(--line)}
+.board .dark-cinematic :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:cinematic-focus 470ms ease-out}
+@keyframes cinematic-focus{0%{opacity:.35;filter:blur(3px)}100%{opacity:1;filter:blur(0)}}
+
+/* Aurora: the color field belongs behind stable readable panels. */
+.board .aurora-mesh{--motion-time:450ms;--motion-ease:cubic-bezier(.2,.7,.2,1);--press-move:scale(.985)}
+.board .aurora-mesh :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button,.choice label,.card,.state,.sheet,.board-dialog){border:1px solid #ffffff55;box-shadow:inset 0 1px 0 #fff6,0 8px 22px #060a3499;backdrop-filter:blur(12px)}
+.board .aurora-mesh .card{background:linear-gradient(130deg,#194c68c9,#3e2c78ca)}
+.board .aurora-mesh .search{box-shadow:inset 0 1px 0 #fff6;backdrop-filter:blur(12px)}
+.board .aurora-mesh :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:aurora-halo 520ms ease-out}
+@keyframes aurora-halo{0%{box-shadow:0 0 0 0 #8bf2e280}60%{box-shadow:0 0 0 7px #8bf2e222}100%{box-shadow:0 0 0 0 transparent}}
+
+/* Aero: watery convex controls and a clear depth stack. */
+.board .frutiger-aero{--motion-time:270ms;--motion-ease:cubic-bezier(.2,.9,.3,1);--press-move:translateY(2px)}
+.board .frutiger-aero :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button,.choice label){background:var(--ctrl);border:1px solid #d7ffff;box-shadow:inset 0 3px 3px #fff9,0 6px 10px #06467180}
+.board .frutiger-aero :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:linear-gradient(#e7ffd6,var(--accent) 55%,#3b9d68);color:var(--on-accent)}
+.board .frutiger-aero .search{background:linear-gradient(#e9ffff,#abd9e7);color:#0c4761;box-shadow:inset 0 3px 7px #4d98ac88}
+.board .frutiger-aero :is(.card,.state,.sheet,.board-dialog){background:var(--surface);border:1px solid #d7ffff;box-shadow:inset 0 2px 2px #fff9,0 12px 22px #06467180}
+.board .frutiger-aero .list{box-shadow:0 8px 18px #06467180}
+.board .frutiger-aero .list .row{background:var(--surface);border-color:#9fe4f2}
+.board .frutiger-aero :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){animation:aero-buoy 380ms cubic-bezier(.2,.9,.3,1)}
+@keyframes aero-buoy{0%{transform:translateY(4px);filter:brightness(.8)}60%{transform:translateY(-2px)}100%{transform:none;filter:none}}
+
+/* Origami: folds, overlap and cut edges, never editorial hairline-only UI. */
+.board .origami-paper{--motion-time:260ms;--motion-ease:cubic-bezier(.3,.1,.2,1);--press-move:translateY(2px) rotateX(5deg)}
+.board .origami-paper .bar{padding-bottom:12px;border-bottom:2px dashed var(--line)}
+.board .origami-paper :is(.btn,.small-icon,.tabset button,.chipset button,.bottom-nav button,.choice label,.card,.state,.sheet,.board-dialog){position:relative;border:1px solid var(--line);border-radius:2px;box-shadow:3px 5px 9px #0005;background:linear-gradient(145deg,var(--surface) 0 82%,var(--ctrl) 82%)}
+.board .origami-paper :is(.card,.state,.sheet,.board-dialog){background:linear-gradient(145deg,var(--surface) 0 94%,var(--ctrl) 94%);box-shadow:2px 2px 0 var(--line),5px 5px 0 var(--ctrl),8px 9px 15px #0005}
+.board .origami-paper .choice label{background:linear-gradient(145deg,var(--surface) 0 92%,var(--ctrl) 92%);box-shadow:2px 3px 0 var(--ctrl),4px 5px 8px #0004}
+.board .origami-paper :is(.btn.primary,.tabset button[aria-selected=true],.chipset button[aria-pressed=true],.bottom-nav button[aria-current=true]){background:linear-gradient(145deg,var(--accent) 0 82%,var(--ctrl) 82%);color:var(--on-accent);border-left:4px solid var(--fg)}
+.board .origami-paper :is(.card,.state,.sheet,.board-dialog)::after{content:"";position:absolute;right:0;top:0;width:17px;height:17px;background:linear-gradient(45deg,var(--ctrl) 49%,var(--bg) 50%);box-shadow:-2px 2px 4px #0003;pointer-events:none}
+.board .origami-paper .search{border:0;border-bottom:2px solid var(--line);border-radius:0;background:linear-gradient(160deg,var(--surface),var(--ctrl));box-shadow:inset 2px 2px 4px #0003}
+.board .origami-paper .list{border:1px solid var(--line);box-shadow:var(--panel-shadow);border-radius:2px}
+.board .origami-paper .list .row{background:linear-gradient(150deg,var(--surface) 0 93%,var(--ctrl) 93%);border-radius:0}
+.board .origami-paper .list .row+.row{border-top:1px dashed var(--line)}
+.board .origami-paper progress{appearance:none;height:14px;border:1px solid var(--line);border-radius:0;transform:skewX(-12deg)}
+.board .origami-paper progress::-webkit-progress-bar{background:var(--surface)}
+.board .origami-paper progress::-webkit-progress-value{background:var(--accent)}
+.board .origami-paper :is(.tabset button[aria-selected=true],.chipset button[aria-pressed=true]){transform-origin:left top;animation:paper-unfold 320ms cubic-bezier(.3,.1,.2,1)}
+@keyframes paper-unfold{0%{transform:rotateY(-24deg);filter:brightness(.78)}100%{transform:rotateY(0);filter:brightness(1)}}
+
+@media(prefers-reduced-motion:reduce){body:not(.force-motion) .board .phone button,body:not(.force-motion) .board .phone button::after{transition:none;animation:none!important;transform:none!important}}

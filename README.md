@@ -4,6 +4,16 @@
 
 최신 릴리스: [v0.3.1](https://github.com/happy4ed/UX-Design-Master/releases/tag/v0.3.1). B 단계의 실제 앱 구성 참고·와이어프레임 다양성 검토와 동작 중 콘텐츠 잘림·행동 밀도 실측을 추가했습니다.
 
+현재 작업본: `0.3.2-dev` ([변경 기록](CHANGELOG.md)). 상세 스타일 가이드와 실측 절차를 추가하는 중이며 아직 릴리스·커밋·푸시하지 않았습니다.
+
+이번 작업본의 [웹 스타일 가이드북](samples/style-guidebook.html)에서 19개 스타일의 A~L 원문과 미확인 항목을 살피고 두 스타일을 나란히 비교할 수 있습니다. [기준 화면](samples/style-book-reference-screen.html)은 글꼴·아이콘·슬라이더 차이를 포함한 시연안입니다.
+
+[컴포넌트 시연](samples/style-book-component-board.html)에는 13개 역할 묶음의 조작 가능한 예시가 있으며 스타일·라이트/다크·폰/폴드 폭을 바꿔 볼 수 있습니다.
+
+One UI·iOS를 제외한 17개 스타일은 [형태·상태·모션 변환표](references/style-book/component-expression.json)를 각 가이드 E.2절과 컴포넌트 시연에 적용했습니다. 가이드북 상단에는 원본에서 관찰한 범위와 미측정 범위를 표시합니다. [68상태 렌더 실측](samples/style-book-component-expression-audit.json)은 내부 시연의 형태·대비·조작 영역·선택 모션을 검사하며 원본 복제 판정은 아닙니다.
+
+원본에서 아직 확인되지 않은 값이 시안에 필요하면 [임시 추정·갱신 절차](references/style-estimation.md)로 추정값을 적용합니다. 웹 가이드북의 K절과 임시값 표에서 원본 사실과 구현 가설을 구분할 수 있습니다.
+
 ## 진행 흐름
 
 1. A1 기능·콘텐츠 구조 → A2 사용·읽기 흐름 → A3 화면·페이지 분할을 사용자와 순서대로 확인합니다.

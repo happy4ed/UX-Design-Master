@@ -1,0 +1,15 @@
+/* Seven user-named guess style token sets. */
+.bento-grid{--bg:#111827;--fg:#f7f8fb;--surface:#263246;--ctrl:#34425a;--line:#60718c;--accent:#b6e19b;--on-accent:#152619;--card-r:20px;--field-r:12px;--button-r:12px;}
+.light .bento-grid{--bg:#f4f5f2;--fg:#1d2632;--surface:#fff;--ctrl:#e7ece7;--line:#a8b4aa;--accent:#476c39;--on-accent:#fff;}
+.dark-tech{--bg:#070b10;--fg:#dce9ee;--surface:#101a24;--ctrl:#172532;--line:#2d5261;--accent:#63dbca;--on-accent:#05201d;--card-r:8px;--field-r:7px;--button-r:7px;}
+.light .dark-tech{--bg:#e9f0f0;--fg:#12232b;--surface:#fff;--ctrl:#dce9e9;--line:#8ca9ae;--accent:#0b756e;--on-accent:#fff;}
+.kinetic-typography{--bg:#171719;--fg:#f6f4ed;--surface:#29292c;--ctrl:#37373b;--line:#757578;--accent:#ffcf6b;--on-accent:#22180c;--card-r:0px;--field-r:0px;--button-r:0px;}
+.light .kinetic-typography{--bg:#faf9f5;--fg:#181819;--surface:#fff;--ctrl:#eeeeea;--line:#989893;--accent:#a93527;--on-accent:#fff;}
+.scroll-3d{--bg:#0d1422;--fg:#edf4ff;--surface:#202e45;--ctrl:#2d3d55;--line:#617995;--accent:#85c8ff;--on-accent:#10263b;--card-r:14px;--field-r:9px;--button-r:9px;}
+.light .scroll-3d{--bg:#eaf2fb;--fg:#152d44;--surface:#fff;--ctrl:#dbe8f5;--line:#9db2c5;--accent:#196d9f;--on-accent:#fff;}
+.grainy-gradient{--bg:#211b32;--fg:#faf6fa;--surface:#392b47;--ctrl:#54405b;--line:#9e819e;--accent:#f6bb9c;--on-accent:#34221b;--card-r:18px;--field-r:12px;--button-r:14px;}
+.light .grainy-gradient{--bg:#f5e9df;--fg:#352436;--surface:#fffaf6;--ctrl:#eadedc;--line:#ae929c;--accent:#96536d;--on-accent:#fff;}
+.retro-pixel{--bg:#151426;--fg:#fff7d8;--surface:#2f2d48;--ctrl:#494260;--line:#a39abc;--accent:#f6cf64;--on-accent:#282136;--card-r:0px;--field-r:0px;--button-r:0px;}
+.light .retro-pixel{--bg:#f4ecd4;--fg:#28223a;--surface:#fff9e9;--ctrl:#e9ddba;--line:#81718d;--accent:#8a4d74;--on-accent:#fff;}
+.swiss-grid{--bg:#17191a;--fg:#f7f7f3;--surface:#222527;--ctrl:#303536;--line:#a6abad;--accent:#e84b3c;--on-accent:#fff;--card-r:0px;--field-r:0px;--button-r:0px;}
+.light .swiss-grid{--bg:#f7f7f3;--fg:#161a1b;--surface:#fff;--ctrl:#ebeeed;--line:#6d7473;--accent:#c72e24;--on-accent:#fff;}

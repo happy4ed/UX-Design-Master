@@ -1,0 +1,5 @@
+{
+  "schemaVersion": "1.0",
+  "description": "Optional measured replacements for guess values. A replacement needs source, sameStateEvidence, date, and renderUpdated:true after changing the actual CSS/motion sample; the sync script then removes guess only for that exact row.",
+  "styles": {}
+}

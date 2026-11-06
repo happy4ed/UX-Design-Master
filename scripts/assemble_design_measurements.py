@@ -27,8 +27,10 @@ def assemble(bundle, base):
         source = (state.get("measurement") or {}).get("source")
         if not source:
             raise ValueError(f"{state.get('id')}: measurement.source 필요")
-        style = json.loads((base / source).read_text(encoding="utf-8"))
+        captured = json.loads((base / source).read_text(encoding="utf-8"))
+        style = captured.get("evidence", captured)
         item = dict(state)
+        item["capture"] = item.get("capture") or captured.get("screenshot")
         item["viewport"] = item.get("viewport") or style.get("viewport")
         item["measurement"] = {"source": source, "landmarks": style.get("landmarks", []), "focus": style.get("focus"), "scroll": style.get("scroll")}
         result["states"].append(item)
@@ -43,6 +45,16 @@ def assemble(bundle, base):
         for field, rows in style.get("weighted", {}).items():
             for row in rows:
                 weighted[field][row["value"]] += row["count"]
+        for candidate in style.get("materialCandidates", [])[:25]:
+            add_observation(state, f"dom.{candidate['index']}", "materialCandidate",
+                            {key: candidate.get(key) for key in ("backgroundColor", "backgroundImage", "opacity", "backdropFilter", "filter", "boxShadow", "pseudo", "zIndex", "parentIndex")},
+                            "computed CSS", source, "visible DOM and pseudo-element computed styles",
+                            "candidate only; actual transparency, refraction and Z order require paired render review")
+        for candidate in style.get("shapeCandidates", [])[:40]:
+            add_observation(state, f"dom.{candidate['index']}", "shapeCandidate",
+                            {key: candidate.get(key) for key in ("declaredShape", "width", "height", "aspectRatio", "borderRadius", "transform")},
+                            "CSS px and ratio", source, "rendered bounding box and computed radius",
+                            "shape name and optical appearance require screenshot; hit area can differ")
         alignment_source = state.get("alignmentSource")
         if not alignment_source:
             continue
@@ -67,6 +79,8 @@ def assemble(bundle, base):
     def top(table):
         return {field: [{"value": value, "count": round(count, 3)} for value, count in sorted(values.items(), key=lambda pair: -pair[1])[:12]] for field, values in table.items()}
     result["evidence"] = {"sampledNodes": sampled, "truncatedNodes": truncated, "observed": top(counts), "weighted": top(weighted),
+                          "materialCandidateCount": sum(1 for row in result["observations"] if row.get("property") == "materialCandidate"),
+                          "shapeCandidateCount": sum(1 for row in result["observations"] if row.get("property") == "shapeCandidate"),
                           "note": "화면별 CSS 후보를 합산했으며 의미 역할·승인값은 decisions에서 별도로 판단"}
     return result
 

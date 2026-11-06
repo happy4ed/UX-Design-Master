@@ -1,0 +1,104 @@
+*{box-sizing:border-box}html{background:#e8e9ed;color:#202127;font-family:system-ui,'Noto Sans KR',sans-serif}body{margin:0}button,input{font:inherit}button{cursor:pointer}.top{padding:28px clamp(16px,4vw,48px) 18px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}.top h1{margin:0;font-size:25px}.top p{margin:7px 0 0;color:#5c5e67;font-size:14px}.toolbar{display:flex;gap:8px;align-items:center}.toolbar button{border:1px solid #b8bac4;background:white;border-radius:9px;min-height:48px;padding:0 14px}.toolbar button[aria-pressed=true]{background:#202127;color:#fff}.grid{padding:0 clamp(16px,4vw,48px) 48px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.sample{min-width:0}.caption{font-size:15px;font-weight:700;margin:0 0 8px}.sub{font-size:12px;color:#5c5e67;margin:0 0 10px}.phone{height:690px;overflow:auto;border-radius:33px;border:7px solid #24252b;box-shadow:0 8px 28px #0002;background:var(--bg);color:var(--fg);font-size:14px}.inner{padding:13px 13px 20px}.appbar{display:flex;align-items:center;justify-content:space-between;min-height:52px;margin-bottom:10px}.appbar strong{font-size:18px}.icon-btn,.play,.skip{border:0;background:var(--ctrl);color:var(--fg);border-radius:var(--button-r);min-width:48px;min-height:48px;font-size:19px}.search{width:100%;min-height:48px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:var(--field-r);padding:0 15px;outline-offset:2px}.chips{display:flex;gap:8px;margin:13px 0}.chip{border:1px solid var(--line);background:var(--ctrl);color:var(--fg);min-height:48px;padding:0 13px;border-radius:var(--button-r)}.chip[aria-pressed=true]{background:var(--accent);color:var(--on-accent);border-color:transparent}.poster{height:195px;border-radius:var(--card-r);background:linear-gradient(110deg,#203b50,#6f718b 47%,#c89573 82%,#50402f);position:relative;overflow:hidden}.poster:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,#000b)}.poster-label{position:absolute;bottom:15px;left:15px;z-index:1;color:#fff}.poster-label strong{display:block;font-size:21px}.poster-label span{display:block;font-size:13px;margin-top:3px}.media{background:var(--surface);border-radius:var(--card-r);padding:16px;margin-top:12px}.media h2{font-size:16px;line-height:22px;margin:0 0 2px}.media .artist{font-size:13px;opacity:.72;margin:0 0 16px}.scrub{width:100%;accent-color:var(--accent);height:48px}.times{display:flex;justify-content:space-between;font-size:12px;opacity:.72}.transport{display:flex;align-items:center;justify-content:center;gap:16px;margin:10px 0 17px}.play{background:var(--accent);color:var(--on-accent);min-width:55px;min-height:55px}.volume label{display:block;font-size:14px;font-weight:650;margin:0 0 7px}.volume-row{display:flex;align-items:center;gap:9px}.volume-row button{min-width:48px;min-height:48px;border:1px solid var(--line);background:var(--ctrl);color:var(--fg);border-radius:var(--button-r)}.volume-row input{min-width:0;flex:1;height:48px;accent-color:var(--accent)}.section{font-size:13px;font-weight:700;opacity:.65;margin:22px 0 8px}.row{display:flex;justify-content:space-between;align-items:center;background:var(--surface);min-height:52px;padding:11px 14px;border-bottom:1px solid var(--line)}.row:first-of-type{border-radius:var(--card-r) var(--card-r) 0 0}.row:last-of-type{border:0;border-radius:0 0 var(--card-r) var(--card-r)}.row small{opacity:.65}.evidence{margin-top:10px;font-size:12px;line-height:1.5;color:#52545e}.oneui{--bg:#010102;--fg:#fcfcff;--surface:#17171a;--ctrl:#252528;--line:#3a3a3d;--accent:#387aff;--on-accent:#fff;--card-r:22px;--field-r:25px;--button-r:25px}.material{--bg:#17130b;--fg:#ebe1d4;--surface:#39342b;--ctrl:#53452a;--line:#4d4639;--accent:#eac16c;--on-accent:#402d00;--card-r:12px;--field-r:28px;--button-r:8px}.ios{--bg:#000;--fg:#f2f2f7;--surface:#1c1c1e;--ctrl:#353538;--line:#38383b;--accent:#0091ff;--on-accent:#fff;--card-r:26px;--field-r:24px;--button-r:24px}.hifi{--bg:#3b2510;--fg:#161311;--surface:linear-gradient(120deg,#c3bdb5,#b5b8b8 45%,#958878);--ctrl:#c4c5c3;--line:#6b645d;--accent:#d6a586;--on-accent:#18100c;--card-r:5px;--field-r:4px;--button-r:5px}.hifi .media{box-shadow:inset 0 1px 0 #fff9,0 5px 13px #0007}.hifi .play,.hifi .skip,.hifi .volume-row button{box-shadow:inset 0 2px 2px #fff9,0 3px 3px #0008}.hifi .poster{border:5px solid #363332}.hifi .section{color:#f2ebdc;opacity:1}.hifi .row{background:linear-gradient(120deg,#c3bdb5,#958878)}.light .oneui{--bg:#fcfcff;--fg:#17171a;--surface:#f1f1f5;--ctrl:#e7e8ec;--line:#d8d9df;--accent:#387aff;--on-accent:#fff}.light .material{--bg:#fcf8f0;--fg:#211c14;--surface:#efe9df;--ctrl:#e9dfce;--line:#d7cdbf;--accent:#755800;--on-accent:#fff}.light .ios{--bg:#f2f2f7;--fg:#1c1c1e;--surface:#fff;--ctrl:#e6e6ea;--line:#d0d0d6;--accent:#007aff;--on-accent:#fff}.light .hifi{--bg:#9b6b44}.fold .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fold .phone{height:620px;border-radius:24px}.fold .inner{max-width:850px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:0 18px}.fold .appbar,.fold .search,.fold .chips{grid-column:1/-1}.fold .poster{height:460px;grid-row:4/8}.fold .media{margin-top:0}.fold .section{grid-column:1/-1}.fold .row{grid-column:1/-1}@media(max-width:1250px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.grid,.fold .grid{grid-template-columns:1fr}.phone{height:auto;max-height:710px}.top h1{font-size:21px}}
+
+/* 아래 15개는 실서비스의 복제 토큰이 아닌, 각 A–L 가이드의 제안값으로 만든 비교용 표현이다. */
+.phone{font-family:var(--style-font,system-ui,'Noto Sans KR',sans-serif)}
+.phone .media{box-shadow:var(--panel-shadow,none);border:var(--panel-border,0)}
+.phone .poster{background:var(--poster,linear-gradient(110deg,#203b50,#6f718b 47%,#c89573 82%,#50402f))}
+.phone .appbar strong{font-family:var(--display-font,inherit);letter-spacing:var(--title-tracking,normal)}
+.phone .row{background:var(--row-bg,var(--surface));border-bottom-color:var(--line)}
+.phone .search,.phone .chip,.phone .icon-btn,.phone .skip,.phone .play,.phone .volume-row button{box-shadow:var(--control-shadow,none)}
+.phone .search::placeholder{color:var(--fg);opacity:.74}
+.phone .scrub{margin-left:0;margin-right:0}
+.phone .search:focus-visible,.phone button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* Glass: translucent surfaces over a coloured depth field. */
+.glassmorphism{--bg:#121a30;--fg:#f4f8ff;--surface:#ffffff24;--ctrl:#ffffff18;--line:#ffffff59;--accent:#83e9e7;--on-accent:#06242a;--card-r:25px;--field-r:17px;--button-r:999px;--panel-border:1px solid #ffffff50;--panel-shadow:inset 0 1px 0 #ffffff4d,0 14px 30px #03091f77;--poster:radial-gradient(circle at 72% 18%,#e6f3ffbb 0 8%,transparent 30%),linear-gradient(125deg,#071b43,#337ea1 42%,#864f9c 74%,#211b3c)}
+.glassmorphism .media,.glassmorphism .row,.glassmorphism .search{backdrop-filter:blur(16px) saturate(1.2)}
+.glassmorphism .phone,.glassmorphism{background-image:radial-gradient(circle at 15% 15%,#255890 0,transparent 46%),radial-gradient(circle at 88% 85%,#753b9b 0,transparent 45%)}
+.light .glassmorphism{--bg:#dbe9f4;--fg:#153046;--surface:#ffffff9c;--ctrl:#ffffffb2;--line:#7a9bb4;--accent:#006e87;--on-accent:#fff;--panel-border:1px solid #ffffffd9;--panel-shadow:inset 0 1px 0 #fff,0 12px 25px #365a7545}
+
+/* Neumorphism: a single material with convex and inset controls. */
+.neumorphism{--bg:#252b36;--fg:#f2f4f7;--surface:#252b36;--ctrl:#252b36;--line:#4b5361;--accent:#8dbce9;--on-accent:#121c2c;--card-r:26px;--field-r:18px;--button-r:18px;--panel-shadow:9px 9px 19px #151922,-9px -9px 19px #353d4a;--control-shadow:5px 5px 10px #161b24,-5px -5px 10px #343c49;--poster:linear-gradient(125deg,#4a6b77,#a5adb5 48%,#495a75)}
+.neumorphism .search{box-shadow:inset 5px 5px 10px #161b24,inset -5px -5px 10px #343c49}
+.neumorphism .row{border:0;box-shadow:inset 0 -1px 0 #4b5361}
+.light .neumorphism{--bg:#e5e9ef;--fg:#26313d;--surface:#e5e9ef;--ctrl:#e5e9ef;--line:#bcc7d3;--accent:#315f8a;--on-accent:#fff;--panel-shadow:9px 9px 19px #bbc4cf,-9px -9px 19px #fff;--control-shadow:5px 5px 10px #b9c4d0,-5px -5px 10px #fff}
+.light .neumorphism .search{box-shadow:inset 5px 5px 10px #bbc4cf,inset -5px -5px 10px #fff}
+
+/* Clay: inflated, soft forms, deliberately different from both glass and neo. */
+.claymorphism{--bg:#382747;--fg:#fff3fb;--surface:#66547d;--ctrl:#82689b;--line:#a986b4;--accent:#ffb8d9;--on-accent:#44233f;--card-r:36px;--field-r:24px;--button-r:28px;--panel-shadow:inset 0 6px 10px #ffffff2e,inset 0 -9px 15px #2415336b,0 18px 25px #180d2a7a;--control-shadow:inset 0 3px 7px #ffffff6b,inset 0 -5px 9px #3f294e66,0 8px 11px #2013298c;--poster:radial-gradient(circle at 73% 31%,#ffd0ee 0 13%,transparent 14%),radial-gradient(circle at 30% 25%,#d3f0bb 0 20%,transparent 21%),linear-gradient(145deg,#7c5ca1,#ef8cb1)}
+.claymorphism .poster{border-radius:47% 35% 32% 35% / 25% 30% 25% 25%}
+.claymorphism .media{transform:rotate(-.4deg)}
+.light .claymorphism{--bg:#fff1ef;--fg:#52374d;--surface:#f5d7e8;--ctrl:#f8deed;--line:#ddacc4;--accent:#dc5e99;--on-accent:#fff;--panel-shadow:inset 0 6px 10px #fff,inset 0 -9px 15px #b7749866,0 18px 25px #b47c997a;--control-shadow:inset 0 3px 7px #fff,inset 0 -5px 9px #c57d9c66,0 8px 11px #ab6e8b70}
+
+/* Flat: solid colour hierarchy without simulated material. */
+.flat-2{--bg:#142642;--fg:#f8fbff;--surface:#1e3b5d;--ctrl:#2c5276;--line:#547596;--accent:#4ee2a8;--on-accent:#102a35;--card-r:10px;--field-r:8px;--button-r:7px;--poster:linear-gradient(132deg,#236db2 0 32%,#f2c94c 32% 53%,#da5f69 53% 73%,#14375c 73%)}
+.flat-2 .media,.flat-2 .row{box-shadow:none}
+.light .flat-2{--bg:#f4f7fb;--fg:#153456;--surface:#e4edf5;--ctrl:#d7e8f5;--line:#95b4ce;--accent:#006f58;--on-accent:#fff}
+
+/* Neo-brutalism: heavy black edges and unblurred offset shadows. */
+.neo-brutalism{--bg:#221f2f;--fg:#fff9e8;--surface:#393245;--ctrl:#514a53;--line:#f3df6d;--accent:#f5e55e;--on-accent:#18141d;--card-r:0px;--field-r:0px;--button-r:0px;--panel-border:3px solid var(--line);--panel-shadow:6px 6px 0 #07060b;--control-shadow:4px 4px 0 #07060b;--poster:repeating-linear-gradient(-25deg,#f7cf4b 0 18px,#ec6685 18px 35px,#8167bd 35px 55px)}
+.neo-brutalism .search,.neo-brutalism .chip,.neo-brutalism .icon-btn,.neo-brutalism .skip,.neo-brutalism .play,.neo-brutalism .volume-row button{border:3px solid var(--line)}
+.neo-brutalism .appbar strong{text-transform:uppercase;font-weight:900}
+.light .neo-brutalism{--bg:#fff7dd;--fg:#19141d;--surface:#fff;--ctrl:#f7e9a9;--line:#19141d;--accent:#fa6290;--on-accent:#19141d;--panel-shadow:6px 6px 0 #19141d;--control-shadow:4px 4px 0 #19141d}
+
+/* Bauhaus/Swiss: orthogonal grid, primary geometry, disciplined typography. */
+.bauhaus-swiss{--bg:#161615;--fg:#f5f2e6;--surface:#232422;--ctrl:#31352f;--line:#b9b8aa;--accent:#e8d047;--on-accent:#181715;--card-r:0px;--field-r:0px;--button-r:0px;--style-font:Arial,'Noto Sans KR',sans-serif;--title-tracking:-.05em;--poster:radial-gradient(circle at 74% 36%,#efc834 0 15%,transparent 15.3%),linear-gradient(90deg,transparent 0 40%,#ec594e 40% 65%,transparent 65%),linear-gradient(135deg,#274cbd,#f4e6ca)}
+.bauhaus-swiss .appbar,.bauhaus-swiss .media{border-top:4px solid var(--accent)}
+.bauhaus-swiss .section{text-transform:uppercase;letter-spacing:.11em}
+.light .bauhaus-swiss{--bg:#f4f0e7;--fg:#161615;--surface:#fffef9;--ctrl:#e9e5d9;--line:#1b1b19;--accent:#bc2d25;--on-accent:#fff}
+
+/* Memphis: graphic collision of dots, stripes, angles and rounded shapes. */
+.memphis{--bg:#29284b;--fg:#fff5dc;--surface:#47416d;--ctrl:#6a5b88;--line:#9b8fc7;--accent:#ffcc4e;--on-accent:#392345;--card-r:12px;--field-r:21px;--button-r:999px;--panel-border:2px solid #fca1c6;--panel-shadow:8px 8px 0 #0f1029;--poster:radial-gradient(circle at 74% 36%,#ffd544 0 14%,transparent 15%),repeating-linear-gradient(45deg,transparent 0 12px,#f08bb8 12px 17px,transparent 17px 29px),linear-gradient(135deg,#3db7b5,#7e4ac4)}
+.memphis .chip:nth-child(2){transform:rotate(2deg)}
+.memphis .poster-label strong{background:#1a1e3c;padding:3px 6px;display:inline-block}
+.light .memphis{--bg:#ffecdc;--fg:#30264d;--surface:#ffe2c2;--ctrl:#f7cad6;--line:#6a4d8e;--accent:#33b6af;--on-accent:#112c3b;--panel-border:2px solid #5d367f;--panel-shadow:8px 8px 0 #5d367f}
+
+/* Y2K chrome: specular silver, glossy capsules and fluorescent accents. */
+.y2k-chrome{--bg:#140e31;--fg:#f7f2ff;--surface:linear-gradient(145deg,#3f3573,#261c4c);--ctrl:linear-gradient(135deg,#d5d5e8,#6d6fa5 45%,#f0eef5 72%,#7773aa);--line:#bcb9ef;--accent:#a6ffeb;--on-accent:#1d1644;--card-r:24px;--field-r:999px;--button-r:999px;--panel-border:1px solid #e6deff88;--panel-shadow:inset 0 2px 1px #fff8,0 10px 22px #0009;--control-shadow:inset 0 3px 2px #fff9,0 3px 8px #0008;--poster:radial-gradient(circle at 50% -30%,#fff 0,#b4b1ff 16%,#816cb8 38%,#322177 75%)}
+.y2k-chrome .icon-btn,.y2k-chrome .skip,.y2k-chrome .volume-row button{color:#201942}
+.light .y2k-chrome{--bg:#dddaf6;--fg:#241b47;--surface:linear-gradient(145deg,#fff,#cecae9);--ctrl:linear-gradient(135deg,#fff,#b4b7db 45%,#fff 72%,#b1b0d1);--line:#807caf;--accent:#5a00b6;--on-accent:#fff;--panel-shadow:inset 0 2px 1px #fff,0 10px 22px #615a9677}
+
+/* Maximalism: one huge title, energetic art, assertive frame and contrast. */
+.maximalism{--bg:#27162a;--fg:#fff4db;--surface:#57304a;--ctrl:#7e4c63;--line:#f6c86d;--accent:#ff5b4a;--on-accent:#24122b;--card-r:4px;--field-r:4px;--button-r:4px;--panel-border:3px solid var(--line);--panel-shadow:8px 8px 0 #0d0818;--poster:repeating-conic-gradient(from 30deg at 65% 38%,#ffcf57 0 18deg,#e2586b 18deg 36deg,#65479b 36deg 54deg,#ffcf57 54deg 72deg)}
+.maximalism .appbar strong{font-size:27px;font-weight:900;line-height:1;letter-spacing:-.07em}
+.maximalism .poster-label strong{font-size:31px;line-height:.95;text-transform:uppercase;font-weight:900}
+.maximalism .section{font-size:16px;letter-spacing:.05em}
+.light .maximalism{--bg:#f9efdc;--fg:#321523;--surface:#f8c8ac;--ctrl:#f3d58a;--line:#321523;--accent:#e84836;--on-accent:#fff;--panel-shadow:8px 8px 0 #321523}
+
+/* Editorial: paper and hairline divisions; serif title, no floating cards. */
+.editorial-print{--bg:#1d1d20;--fg:#f4f0e8;--surface:#262629;--ctrl:#313135;--line:#a5a2a0;--accent:#d6b891;--on-accent:#241d19;--card-r:0px;--field-r:0px;--button-r:0px;--style-font:Georgia,'Noto Serif KR',serif;--display-font:Georgia,'Noto Serif KR',serif;--poster:linear-gradient(95deg,#1f2d3a,#5a6570 42%,#b17e61 78%,#40332c)}
+.editorial-print .media{background:transparent;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0}
+.editorial-print .row{background:transparent}
+.editorial-print .appbar strong{font-size:21px;font-weight:500}
+.editorial-print .poster-label strong{font-family:Georgia,'Noto Serif KR',serif;font-weight:500;font-size:25px}
+.editorial-print .section{text-transform:uppercase;letter-spacing:.14em}
+.light .editorial-print{--bg:#f8f6f1;--fg:#181818;--surface:#fff;--ctrl:#f3f0e8;--line:#9c9b98;--accent:#173f71;--on-accent:#fff}
+
+/* Minimalism: space and a single action, not a generic card pile. */
+.minimalism{--bg:#101113;--fg:#f5f5f5;--surface:#101113;--ctrl:#1e2023;--line:#52565c;--accent:#acd8ff;--on-accent:#102c48;--card-r:4px;--field-r:4px;--button-r:999px;--poster:linear-gradient(125deg,#202d3c,#66727b 50%,#c8a386)}
+.minimalism .inner{padding:22px}.minimalism .media{padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:22px}.minimalism .row{background:transparent;padding-left:0;padding-right:0}.minimalism .appbar{margin-bottom:20px}.minimalism .section{margin-top:30px}
+.light .minimalism{--bg:#fff;--fg:#17191c;--surface:#fff;--ctrl:#f2f3f3;--line:#c5c9cd;--accent:#1a61ae;--on-accent:#fff}
+
+/* Cinematic: poster-first dark field, restrained brass and dark scrim. */
+.dark-cinematic{--bg:#080c10;--fg:#eae9e5;--surface:#141a20;--ctrl:#242d35;--line:#57616d;--accent:#d7b66c;--on-accent:#2b2115;--card-r:10px;--field-r:8px;--button-r:8px;--panel-shadow:0 15px 35px #000b;--poster:radial-gradient(circle at 70% 25%,#f4ba7a 0 4%,transparent 20%),linear-gradient(120deg,#080d1a,#1d3a58 48%,#6f4634 80%,#120e13)}
+.dark-cinematic .poster{height:235px}.dark-cinematic .poster:after{background:linear-gradient(transparent 15%,#05080de8)}
+.dark-cinematic .poster-label strong{font-size:27px;letter-spacing:.04em}
+.light .dark-cinematic{--bg:#ebe8e3;--fg:#252326;--surface:#fff;--ctrl:#ddd9d1;--line:#9e9a94;--accent:#765329;--on-accent:#fff;--panel-shadow:0 10px 25px #3c34213d}
+
+/* Aurora: animated-feeling colour field, with quiet glassy foreground. */
+.aurora-mesh{--bg:#090d28;--fg:#f8f8ff;--surface:#252446bd;--ctrl:#373764c9;--line:#b7b8fa85;--accent:#7eeedb;--on-accent:#063b3c;--card-r:20px;--field-r:16px;--button-r:14px;--panel-border:1px solid #ffffff38;--panel-shadow:0 10px 30px #03051399;--poster:radial-gradient(circle at 23% 35%,#5de8db 0,transparent 35%),radial-gradient(circle at 70% 50%,#f39ee1 0,transparent 40%),linear-gradient(130deg,#143179,#2e144e)}
+.aurora-mesh{background-image:radial-gradient(circle at 80% 25%,#394caaa6 0,transparent 43%),radial-gradient(circle at 20% 70%,#177e8391 0,transparent 47%)}
+.aurora-mesh .media{backdrop-filter:blur(12px)}
+.light .aurora-mesh{--bg:#e9ecff;--fg:#1c2650;--surface:#ffffffbc;--ctrl:#e5e8ff;--line:#747fbb;--accent:#136f68;--on-accent:#fff;--panel-border:1px solid #fff;--panel-shadow:0 10px 30px #6a70ad44}
+
+/* Frutiger Aero: sky/nature glossy material, distinct from Y2K metal. */
+.frutiger-aero{--bg:#0a4979;--fg:#f5fdff;--surface:linear-gradient(#327db4,#07517e);--ctrl:linear-gradient(#a5f2ff,#3aa4ce 48%,#17749d);--line:#9fe4f2;--accent:#a4f788;--on-accent:#134731;--card-r:25px;--field-r:999px;--button-r:999px;--panel-border:1px solid #d5ffffa3;--panel-shadow:inset 0 2px 2px #e9ffff9e,0 12px 21px #00284499;--control-shadow:inset 0 3px 3px #efffffb8,0 5px 10px #004b6b88;--poster:radial-gradient(circle at 74% 22%,#fff 0 3%,transparent 15%),linear-gradient(165deg,#6ddaff 0 45%,#d9f9f7 45% 50%,#50ab6c 51% 75%,#126b5b)}
+.frutiger-aero .icon-btn,.frutiger-aero .skip,.frutiger-aero .volume-row button{color:#064c72}
+.light .frutiger-aero{--bg:#c7f3fa;--fg:#0c4761;--surface:linear-gradient(#f5feff,#a9e1ef);--ctrl:linear-gradient(#fff,#b7f3f8 48%,#72bfd6);--line:#3690a8;--accent:#228247;--on-accent:#fff;--panel-shadow:inset 0 2px 2px #fff,0 12px 21px #428da955}
+
+/* Origami: overlapping flat paper facets and folded edges. */
+.origami-paper{--bg:#29241f;--fg:#f7efe2;--surface:#51483e;--ctrl:#6a5d4a;--line:#ae9b81;--accent:#eac88a;--on-accent:#35281d;--card-r:3px;--field-r:2px;--button-r:2px;--panel-shadow:4px 6px 12px #0e0a0880;--poster:linear-gradient(135deg,transparent 0 49%,#f2c288 49% 51%,transparent 51%),linear-gradient(45deg,#876478 0 49%,#c49c80 49% 51%,#748ba1 51%)}
+.origami-paper .media{clip-path:polygon(0 0,93% 0,100% 18px,100% 100%,0 100%);background-image:linear-gradient(140deg,#ffffff12 0 40%,transparent 40%)}
+.origami-paper .poster{clip-path:polygon(0 0,90% 0,100% 20%,100% 100%,0 100%)}
+.origami-paper .play{clip-path:polygon(0 0,85% 0,100% 20%,100% 100%,0 100%)}
+.light .origami-paper{--bg:#f4eadc;--fg:#352b22;--surface:#fff8ec;--ctrl:#e8d5bb;--line:#8e7c68;--accent:#aa5b3a;--on-accent:#fff;--panel-shadow:4px 6px 12px #84705a55}

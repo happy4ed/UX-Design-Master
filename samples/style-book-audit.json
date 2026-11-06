@@ -1,0 +1,4593 @@
+{
+  "status": "PASS",
+  "meaning": "DOM geometry and proposed token application only; source-style fidelity NOT_RUN",
+  "style_count": 26,
+  "free_style_count": 22,
+  "duplicate_free_style_tokens": [],
+  "proposed_token_mismatches": [],
+  "detail_diversity": {
+    "font_families": 10,
+    "icon_forms": 13,
+    "scrub_track_heights": 12,
+    "scrub_thumb_widths": 16
+  },
+  "missing_details": [],
+  "records": [
+    {
+      "style": "oneui",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/oneui-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/oneui-phone-dark-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "16px",
+        "volumeTrack": "18px"
+      },
+      "token": {
+        "bg": "#010102",
+        "surface": "#17171a",
+        "accent": "#387aff",
+        "cardR": "22px",
+        "fieldR": "25px",
+        "buttonR": "25px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "oneui",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/oneui-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/oneui-phone-light-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "16px",
+        "volumeTrack": "18px"
+      },
+      "token": {
+        "bg": "#fcfcff",
+        "surface": "#f1f1f5",
+        "accent": "#387aff",
+        "cardR": "22px",
+        "fieldR": "25px",
+        "buttonR": "25px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "oneui",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/oneui-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/oneui-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "16px",
+        "volumeTrack": "18px"
+      },
+      "token": {
+        "bg": "#010102",
+        "surface": "#17171a",
+        "accent": "#387aff",
+        "cardR": "22px",
+        "fieldR": "25px",
+        "buttonR": "25px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "oneui",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/oneui-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/oneui-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "16px",
+        "volumeTrack": "18px"
+      },
+      "token": {
+        "bg": "#fcfcff",
+        "surface": "#f1f1f5",
+        "accent": "#387aff",
+        "cardR": "22px",
+        "fieldR": "25px",
+        "buttonR": "25px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "material",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/material-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/material-phone-dark-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Roboto, \"Noto Sans KR\", Arial, sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "16px",
+        "scrubThumb": "4px",
+        "volumeTrack": "16px"
+      },
+      "token": {
+        "bg": "#17130b",
+        "surface": "#39342b",
+        "accent": "#eac16c",
+        "cardR": "12px",
+        "fieldR": "28px",
+        "buttonR": "8px",
+        "font": "Roboto,\"Noto Sans KR\",Arial,sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "material",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/material-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/material-phone-light-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Roboto, \"Noto Sans KR\", Arial, sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "16px",
+        "scrubThumb": "4px",
+        "volumeTrack": "16px"
+      },
+      "token": {
+        "bg": "#fcf8f0",
+        "surface": "#efe9df",
+        "accent": "#755800",
+        "cardR": "12px",
+        "fieldR": "28px",
+        "buttonR": "8px",
+        "font": "Roboto,\"Noto Sans KR\",Arial,sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "material",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/material-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/material-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "Roboto, \"Noto Sans KR\", Arial, sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "16px",
+        "scrubThumb": "4px",
+        "volumeTrack": "16px"
+      },
+      "token": {
+        "bg": "#17130b",
+        "surface": "#39342b",
+        "accent": "#eac16c",
+        "cardR": "12px",
+        "fieldR": "28px",
+        "buttonR": "8px",
+        "font": "Roboto,\"Noto Sans KR\",Arial,sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "material",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/material-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/material-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "Roboto, \"Noto Sans KR\", Arial, sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "16px",
+        "scrubThumb": "4px",
+        "volumeTrack": "16px"
+      },
+      "token": {
+        "bg": "#fcf8f0",
+        "surface": "#efe9df",
+        "accent": "#755800",
+        "cardR": "12px",
+        "fieldR": "28px",
+        "buttonR": "8px",
+        "font": "Roboto,\"Noto Sans KR\",Arial,sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "ios",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/ios-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/ios-phone-dark-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "1px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#000",
+        "surface": "#1c1c1e",
+        "accent": "#0091ff",
+        "cardR": "26px",
+        "fieldR": "24px",
+        "buttonR": "24px",
+        "font": "-apple-system,BlinkMacSystemFont,\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "ios",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/ios-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/ios-phone-light-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "1px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#f2f2f7",
+        "surface": "#fff",
+        "accent": "#007aff",
+        "cardR": "26px",
+        "fieldR": "24px",
+        "buttonR": "24px",
+        "font": "-apple-system,BlinkMacSystemFont,\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "ios",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/ios-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/ios-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "1px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#000",
+        "surface": "#1c1c1e",
+        "accent": "#0091ff",
+        "cardR": "26px",
+        "fieldR": "24px",
+        "buttonR": "24px",
+        "font": "-apple-system,BlinkMacSystemFont,\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "ios",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/ios-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/ios-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "1px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#f2f2f7",
+        "surface": "#fff",
+        "accent": "#007aff",
+        "cardR": "26px",
+        "fieldR": "24px",
+        "buttonR": "24px",
+        "font": "-apple-system,BlinkMacSystemFont,\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "hifi",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/hifi-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/hifi-phone-dark-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "technical",
+        "svgIcons": 4,
+        "scrubTrack": "10px",
+        "scrubThumb": "12px",
+        "volumeTrack": "10px"
+      },
+      "token": {
+        "bg": "#3b2510",
+        "surface": "linear-gradient(120deg,#c3bdb5,#b5b8b8 45%,#958878)",
+        "accent": "#d6a586",
+        "cardR": "5px",
+        "fieldR": "4px",
+        "buttonR": "5px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "hifi",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/hifi-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/hifi-phone-light-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "technical",
+        "svgIcons": 4,
+        "scrubTrack": "10px",
+        "scrubThumb": "12px",
+        "volumeTrack": "10px"
+      },
+      "token": {
+        "bg": "#b88759",
+        "surface": "linear-gradient(120deg,#c3bdb5,#b5b8b8 45%,#958878)",
+        "accent": "#d6a586",
+        "cardR": "5px",
+        "fieldR": "4px",
+        "buttonR": "5px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "hifi",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/hifi-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/hifi-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "technical",
+        "svgIcons": 4,
+        "scrubTrack": "10px",
+        "scrubThumb": "12px",
+        "volumeTrack": "10px"
+      },
+      "token": {
+        "bg": "#3b2510",
+        "surface": "linear-gradient(120deg,#c3bdb5,#b5b8b8 45%,#958878)",
+        "accent": "#d6a586",
+        "cardR": "5px",
+        "fieldR": "4px",
+        "buttonR": "5px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "hifi",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/hifi-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/hifi-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "technical",
+        "svgIcons": 4,
+        "scrubTrack": "10px",
+        "scrubThumb": "12px",
+        "volumeTrack": "10px"
+      },
+      "token": {
+        "bg": "#b88759",
+        "surface": "linear-gradient(120deg,#c3bdb5,#b5b8b8 45%,#958878)",
+        "accent": "#d6a586",
+        "cardR": "5px",
+        "fieldR": "4px",
+        "buttonR": "5px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "glassmorphism",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/glassmorphism-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/glassmorphism-phone-dark-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "8px",
+        "scrubThumb": "18px",
+        "volumeTrack": "8px"
+      },
+      "token": {
+        "bg": "#121a30",
+        "surface": "#ffffff24",
+        "accent": "#83e9e7",
+        "cardR": "25px",
+        "fieldR": "17px",
+        "buttonR": "999px",
+        "font": "\"Segoe UI\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 72% 18%,#e6f3ffbb 0 8%,transparent 30%),linear-gradient(125deg,#071b43,#337ea1 42%,#864f9c 74%,#211b3c)",
+        "panelBorder": "1px solid #ffffff50",
+        "panelShadow": "inset 0 1px 0 #ffffff4d,0 14px 30px #03091f77"
+      }
+    },
+    {
+      "style": "glassmorphism",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/glassmorphism-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/glassmorphism-phone-light-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "8px",
+        "scrubThumb": "18px",
+        "volumeTrack": "8px"
+      },
+      "token": {
+        "bg": "#dbe9f4",
+        "surface": "#ffffff9c",
+        "accent": "#006e87",
+        "cardR": "25px",
+        "fieldR": "17px",
+        "buttonR": "999px",
+        "font": "\"Segoe UI\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 72% 18%,#e6f3ffbb 0 8%,transparent 30%),linear-gradient(125deg,#071b43,#337ea1 42%,#864f9c 74%,#211b3c)",
+        "panelBorder": "1px solid #ffffffd9",
+        "panelShadow": "inset 0 1px 0 #fff,0 12px 25px #365a7545"
+      }
+    },
+    {
+      "style": "glassmorphism",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/glassmorphism-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/glassmorphism-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "8px",
+        "scrubThumb": "18px",
+        "volumeTrack": "8px"
+      },
+      "token": {
+        "bg": "#121a30",
+        "surface": "#ffffff24",
+        "accent": "#83e9e7",
+        "cardR": "25px",
+        "fieldR": "17px",
+        "buttonR": "999px",
+        "font": "\"Segoe UI\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 72% 18%,#e6f3ffbb 0 8%,transparent 30%),linear-gradient(125deg,#071b43,#337ea1 42%,#864f9c 74%,#211b3c)",
+        "panelBorder": "1px solid #ffffff50",
+        "panelShadow": "inset 0 1px 0 #ffffff4d,0 14px 30px #03091f77"
+      }
+    },
+    {
+      "style": "glassmorphism",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/glassmorphism-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/glassmorphism-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "8px",
+        "scrubThumb": "18px",
+        "volumeTrack": "8px"
+      },
+      "token": {
+        "bg": "#dbe9f4",
+        "surface": "#ffffff9c",
+        "accent": "#006e87",
+        "cardR": "25px",
+        "fieldR": "17px",
+        "buttonR": "999px",
+        "font": "\"Segoe UI\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 72% 18%,#e6f3ffbb 0 8%,transparent 30%),linear-gradient(125deg,#071b43,#337ea1 42%,#864f9c 74%,#211b3c)",
+        "panelBorder": "1px solid #ffffffd9",
+        "panelShadow": "inset 0 1px 0 #fff,0 12px 25px #365a7545"
+      }
+    },
+    {
+      "style": "neumorphism",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/neumorphism-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/neumorphism-phone-dark-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "10px",
+        "scrubThumb": "20px",
+        "volumeTrack": "10px"
+      },
+      "token": {
+        "bg": "#252b36",
+        "surface": "#252b36",
+        "accent": "#8dbce9",
+        "cardR": "26px",
+        "fieldR": "18px",
+        "buttonR": "18px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#4a6b77,#a5adb5 48%,#495a75)",
+        "panelBorder": "",
+        "panelShadow": "9px 9px 19px #151922,-9px -9px 19px #353d4a"
+      }
+    },
+    {
+      "style": "neumorphism",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/neumorphism-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/neumorphism-phone-light-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "10px",
+        "scrubThumb": "20px",
+        "volumeTrack": "10px"
+      },
+      "token": {
+        "bg": "#e5e9ef",
+        "surface": "#e5e9ef",
+        "accent": "#315f8a",
+        "cardR": "26px",
+        "fieldR": "18px",
+        "buttonR": "18px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#4a6b77,#a5adb5 48%,#495a75)",
+        "panelBorder": "",
+        "panelShadow": "9px 9px 19px #bbc4cf,-9px -9px 19px #fff"
+      }
+    },
+    {
+      "style": "neumorphism",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/neumorphism-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/neumorphism-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "10px",
+        "scrubThumb": "20px",
+        "volumeTrack": "10px"
+      },
+      "token": {
+        "bg": "#252b36",
+        "surface": "#252b36",
+        "accent": "#8dbce9",
+        "cardR": "26px",
+        "fieldR": "18px",
+        "buttonR": "18px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#4a6b77,#a5adb5 48%,#495a75)",
+        "panelBorder": "",
+        "panelShadow": "9px 9px 19px #151922,-9px -9px 19px #353d4a"
+      }
+    },
+    {
+      "style": "neumorphism",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/neumorphism-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/neumorphism-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "10px",
+        "scrubThumb": "20px",
+        "volumeTrack": "10px"
+      },
+      "token": {
+        "bg": "#e5e9ef",
+        "surface": "#e5e9ef",
+        "accent": "#315f8a",
+        "cardR": "26px",
+        "fieldR": "18px",
+        "buttonR": "18px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#4a6b77,#a5adb5 48%,#495a75)",
+        "panelBorder": "",
+        "panelShadow": "9px 9px 19px #bbc4cf,-9px -9px 19px #fff"
+      }
+    },
+    {
+      "style": "claymorphism",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/claymorphism-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/claymorphism-phone-dark-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 21,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "15px",
+        "scrubThumb": "25px",
+        "volumeTrack": "15px"
+      },
+      "token": {
+        "bg": "#382747",
+        "surface": "#66547d",
+        "accent": "#ffb8d9",
+        "cardR": "36px",
+        "fieldR": "24px",
+        "buttonR": "28px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 73% 31%,#ffd0ee 0 13%,transparent 14%),radial-gradient(circle at 30% 25%,#d3f0bb 0 20%,transparent 21%),linear-gradient(145deg,#7c5ca1,#ef8cb1)",
+        "panelBorder": "",
+        "panelShadow": "inset 0 6px 10px #ffffff2e,inset 0 -9px 15px #2415336b,0 18px 25px #180d2a7a"
+      }
+    },
+    {
+      "style": "claymorphism",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/claymorphism-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/claymorphism-phone-light-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 21,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "15px",
+        "scrubThumb": "25px",
+        "volumeTrack": "15px"
+      },
+      "token": {
+        "bg": "#fff1ef",
+        "surface": "#f5d7e8",
+        "accent": "#dc5e99",
+        "cardR": "36px",
+        "fieldR": "24px",
+        "buttonR": "28px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 73% 31%,#ffd0ee 0 13%,transparent 14%),radial-gradient(circle at 30% 25%,#d3f0bb 0 20%,transparent 21%),linear-gradient(145deg,#7c5ca1,#ef8cb1)",
+        "panelBorder": "",
+        "panelShadow": "inset 0 6px 10px #fff,inset 0 -9px 15px #b7749866,0 18px 25px #b47c997a"
+      }
+    },
+    {
+      "style": "claymorphism",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/claymorphism-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/claymorphism-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 163,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "15px",
+        "scrubThumb": "25px",
+        "volumeTrack": "15px"
+      },
+      "token": {
+        "bg": "#382747",
+        "surface": "#66547d",
+        "accent": "#ffb8d9",
+        "cardR": "36px",
+        "fieldR": "24px",
+        "buttonR": "28px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 73% 31%,#ffd0ee 0 13%,transparent 14%),radial-gradient(circle at 30% 25%,#d3f0bb 0 20%,transparent 21%),linear-gradient(145deg,#7c5ca1,#ef8cb1)",
+        "panelBorder": "",
+        "panelShadow": "inset 0 6px 10px #ffffff2e,inset 0 -9px 15px #2415336b,0 18px 25px #180d2a7a"
+      }
+    },
+    {
+      "style": "claymorphism",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/claymorphism-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/claymorphism-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 163,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "15px",
+        "scrubThumb": "25px",
+        "volumeTrack": "15px"
+      },
+      "token": {
+        "bg": "#fff1ef",
+        "surface": "#f5d7e8",
+        "accent": "#dc5e99",
+        "cardR": "36px",
+        "fieldR": "24px",
+        "buttonR": "28px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 73% 31%,#ffd0ee 0 13%,transparent 14%),radial-gradient(circle at 30% 25%,#d3f0bb 0 20%,transparent 21%),linear-gradient(145deg,#7c5ca1,#ef8cb1)",
+        "panelBorder": "",
+        "panelShadow": "inset 0 6px 10px #fff,inset 0 -9px 15px #b7749866,0 18px 25px #b47c997a"
+      }
+    },
+    {
+      "style": "flat-2",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/flat-2-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/flat-2-phone-dark-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "8px",
+        "scrubThumb": "13px",
+        "volumeTrack": "8px"
+      },
+      "token": {
+        "bg": "#142642",
+        "surface": "#1e3b5d",
+        "accent": "#4ee2a8",
+        "cardR": "10px",
+        "fieldR": "8px",
+        "buttonR": "7px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(132deg,#236db2 0 32%,#f2c94c 32% 53%,#da5f69 53% 73%,#14375c 73%)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "flat-2",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/flat-2-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/flat-2-phone-light-viewport.png",
+      "width": 321,
+      "height": 908,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "8px",
+        "scrubThumb": "13px",
+        "volumeTrack": "8px"
+      },
+      "token": {
+        "bg": "#f4f7fb",
+        "surface": "#e4edf5",
+        "accent": "#006f58",
+        "cardR": "10px",
+        "fieldR": "8px",
+        "buttonR": "7px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(132deg,#236db2 0 32%,#f2c94c 32% 53%,#da5f69 53% 73%,#14375c 73%)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "flat-2",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/flat-2-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/flat-2-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "8px",
+        "scrubThumb": "13px",
+        "volumeTrack": "8px"
+      },
+      "token": {
+        "bg": "#142642",
+        "surface": "#1e3b5d",
+        "accent": "#4ee2a8",
+        "cardR": "10px",
+        "fieldR": "8px",
+        "buttonR": "7px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(132deg,#236db2 0 32%,#f2c94c 32% 53%,#da5f69 53% 73%,#14375c 73%)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "flat-2",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/flat-2-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/flat-2-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 164,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "8px",
+        "scrubThumb": "13px",
+        "volumeTrack": "8px"
+      },
+      "token": {
+        "bg": "#f4f7fb",
+        "surface": "#e4edf5",
+        "accent": "#006f58",
+        "cardR": "10px",
+        "fieldR": "8px",
+        "buttonR": "7px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(132deg,#236db2 0 32%,#f2c94c 32% 53%,#da5f69 53% 73%,#14375c 73%)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "neo-brutalism",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/neo-brutalism-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/neo-brutalism-phone-dark-viewport.png",
+      "width": 321,
+      "height": 914,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "12px",
+        "scrubThumb": "20px",
+        "volumeTrack": "12px"
+      },
+      "token": {
+        "bg": "#221f2f",
+        "surface": "#393245",
+        "accent": "#f5e55e",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "repeating-linear-gradient(-25deg,#f7cf4b 0 18px,#ec6685 18px 35px,#8167bd 35px 55px)",
+        "panelBorder": "3px solid #f3df6d",
+        "panelShadow": "6px 6px 0 #07060b"
+      }
+    },
+    {
+      "style": "neo-brutalism",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/neo-brutalism-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/neo-brutalism-phone-light-viewport.png",
+      "width": 321,
+      "height": 914,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "12px",
+        "scrubThumb": "20px",
+        "volumeTrack": "12px"
+      },
+      "token": {
+        "bg": "#fff7dd",
+        "surface": "#fff",
+        "accent": "#fa6290",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "repeating-linear-gradient(-25deg,#f7cf4b 0 18px,#ec6685 18px 35px,#8167bd 35px 55px)",
+        "panelBorder": "3px solid #19141d",
+        "panelShadow": "6px 6px 0 #19141d"
+      }
+    },
+    {
+      "style": "neo-brutalism",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/neo-brutalism-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/neo-brutalism-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 158,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "12px",
+        "scrubThumb": "20px",
+        "volumeTrack": "12px"
+      },
+      "token": {
+        "bg": "#221f2f",
+        "surface": "#393245",
+        "accent": "#f5e55e",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "repeating-linear-gradient(-25deg,#f7cf4b 0 18px,#ec6685 18px 35px,#8167bd 35px 55px)",
+        "panelBorder": "3px solid #f3df6d",
+        "panelShadow": "6px 6px 0 #07060b"
+      }
+    },
+    {
+      "style": "neo-brutalism",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/neo-brutalism-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/neo-brutalism-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 158,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "12px",
+        "scrubThumb": "20px",
+        "volumeTrack": "12px"
+      },
+      "token": {
+        "bg": "#fff7dd",
+        "surface": "#fff",
+        "accent": "#fa6290",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "repeating-linear-gradient(-25deg,#f7cf4b 0 18px,#ec6685 18px 35px,#8167bd 35px 55px)",
+        "panelBorder": "3px solid #19141d",
+        "panelShadow": "6px 6px 0 #19141d"
+      }
+    },
+    {
+      "style": "bauhaus-swiss",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/bauhaus-swiss-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/bauhaus-swiss-phone-dark-viewport.png",
+      "width": 321,
+      "height": 912,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "geometric",
+        "svgIcons": 4,
+        "scrubTrack": "5px",
+        "scrubThumb": "17px",
+        "volumeTrack": "5px"
+      },
+      "token": {
+        "bg": "#161615",
+        "surface": "#232422",
+        "accent": "#e8d047",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 36%,#efc834 0 15%,transparent 15.3%),linear-gradient(90deg,transparent 0 40%,#ec594e 40% 65%,transparent 65%),linear-gradient(135deg,#274cbd,#f4e6ca)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "bauhaus-swiss",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/bauhaus-swiss-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/bauhaus-swiss-phone-light-viewport.png",
+      "width": 321,
+      "height": 912,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "geometric",
+        "svgIcons": 4,
+        "scrubTrack": "5px",
+        "scrubThumb": "17px",
+        "volumeTrack": "5px"
+      },
+      "token": {
+        "bg": "#f4f0e7",
+        "surface": "#fffef9",
+        "accent": "#bc2d25",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 36%,#efc834 0 15%,transparent 15.3%),linear-gradient(90deg,transparent 0 40%,#ec594e 40% 65%,transparent 65%),linear-gradient(135deg,#274cbd,#f4e6ca)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "bauhaus-swiss",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/bauhaus-swiss-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/bauhaus-swiss-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 160,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "geometric",
+        "svgIcons": 4,
+        "scrubTrack": "5px",
+        "scrubThumb": "17px",
+        "volumeTrack": "5px"
+      },
+      "token": {
+        "bg": "#161615",
+        "surface": "#232422",
+        "accent": "#e8d047",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 36%,#efc834 0 15%,transparent 15.3%),linear-gradient(90deg,transparent 0 40%,#ec594e 40% 65%,transparent 65%),linear-gradient(135deg,#274cbd,#f4e6ca)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "bauhaus-swiss",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/bauhaus-swiss-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/bauhaus-swiss-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 160,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "geometric",
+        "svgIcons": 4,
+        "scrubTrack": "5px",
+        "scrubThumb": "17px",
+        "volumeTrack": "5px"
+      },
+      "token": {
+        "bg": "#f4f0e7",
+        "surface": "#fffef9",
+        "accent": "#bc2d25",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 36%,#efc834 0 15%,transparent 15.3%),linear-gradient(90deg,transparent 0 40%,#ec594e 40% 65%,transparent 65%),linear-gradient(135deg,#274cbd,#f4e6ca)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "memphis",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/memphis-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/memphis-phone-dark-viewport.png",
+      "width": 321,
+      "height": 912,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "12px",
+        "scrubThumb": "22px",
+        "volumeTrack": "12px"
+      },
+      "token": {
+        "bg": "#29284b",
+        "surface": "#47416d",
+        "accent": "#ffcc4e",
+        "cardR": "12px",
+        "fieldR": "21px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 36%,#ffd544 0 14%,transparent 15%),repeating-linear-gradient(45deg,transparent 0 12px,#f08bb8 12px 17px,transparent 17px 29px),linear-gradient(135deg,#3db7b5,#7e4ac4)",
+        "panelBorder": "2px solid #fca1c6",
+        "panelShadow": "8px 8px 0 #0f1029"
+      }
+    },
+    {
+      "style": "memphis",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/memphis-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/memphis-phone-light-viewport.png",
+      "width": 321,
+      "height": 912,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "12px",
+        "scrubThumb": "22px",
+        "volumeTrack": "12px"
+      },
+      "token": {
+        "bg": "#ffecdc",
+        "surface": "#ffe2c2",
+        "accent": "#33b6af",
+        "cardR": "12px",
+        "fieldR": "21px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 36%,#ffd544 0 14%,transparent 15%),repeating-linear-gradient(45deg,transparent 0 12px,#f08bb8 12px 17px,transparent 17px 29px),linear-gradient(135deg,#3db7b5,#7e4ac4)",
+        "panelBorder": "2px solid #5d367f",
+        "panelShadow": "8px 8px 0 #5d367f"
+      }
+    },
+    {
+      "style": "memphis",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/memphis-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/memphis-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 160,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "12px",
+        "scrubThumb": "22px",
+        "volumeTrack": "12px"
+      },
+      "token": {
+        "bg": "#29284b",
+        "surface": "#47416d",
+        "accent": "#ffcc4e",
+        "cardR": "12px",
+        "fieldR": "21px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 36%,#ffd544 0 14%,transparent 15%),repeating-linear-gradient(45deg,transparent 0 12px,#f08bb8 12px 17px,transparent 17px 29px),linear-gradient(135deg,#3db7b5,#7e4ac4)",
+        "panelBorder": "2px solid #fca1c6",
+        "panelShadow": "8px 8px 0 #0f1029"
+      }
+    },
+    {
+      "style": "memphis",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/memphis-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/memphis-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 160,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "12px",
+        "scrubThumb": "22px",
+        "volumeTrack": "12px"
+      },
+      "token": {
+        "bg": "#ffecdc",
+        "surface": "#ffe2c2",
+        "accent": "#33b6af",
+        "cardR": "12px",
+        "fieldR": "21px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 36%,#ffd544 0 14%,transparent 15%),repeating-linear-gradient(45deg,transparent 0 12px,#f08bb8 12px 17px,transparent 17px 29px),linear-gradient(135deg,#3db7b5,#7e4ac4)",
+        "panelBorder": "2px solid #5d367f",
+        "panelShadow": "8px 8px 0 #5d367f"
+      }
+    },
+    {
+      "style": "y2k-chrome",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/y2k-chrome-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/y2k-chrome-phone-dark-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "14px",
+        "scrubThumb": "26px",
+        "volumeTrack": "14px"
+      },
+      "token": {
+        "bg": "#140e31",
+        "surface": "linear-gradient(145deg,#3f3573,#261c4c)",
+        "accent": "#a6ffeb",
+        "cardR": "24px",
+        "fieldR": "999px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 50% -30%,#fff 0,#b4b1ff 16%,#816cb8 38%,#322177 75%)",
+        "panelBorder": "1px solid #e6deff88",
+        "panelShadow": "inset 0 2px 1px #fff8,0 10px 22px #0009"
+      }
+    },
+    {
+      "style": "y2k-chrome",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/y2k-chrome-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/y2k-chrome-phone-light-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "14px",
+        "scrubThumb": "26px",
+        "volumeTrack": "14px"
+      },
+      "token": {
+        "bg": "#dddaf6",
+        "surface": "linear-gradient(145deg,#fff,#cecae9)",
+        "accent": "#5a00b6",
+        "cardR": "24px",
+        "fieldR": "999px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 50% -30%,#fff 0,#b4b1ff 16%,#816cb8 38%,#322177 75%)",
+        "panelBorder": "1px solid #e6deff88",
+        "panelShadow": "inset 0 2px 1px #fff,0 10px 22px #615a9677"
+      }
+    },
+    {
+      "style": "y2k-chrome",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/y2k-chrome-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/y2k-chrome-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "14px",
+        "scrubThumb": "26px",
+        "volumeTrack": "14px"
+      },
+      "token": {
+        "bg": "#140e31",
+        "surface": "linear-gradient(145deg,#3f3573,#261c4c)",
+        "accent": "#a6ffeb",
+        "cardR": "24px",
+        "fieldR": "999px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 50% -30%,#fff 0,#b4b1ff 16%,#816cb8 38%,#322177 75%)",
+        "panelBorder": "1px solid #e6deff88",
+        "panelShadow": "inset 0 2px 1px #fff8,0 10px 22px #0009"
+      }
+    },
+    {
+      "style": "y2k-chrome",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/y2k-chrome-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/y2k-chrome-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "14px",
+        "scrubThumb": "26px",
+        "volumeTrack": "14px"
+      },
+      "token": {
+        "bg": "#dddaf6",
+        "surface": "linear-gradient(145deg,#fff,#cecae9)",
+        "accent": "#5a00b6",
+        "cardR": "24px",
+        "fieldR": "999px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 50% -30%,#fff 0,#b4b1ff 16%,#816cb8 38%,#322177 75%)",
+        "panelBorder": "1px solid #e6deff88",
+        "panelShadow": "inset 0 2px 1px #fff,0 10px 22px #615a9677"
+      }
+    },
+    {
+      "style": "maximalism",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/maximalism-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/maximalism-phone-dark-viewport.png",
+      "width": 321,
+      "height": 914,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Impact, \"Arial Black\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "14px",
+        "scrubThumb": "24px",
+        "volumeTrack": "14px"
+      },
+      "token": {
+        "bg": "#27162a",
+        "surface": "#57304a",
+        "accent": "#ff5b4a",
+        "cardR": "4px",
+        "fieldR": "4px",
+        "buttonR": "4px",
+        "font": "Impact,\"Arial Black\",\"Noto Sans KR\",sans-serif",
+        "poster": "repeating-conic-gradient(from 30deg at 65% 38%,#ffcf57 0 18deg,#e2586b 18deg 36deg,#65479b 36deg 54deg,#ffcf57 54deg 72deg)",
+        "panelBorder": "3px solid #f6c86d",
+        "panelShadow": "8px 8px 0 #0d0818"
+      }
+    },
+    {
+      "style": "maximalism",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/maximalism-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/maximalism-phone-light-viewport.png",
+      "width": 321,
+      "height": 914,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Impact, \"Arial Black\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "14px",
+        "scrubThumb": "24px",
+        "volumeTrack": "14px"
+      },
+      "token": {
+        "bg": "#f9efdc",
+        "surface": "#f8c8ac",
+        "accent": "#e84836",
+        "cardR": "4px",
+        "fieldR": "4px",
+        "buttonR": "4px",
+        "font": "Impact,\"Arial Black\",\"Noto Sans KR\",sans-serif",
+        "poster": "repeating-conic-gradient(from 30deg at 65% 38%,#ffcf57 0 18deg,#e2586b 18deg 36deg,#65479b 36deg 54deg,#ffcf57 54deg 72deg)",
+        "panelBorder": "3px solid #321523",
+        "panelShadow": "8px 8px 0 #321523"
+      }
+    },
+    {
+      "style": "maximalism",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/maximalism-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/maximalism-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 158,
+      "detail": {
+        "fontFamily": "Impact, \"Arial Black\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "14px",
+        "scrubThumb": "24px",
+        "volumeTrack": "14px"
+      },
+      "token": {
+        "bg": "#27162a",
+        "surface": "#57304a",
+        "accent": "#ff5b4a",
+        "cardR": "4px",
+        "fieldR": "4px",
+        "buttonR": "4px",
+        "font": "Impact,\"Arial Black\",\"Noto Sans KR\",sans-serif",
+        "poster": "repeating-conic-gradient(from 30deg at 65% 38%,#ffcf57 0 18deg,#e2586b 18deg 36deg,#65479b 36deg 54deg,#ffcf57 54deg 72deg)",
+        "panelBorder": "3px solid #f6c86d",
+        "panelShadow": "8px 8px 0 #0d0818"
+      }
+    },
+    {
+      "style": "maximalism",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/maximalism-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/maximalism-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 158,
+      "detail": {
+        "fontFamily": "Impact, \"Arial Black\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "14px",
+        "scrubThumb": "24px",
+        "volumeTrack": "14px"
+      },
+      "token": {
+        "bg": "#f9efdc",
+        "surface": "#f8c8ac",
+        "accent": "#e84836",
+        "cardR": "4px",
+        "fieldR": "4px",
+        "buttonR": "4px",
+        "font": "Impact,\"Arial Black\",\"Noto Sans KR\",sans-serif",
+        "poster": "repeating-conic-gradient(from 30deg at 65% 38%,#ffcf57 0 18deg,#e2586b 18deg 36deg,#65479b 36deg 54deg,#ffcf57 54deg 72deg)",
+        "panelBorder": "3px solid #321523",
+        "panelShadow": "8px 8px 0 #321523"
+      }
+    },
+    {
+      "style": "editorial-print",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/editorial-print-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/editorial-print-phone-dark-viewport.png",
+      "width": 321,
+      "height": 913,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Georgia, \"Noto Serif KR\", serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "3px",
+        "volumeTrack": "2px"
+      },
+      "token": {
+        "bg": "#1d1d20",
+        "surface": "#262629",
+        "accent": "#d6b891",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Georgia,\"Noto Serif KR\",serif",
+        "poster": "linear-gradient(95deg,#1f2d3a,#5a6570 42%,#b17e61 78%,#40332c)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "editorial-print",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/editorial-print-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/editorial-print-phone-light-viewport.png",
+      "width": 321,
+      "height": 913,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Georgia, \"Noto Serif KR\", serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "3px",
+        "volumeTrack": "2px"
+      },
+      "token": {
+        "bg": "#f8f6f1",
+        "surface": "#fff",
+        "accent": "#173f71",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Georgia,\"Noto Serif KR\",serif",
+        "poster": "linear-gradient(95deg,#1f2d3a,#5a6570 42%,#b17e61 78%,#40332c)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "editorial-print",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/editorial-print-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/editorial-print-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 159,
+      "detail": {
+        "fontFamily": "Georgia, \"Noto Serif KR\", serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "3px",
+        "volumeTrack": "2px"
+      },
+      "token": {
+        "bg": "#1d1d20",
+        "surface": "#262629",
+        "accent": "#d6b891",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Georgia,\"Noto Serif KR\",serif",
+        "poster": "linear-gradient(95deg,#1f2d3a,#5a6570 42%,#b17e61 78%,#40332c)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "editorial-print",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/editorial-print-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/editorial-print-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 159,
+      "detail": {
+        "fontFamily": "Georgia, \"Noto Serif KR\", serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "3px",
+        "volumeTrack": "2px"
+      },
+      "token": {
+        "bg": "#f8f6f1",
+        "surface": "#fff",
+        "accent": "#173f71",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Georgia,\"Noto Serif KR\",serif",
+        "poster": "linear-gradient(95deg,#1f2d3a,#5a6570 42%,#b17e61 78%,#40332c)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "minimalism",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/minimalism-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/minimalism-phone-dark-viewport.png",
+      "width": 321,
+      "height": 957,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 30,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "9px",
+        "volumeTrack": "2px"
+      },
+      "token": {
+        "bg": "#101113",
+        "surface": "#101113",
+        "accent": "#acd8ff",
+        "cardR": "4px",
+        "fieldR": "4px",
+        "buttonR": "999px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#202d3c,#66727b 50%,#c8a386)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "minimalism",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/minimalism-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/minimalism-phone-light-viewport.png",
+      "width": 321,
+      "height": 957,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 30,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "9px",
+        "volumeTrack": "2px"
+      },
+      "token": {
+        "bg": "#fff",
+        "surface": "#fff",
+        "accent": "#1a61ae",
+        "cardR": "4px",
+        "fieldR": "4px",
+        "buttonR": "999px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#202d3c,#66727b 50%,#c8a386)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "minimalism",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/minimalism-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/minimalism-fold-dark-viewport.png",
+      "width": 662,
+      "height": 872,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 140,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "9px",
+        "volumeTrack": "2px"
+      },
+      "token": {
+        "bg": "#101113",
+        "surface": "#101113",
+        "accent": "#acd8ff",
+        "cardR": "4px",
+        "fieldR": "4px",
+        "buttonR": "999px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#202d3c,#66727b 50%,#c8a386)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "minimalism",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/minimalism-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/minimalism-fold-light-viewport.png",
+      "width": 662,
+      "height": 872,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 140,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "thin",
+        "svgIcons": 4,
+        "scrubTrack": "2px",
+        "scrubThumb": "9px",
+        "volumeTrack": "2px"
+      },
+      "token": {
+        "bg": "#fff",
+        "surface": "#fff",
+        "accent": "#1a61ae",
+        "cardR": "4px",
+        "fieldR": "4px",
+        "buttonR": "999px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#202d3c,#66727b 50%,#c8a386)",
+        "panelBorder": "",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "dark-cinematic",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/dark-cinematic-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/dark-cinematic-phone-dark-viewport.png",
+      "width": 321,
+      "height": 948,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "3px",
+        "scrubThumb": "10px",
+        "volumeTrack": "3px"
+      },
+      "token": {
+        "bg": "#080c10",
+        "surface": "#141a20",
+        "accent": "#d7b66c",
+        "cardR": "10px",
+        "fieldR": "8px",
+        "buttonR": "8px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 70% 25%,#f4ba7a 0 4%,transparent 20%),linear-gradient(120deg,#080d1a,#1d3a58 48%,#6f4634 80%,#120e13)",
+        "panelBorder": "",
+        "panelShadow": "0 15px 35px #000b"
+      }
+    },
+    {
+      "style": "dark-cinematic",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/dark-cinematic-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/dark-cinematic-phone-light-viewport.png",
+      "width": 321,
+      "height": 948,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "3px",
+        "scrubThumb": "10px",
+        "volumeTrack": "3px"
+      },
+      "token": {
+        "bg": "#ebe8e3",
+        "surface": "#fff",
+        "accent": "#765329",
+        "cardR": "10px",
+        "fieldR": "8px",
+        "buttonR": "8px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 70% 25%,#f4ba7a 0 4%,transparent 20%),linear-gradient(120deg,#080d1a,#1d3a58 48%,#6f4634 80%,#120e13)",
+        "panelBorder": "",
+        "panelShadow": "0 10px 25px #3c34213d"
+      }
+    },
+    {
+      "style": "dark-cinematic",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/dark-cinematic-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/dark-cinematic-fold-dark-viewport.png",
+      "width": 662,
+      "height": 701,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "3px",
+        "scrubThumb": "10px",
+        "volumeTrack": "3px"
+      },
+      "token": {
+        "bg": "#080c10",
+        "surface": "#141a20",
+        "accent": "#d7b66c",
+        "cardR": "10px",
+        "fieldR": "8px",
+        "buttonR": "8px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 70% 25%,#f4ba7a 0 4%,transparent 20%),linear-gradient(120deg,#080d1a,#1d3a58 48%,#6f4634 80%,#120e13)",
+        "panelBorder": "",
+        "panelShadow": "0 15px 35px #000b"
+      }
+    },
+    {
+      "style": "dark-cinematic",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/dark-cinematic-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/dark-cinematic-fold-light-viewport.png",
+      "width": 662,
+      "height": 701,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "filled",
+        "svgIcons": 4,
+        "scrubTrack": "3px",
+        "scrubThumb": "10px",
+        "volumeTrack": "3px"
+      },
+      "token": {
+        "bg": "#ebe8e3",
+        "surface": "#fff",
+        "accent": "#765329",
+        "cardR": "10px",
+        "fieldR": "8px",
+        "buttonR": "8px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 70% 25%,#f4ba7a 0 4%,transparent 20%),linear-gradient(120deg,#080d1a,#1d3a58 48%,#6f4634 80%,#120e13)",
+        "panelBorder": "",
+        "panelShadow": "0 10px 25px #3c34213d"
+      }
+    },
+    {
+      "style": "aurora-mesh",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/aurora-mesh-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/aurora-mesh-phone-dark-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "18px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#090d28",
+        "surface": "#252446bd",
+        "accent": "#7eeedb",
+        "cardR": "20px",
+        "fieldR": "16px",
+        "buttonR": "14px",
+        "font": "\"Segoe UI\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 23% 35%,#5de8db 0,transparent 35%),radial-gradient(circle at 70% 50%,#f39ee1 0,transparent 40%),linear-gradient(130deg,#143179,#2e144e)",
+        "panelBorder": "1px solid #ffffff38",
+        "panelShadow": "0 10px 30px #03051399"
+      }
+    },
+    {
+      "style": "aurora-mesh",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/aurora-mesh-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/aurora-mesh-phone-light-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "18px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#e9ecff",
+        "surface": "#ffffffbc",
+        "accent": "#136f68",
+        "cardR": "20px",
+        "fieldR": "16px",
+        "buttonR": "14px",
+        "font": "\"Segoe UI\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 23% 35%,#5de8db 0,transparent 35%),radial-gradient(circle at 70% 50%,#f39ee1 0,transparent 40%),linear-gradient(130deg,#143179,#2e144e)",
+        "panelBorder": "1px solid #fff",
+        "panelShadow": "0 10px 30px #6a70ad44"
+      }
+    },
+    {
+      "style": "aurora-mesh",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/aurora-mesh-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/aurora-mesh-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "18px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#090d28",
+        "surface": "#252446bd",
+        "accent": "#7eeedb",
+        "cardR": "20px",
+        "fieldR": "16px",
+        "buttonR": "14px",
+        "font": "\"Segoe UI\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 23% 35%,#5de8db 0,transparent 35%),radial-gradient(circle at 70% 50%,#f39ee1 0,transparent 40%),linear-gradient(130deg,#143179,#2e144e)",
+        "panelBorder": "1px solid #ffffff38",
+        "panelShadow": "0 10px 30px #03051399"
+      }
+    },
+    {
+      "style": "aurora-mesh",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/aurora-mesh-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/aurora-mesh-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "round",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "18px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#e9ecff",
+        "surface": "#ffffffbc",
+        "accent": "#136f68",
+        "cardR": "20px",
+        "fieldR": "16px",
+        "buttonR": "14px",
+        "font": "\"Segoe UI\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 23% 35%,#5de8db 0,transparent 35%),radial-gradient(circle at 70% 50%,#f39ee1 0,transparent 40%),linear-gradient(130deg,#143179,#2e144e)",
+        "panelBorder": "1px solid #fff",
+        "panelShadow": "0 10px 30px #6a70ad44"
+      }
+    },
+    {
+      "style": "frutiger-aero",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/frutiger-aero-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/frutiger-aero-phone-dark-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "13px",
+        "scrubThumb": "23px",
+        "volumeTrack": "13px"
+      },
+      "token": {
+        "bg": "#0a4979",
+        "surface": "linear-gradient(#327db4,#07517e)",
+        "accent": "#a4f788",
+        "cardR": "25px",
+        "fieldR": "999px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 22%,#fff 0 3%,transparent 15%),linear-gradient(165deg,#6ddaff 0 45%,#d9f9f7 45% 50%,#50ab6c 51% 75%,#126b5b)",
+        "panelBorder": "1px solid #d5ffffa3",
+        "panelShadow": "inset 0 2px 2px #e9ffff9e,0 12px 21px #00284499"
+      }
+    },
+    {
+      "style": "frutiger-aero",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/frutiger-aero-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/frutiger-aero-phone-light-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "13px",
+        "scrubThumb": "23px",
+        "volumeTrack": "13px"
+      },
+      "token": {
+        "bg": "#c7f3fa",
+        "surface": "linear-gradient(#f5feff,#a9e1ef)",
+        "accent": "#228247",
+        "cardR": "25px",
+        "fieldR": "999px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 22%,#fff 0 3%,transparent 15%),linear-gradient(165deg,#6ddaff 0 45%,#d9f9f7 45% 50%,#50ab6c 51% 75%,#126b5b)",
+        "panelBorder": "1px solid #d5ffffa3",
+        "panelShadow": "inset 0 2px 2px #fff,0 12px 21px #428da955"
+      }
+    },
+    {
+      "style": "frutiger-aero",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/frutiger-aero-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/frutiger-aero-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "13px",
+        "scrubThumb": "23px",
+        "volumeTrack": "13px"
+      },
+      "token": {
+        "bg": "#0a4979",
+        "surface": "linear-gradient(#327db4,#07517e)",
+        "accent": "#a4f788",
+        "cardR": "25px",
+        "fieldR": "999px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 22%,#fff 0 3%,transparent 15%),linear-gradient(165deg,#6ddaff 0 45%,#d9f9f7 45% 50%,#50ab6c 51% 75%,#126b5b)",
+        "panelBorder": "1px solid #d5ffffa3",
+        "panelShadow": "inset 0 2px 2px #e9ffff9e,0 12px 21px #00284499"
+      }
+    },
+    {
+      "style": "frutiger-aero",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/frutiger-aero-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/frutiger-aero-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+        "iconForm": "soft",
+        "svgIcons": 4,
+        "scrubTrack": "13px",
+        "scrubThumb": "23px",
+        "volumeTrack": "13px"
+      },
+      "token": {
+        "bg": "#c7f3fa",
+        "surface": "linear-gradient(#f5feff,#a9e1ef)",
+        "accent": "#228247",
+        "cardR": "25px",
+        "fieldR": "999px",
+        "buttonR": "999px",
+        "font": "\"Trebuchet MS\",\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 74% 22%,#fff 0 3%,transparent 15%),linear-gradient(165deg,#6ddaff 0 45%,#d9f9f7 45% 50%,#50ab6c 51% 75%,#126b5b)",
+        "panelBorder": "1px solid #d5ffffa3",
+        "panelShadow": "inset 0 2px 2px #fff,0 12px 21px #428da955"
+      }
+    },
+    {
+      "style": "origami-paper",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/origami-paper-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/origami-paper-phone-dark-viewport.png",
+      "width": 321,
+      "height": 909,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Georgia, \"Noto Serif KR\", serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "17px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#29241f",
+        "surface": "#51483e",
+        "accent": "#eac88a",
+        "cardR": "3px",
+        "fieldR": "2px",
+        "buttonR": "2px",
+        "font": "Georgia,\"Noto Serif KR\",serif",
+        "poster": "linear-gradient(135deg,transparent 0 49%,#f2c288 49% 51%,transparent 51%),linear-gradient(45deg,#876478 0 49%,#c49c80 49% 51%,#748ba1 51%)",
+        "panelBorder": "",
+        "panelShadow": "4px 6px 12px #0e0a0880"
+      }
+    },
+    {
+      "style": "origami-paper",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/origami-paper-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/origami-paper-phone-light-viewport.png",
+      "width": 321,
+      "height": 909,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Georgia, \"Noto Serif KR\", serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "17px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#f4eadc",
+        "surface": "#fff8ec",
+        "accent": "#aa5b3a",
+        "cardR": "3px",
+        "fieldR": "2px",
+        "buttonR": "2px",
+        "font": "Georgia,\"Noto Serif KR\",serif",
+        "poster": "linear-gradient(135deg,transparent 0 49%,#f2c288 49% 51%,transparent 51%),linear-gradient(45deg,#876478 0 49%,#c49c80 49% 51%,#748ba1 51%)",
+        "panelBorder": "",
+        "panelShadow": "4px 6px 12px #84705a55"
+      }
+    },
+    {
+      "style": "origami-paper",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/origami-paper-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/origami-paper-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 163,
+      "detail": {
+        "fontFamily": "Georgia, \"Noto Serif KR\", serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "17px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#29241f",
+        "surface": "#51483e",
+        "accent": "#eac88a",
+        "cardR": "3px",
+        "fieldR": "2px",
+        "buttonR": "2px",
+        "font": "Georgia,\"Noto Serif KR\",serif",
+        "poster": "linear-gradient(135deg,transparent 0 49%,#f2c288 49% 51%,transparent 51%),linear-gradient(45deg,#876478 0 49%,#c49c80 49% 51%,#748ba1 51%)",
+        "panelBorder": "",
+        "panelShadow": "4px 6px 12px #0e0a0880"
+      }
+    },
+    {
+      "style": "origami-paper",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/origami-paper-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/origami-paper-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 163,
+      "detail": {
+        "fontFamily": "Georgia, \"Noto Serif KR\", serif",
+        "iconForm": "angular",
+        "svgIcons": 4,
+        "scrubTrack": "7px",
+        "scrubThumb": "17px",
+        "volumeTrack": "7px"
+      },
+      "token": {
+        "bg": "#f4eadc",
+        "surface": "#fff8ec",
+        "accent": "#aa5b3a",
+        "cardR": "3px",
+        "fieldR": "2px",
+        "buttonR": "2px",
+        "font": "Georgia,\"Noto Serif KR\",serif",
+        "poster": "linear-gradient(135deg,transparent 0 49%,#f2c288 49% 51%,transparent 51%),linear-gradient(45deg,#876478 0 49%,#c49c80 49% 51%,#748ba1 51%)",
+        "panelBorder": "",
+        "panelShadow": "4px 6px 12px #84705a55"
+      }
+    },
+    {
+      "style": "bento-grid",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/bento-grid-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/bento-grid-phone-dark-viewport.png",
+      "width": 321,
+      "height": 964,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 32,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "simple",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#111827",
+        "surface": "#263246",
+        "accent": "#b6e19b",
+        "cardR": "20px",
+        "fieldR": "12px",
+        "buttonR": "12px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(135deg,#355f50,#a1c494)",
+        "panelBorder": "1px solid #60718c",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "bento-grid",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/bento-grid-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/bento-grid-phone-light-viewport.png",
+      "width": 321,
+      "height": 964,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 32,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "simple",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#f4f5f2",
+        "surface": "#fff",
+        "accent": "#476c39",
+        "cardR": "20px",
+        "fieldR": "12px",
+        "buttonR": "12px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(135deg,#355f50,#a1c494)",
+        "panelBorder": "1px solid #a8b4aa",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "bento-grid",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/bento-grid-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/bento-grid-fold-dark-viewport.png",
+      "width": 662,
+      "height": 1272,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 32,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "simple",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#111827",
+        "surface": "#263246",
+        "accent": "#b6e19b",
+        "cardR": "20px",
+        "fieldR": "12px",
+        "buttonR": "12px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(135deg,#355f50,#a1c494)",
+        "panelBorder": "1px solid #60718c",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "bento-grid",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/bento-grid-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/bento-grid-fold-light-viewport.png",
+      "width": 662,
+      "height": 1272,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 32,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "simple",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#f4f5f2",
+        "surface": "#fff",
+        "accent": "#476c39",
+        "cardR": "20px",
+        "fieldR": "12px",
+        "buttonR": "12px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(135deg,#355f50,#a1c494)",
+        "panelBorder": "1px solid #a8b4aa",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "dark-tech",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/dark-tech-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/dark-tech-phone-dark-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "ui-sans-serif, \"Noto Sans KR\", sans-serif",
+        "iconForm": "technical",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#070b10",
+        "surface": "#101a24",
+        "accent": "#63dbca",
+        "cardR": "8px",
+        "fieldR": "7px",
+        "buttonR": "7px",
+        "font": "ui-sans-serif,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(145deg,#07121e 5%,#164456 52%,#0c1822)",
+        "panelBorder": "1px solid #4a8d8b",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "dark-tech",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/dark-tech-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/dark-tech-phone-light-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "ui-sans-serif, \"Noto Sans KR\", sans-serif",
+        "iconForm": "technical",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#e9f0f0",
+        "surface": "#fff",
+        "accent": "#0b756e",
+        "cardR": "8px",
+        "fieldR": "7px",
+        "buttonR": "7px",
+        "font": "ui-sans-serif,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(145deg,#07121e 5%,#164456 52%,#0c1822)",
+        "panelBorder": "1px solid #4a8d8b",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "dark-tech",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/dark-tech-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/dark-tech-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "ui-sans-serif, \"Noto Sans KR\", sans-serif",
+        "iconForm": "technical",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#070b10",
+        "surface": "#101a24",
+        "accent": "#63dbca",
+        "cardR": "8px",
+        "fieldR": "7px",
+        "buttonR": "7px",
+        "font": "ui-sans-serif,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(145deg,#07121e 5%,#164456 52%,#0c1822)",
+        "panelBorder": "1px solid #4a8d8b",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "dark-tech",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/dark-tech-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/dark-tech-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "ui-sans-serif, \"Noto Sans KR\", sans-serif",
+        "iconForm": "technical",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#e9f0f0",
+        "surface": "#fff",
+        "accent": "#0b756e",
+        "cardR": "8px",
+        "fieldR": "7px",
+        "buttonR": "7px",
+        "font": "ui-sans-serif,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(145deg,#07121e 5%,#164456 52%,#0c1822)",
+        "panelBorder": "1px solid #4a8d8b",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "kinetic-typography",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/kinetic-typography-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/kinetic-typography-phone-dark-viewport.png",
+      "width": 321,
+      "height": 922,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "text-first",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#171719",
+        "surface": "#29292c",
+        "accent": "#ffcf6b",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#1e1e23,#706243)",
+        "panelBorder": "0",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "kinetic-typography",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/kinetic-typography-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/kinetic-typography-phone-light-viewport.png",
+      "width": 321,
+      "height": 922,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "text-first",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#faf9f5",
+        "surface": "#fff",
+        "accent": "#a93527",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#1e1e23,#706243)",
+        "panelBorder": "0",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "kinetic-typography",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/kinetic-typography-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/kinetic-typography-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 150,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "text-first",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#171719",
+        "surface": "#29292c",
+        "accent": "#ffcf6b",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#1e1e23,#706243)",
+        "panelBorder": "0",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "kinetic-typography",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/kinetic-typography-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/kinetic-typography-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 150,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "text-first",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#faf9f5",
+        "surface": "#fff",
+        "accent": "#a93527",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(125deg,#1e1e23,#706243)",
+        "panelBorder": "0",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "scroll-3d",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/scroll-3d-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/scroll-3d-phone-dark-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "flat-overlay",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#0d1422",
+        "surface": "#202e45",
+        "accent": "#85c8ff",
+        "cardR": "14px",
+        "fieldR": "9px",
+        "buttonR": "9px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 52% 44%,#a5dbff,#305e91 42%,#15273c 65%,#091421)",
+        "panelBorder": "1px solid #8fb6d888",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "scroll-3d",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/scroll-3d-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/scroll-3d-phone-light-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "flat-overlay",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#eaf2fb",
+        "surface": "#fff",
+        "accent": "#196d9f",
+        "cardR": "14px",
+        "fieldR": "9px",
+        "buttonR": "9px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 52% 44%,#a5dbff,#305e91 42%,#15273c 65%,#091421)",
+        "panelBorder": "1px solid #8fb6d888",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "scroll-3d",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/scroll-3d-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/scroll-3d-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "flat-overlay",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#0d1422",
+        "surface": "#202e45",
+        "accent": "#85c8ff",
+        "cardR": "14px",
+        "fieldR": "9px",
+        "buttonR": "9px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 52% 44%,#a5dbff,#305e91 42%,#15273c 65%,#091421)",
+        "panelBorder": "1px solid #8fb6d888",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "scroll-3d",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/scroll-3d-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/scroll-3d-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "flat-overlay",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#eaf2fb",
+        "surface": "#fff",
+        "accent": "#196d9f",
+        "cardR": "14px",
+        "fieldR": "9px",
+        "buttonR": "9px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 52% 44%,#a5dbff,#305e91 42%,#15273c 65%,#091421)",
+        "panelBorder": "1px solid #8fb6d888",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "grainy-gradient",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/grainy-gradient-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/grainy-gradient-phone-dark-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "clean",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#211b32",
+        "surface": "#392b47",
+        "accent": "#f6bb9c",
+        "cardR": "18px",
+        "fieldR": "12px",
+        "buttonR": "14px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 25% 30%,#e7a392,transparent 40%),radial-gradient(circle at 75% 60%,#a386c6,transparent 48%),linear-gradient(130deg,#5b456e,#cd887e)",
+        "panelBorder": "1px solid #ffffff44",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "grainy-gradient",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/grainy-gradient-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/grainy-gradient-phone-light-viewport.png",
+      "width": 321,
+      "height": 910,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "clean",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#f5e9df",
+        "surface": "#fffaf6",
+        "accent": "#96536d",
+        "cardR": "18px",
+        "fieldR": "12px",
+        "buttonR": "14px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 25% 30%,#e7a392,transparent 40%),radial-gradient(circle at 75% 60%,#a386c6,transparent 48%),linear-gradient(130deg,#5b456e,#cd887e)",
+        "panelBorder": "1px solid #ffffff44",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "grainy-gradient",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/grainy-gradient-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/grainy-gradient-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "clean",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#211b32",
+        "surface": "#392b47",
+        "accent": "#f6bb9c",
+        "cardR": "18px",
+        "fieldR": "12px",
+        "buttonR": "14px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 25% 30%,#e7a392,transparent 40%),radial-gradient(circle at 75% 60%,#a386c6,transparent 48%),linear-gradient(130deg,#5b456e,#cd887e)",
+        "panelBorder": "1px solid #ffffff44",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "grainy-gradient",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/grainy-gradient-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/grainy-gradient-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 162,
+      "detail": {
+        "fontFamily": "system-ui, \"Noto Sans KR\", sans-serif",
+        "iconForm": "clean",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#f5e9df",
+        "surface": "#fffaf6",
+        "accent": "#96536d",
+        "cardR": "18px",
+        "fieldR": "12px",
+        "buttonR": "14px",
+        "font": "system-ui,\"Noto Sans KR\",sans-serif",
+        "poster": "radial-gradient(circle at 25% 30%,#e7a392,transparent 40%),radial-gradient(circle at 75% 60%,#a386c6,transparent 48%),linear-gradient(130deg,#5b456e,#cd887e)",
+        "panelBorder": "1px solid #ffffff44",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "retro-pixel",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/retro-pixel-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/retro-pixel-phone-dark-viewport.png",
+      "width": 321,
+      "height": 915,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "ui-monospace, \"Noto Sans KR\", monospace",
+        "iconForm": "pixel",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#151426",
+        "surface": "#2f2d48",
+        "accent": "#f6cf64",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "ui-monospace,\"Noto Sans KR\",monospace",
+        "poster": "repeating-linear-gradient(90deg,#5c4a86 0 12px,#776398 12px 24px,#b58a69 24px 36px)",
+        "panelBorder": "4px solid #a39abc",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "retro-pixel",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/retro-pixel-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/retro-pixel-phone-light-viewport.png",
+      "width": 321,
+      "height": 915,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "ui-monospace, \"Noto Sans KR\", monospace",
+        "iconForm": "pixel",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#f4ecd4",
+        "surface": "#fff9e9",
+        "accent": "#8a4d74",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "ui-monospace,\"Noto Sans KR\",monospace",
+        "poster": "repeating-linear-gradient(90deg,#5c4a86 0 12px,#776398 12px 24px,#b58a69 24px 36px)",
+        "panelBorder": "4px solid #81718d",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "retro-pixel",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/retro-pixel-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/retro-pixel-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 158,
+      "detail": {
+        "fontFamily": "ui-monospace, \"Noto Sans KR\", monospace",
+        "iconForm": "pixel",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#151426",
+        "surface": "#2f2d48",
+        "accent": "#f6cf64",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "ui-monospace,\"Noto Sans KR\",monospace",
+        "poster": "repeating-linear-gradient(90deg,#5c4a86 0 12px,#776398 12px 24px,#b58a69 24px 36px)",
+        "panelBorder": "4px solid #a39abc",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "retro-pixel",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/retro-pixel-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/retro-pixel-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 158,
+      "detail": {
+        "fontFamily": "ui-monospace, \"Noto Sans KR\", monospace",
+        "iconForm": "pixel",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#f4ecd4",
+        "surface": "#fff9e9",
+        "accent": "#8a4d74",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "ui-monospace,\"Noto Sans KR\",monospace",
+        "poster": "repeating-linear-gradient(90deg,#5c4a86 0 12px,#776398 12px 24px,#b58a69 24px 36px)",
+        "panelBorder": "4px solid #81718d",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "swiss-grid",
+      "layout": "phone",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/swiss-grid-phone-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/swiss-grid-phone-dark-viewport.png",
+      "width": 321,
+      "height": 904,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "line",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#17191a",
+        "surface": "#222527",
+        "accent": "#e84b3c",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(90deg,#d6d4c7 0 36%,#e54c3c 36% 58%,#272b2c 58%)",
+        "panelBorder": "0",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "swiss-grid",
+      "layout": "phone",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/swiss-grid-phone-light.png",
+      "viewport_screenshot": "samples/style-book-renders/swiss-grid-phone-light-viewport.png",
+      "width": 321,
+      "height": 904,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 22,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "line",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#f7f7f3",
+        "surface": "#fff",
+        "accent": "#c72e24",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(90deg,#d6d4c7 0 36%,#e54c3c 36% 58%,#272b2c 58%)",
+        "panelBorder": "0",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "swiss-grid",
+      "layout": "fold",
+      "scheme": "dark",
+      "screenshot": "samples/style-book-renders/swiss-grid-fold-dark.png",
+      "viewport_screenshot": "samples/style-book-renders/swiss-grid-fold-dark-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 168,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "line",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#17191a",
+        "surface": "#222527",
+        "accent": "#e84b3c",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(90deg,#d6d4c7 0 36%,#e54c3c 36% 58%,#272b2c 58%)",
+        "panelBorder": "0",
+        "panelShadow": ""
+      }
+    },
+    {
+      "style": "swiss-grid",
+      "layout": "fold",
+      "scheme": "light",
+      "screenshot": "samples/style-book-renders/swiss-grid-fold-light.png",
+      "viewport_screenshot": "samples/style-book-renders/swiss-grid-fold-light-viewport.png",
+      "width": 662,
+      "height": 843,
+      "badTargets": [],
+      "smallControlText": [],
+      "smallVisibleText": [],
+      "overflow": [],
+      "rowPads": [
+        {
+          "top": "11px",
+          "bottom": "11px"
+        },
+        {
+          "top": "11px",
+          "bottom": "11px"
+        }
+      ],
+      "sectionGap": 168,
+      "detail": {
+        "fontFamily": "Arial, \"Noto Sans KR\", sans-serif",
+        "iconForm": "line",
+        "svgIcons": 4,
+        "scrubTrack": "6px",
+        "scrubThumb": "16px",
+        "volumeTrack": "6px"
+      },
+      "token": {
+        "bg": "#f7f7f3",
+        "surface": "#fff",
+        "accent": "#c72e24",
+        "cardR": "0px",
+        "fieldR": "0px",
+        "buttonR": "0px",
+        "font": "Arial,\"Noto Sans KR\",sans-serif",
+        "poster": "linear-gradient(90deg,#d6d4c7 0 36%,#e54c3c 36% 58%,#272b2c 58%)",
+        "panelBorder": "0",
+        "panelShadow": ""
+      }
+    }
+  ]
+}

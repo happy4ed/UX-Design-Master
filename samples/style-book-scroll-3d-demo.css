@@ -1,0 +1,16 @@
+#scroll3d-demo[hidden]{display:none}
+#scroll3d-demo p{max-width:780px}
+.space-scroll{height:340px;overflow-y:auto;overscroll-behavior:contain;border:2px solid #91bfe4;background:#0d1422;color:#edf4ff;scrollbar-color:#85c8ff #0d1422}
+.space-scroll:focus-visible{outline:3px solid #85c8ff;outline-offset:3px}
+.space-track{height:1080px}
+.space-stage{height:338px;position:sticky;top:0;overflow:hidden;perspective:700px;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#36628c,#0d1422 70%)}
+.space-stage:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 49%,#8cb8d622 50%,transparent 51%),linear-gradient(90deg,transparent 49%,#8cb8d622 50%,transparent 51%);background-size:42px 42px;transform:rotateX(60deg) scale(2);transform-origin:center 80%;opacity:.65}
+.space-object{position:relative;width:132px;height:132px;transform-style:preserve-3d;transform:rotateY(var(--space-y,-25deg)) rotateX(var(--space-x,12deg)) translateZ(var(--space-z,0px));will-change:transform}
+.space-object span{position:absolute;inset:0;display:grid;place-items:center;border:2px solid #b5dcff;background:linear-gradient(135deg,#75c3ecbb,#265590cc);font-size:25px;font-weight:800;backface-visibility:hidden}
+.space-object .space-front{transform:translateZ(66px)}
+.space-object .space-left{transform:rotateY(-90deg) translateZ(66px);background:#1a4b75}
+.space-object .space-right{transform:rotateY(90deg) translateZ(66px);background:#347aa1}
+.space-panel{position:absolute;top:45%;padding:12px 15px;background:#122b45e8;border:1px solid #89b6d6;color:#fff;font-size:14px;transform:translateX(var(--space-left,0px));opacity:var(--space-opacity,1)}
+.space-a{left:6%;top:17%}.space-b{right:7%;top:30%;transform:translateX(var(--space-right,0px))}.space-c{left:9%;top:73%}
+.space-readout{position:absolute;right:16px;bottom:16px;padding:8px 12px;background:#0b1b2bcc;border:1px solid #8ab9d7;font-variant-numeric:tabular-nums}
+@media(prefers-reduced-motion:reduce){.space-object{transform:rotateY(-25deg) rotateX(12deg)!important;will-change:auto}.space-panel{transform:none!important;opacity:1!important}}

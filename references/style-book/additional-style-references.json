@@ -1,0 +1,54 @@
+{
+  "checked_on": "2026-11-05",
+  "method": "각 스타일에서 최소 한 실제 웹페이지 또는 공식 디자인 문서를 시각적으로 확인했다. 보조 자료는 텍스트만 확인한 경우를 따로 표기한다. 모션은 재생 전후 화면을 본 경우에만 관찰로 적었다. 외부 캡처는 배포 스킬에 포함하지 않는다.",
+  "styles": {
+    "bento-grid": {
+      "references": [
+        {"id":"R02-1","name":"Animated Bento Grid · 7 Sync Technologies","url":"https://animated-bento-grid.framer.website/","kind":"제작자 라이브 데모","observed":"스크롤 전에는 빈 격자선과 중앙 문구가 먼저 보이고, 스크롤 후 크기와 비율이 다른 색 타일이 각 격자 칸에 채워진다.","boundary":"타일 크기·개수·모션 시간의 CSS 수치는 측정하지 않았다."},
+        {"id":"R02-2","name":"Bento Grids","url":"https://bentogrids.com/","kind":"실제 사례 모음","observed":"타일이 하나의 공유 격자에 놓이며 넓은 셀·작은 셀·서로 다른 콘텐츠 밀도가 반복된다.","boundary":"모음에 실린 개별 사이트의 최신 상태와 원본 동작은 별도로 확인해야 한다."}
+      ],
+      "sample_gap":"현재 미디어 리모컨은 같은 크기의 카드가 반복되어 벤토의 1×1·2×1·2×2 구성 차이가 첫 화면에 분명히 보이지 않는다."
+    },
+    "dark-tech": {
+      "references": [
+        {"id":"R03-1","name":"Linear","url":"https://linear.app/","kind":"제품 공식 웹사이트","observed":"거의 검은 전체 바탕, 좁은 중립색 탐색, 큰 흰 제목, 하위 인터페이스 화면의 제한된 강조가 층을 만든다.","boundary":"현재 홈페이지의 마케팅 표현이다. 실제 앱 컴포넌트 전체나 모션의 공식 토큰으로 옮기지 않는다."},
+        {"id":"R03-2","name":"Raycast","url":"https://www.raycast.com/","kind":"제품 공식 웹사이트","observed":"검은 면 위에 붉은 대각 광선이 큰 시각 중심을 만들고, 상단 탐색은 얇고 절제되어 있다.","boundary":"붉은 광선은 브랜드 표현이다. 모든 다크 테크 제품의 공통색은 아니다."}
+      ],
+      "sample_gap":"현재 샘플의 민트 발광은 가안이다. 검은 바탕과 정보 층의 위계보다 조작 전체에 광이 퍼지면 실제 사례의 절제가 사라진다."
+    },
+    "kinetic-typography": {
+      "references": [
+        {"id":"R05-1","name":"WIM & CO Playground","url":"https://wimco.se/playground/","kind":"제작자 인터랙티브 실험","observed":"첫 화면의 큰 세리프 글자가 화면의 주인공이다. 글자를 직접 입력하고 드래그·클릭하며 속도·강도·간격·방향을 조정하는 실험을 제공한다.","boundary":"글꼴·운동 방식이 하나의 표준은 아니다. 각 실험의 중간 프레임과 단위 시간은 아직 실측하지 않았다."},
+        {"id":"R05-2","name":"Too Much Type","url":"https://toomuchtype.com/","kind":"제작자 실험 사이트 · 텍스트 확인","observed":"공식 페이지 설명에서 여러 실험 서체와 웹 기반 타입 시편을 제공한다.","boundary":"이 사이트의 화면과 개별 모션은 이번 시각 대조에서 확인하지 않았다."}
+      ],
+      "sample_gap":"현재 샘플은 제목을 크게 하고 한 덩어리를 움직일 뿐이다. 글자 단위 변형·사용자 입력·정지 상태의 읽기 위계를 보여줘야 한다."
+    },
+    "scroll-3d": {
+      "references": [
+        {"id":"R06-1","name":"Ear Buddies · Webflow University / Spline","url":"https://earbuddies-spline.webflow.io/","kind":"제작자 라이브 데모","observed":"첫 화면에 입체 이어버드 두 개가 제목 양옆에 있고, 스크롤 후 다른 시점의 제품과 설명·파형이 차례로 등장한다.","boundary":"현재 브라우저에서 스크롤 전후를 확인했다. 제품 모델의 정확한 회전축·거리·프레임 수는 실측하지 않았다."},
+        {"id":"R06-2","name":"Webflow 원본 소개","url":"https://webflow.com/made-in-webflow/website/earbuddies-spline","kind":"제작자 등록 페이지","observed":"3D interaction on scroll로 등록된 Webflow·Spline 예제이며 라이브 사이트로 연결된다.","boundary":"소개 문구만으로 실시간 3D 렌더 방식까지 단정하지 않는다."}
+      ],
+      "sample_gap":"현재 내부 시연은 큐브 회전 한 장면만 제공한다. 시점 이동과 여러 제품 정보 장면의 순차 연결을 보여줘야 한다."
+    },
+    "grainy-gradient": {
+      "references": [
+        {"id":"R07-1","name":"Opera One Design Guide · Colors and Gradients / Grain","url":"https://www-static-sites.operacdn.com/wp-content/uploads/sites/6/2024/03/OPERA-DESIGN-GUIDE-EXT-Q2-2024.pdf","kind":"브랜드 공식 디자인 가이드","observed":"유동적인 다색 그라데이션 위에 섬세하지만 눈에 띄는 입자를 올린다. 고주파 그래픽은 전경, 저주파 그래픽은 배경으로 구분하고 입자의 너무 적음·적정·과함을 비교한다.","boundary":"Opera 고유 팔레트·수치·서체는 그레이니 그라데이션 일반 규칙으로 복사하지 않는다."}
+      ],
+      "sample_gap":"현재 샘플은 포스터 한 장에만 입자가 있고 화면 전체의 색장·입자 레이어와 깨끗한 글자 층이 드러나지 않는다."
+    },
+    "retro-pixel": {
+      "references": [
+        {"id":"R10-1","name":"Aseprite","url":"https://www.aseprite.org/","kind":"제품 공식 웹사이트","observed":"픽셀 게임 배경·로고·비트맵 질감·각진 아이콘이 페이지 전체에서 연결된다. 읽기와 구매 조작은 더 단정한 면에 둔다.","boundary":"실제 편집기의 조작은 별도 화면이다. 웹 마케팅 페이지의 도트 패턴을 앱의 모든 텍스트에 복사하지 않는다."},
+        {"id":"R10-2","name":"Playdate","url":"https://play.date/","kind":"제품 공식 웹사이트","observed":"휴대 게임기 화면의 1비트 그래픽과 굵은 픽셀 게임 타이틀을 큰 실물 사진·명확한 웹 탐색과 결합한다.","boundary":"웹 탐색 자체는 픽셀 UI가 아니므로 전체 컴포넌트 스타일 근거로 사용하지 않는다."}
+      ],
+      "sample_gap":"현재 샘플은 사각 테두리와 픽셀 포스터에 머무른다. 아이콘·제목·상태 표식까지 일관된 격자 규칙이 필요하다."
+    },
+    "swiss-grid": {
+      "references": [
+        {"id":"R11-1","name":"Skala Design","url":"https://skaladesign.ch/","kind":"디자인 스튜디오 공식 웹사이트","observed":"밝은 바탕의 비대칭 열, 열 경계의 짧은 세로선, 작은 산세리프 탐색, 규칙적인 이미지 시작선으로 위계를 만든다.","boundary":"스튜디오의 구체적인 열 수와 간격 수치는 다른 제품으로 옮기지 않는다."},
+        {"id":"R11-2","name":"Swiss National Library · International Style","url":"https://www.nb.admin.ch/en/the-international-style-1950-1970","kind":"국립도서관 역사 자료","observed":"타이포그래피 그리드·산세리프·정밀한 실행·장식 없는 합리적 구성·절제된 색을 핵심으로 설명하고 역사 포스터를 보여준다.","boundary":"역사 포스터는 현대 앱 조작의 직접 근거가 아니다."}
+      ],
+      "sample_gap":"현재 샘플의 빨강·어두운 바탕보다 열 경계·기준선·정보 순서가 먼저 드러나야 한다."
+    }
+  }
+}

@@ -112,12 +112,14 @@ with tempfile.TemporaryDirectory() as directory:
     style = {"viewport": {"width": 390, "height": 844}, "sampledNodes": 8, "truncatedNodes": 0,
              "observed": {"backgroundColor": [{"value": "rgb(255, 255, 255)", "count": 4}]},
              "weighted": {"backgroundColor": [{"value": "rgb(255, 255, 255)", "count": 0.8}]},
+             "materialCandidates": [{"index": 2, "backgroundColor": "rgba(255,255,255,.2)", "backdropFilter": "blur(8px)", "pseudo": {"::before": {"filter": "url(#lens)"}}}],
+             "shapeCandidates": [{"index": 3, "declaredShape": "circle", "width": 48, "height": 48, "aspectRatio": 1, "borderRadius": "50%"}],
              "landmarks": [{"id": "title", "x": 20, "y": 80}], "focus": "filter", "scroll": {"x": 0, "y": 0}}
     alignment = {"groups": [{"id": "icons", "entries": [{"id": "icon-a", "drawnWidthRatio": 0.75, "primitiveInkAreaRatio": 0.56,
                  "visualOffset": {"x": 1, "y": 0}, "measurementLimits": "path ink unknown", "text": None,
                  "radius": {"borderTopLeftRadius": {"px": 8, "ratio": 0.2}}}]}],
                  "markerRows": [{"id": "marker-a", "gapPx": 12}]}
-    Path(directory, "before-style.json").write_text(json.dumps(style))
+    Path(directory, "before-style.json").write_text(json.dumps({"screenshot": "before.png", "evidence": style}))
     Path(directory, "before-alignment.json").write_text(json.dumps(alignment))
     bundle = {"project": "assembly", "reference": "fixture", "states": [{**state("before", 20), "measurement": {"source": "before-style.json"}, "alignmentSource": "before-alignment.json"}],
               "decisions": {}}
@@ -126,5 +128,8 @@ with tempfile.TemporaryDirectory() as directory:
     assert any(row["property"] == "primitiveInkAreaRatio" for row in assembled["observations"])
     assert any(row["property"] == "markerGap" for row in assembled["observations"])
     assert any(row["property"] == "computedStyleCandidate" for row in assembled["observations"])
+    assert any(row["property"] == "materialCandidate" for row in assembled["observations"])
+    assert any(row["property"] == "shapeCandidate" for row in assembled["observations"])
+    assert "재질·형상 추출 판정" in make_brief(assembled)
     assert assembled["evidence"]["observed"]["backgroundColor"][0]["count"] == 4
 print("state evidence, DESIGN.md traceability, input modes, and motion flow: PASS")

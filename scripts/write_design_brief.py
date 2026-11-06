@@ -93,11 +93,13 @@ def make_brief(data):
              f"- 측정 기준: {cell(data.get('measurementDate'))}",
              f"- 상태 기록: {len(states)}건 / 관찰값: {len(observations)}건",
              f"- 자동 수집 표본: {cell(evidence.get('sampledNodes'))}개; 표본 밖 노드: {cell(evidence.get('truncatedNodes'))}개",
+             f"- 재질 후보 관찰: {cell(evidence.get('materialCandidateCount'))}개; 형상 후보 관찰: {cell(evidence.get('shapeCandidateCount'))}개",
              "- CSS 빈도·DOM 부모는 의미 역할, 실제 가림 순서, 광학 정렬의 증거가 아니다.", ""]
     state_rows = [{"id": s.get("id"), "screenId": s.get("screenId"), "stateId": s.get("stateId"), "viewport": s.get("viewport"), "capture": s.get("capture"), "measurement": (s.get("measurement") or {}).get("source"), "visualReview": (s.get("visualReview") or {}).get("status")} for s in states]
     section(lines, "### 화면·상태·기기별 근거", state_rows, [("id", "기록 ID"), ("screenId", "화면"), ("stateId", "상태"), ("viewport", "뷰포트"), ("capture", "캡처"), ("measurement", "수치 근거"), ("visualReview", "직접 확인")])
     section(lines, "### 조작 전후 비교", data.get("transitions", []), [("id", "비교 ID"), ("before", "이전 상태"), ("action", "조작"), ("after", "이후 상태"), ("stableLandmarks", "기준선 계약"), ("observed", "스크롤·포커스 실측")])
     section(lines, "## 2. 관찰값 — 채택 토큰과 분리", observations, [("id", "관찰 ID"), ("target", "대상"), ("property", "속성"), ("value", "값"), ("unit", "단위"), ("method", "방법"), ("uncertainty", "불확실성")])
+    lines.extend(["### 재질·형상 추출 판정", "", "계산 CSS의 투명도·블러·필터와 실제 굴절/투과는 구분한다. 원형은 R만 보지 않고 렌더된 가로·세로와 중간 상태를 비교한다. 후보를 채택하려면 같은 화면의 캡처, 뒤쪽 배경과 Z층, 라이트/다크 및 실제 조작 상태를 직접 확인한다.", ""])
     lines.extend(["### 계산 스타일 상위 후보", ""])
     for field in ("color", "backgroundColor", "fontFamily", "fontSize", "fontWeight", "lineHeight", "borderRadius", "gap", "paddingLeft"):
         common = ", ".join(f"{v['value']} ({v['count']})" for v in evidence.get("observed", {}).get(field, [])[:5]) or "측정 안 됨"

@@ -1,0 +1,3228 @@
+{
+  "schema": 1,
+  "meaning": "provisional implementation values; not source fidelity",
+  "generated_from": [
+    "references/style-book/detail-decisions.json",
+    "samples/style-book-audit.json"
+  ],
+  "records": [
+    {
+      "style": "oneui-9",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "system-ui, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json oneui-9.fontFamily; style-book-audit.json oneui 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "oneui-9",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "soft",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json oneui-9.iconForm; style-book-audit.json oneui 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "oneui-9",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "2px",
+      "unit": "px",
+      "range": [
+        2,
+        2
+      ],
+      "grade": "관찰",
+      "confidence": "중간",
+      "basis": "oneui-9.md E: 미디어 재생 위치 트랙 약 2dp",
+      "method": "동일 부품의 해당 버전 관찰값; px 시연은 1:1 가정",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "oneui-9",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": [
+        13,
+        19
+      ],
+      "grade": "관찰",
+      "confidence": "중간",
+      "basis": "oneui-9.md E: 미디어 재생 위치 링 썸 약 16dp",
+      "method": "동일 부품의 해당 버전 관찰값; px 시연은 1:1 가정",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "oneui-9",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "18px",
+      "unit": "px",
+      "range": [
+        14,
+        22
+      ],
+      "grade": "추정",
+      "confidence": "낮음",
+      "basis": "oneui-9.md E: 미디어 출력 음량 막대 약 18dp",
+      "method": "미디어 출력의 같은 역할을 기준 화면 수평 음량에 임시 적용; 일반 설정 슬라이더로 일반화 금지",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "material-3-expressive",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Roboto, \"Noto Sans KR\", Arial, sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json material-3-expressive.fontFamily; style-book-audit.json material 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "material-3-expressive",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "round",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json material-3-expressive.iconForm; style-book-audit.json material 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "material-3-expressive",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": null,
+      "grade": "공식",
+      "confidence": "높음",
+      "basis": "material-3-expressive.md E: Compose SliderTokens 16dp",
+      "method": "기준 화면 재생 위치에 공식 일반 Slider 트랙을 시연 적용",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "material-3-expressive",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "4px",
+      "unit": "px",
+      "range": null,
+      "grade": "공식",
+      "confidence": "높음",
+      "basis": "material-3-expressive.md E: Compose SliderTokens 손잡이 폭 4dp",
+      "method": "기준 화면 재생 위치에 공식 일반 Slider 손잡이를 시연 적용",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "material-3-expressive",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": [
+        13,
+        19
+      ],
+      "grade": "추정",
+      "confidence": "낮음",
+      "basis": "material-3-expressive.md E: Compose SliderTokens 16dp",
+      "method": "전용 음량 토큰 미확인; 같은 플랫폼의 일반 Slider를 임시 매핑",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "ios-27",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "-apple-system, BlinkMacSystemFont, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json ios-27.fontFamily; style-book-audit.json ios 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "ios-27",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "filled",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json ios-27.iconForm; style-book-audit.json ios 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "ios-27",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "7px",
+      "unit": "px",
+      "range": [
+        6,
+        8
+      ],
+      "grade": "관찰",
+      "confidence": "중간",
+      "basis": "ios-27.md E: Music 재생 위치 7pt 캡슐",
+      "method": "같은 미디어 역할의 전달 실측 요약값을 시연에 적용",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "ios-27",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "1px",
+      "unit": "px",
+      "range": [
+        1,
+        1
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json ios-27.scrubThumb; style-book-audit.json ios 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험; 1px은 실제 보이는 썸 크기가 아니라 CSS에서 썸을 숨기는 시연 구현값",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "ios-27",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "7px",
+      "unit": "px",
+      "range": [
+        6,
+        8
+      ],
+      "grade": "관찰",
+      "confidence": "중간",
+      "basis": "ios-27.md E: Music 음량 7pt 캡슐",
+      "method": "오디오 음량은 플랫폼 volume view 역할로 처리; 외형만 시연",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "skeuo-audio-hifi",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json skeuo-audio-hifi.fontFamily; style-book-audit.json hifi 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "skeuo-audio-hifi",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "technical",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json skeuo-audio-hifi.iconForm; style-book-audit.json hifi 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "skeuo-audio-hifi",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "10px",
+      "unit": "px",
+      "range": [
+        8,
+        12
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json skeuo-audio-hifi.scrubTrack; style-book-audit.json hifi 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "skeuo-audio-hifi",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "12px",
+      "unit": "px",
+      "range": [
+        10,
+        14
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json skeuo-audio-hifi.scrubThumb; style-book-audit.json hifi 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "skeuo-audio-hifi",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "10px",
+      "unit": "px",
+      "range": [
+        8,
+        12
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json skeuo-audio-hifi.volumeTrack; style-book-audit.json hifi 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "glassmorphism",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json glassmorphism.fontFamily; style-book-audit.json glassmorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "glassmorphism",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "thin",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json glassmorphism.iconForm; style-book-audit.json glassmorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "glassmorphism",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "8px",
+      "unit": "px",
+      "range": [
+        6,
+        10
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json glassmorphism.scrubTrack; style-book-audit.json glassmorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "glassmorphism",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "18px",
+      "unit": "px",
+      "range": [
+        14,
+        22
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json glassmorphism.scrubThumb; style-book-audit.json glassmorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "glassmorphism",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "8px",
+      "unit": "px",
+      "range": [
+        6,
+        10
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json glassmorphism.volumeTrack; style-book-audit.json glassmorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neumorphism",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neumorphism.fontFamily; style-book-audit.json neumorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neumorphism",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "soft",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neumorphism.iconForm; style-book-audit.json neumorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neumorphism",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "10px",
+      "unit": "px",
+      "range": [
+        8,
+        12
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neumorphism.scrubTrack; style-book-audit.json neumorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neumorphism",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "20px",
+      "unit": "px",
+      "range": [
+        16,
+        24
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neumorphism.scrubThumb; style-book-audit.json neumorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neumorphism",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "10px",
+      "unit": "px",
+      "range": [
+        8,
+        12
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neumorphism.volumeTrack; style-book-audit.json neumorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "claymorphism",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json claymorphism.fontFamily; style-book-audit.json claymorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "claymorphism",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "round",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json claymorphism.iconForm; style-book-audit.json claymorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "claymorphism",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "15px",
+      "unit": "px",
+      "range": [
+        12,
+        18
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json claymorphism.scrubTrack; style-book-audit.json claymorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "claymorphism",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "25px",
+      "unit": "px",
+      "range": [
+        20,
+        30
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json claymorphism.scrubThumb; style-book-audit.json claymorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "claymorphism",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "15px",
+      "unit": "px",
+      "range": [
+        12,
+        18
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json claymorphism.volumeTrack; style-book-audit.json claymorphism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "flat-2",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Arial, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json flat-2.fontFamily; style-book-audit.json flat-2 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "flat-2",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "filled",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json flat-2.iconForm; style-book-audit.json flat-2 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "flat-2",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "8px",
+      "unit": "px",
+      "range": [
+        6,
+        10
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json flat-2.scrubTrack; style-book-audit.json flat-2 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "flat-2",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "13px",
+      "unit": "px",
+      "range": [
+        10,
+        16
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json flat-2.scrubThumb; style-book-audit.json flat-2 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "flat-2",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "8px",
+      "unit": "px",
+      "range": [
+        6,
+        10
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json flat-2.volumeTrack; style-book-audit.json flat-2 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neo-brutalism",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Arial, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neo-brutalism.fontFamily; style-book-audit.json neo-brutalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neo-brutalism",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "angular",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neo-brutalism.iconForm; style-book-audit.json neo-brutalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neo-brutalism",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "12px",
+      "unit": "px",
+      "range": [
+        10,
+        14
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neo-brutalism.scrubTrack; style-book-audit.json neo-brutalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neo-brutalism",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "20px",
+      "unit": "px",
+      "range": [
+        16,
+        24
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neo-brutalism.scrubThumb; style-book-audit.json neo-brutalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "neo-brutalism",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "12px",
+      "unit": "px",
+      "range": [
+        10,
+        14
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json neo-brutalism.volumeTrack; style-book-audit.json neo-brutalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bauhaus-swiss",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Arial, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bauhaus-swiss.fontFamily; style-book-audit.json bauhaus-swiss 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bauhaus-swiss",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "geometric",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bauhaus-swiss.iconForm; style-book-audit.json bauhaus-swiss 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bauhaus-swiss",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "5px",
+      "unit": "px",
+      "range": [
+        4,
+        6
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bauhaus-swiss.scrubTrack; style-book-audit.json bauhaus-swiss 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bauhaus-swiss",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "17px",
+      "unit": "px",
+      "range": [
+        14,
+        20
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bauhaus-swiss.scrubThumb; style-book-audit.json bauhaus-swiss 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bauhaus-swiss",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "5px",
+      "unit": "px",
+      "range": [
+        4,
+        6
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bauhaus-swiss.volumeTrack; style-book-audit.json bauhaus-swiss 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "memphis",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json memphis.fontFamily; style-book-audit.json memphis 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "memphis",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "filled",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json memphis.iconForm; style-book-audit.json memphis 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "memphis",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "12px",
+      "unit": "px",
+      "range": [
+        10,
+        14
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json memphis.scrubTrack; style-book-audit.json memphis 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "memphis",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "22px",
+      "unit": "px",
+      "range": [
+        18,
+        26
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json memphis.scrubThumb; style-book-audit.json memphis 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "memphis",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "12px",
+      "unit": "px",
+      "range": [
+        10,
+        14
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json memphis.volumeTrack; style-book-audit.json memphis 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "y2k-chrome",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json y2k-chrome.fontFamily; style-book-audit.json y2k-chrome 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "y2k-chrome",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "filled",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json y2k-chrome.iconForm; style-book-audit.json y2k-chrome 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "y2k-chrome",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "14px",
+      "unit": "px",
+      "range": [
+        11,
+        17
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json y2k-chrome.scrubTrack; style-book-audit.json y2k-chrome 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "y2k-chrome",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "26px",
+      "unit": "px",
+      "range": [
+        21,
+        31
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json y2k-chrome.scrubThumb; style-book-audit.json y2k-chrome 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "y2k-chrome",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "14px",
+      "unit": "px",
+      "range": [
+        11,
+        17
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json y2k-chrome.volumeTrack; style-book-audit.json y2k-chrome 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "maximalism",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Impact, \"Arial Black\", \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json maximalism.fontFamily; style-book-audit.json maximalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "maximalism",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "angular",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json maximalism.iconForm; style-book-audit.json maximalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "maximalism",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "14px",
+      "unit": "px",
+      "range": [
+        11,
+        17
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json maximalism.scrubTrack; style-book-audit.json maximalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "maximalism",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "24px",
+      "unit": "px",
+      "range": [
+        19,
+        29
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json maximalism.scrubThumb; style-book-audit.json maximalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "maximalism",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "14px",
+      "unit": "px",
+      "range": [
+        11,
+        17
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json maximalism.volumeTrack; style-book-audit.json maximalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "editorial-print",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Georgia, \"Noto Serif KR\", serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json editorial-print.fontFamily; style-book-audit.json editorial-print 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "editorial-print",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "thin",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json editorial-print.iconForm; style-book-audit.json editorial-print 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "editorial-print",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "2px",
+      "unit": "px",
+      "range": [
+        2,
+        2
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json editorial-print.scrubTrack; style-book-audit.json editorial-print 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "editorial-print",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "3px",
+      "unit": "px",
+      "range": [
+        2,
+        4
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json editorial-print.scrubThumb; style-book-audit.json editorial-print 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "editorial-print",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "2px",
+      "unit": "px",
+      "range": [
+        2,
+        2
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json editorial-print.volumeTrack; style-book-audit.json editorial-print 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "minimalism",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Arial, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json minimalism.fontFamily; style-book-audit.json minimalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "minimalism",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "thin",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json minimalism.iconForm; style-book-audit.json minimalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "minimalism",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "2px",
+      "unit": "px",
+      "range": [
+        2,
+        2
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json minimalism.scrubTrack; style-book-audit.json minimalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "minimalism",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "9px",
+      "unit": "px",
+      "range": [
+        7,
+        11
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json minimalism.scrubThumb; style-book-audit.json minimalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "minimalism",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "2px",
+      "unit": "px",
+      "range": [
+        2,
+        2
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json minimalism.volumeTrack; style-book-audit.json minimalism 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-cinematic",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Arial, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-cinematic.fontFamily; style-book-audit.json dark-cinematic 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-cinematic",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "filled",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-cinematic.iconForm; style-book-audit.json dark-cinematic 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-cinematic",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "3px",
+      "unit": "px",
+      "range": [
+        2,
+        4
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-cinematic.scrubTrack; style-book-audit.json dark-cinematic 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-cinematic",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "10px",
+      "unit": "px",
+      "range": [
+        8,
+        12
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-cinematic.scrubThumb; style-book-audit.json dark-cinematic 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-cinematic",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "3px",
+      "unit": "px",
+      "range": [
+        2,
+        4
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-cinematic.volumeTrack; style-book-audit.json dark-cinematic 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "aurora-mesh",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "\"Segoe UI\", \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json aurora-mesh.fontFamily; style-book-audit.json aurora-mesh 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "aurora-mesh",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "round",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json aurora-mesh.iconForm; style-book-audit.json aurora-mesh 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "aurora-mesh",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "7px",
+      "unit": "px",
+      "range": [
+        6,
+        8
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json aurora-mesh.scrubTrack; style-book-audit.json aurora-mesh 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "aurora-mesh",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "18px",
+      "unit": "px",
+      "range": [
+        14,
+        22
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json aurora-mesh.scrubThumb; style-book-audit.json aurora-mesh 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "aurora-mesh",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "7px",
+      "unit": "px",
+      "range": [
+        6,
+        8
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json aurora-mesh.volumeTrack; style-book-audit.json aurora-mesh 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "frutiger-aero",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "\"Trebuchet MS\", \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json frutiger-aero.fontFamily; style-book-audit.json frutiger-aero 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "frutiger-aero",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "soft",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json frutiger-aero.iconForm; style-book-audit.json frutiger-aero 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "frutiger-aero",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "13px",
+      "unit": "px",
+      "range": [
+        10,
+        16
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json frutiger-aero.scrubTrack; style-book-audit.json frutiger-aero 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "frutiger-aero",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "23px",
+      "unit": "px",
+      "range": [
+        18,
+        28
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json frutiger-aero.scrubThumb; style-book-audit.json frutiger-aero 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "frutiger-aero",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "13px",
+      "unit": "px",
+      "range": [
+        10,
+        16
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json frutiger-aero.volumeTrack; style-book-audit.json frutiger-aero 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "origami-paper",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Georgia, \"Noto Serif KR\", serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json origami-paper.fontFamily; style-book-audit.json origami-paper 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "origami-paper",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "angular",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json origami-paper.iconForm; style-book-audit.json origami-paper 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "origami-paper",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "7px",
+      "unit": "px",
+      "range": [
+        6,
+        8
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json origami-paper.scrubTrack; style-book-audit.json origami-paper 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "origami-paper",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "17px",
+      "unit": "px",
+      "range": [
+        14,
+        20
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json origami-paper.scrubThumb; style-book-audit.json origami-paper 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "origami-paper",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "7px",
+      "unit": "px",
+      "range": [
+        6,
+        8
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json origami-paper.volumeTrack; style-book-audit.json origami-paper 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bento-grid",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "system-ui, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bento-grid.fontFamily; style-book-audit.json bento-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bento-grid",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "simple",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bento-grid.iconForm; style-book-audit.json bento-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bento-grid",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bento-grid.scrubTrack; style-book-audit.json bento-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bento-grid",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": [
+        13,
+        19
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bento-grid.scrubThumb; style-book-audit.json bento-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "bento-grid",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json bento-grid.volumeTrack; style-book-audit.json bento-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-tech",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "ui-sans-serif, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-tech.fontFamily; style-book-audit.json dark-tech 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-tech",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "technical",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-tech.iconForm; style-book-audit.json dark-tech 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-tech",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-tech.scrubTrack; style-book-audit.json dark-tech 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-tech",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": [
+        13,
+        19
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-tech.scrubThumb; style-book-audit.json dark-tech 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "dark-tech",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json dark-tech.volumeTrack; style-book-audit.json dark-tech 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "kinetic-typography",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Arial, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json kinetic-typography.fontFamily; style-book-audit.json kinetic-typography 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "kinetic-typography",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "text-first",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json kinetic-typography.iconForm; style-book-audit.json kinetic-typography 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "kinetic-typography",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json kinetic-typography.scrubTrack; style-book-audit.json kinetic-typography 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "kinetic-typography",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": [
+        13,
+        19
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json kinetic-typography.scrubThumb; style-book-audit.json kinetic-typography 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "kinetic-typography",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json kinetic-typography.volumeTrack; style-book-audit.json kinetic-typography 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "scroll-3d",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "system-ui, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json scroll-3d.fontFamily; style-book-audit.json scroll-3d 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "scroll-3d",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "flat-overlay",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json scroll-3d.iconForm; style-book-audit.json scroll-3d 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "scroll-3d",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json scroll-3d.scrubTrack; style-book-audit.json scroll-3d 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "scroll-3d",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": [
+        13,
+        19
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json scroll-3d.scrubThumb; style-book-audit.json scroll-3d 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "scroll-3d",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json scroll-3d.volumeTrack; style-book-audit.json scroll-3d 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "grainy-gradient",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "system-ui, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json grainy-gradient.fontFamily; style-book-audit.json grainy-gradient 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "grainy-gradient",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "clean",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json grainy-gradient.iconForm; style-book-audit.json grainy-gradient 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "grainy-gradient",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json grainy-gradient.scrubTrack; style-book-audit.json grainy-gradient 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "grainy-gradient",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": [
+        13,
+        19
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json grainy-gradient.scrubThumb; style-book-audit.json grainy-gradient 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "grainy-gradient",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json grainy-gradient.volumeTrack; style-book-audit.json grainy-gradient 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "retro-pixel",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "ui-monospace, \"Noto Sans KR\", monospace",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json retro-pixel.fontFamily; style-book-audit.json retro-pixel 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "retro-pixel",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "pixel",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json retro-pixel.iconForm; style-book-audit.json retro-pixel 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "retro-pixel",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json retro-pixel.scrubTrack; style-book-audit.json retro-pixel 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "retro-pixel",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": [
+        13,
+        19
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json retro-pixel.scrubThumb; style-book-audit.json retro-pixel 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "retro-pixel",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json retro-pixel.volumeTrack; style-book-audit.json retro-pixel 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "swiss-grid",
+      "key": "fontFamily",
+      "label": "글꼴 대체",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "Arial, \"Noto Sans KR\", sans-serif",
+      "unit": "family",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json swiss-grid.fontFamily; style-book-audit.json swiss-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "swiss-grid",
+      "key": "iconForm",
+      "label": "시연 아이콘 형상",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "line",
+      "unit": "form",
+      "range": null,
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json swiss-grid.iconForm; style-book-audit.json swiss-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "swiss-grid",
+      "key": "scrubTrack",
+      "label": "재생 위치 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json swiss-grid.scrubTrack; style-book-audit.json swiss-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "swiss-grid",
+      "key": "scrubThumb",
+      "label": "재생 위치 손잡이 폭",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "16px",
+      "unit": "px",
+      "range": [
+        13,
+        19
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json swiss-grid.scrubThumb; style-book-audit.json swiss-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    },
+    {
+      "style": "swiss-grid",
+      "key": "volumeTrack",
+      "label": "음량 트랙",
+      "scope": "기준 화면·폰/폴드·라이트/다크; 원본 플랫폼 확정값 아님",
+      "value": "6px",
+      "unit": "px",
+      "range": [
+        5,
+        7
+      ],
+      "grade": "설계 가설",
+      "confidence": "낮음",
+      "basis": "detail-decisions.json swiss-grid.volumeTrack; style-book-audit.json swiss-grid 4상태",
+      "method": "같은 스타일의 기존 내부 가안에서 역할별 계산 스타일을 읽고 폰/폴드·라이트/다크의 기능형으로 시험",
+      "qa": "4상태 DOM_GEOMETRY_PASS",
+      "not_checked": [
+        "원본과 동일 화면 비교",
+        "실기기 대비·광학 정렬",
+        "모든 입력 상태"
+      ],
+      "replace_when": "같은 버전·부품·상태의 공식 토큰 또는 원본 실측이 확보되거나 제품 검수에서 실패하면 재측정",
+      "checked_on": "2026-11-05",
+      "status": "활성 임시값",
+      "history": []
+    }
+  ]
+}
