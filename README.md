@@ -4,7 +4,7 @@
 
 최신 릴리스: [v0.3.1](https://github.com/happy4ed/UX-Design-Master/releases/tag/v0.3.1). B 단계의 실제 앱 구성 참고·와이어프레임 다양성 검토와 동작 중 콘텐츠 잘림·행동 밀도 실측을 추가했습니다.
 
-현재 작업본: `0.3.2-dev` ([변경 기록](CHANGELOG.md)). 상세 스타일 가이드와 실측 절차를 추가하는 중이며 아직 릴리스·커밋·푸시하지 않았습니다.
+현재 작업본: `main` 개발 버전 ([변경 기록](CHANGELOG.md)). 상세 스타일 가이드와 컴포넌트 지식을 계속 보강하며 정식 릴리스와 구분합니다.
 
 이번 작업본의 [웹 스타일 가이드북](samples/style-guidebook.html)에서 19개 스타일의 A~L 원문과 미확인 항목을 살피고 두 스타일을 나란히 비교할 수 있습니다. [기준 화면](samples/style-book-reference-screen.html)은 글꼴·아이콘·슬라이더 차이를 포함한 시연안입니다.
 

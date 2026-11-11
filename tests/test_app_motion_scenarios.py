@@ -23,7 +23,7 @@ for row in all_scenarios:
     assert row['event'] in by_component[row['components'][0]]['candidateEvents'], row['id']
     for component_id in row['components']:
         assert row['id'] in by_component[component_id]['scenarioIds'], (row['id'], component_id)
-assert coverage['count'] == len(ids) == 122
+assert coverage['count'] == len(ids)
 assert coverage['scenarioCount'] == len(all_scenarios)
 assert coverage['noMotionDefaultCount'] == len(no_motion['entries'])
 assert all(row['defaultMotionDecision'] in ('candidate-scenarios', 'no-motion-by-default') for row in coverage['entries'])

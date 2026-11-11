@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
   "source": "core-components.json",
-  "count": 122,
+  "count": 134,
   "scenarioCount": 97,
-  "noMotionDefaultCount": 11,
+  "noMotionDefaultCount": 23,
   "decisionMethod": "each instance: role → actual state/event → purpose → static feedback → preview → user confirmation D",
   "entries": [
     {
@@ -2764,6 +2764,209 @@
         "keyboard-viewport-reflow"
       ],
       "note": "후보와 기본 판단은 구현·검증 완료 또는 사용자 승인으로 간주하지 않음"
+    },
+    {
+      "componentId": "lightbox",
+      "name": "미디어 확대 보기",
+      "family": "overlays",
+      "knownStates": [
+        "open",
+        "loading",
+        "zoomed",
+        "error"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "structured-search",
+      "name": "구조화 검색",
+      "family": "inputs",
+      "knownStates": [
+        "empty",
+        "editing",
+        "applied",
+        "invalid"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "transfer-list",
+      "name": "목록 간 선택 이동",
+      "family": "selection",
+      "knownStates": [
+        "empty",
+        "partial",
+        "selected",
+        "disabled",
+        "reordering"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "emoji-picker",
+      "name": "이모지 선택기",
+      "family": "selection",
+      "knownStates": [
+        "loading",
+        "empty",
+        "results",
+        "selected"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "comment-pin",
+      "name": "주석 위치 핀",
+      "family": "patterns",
+      "knownStates": [
+        "unread",
+        "selected",
+        "resolved",
+        "disabled"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "comment-thread",
+      "name": "주석 스레드",
+      "family": "patterns",
+      "knownStates": [
+        "empty",
+        "draft",
+        "posting",
+        "error",
+        "resolved"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "tour",
+      "name": "단계별 안내",
+      "family": "patterns",
+      "knownStates": [
+        "inactive",
+        "active",
+        "completed",
+        "dismissed"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "diff-viewer",
+      "name": "변경 비교",
+      "family": "data",
+      "knownStates": [
+        "loading",
+        "empty",
+        "collapsed",
+        "expanded"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "log-stream",
+      "name": "실시간 로그",
+      "family": "data",
+      "knownStates": [
+        "following",
+        "paused",
+        "loading",
+        "error"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "code-editor",
+      "name": "코드 입력기",
+      "family": "inputs",
+      "knownStates": [
+        "empty",
+        "editing",
+        "readonly",
+        "disabled",
+        "invalid"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "citation",
+      "name": "출처 표시",
+      "family": "content",
+      "knownStates": [
+        "linked",
+        "unavailable"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
+    },
+    {
+      "componentId": "blockquote",
+      "name": "블록 인용",
+      "family": "content",
+      "knownStates": [
+        "normal",
+        "long"
+      ],
+      "candidateEvents": [],
+      "staticFallback": "모든 정보와 조작을 정적 상태에서도 제공",
+      "decision": "context-required",
+      "defaultMotionDecision": "no-motion-by-default",
+      "scenarioIds": [],
+      "note": "신규 개념의 시연·개별 모션 계약은 미검증이며 제품 과업에서 결정한다."
     }
   ]
 }

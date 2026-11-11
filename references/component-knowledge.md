@@ -4,6 +4,22 @@
 
 기본 컴포넌트 의미·상하위·구성·junction은 [Core UI KB](core-component-kb.md)를 먼저 조회한다. 아래 목록은 그 기본 요소를 활용하는 외부 복합 패턴 후보다.
 
+## 구성과 동작 계약 조회
+
+[내부 컴포넌트 계약 지식](../knowledge/astryx-component-contracts.json)은 역할별로 검토한 동작·기존 요소와의 연결·경계와 원본 속성 이름 및 타입을 제공한다. 구성 요소와 하위 요소, 표시 변형, 구현 훅, 제공자·별칭은 서로 다른 단위다. 공개 이름만 수집한 항목은 `static-export`이며 속성과 동작이 확인된 계약이 아니다.
+
+```bash
+python3 scripts/query_component_contracts.py --query "선택" --limit 5
+python3 scripts/query_component_contracts.py --core-id table --limit 5
+python3 scripts/query_component_contracts.py --query TourStep --include-unreviewed
+python3 scripts/query_component_contracts.py --query Button --limit 1 --full
+python3 scripts/query_component_contracts.py --types --query ButtonProps
+```
+
+화면별 기능과 컴포넌트를 정의할 때 해당 역할 및 상위 ID로 조회해 하위 슬롯·필수 데이터·상태·인터랙션·키보드와 경계 사례를 프로젝트 계약으로 구체화한다. `attributes`는 문서 속성, `sourceTypeDeclarations`는 구문상 직접 선언, `nativeContract`는 네이티브 추가·제외 속성이다. 구문 추출은 상속·합성 타입을 완전히 펼친 결과가 아니며, `slotsReference`처럼 미해결된 공유 정의도 기록한다. 속성 목록은 특정 라이브러리의 관찰 기록이며 그대로 코드 의존성이나 기본 수치로 사용하지 않는다. 단순 이름 일치 또는 관련 후보는 의미·행동을 대조해 확정하고 미확인 export에는 필요한 설계 가정을 기록한다. 사용자에게 보이는 시안과 실제 검증에 선택된 요소의 계약을 반영한다.
+
+기본 조회에서 적합한 요소가 나오지 않거나 내보내기 이름을 사용자가 지정한 경우 `--include-unreviewed`로 전체 공개 이름을 추가 조회한다. 미분류 항목은 공개 이름·정의 파일·호출 시그니처의 근거로만 사용하고, 사용자 과업에 필요한 의미와 상태를 따로 확정한다. 네이티브 대상이면 해당 `nativeContract`의 플랫폼별 속성·웹 전용 제외 항목을 함께 대조한다. 함수 인자와 타입을 컴포넌트 UI로 자동 간주하지 않는다.
+
 ## Affect UI 목록
 
 2026-10-26의 [실제 목록](https://www.affectui.com/components)에서 Components 65개를 확인했다. [텍스트 색인](https://www.affectui.com/llms.txt)은 64개로 `Plan vs Actual`이 빠져 있어 실제 탐색 목록으로 보완했다. 화면 15·블록 11·일러스트 24·모션 8은 컴포넌트 65개와 구분하며 조사 산출물에 보조 목록으로 보존했다.

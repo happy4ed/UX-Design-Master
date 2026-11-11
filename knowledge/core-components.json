@@ -3,15 +3,15 @@
   "checkedAt": "2026-10-26",
   "title": "Core UI Knowledge Base",
   "counting": {
-    "totalConcepts": 122,
+    "totalConcepts": 134,
     "byLevel": {
       "visual": 10,
-      "component": 104,
+      "component": 116,
       "structure": 8
     },
     "families": 11,
     "junctions": 12,
-    "relations": 492,
+    "relations": 545,
     "unit": "고유 KB 정의 항목; 보편적으로 정해진 UI 컴포넌트 총수가 아님",
     "excludes": "색/크기/hover/disabled 등 상태·스타일 변형과 개별 슬롯을 별도 컴포넌트로 중복 합산하지 않음"
   },
@@ -6078,6 +6078,565 @@
         "controls:keyboard:text-field",
         "controls:keyboard:textarea"
       ]
+    },
+    {
+      "id": "lightbox",
+      "name": "Lightbox",
+      "ko": "미디어 확대 보기",
+      "family": "overlays",
+      "level": "component",
+      "definition": "이미지나 영상을 확대하고 이동하며 연속 미디어를 살피는 오버레이",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "media",
+        "close",
+        "previous",
+        "next",
+        "zoom"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "open",
+        "loading",
+        "zoomed",
+        "error"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:lightbox:family:overlays",
+        "contrast_with:lightbox:dialog",
+        "can_contain:lightbox:image",
+        "can_contain:lightbox:icon-button"
+      ]
+    },
+    {
+      "id": "structured-search",
+      "name": "Structured Search",
+      "ko": "구조화 검색",
+      "family": "inputs",
+      "level": "component",
+      "definition": "필드와 연산자, 값을 조합해 검색 조건을 편집하는 입력",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "field",
+        "operator",
+        "value",
+        "condition-token",
+        "editor"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "empty",
+        "editing",
+        "applied",
+        "invalid"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:structured-search:family:inputs",
+        "contrast_with:structured-search:filter-bar",
+        "can_contain:structured-search:chip",
+        "can_contain:structured-search:text-field",
+        "can_contain:structured-search:menu"
+      ]
+    },
+    {
+      "id": "transfer-list",
+      "name": "Transfer List",
+      "ko": "목록 간 선택 이동",
+      "family": "selection",
+      "level": "component",
+      "definition": "선택 가능 항목과 선택된 항목 사이에서 값을 이동하고 필요하면 순서를 조정한다",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "available-list",
+        "selected-list",
+        "transfer-action",
+        "search",
+        "reorder-handle"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "empty",
+        "partial",
+        "selected",
+        "disabled",
+        "reordering"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:transfer-list:family:selection",
+        "contrast_with:transfer-list:multi-select",
+        "can_contain:transfer-list:list",
+        "can_contain:transfer-list:list-item",
+        "can_contain:transfer-list:button",
+        "can_contain:transfer-list:search-field"
+      ]
+    },
+    {
+      "id": "emoji-picker",
+      "name": "Emoji Picker",
+      "ko": "이모지 선택기",
+      "family": "selection",
+      "level": "component",
+      "definition": "검색이나 범주를 통해 이모지를 선택해 삽입하거나 반응을 추가한다",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "search",
+        "category",
+        "emoji-grid"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "loading",
+        "empty",
+        "results",
+        "selected"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:emoji-picker:family:selection",
+        "contrast_with:emoji-picker:select",
+        "can_contain:emoji-picker:search-field",
+        "can_contain:emoji-picker:button"
+      ]
+    },
+    {
+      "id": "comment-pin",
+      "name": "Comment Pin",
+      "ko": "주석 위치 핀",
+      "family": "patterns",
+      "level": "component",
+      "definition": "문서나 이미지의 위치에 연결된 주석 스레드의 앵커",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "anchor",
+        "participant",
+        "unread-indicator"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "unread",
+        "selected",
+        "resolved",
+        "disabled"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:comment-pin:family:patterns",
+        "contrast_with:comment-pin:icon-button",
+        "can_contain:comment-pin:avatar",
+        "can_contain:comment-pin:status-indicator"
+      ]
+    },
+    {
+      "id": "comment-thread",
+      "name": "Comment Thread",
+      "ko": "주석 스레드",
+      "family": "patterns",
+      "level": "component",
+      "definition": "주석과 답글, 반응과 해결 상태를 한 위치의 대화로 묶는다",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "anchor",
+        "comment",
+        "reply",
+        "composer",
+        "actions"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "empty",
+        "draft",
+        "posting",
+        "error",
+        "resolved"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:comment-thread:family:patterns",
+        "contrast_with:comment-thread:chat-message",
+        "can_contain:comment-thread:chat-message",
+        "can_contain:comment-thread:chat-composer",
+        "can_contain:comment-thread:button"
+      ]
+    },
+    {
+      "id": "tour",
+      "name": "Product Tour",
+      "ko": "단계별 안내",
+      "family": "patterns",
+      "level": "component",
+      "definition": "대상 화면의 요소에 연결된 안내 단계를 순서대로 제공한다",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "step",
+        "anchor",
+        "progress",
+        "next",
+        "back",
+        "dismiss"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "inactive",
+        "active",
+        "completed",
+        "dismissed"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:tour:family:patterns",
+        "contrast_with:tour:popover",
+        "can_contain:tour:popover",
+        "can_contain:tour:button",
+        "can_contain:tour:stepper"
+      ]
+    },
+    {
+      "id": "diff-viewer",
+      "name": "Diff Viewer",
+      "ko": "변경 비교",
+      "family": "data",
+      "level": "component",
+      "definition": "이전과 이후 내용의 추가·삭제·변경을 통합 또는 분할로 보여준다",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "file-header",
+        "hunk",
+        "line-number",
+        "change-marker"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "loading",
+        "empty",
+        "collapsed",
+        "expanded"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:diff-viewer:family:data",
+        "contrast_with:diff-viewer:table",
+        "can_contain:diff-viewer:text",
+        "can_contain:diff-viewer:button"
+      ]
+    },
+    {
+      "id": "log-stream",
+      "name": "Log Stream",
+      "ko": "실시간 로그",
+      "family": "data",
+      "level": "component",
+      "definition": "시간순 로그와 수준·출처를 표시하고 최신 항목 따라가기 및 상세 펼침을 제공한다",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "timestamp",
+        "level",
+        "source",
+        "message",
+        "detail",
+        "follow"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "following",
+        "paused",
+        "loading",
+        "error"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:log-stream:family:data",
+        "contrast_with:log-stream:feed",
+        "can_contain:log-stream:text",
+        "can_contain:log-stream:button",
+        "can_contain:log-stream:disclosure"
+      ]
+    },
+    {
+      "id": "code-editor",
+      "name": "Code Editor",
+      "ko": "코드 입력기",
+      "family": "inputs",
+      "level": "component",
+      "definition": "코드를 입력·편집하며 언어별 표시와 선택·키보드 입력을 지원한다",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "editor",
+        "line-number",
+        "selection",
+        "error"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "empty",
+        "editing",
+        "readonly",
+        "disabled",
+        "invalid"
+      ],
+      "interactive": true,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "platform accessibility requirements",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "contextual",
+      "hitPolicy": "조작 요소별 실제 hit 영역과 키보드 대안 검증",
+      "aliases": [],
+      "relations": [
+        "categorized_in:code-editor:family:inputs",
+        "contrast_with:code-editor:textarea",
+        "can_contain:code-editor:text-field",
+        "can_contain:code-editor:toolbar"
+      ]
+    },
+    {
+      "id": "citation",
+      "name": "Citation",
+      "ko": "출처 표시",
+      "family": "content",
+      "level": "component",
+      "definition": "인용한 자료를 텍스트나 번호와 안전한 목적지로 연결한다",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "source-label",
+        "destination",
+        "marker"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "linked",
+        "unavailable"
+      ],
+      "interactive": false,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "N/A unless interactive variant",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "none",
+      "hitPolicy": "기본 정보 표현",
+      "aliases": [],
+      "relations": [
+        "categorized_in:citation:family:content",
+        "contrast_with:citation:link",
+        "can_contain:citation:link"
+      ]
+    },
+    {
+      "id": "blockquote",
+      "name": "Block Quote",
+      "ko": "블록 인용",
+      "family": "content",
+      "level": "component",
+      "definition": "출처가 있는 인용문을 본문과 의미적으로 구분해 표시한다",
+      "distinction": "연결된 기존 요소와 역할이 겹칠 수 있으나 데이터·상태·조작 계약은 별도 확인",
+      "anatomy": [
+        "quoted-content",
+        "attribution"
+      ],
+      "contentContract": "데이터 구조·길이·빈 상태·오류·원문 접근을 프로젝트에 맞게 명세",
+      "states": [
+        "normal",
+        "long"
+      ],
+      "interactive": false,
+      "behavior": "사용 조건·트리거·상태 전이·키보드 및 포인터 동작을 화면별 계약으로 정의",
+      "spatial": {
+        "boundaries": [
+          "visibleBounds",
+          "componentBounds",
+          "hitBounds",
+          "layoutSlot"
+        ],
+        "minimumProfile": "N/A unless interactive variant",
+        "spacing": "부모 inset / 내부 padding / 형제 gap / 그룹 간격 / 예약 공간을 구분",
+        "layoutPolicy": "실제 기기 폭·콘텐츠와 확대 조건에서 결정"
+      },
+      "definitionBasis": "공개 구현을 조사해 과업 의미를 재구성한 자체 개념. 제품에서 채택 전 적합성 확인",
+      "sourceRefs": [],
+      "interactionMode": "none",
+      "hitPolicy": "기본 정보 표현",
+      "aliases": [],
+      "relations": [
+        "categorized_in:blockquote:family:content",
+        "contrast_with:blockquote:text",
+        "can_contain:blockquote:text",
+        "can_contain:blockquote:citation"
+      ]
     }
   ],
   "relationTypes": {
@@ -9574,6 +10133,377 @@
       "target": "junction:chip-value-binding",
       "type": "participates_in",
       "note": "여러 컴포넌트의 상태·이벤트·값·focus를 묶는 junction에 참여"
+    },
+    {
+      "id": "categorized_in:lightbox:family:overlays",
+      "source": "lightbox",
+      "target": "family:overlays",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:lightbox:dialog",
+      "source": "lightbox",
+      "target": "dialog",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:structured-search:family:inputs",
+      "source": "structured-search",
+      "target": "family:inputs",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:structured-search:filter-bar",
+      "source": "structured-search",
+      "target": "filter-bar",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:transfer-list:family:selection",
+      "source": "transfer-list",
+      "target": "family:selection",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:transfer-list:multi-select",
+      "source": "transfer-list",
+      "target": "multi-select",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:emoji-picker:family:selection",
+      "source": "emoji-picker",
+      "target": "family:selection",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:emoji-picker:select",
+      "source": "emoji-picker",
+      "target": "select",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:comment-pin:family:patterns",
+      "source": "comment-pin",
+      "target": "family:patterns",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:comment-pin:icon-button",
+      "source": "comment-pin",
+      "target": "icon-button",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:comment-thread:family:patterns",
+      "source": "comment-thread",
+      "target": "family:patterns",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:comment-thread:chat-message",
+      "source": "comment-thread",
+      "target": "chat-message",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:tour:family:patterns",
+      "source": "tour",
+      "target": "family:patterns",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:tour:popover",
+      "source": "tour",
+      "target": "popover",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:diff-viewer:family:data",
+      "source": "diff-viewer",
+      "target": "family:data",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:diff-viewer:table",
+      "source": "diff-viewer",
+      "target": "table",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:log-stream:family:data",
+      "source": "log-stream",
+      "target": "family:data",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:log-stream:feed",
+      "source": "log-stream",
+      "target": "feed",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:code-editor:family:inputs",
+      "source": "code-editor",
+      "target": "family:inputs",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:code-editor:textarea",
+      "source": "code-editor",
+      "target": "textarea",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:citation:family:content",
+      "source": "citation",
+      "target": "family:content",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:citation:link",
+      "source": "citation",
+      "target": "link",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "categorized_in:blockquote:family:content",
+      "source": "blockquote",
+      "target": "family:content",
+      "type": "categorized_in",
+      "note": "분류 관계"
+    },
+    {
+      "id": "contrast_with:blockquote:text",
+      "source": "blockquote",
+      "target": "text",
+      "type": "contrast_with",
+      "note": "유사 요소와 역할·상태를 비교해 선택"
+    },
+    {
+      "id": "can_contain:lightbox:image",
+      "source": "lightbox",
+      "target": "image",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:lightbox:icon-button",
+      "source": "lightbox",
+      "target": "icon-button",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:structured-search:chip",
+      "source": "structured-search",
+      "target": "chip",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:structured-search:text-field",
+      "source": "structured-search",
+      "target": "text-field",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:structured-search:menu",
+      "source": "structured-search",
+      "target": "menu",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:transfer-list:list",
+      "source": "transfer-list",
+      "target": "list",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:transfer-list:list-item",
+      "source": "transfer-list",
+      "target": "list-item",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:transfer-list:button",
+      "source": "transfer-list",
+      "target": "button",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:transfer-list:search-field",
+      "source": "transfer-list",
+      "target": "search-field",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:emoji-picker:search-field",
+      "source": "emoji-picker",
+      "target": "search-field",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:emoji-picker:button",
+      "source": "emoji-picker",
+      "target": "button",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:comment-pin:avatar",
+      "source": "comment-pin",
+      "target": "avatar",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:comment-pin:status-indicator",
+      "source": "comment-pin",
+      "target": "status-indicator",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:comment-thread:chat-message",
+      "source": "comment-thread",
+      "target": "chat-message",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:comment-thread:chat-composer",
+      "source": "comment-thread",
+      "target": "chat-composer",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:comment-thread:button",
+      "source": "comment-thread",
+      "target": "button",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:tour:popover",
+      "source": "tour",
+      "target": "popover",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:tour:button",
+      "source": "tour",
+      "target": "button",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:tour:stepper",
+      "source": "tour",
+      "target": "stepper",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:diff-viewer:text",
+      "source": "diff-viewer",
+      "target": "text",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:diff-viewer:button",
+      "source": "diff-viewer",
+      "target": "button",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:log-stream:text",
+      "source": "log-stream",
+      "target": "text",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:log-stream:button",
+      "source": "log-stream",
+      "target": "button",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:log-stream:disclosure",
+      "source": "log-stream",
+      "target": "disclosure",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:code-editor:text-field",
+      "source": "code-editor",
+      "target": "text-field",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:code-editor:toolbar",
+      "source": "code-editor",
+      "target": "toolbar",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:citation:link",
+      "source": "citation",
+      "target": "link",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:blockquote:text",
+      "source": "blockquote",
+      "target": "text",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
+    },
+    {
+      "id": "can_contain:blockquote:citation",
+      "source": "blockquote",
+      "target": "citation",
+      "type": "can_contain",
+      "note": "과업에 따라 조합 가능한 하위 요소; 필수 구성은 아님"
     }
   ],
   "junctions": [

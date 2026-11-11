@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "motionCount": 343,
-  "componentCount": 122,
+  "componentCount": 134,
   "relationStatus": "candidate; source-family defaults and specific state rules, not product-level approval",
   "movementScaleMeaning": "Changes in visible spatial footprint relative to the animated target. Small/medium/large/screen are comparison tags, not measured pixel distances or animation intensity. Record actual distances and duration when applying a motion.",
   "useTypes": [
@@ -8048,6 +8048,78 @@
       "name": "시스템 키보드",
       "family": "inputs",
       "interactive": true
+    },
+    {
+      "id": "lightbox",
+      "name": "미디어 확대 보기",
+      "family": "overlays",
+      "interactive": true
+    },
+    {
+      "id": "structured-search",
+      "name": "구조화 검색",
+      "family": "inputs",
+      "interactive": true
+    },
+    {
+      "id": "transfer-list",
+      "name": "목록 간 선택 이동",
+      "family": "selection",
+      "interactive": true
+    },
+    {
+      "id": "emoji-picker",
+      "name": "이모지 선택기",
+      "family": "selection",
+      "interactive": true
+    },
+    {
+      "id": "comment-pin",
+      "name": "주석 위치 핀",
+      "family": "patterns",
+      "interactive": true
+    },
+    {
+      "id": "comment-thread",
+      "name": "주석 스레드",
+      "family": "patterns",
+      "interactive": true
+    },
+    {
+      "id": "tour",
+      "name": "단계별 안내",
+      "family": "patterns",
+      "interactive": true
+    },
+    {
+      "id": "diff-viewer",
+      "name": "변경 비교",
+      "family": "data",
+      "interactive": true
+    },
+    {
+      "id": "log-stream",
+      "name": "실시간 로그",
+      "family": "data",
+      "interactive": true
+    },
+    {
+      "id": "code-editor",
+      "name": "코드 입력기",
+      "family": "inputs",
+      "interactive": true
+    },
+    {
+      "id": "citation",
+      "name": "출처 표시",
+      "family": "content",
+      "interactive": false
+    },
+    {
+      "id": "blockquote",
+      "name": "블록 인용",
+      "family": "content",
+      "interactive": false
     }
   ],
   "edges": [

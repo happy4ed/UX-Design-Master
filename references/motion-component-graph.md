@@ -1,6 +1,6 @@
 # 모션 × 컴포넌트 지식 그래프
 
-[그래프 데이터](../knowledge/motion-component-graph.json)와 [탐색 화면](../samples/motion-component-graph.html)은 확정 고유 모션 343종을 `활용 유형 / 움직임 규모 / 변화 축 / 원본 계열 / 컴포넌트 후보`로 연결한다. 컴포넌트 ID는 [기본 컴포넌트 지식 기반](../knowledge/core-components.json)의 122개 ID를 사용한다. `candidate_for`는 화면의 역할과 상태가 맞을 가능성이다. 실제 컴포넌트 인스턴스에서의 재생 검증이나 제품 적용 승인이 아니다.
+[그래프 데이터](../knowledge/motion-component-graph.json)와 [탐색 화면](../samples/motion-component-graph.html)은 확정 고유 모션 343종을 `활용 유형 / 움직임 규모 / 변화 축 / 원본 계열 / 컴포넌트 후보`로 연결한다. 컴포넌트 ID는 [기본 컴포넌트 지식 기반](../knowledge/core-components.json)의 ID를 사용한다. `candidate_for`는 화면의 역할과 상태가 맞을 가능성이다. 실제 컴포넌트 인스턴스에서의 재생 검증이나 제품 적용 승인이 아니다.
 
 ## 태그의 의미
 
